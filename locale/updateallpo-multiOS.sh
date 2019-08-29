@@ -39,7 +39,7 @@
 remote="origin"
 branch="master"
 python="python"
-localgsed="gsed"
+localgsed="sed"
 findoptions=""
 delete=1
 plugin="OpenWebif"
@@ -123,7 +123,7 @@ if [[ "$OSTYPE" == "darwin"* ]]
     	findoptions=" -s -X "
 fi
 #
-# Script only run with gsed but on some distro normal sed is already gsed so checking it.
+# Script only run with sed but on some distro normal sed is already sed so checking it.
 #
 sed --version 2> /dev/null | grep -q "GNU"
 if [ $? -eq 0 ]; then
@@ -147,16 +147,12 @@ git config core.safecrlf true
 #
 # Git commands to sync with origin and create the branch MyTranslation to work on.
 #
-git reset HEAD --hard
-git checkout -B $branch $remote/$branch
 git pull
-git branch -D MyTranslation
-git checkout -B MyTranslation
 #
 # Retrieve all existing languages to update
 #
 printf "Po files update/creation from script starting.\n"
-languages=($(ls *.po | tr "\n" " " | gsed 's/.po//g'))
+languages=($(ls *.po | tr "\n" " " | sed 's/.po//g'))
 
 # If you want to define the language locally in this script uncomment and defined languages
 #languages=("ar" "bg" "ca" "cs" "da" "de" "el" "en" "es" "et" "fa" "fi" "fr" "fy" "he" "hk" "hr" "hu" "id" "is" "it" "ku" "lt" "lv" "nl" "nb" "nn" "pl" "pt" "pt_BR" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "zh")
@@ -196,3 +192,4 @@ printf "           3) unselect keep original file format\n"
 printf "You only need to do this once in PoEdit.\n\n"
 printf "Please read the translators wiki page:\n"
 printf "\nhttps://wiki.openpli.org/Information_for_Translators\n"
+rm -rf *.mo

@@ -8,747 +8,335 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
-# Simulate the oe-a boxbranding module (Only functions required by OWIF)     #
-##############################################################################
 
-# from Components.About import about
 from Tools.Directories import fileExists
 from time import time
 import os
 import hashlib
-
-try:
-	from Components.About import about
-except ImportError:
-	pass
-
-tpmloaded = 1
-try:
-	from enigma import eTPM
-	if not hasattr(eTPM, 'getData'):
-		tpmloaded = 0
-except:  # noqa: E722
-	tpmloaded = 0
-
-
-def validate_certificate(cert, key):
-	buf = decrypt_block(cert[8:], key)
-	if buf is None:
-		return None
-	return buf[36:107] + cert[139:196]
-
-
-def get_random():
-	try:
-		xor = lambda a, b: ''.join(chr(ord(c) ^ ord(d)) for c, d in zip(a, b * 100))
-		random = os.urandom(8)
-		x = str(time())[-8:]
-		result = xor(random, x)
-
-		return result
-	except:  # noqa: E722
-		return None
-
-
-def bin2long(s):
-	return reduce(lambda x, y: (x << 8L) + y, map(ord, s))
-
-
-def long2bin(l):
-	res = ""
-	for byte in range(128):
-		res += chr((l >> (1024 - (byte + 1) * 8)) & 0xff)
-	return res
-
-
-def rsa_pub1024(src, mod):
-	return long2bin(pow(bin2long(src), 65537, bin2long(mod)))
-
-
-def decrypt_block(src, mod):
-	if len(src) != 128 and len(src) != 202:
-		return None
-	dest = rsa_pub1024(src[:128], mod)
-	hash = hashlib.sha1(dest[1:107])
-	if len(src) == 202:
-		hash.update(src[131:192])
-	result = hash.digest()
-	if result == dest[107:127]:
-		return dest
-	return None
-
-
-def tpm_check():
-	try:
-		tpm = eTPM()
-		rootkey = ['\x9f', '|', '\xe4', 'G', '\xc9', '\xb4', '\xf4', '#', '&', '\xce', '\xb3', '\xfe', '\xda', '\xc9', 'U', '`', '\xd8', '\x8c', 's', 'o', '\x90', '\x9b', '\\', 'b', '\xc0', '\x89', '\xd1', '\x8c', '\x9e', 'J', 'T', '\xc5', 'X', '\xa1', '\xb8', '\x13', '5', 'E', '\x02', '\xc9', '\xb2', '\xe6', 't', '\x89', '\xde', '\xcd', '\x9d', '\x11', '\xdd', '\xc7', '\xf4', '\xe4', '\xe4', '\xbc', '\xdb', '\x9c', '\xea', '}', '\xad', '\xda', 't', 'r', '\x9b', '\xdc', '\xbc', '\x18', '3', '\xe7', '\xaf', '|', '\xae', '\x0c', '\xe3', '\xb5', '\x84', '\x8d', '\r', '\x8d', '\x9d', '2', '\xd0', '\xce', '\xd5', 'q', '\t', '\x84', 'c', '\xa8', ')', '\x99', '\xdc', '<', '"', 'x', '\xe8', '\x87', '\x8f', '\x02', ';', 'S', 'm', '\xd5', '\xf0', '\xa3', '_', '\xb7', 'T', '\t', '\xde', '\xa7', '\xf1', '\xc9', '\xae', '\x8a', '\xd7', '\xd2', '\xcf', '\xb2', '.', '\x13', '\xfb', '\xac', 'j', '\xdf', '\xb1', '\x1d', ':', '?']
-		random = None
-		result = None
-		# l2r = False
-		l2k = None
-		l3k = None
-
-		l2c = tpm.getData(eTPM.DT_LEVEL2_CERT)
-		if l2c is None:
-			return 0
-
-		l2k = validate_certificate(l2c, rootkey)
-		if l2k is None:
-			return 0
-
-		l3c = tpm.getData(eTPM.DT_LEVEL3_CERT)
-		if l3c is None:
-			return 0
-
-		l3k = validate_certificate(l3c, l2k)
-		if l3k is None:
-			return 0
-
-		random = get_random()
-		if random is None:
-			return 0
-
-		value = tpm.computeSignature(random)
-		result = decrypt_block(value, l3k)
-		if result is None:
-			return 0
-
-		if result[80:88] != random:
-			return 0
-
-		return 1
-	except:  # noqa: E722
-		return 0
-
+from enigma import getBoxType, getBoxBrand
+from Tools.StbHardware import getFPVersion
 
 def getAllInfo():
 	info = {}
-
-	brand = "unknown"
-	model = "unknown"
+	fp_version = str(getFPVersion())
+	brand = getBoxBrand()
+	model = getBoxType()
 	procmodel = "unknown"
+
 	grabpip = 0
+	if "4k" or "uhd" or "ultra" in model or model in ("dm900","dm920","multibox","v8plus","hd51","h10","h7","h9","h9combo","vs1500"):
+		grabpip = 1
+
+	info['grabpip'] = grabpip or 0
+
 	lcd = 0
-	orgdream = 0
-	if tpmloaded:
-		orgdream = tpm_check()
+	if "lcd" in model or model in ("e4hdultra","sf208","sf228","sf238","protek4k"):
+		lcd = 1
+
+	info['lcd'] = lcd or 0
 
 	if fileExists("/proc/stb/info/hwmodel"):
-		brand = "DAGS"
 		f = open("/proc/stb/info/hwmodel", 'r')
-		procmodel = f.readline().strip()
+		procmodel = f.readline().strip().lower()
 		f.close()
-		if (procmodel.startswith("optimuss") or procmodel.startswith("pingulux")):
-			brand = "Edision"
-			model = procmodel.replace("optimmuss", "Optimuss ").replace("plus", " Plus").replace(" os", " OS")
-		elif (procmodel.startswith("fusion") or procmodel.startswith("purehd") or procmodel.startswith("revo4k") or procmodel.startswith("galaxy4k")):
-			brand = "Xsarius"
-			if procmodel == "fusionhd":
-				model = procmodel.replace("fusionhd", "Fusion HD")
-			elif procmodel == "fusionhdse":
-				model = procmodel.replace("fusionhdse", "Fusion HD SE")
-			elif procmodel == "purehd":
-				model = procmodel.replace("purehd", "Pure HD")
-			elif procmodel == "purehdse":
-					model = procmodel.replace("purehdse", "Pure HD SE")
-			elif procmodel == "revo4k":
-				model = procmodel.replace("revo4k", "Revo4K")
-			elif procmodel == "galaxy4k":
-				model = procmodel.replace("galaxy4k", "Galaxy4K")
-		elif (procmodel.startswith("lunix")):
-			brand = "Qviart"
-			if procmodel == "lunix3-4k":
-				model = procmodel.replace("lunix3-4k", "Lunix3-4K")
-			elif procmodel == "lunix":
-				model = procmodel.replace("lunix", "Lunix")
-			if procmodel == "lunix4k":
-				model = procmodel.replace("lunix4k", "Lunix4K")
 	elif fileExists("/proc/stb/info/azmodel"):
-		brand = "AZBox"
-		f = open("/proc/stb/info/model", 'r')  # To-Do: Check if "model" is really correct ...
-		procmodel = f.readline().strip()
+		f = open("/proc/stb/info/model", 'r')
+		procmodel = f.readline().strip().lower()
 		f.close()
-		model = procmodel.lower()
 	elif fileExists("/proc/stb/info/gbmodel"):
-		brand = "GigaBlue"
 		f = open("/proc/stb/info/gbmodel", 'r')
-		procmodel = f.readline().strip()
+		procmodel = f.readline().strip().lower()
 		f.close()
-		if procmodel == "GBQUAD PLUS":
-			model = procmodel.replace("GBQUAD", "Quad").replace("PLUS", " Plus")
-		elif procmodel == "gbquad4k":
-			model = procmodel.replace("gbquad4k", "UHD Quad 4k")
-		elif procmodel == "quad4k":
-			model = procmodel.replace("quad4k", "UHD Quad 4k")
-		elif procmodel == "gbue4k":
-			model = procmodel.replace("gbue4k", "UHD UE 4k")
-		elif procmodel == "ue4k":
-			model = procmodel.replace("ue4k", "UHD UE 4k")
 	elif fileExists("/proc/stb/info/vumodel") and not fileExists("/proc/stb/info/boxtype"):
-		brand = "Vu+"
 		f = open("/proc/stb/info/vumodel", 'r')
-		procmodel = f.readline().strip()
+		procmodel = f.readline().strip().lower()
 		f.close()
-		model = procmodel.title().replace("olose", "olo SE").replace("olo2se", "olo2 SE").replace("2", "²").replace("4Kse", "4K SE")
 	elif fileExists("/proc/boxtype"):
 		f = open("/proc/boxtype", 'r')
 		procmodel = f.readline().strip().lower()
 		f.close()
-		if procmodel in ("adb2850", "adb2849", "bska", "bsla", "bxzb", "bzzb"):
-			brand = "Advanced Digital Broadcast"
-			if procmodel in ("bska", "bxzb"):
-				model = "ADB 5800S"
-			elif procmodel in ("bsla", "bzzb"):
-				model = "ADB 5800SX"
-			elif procmodel == "adb2849":
-				model = "ADB 2849ST"
-			else:
-				model = "ADB 2850ST"
-		elif procmodel in ("esi88", "uhd88"):
-			brand = "Sagemcom"
-			if procmodel == "uhd88":
-				model = "UHD 88"
-			else:
-				model = "ESI 88"
 	elif fileExists("/proc/stb/info/boxtype"):
 		f = open("/proc/stb/info/boxtype", 'r')
 		procmodel = f.readline().strip().lower()
 		f.close()
-		if procmodel.startswith("et"):
-			if procmodel == "et7000mini":
-				brand = "Galaxy Innovations"
-				model = "ET-7000 Mini"
-			elif procmodel == "et11000":
-				brand = "Galaxy Innovations"
-				model = "ET-11000"
-			else:
-				brand = "Xtrend"
-				model = procmodel.upper()
-		elif procmodel.startswith("xpeed"):
-			brand = "Golden Interstar"
-			model = procmodel
-		elif procmodel.startswith("xp"):
-			brand = "MaxDigital"
-			model = procmodel.upper()
-		elif procmodel.startswith("ixuss"):
-			brand = "Medialink"
-			model = procmodel.replace(" ", "")
-		elif procmodel == "formuler4turbo":
-			brand = "Formuler"
-			model = "F4 Turbo"
-		elif procmodel.startswith("formuler"):
-			brand = "Formuler"
-			model = procmodel.replace("formuler", "")
-			if model.isdigit():
-				model = 'F' + model
-		elif procmodel.startswith("mbtwinplus"):
-			brand = "Miraclebox"
-			model = "Premium Twin+"
-		elif procmodel.startswith("alphatriplehd"):
-			brand = "SAB"
-			model = "Alpha Triple HD"
-		elif procmodel in ("7000s", "mbmicro"):
-			procmodel = "mbmicro"
-			brand = "Miraclebox"
-			model = "Premium Micro"
-		elif procmodel in ("7005s", "mbmicrov2"):
-			procmodel = "mbmicrov2"
-			brand = "Miraclebox"
-			model = "Premium Micro v2"
-		elif procmodel.startswith("ini"):
-			if procmodel.endswith("9000ru"):
-				brand = "Sezam"
-				model = "Marvel"
-			elif procmodel.endswith("5000ru"):
-				brand = "Sezam"
-				model = "hdx"
-			elif procmodel.endswith("1000ru"):
-				brand = "Sezam"
-				model = "hde"
-			elif procmodel.endswith("5000sv"):
-				brand = "Miraclebox"
-				model = "mbtwin"
-			elif procmodel.endswith("1000sv"):
-				brand = "Miraclebox"
-				model = "mbmini"
-			elif procmodel.endswith("1000de"):
-				brand = "Golden Interstar"
-				model = "Xpeed LX"
-			elif procmodel.endswith("9000de"):
-				brand = "Golden Interstar"
-				model = "Xpeed LX3"
-			elif procmodel.endswith("1000lx"):
-				brand = "Golden Interstar"
-				model = "Xpeed LX"
-			elif procmodel.endswith("de"):
-				brand = "Golden Interstar"
-			elif procmodel.endswith("1000am"):
-				brand = "Atemio"
-				model = "5x00"
-			else:
-				brand = "Venton"
-				model = "HDx"
-		elif procmodel.startswith("unibox-"):
-			brand = "Venton"
-			model = "HDe"
-		elif procmodel == "hd1100":
-			brand = "Mut@nt"
-			model = "HD1100"
-		elif procmodel == "hd1200":
-			brand = "Mut@nt"
-			model = "HD1200"
-		elif procmodel == "hd1265":
-			brand = "Mut@nt"
-			model = "HD1265"
-		elif procmodel == "hd2400":
-			brand = "Mut@nt"
-			model = "HD2400"
-		elif procmodel == "hd51":
-			brand = "Mut@nt"
-			model = "HD51"
-			grabpip = 1
-		elif procmodel == "hd11":
-			brand = "Mut@nt"
-			model = "HD11"
-		elif procmodel == "hd500c":
-			brand = "Mut@nt"
-			model = "HD500c"
-		elif procmodel == "hd530c":
-			brand = "Mut@nt"
-			model = "HD530c"
-		elif procmodel =="hd60":
-			brand ="Mut@nt"
-			model = "HD60"
-		elif procmodel =="multibox":
-			brand ="MaXytec"
-			model = "Multibox"
-			grabpip = 1
-		elif procmodel == "arivalink200":
-			brand = "Ferguson"
-			model = "Ariva @Link 200"
-		elif procmodel.startswith("spark"):
-			brand = "Fulan"
-			if procmodel == "spark7162":
-				model = "Spark 7162"
-			else:
-				model = "Spark"
-		elif procmodel == "spycat":
-			brand = "Spycat"
-			model = "Spycat"
-		elif procmodel == "spycatmini":
-			brand = "Spycat"
-			model = "Spycat Mini"
-		elif procmodel == "spycatminiplus":
-			brand = "Spycat"
-			model = "Spycat Mini+"
-		elif procmodel == "spycat4kmini":
-			brand = "Spycat"
-			model = "spycat 4K Mini"
-		elif procmodel == "vipercombo":
-			brand = "Amiko"
-			model = "ViperCombo"
-		elif procmodel == "vipert2c":
-			brand = "Amiko"
-			model = "ViperT2C"
-		elif procmodel == "vipercombohdd":
-			brand = "Amiko"
-			model = "ViperComboHDD"
-                elif procmodel == "viperslim":
-                        brand = "Amiko"
-                        model = "Viper Slim"
-		elif procmodel == "wetekplay":
-			brand = "WeTeK"
-			model = "Play"
-		elif procmodel.startswith("os"):
-			brand = "Edision"
-			if procmodel == "osmini":
-				model = "OS Mini"
-			elif procmodel == "osminiplus":
-				model = "OS Mini+"
-			elif procmodel == "osmega":
-				model = "OS Mega"
-			elif procmodel == "osnino":
-				model = "OS Nino"
-			elif procmodel == "osninoplus":
-				model = "OS Nino+"
-			elif procmodel == "osninopro":
-				model = "OS Nino Pro"
-			elif procmodel == "osmio4k":
-				model = "OS Mio 4K"
-				grabpip = 1
-			elif procmodel == "osmio4kplus":
-				model = "OS Mio 4K+"
-				grabpip = 1
-			else:
-				model = procmodel
-		elif procmodel == "h3":
-			brand = "Zgemma"
-			model = "H3 series"
-		elif procmodel == "h4":
-			brand = "Zgemma"
-			model = "H4 series"
-		elif procmodel == "h5":
-			brand = "Zgemma"
-			model = "H5 series"
-		elif procmodel == "h6":
-			brand = "Zgemma"
-			model = "H6 series"
-		elif procmodel == "h7":
-			brand = "Zgemma"
-			model = "H7 series"
-			grabpip = 1
-		elif procmodel == "h9":
-			brand = "Zgemma"
-			model = "H9 series"
-			grabpip = 1
-		elif procmodel == "lc":
-			brand = "Zgemma"
-			model = "LC"
-		elif procmodel == "sh1":
-			brand = "Zgemma"
-			model = "Star series"
-		elif procmodel == "i55":
-			brand = "Zgemma"
-			model = "i55"
-		elif procmodel == "i55plus":
-			brand = "Zgemma"
-			model = "i55Plus"
-		elif procmodel == "h9combo":
-			brand = "Zgemma"
-			model = "H9Combo"
-		elif procmodel == "vs1500":
-			brand = "Vimastec"
-			model = "vs1500"
-			grabpip = 1
-		elif procmodel.startswith("sf"):
-			brand = "Octagon"
-			model = procmodel
-		elif procmodel == "e4hd":
-			brand = "Axas"
-			model = "E4HD"
-			lcd = 1
-			grabpip = 1
 	elif fileExists("/proc/stb/info/model"):
 		f = open("/proc/stb/info/model", 'r')
 		procmodel = f.readline().strip().lower()
-		f.close()
-		if procmodel == "tf7700hdpvr":
-			brand = "Topfield"
-			model = "TF7700 HDPVR"
-		elif procmodel == "dsi87":
-			brand = "Sagemcom"
-			model = "DSI 87"
-		elif procmodel.startswith("spark"):
-			brand = "Fulan"
-			if procmodel == "spark7162":
-				model = "Spark 7162"
-			else:
-				model = "Spark"
-		elif (procmodel.startswith("dm") and not procmodel == "dm8000"):
-			brand = "Dream Multimedia"
-			if procmodel == "dm800":
-				model = "DM800 HD PVR"
-			elif procmodel == "dm800se":
-				model = "DM800 HD se"
-			elif procmodel == "dm500hd":
-				model = "DM500 HD"
-			elif procmodel == "dm7020hd":
-				model = "DM7020 HD"
-			elif procmodel == "dm820":
-				model = "DM820 HD"
-			elif procmodel == "dm7080":
-				model = "DM7080 HD"
-			elif procmodel == "dm520":
-				model = "DM520 HD"
-			elif procmodel == "dm525":
-				model = "DM525 HD"
-			elif procmodel == "dm900":
-				model = "DM900 HD"
-				grabpip = 1
-			elif procmodel == "dm920":
-				model = "DM920 HD"
-				grabpip = 1
-			else:
-				model = procmodel.replace("dm", "DM", 1)
-		# A "dm8000" is only a Dreambox if it passes the tpm verification:
-		elif procmodel == "dm8000" and orgdream:
-			brand = "Dream Multimedia"
-			model = "DM8000"
-		else:
-			model = procmodel
+		f.close()		
 
-	if fileExists("/etc/.box"):
-		distro = "HDMU"
-		f = open("/etc/.box", 'r')
-		tempmodel = f.readline().strip().lower()
-		if tempmodel.startswith("ufs") or model.startswith("ufc"):
-			brand = "Kathrein"
-			model = tempmodel.upcase()
-			procmodel = tempmodel
-		elif tempmodel.startswith("spark"):
-			brand = "Fulan"
-			model = tempmodel.title()
-			procmodel = tempmodel
-		elif tempmodel.startswith("xcombo"):
-			brand = "EVO"
-			model = "enfinityX combo plus"
-			procmodel = "vg2000"
-
-	type = procmodel
-	if type in ("et9x00", "et9000", "et9100", "et9200", "et9500"):
-		type = "et9x00"
-	elif type in ("et6x00", "et6000"):
-		type = "et6x00"
-	elif type in ("et5x00", "et5000"):
-		type = "et5x00"
-	elif type in ("et4x00", "et4000"):
-		type = "et4x00"
-	elif type == "xp1000":
-		type = "xp1000"
-	elif type in ("bska", "bxzb"):
-		type = "nbox_white"
-	elif type in ("bsla", "bzzb"):
-		type = "nbox"
-	elif type == "sagemcom88":
-		type = "esi88"
-	elif type in ("tf7700hdpvr", "topf"):
-		type = "topf"
-
-	info['brand'] = brand
-	info['model'] = model
 	info['procmodel'] = procmodel
-	info['type'] = type
 
 	remote = "dmm1"
-	if procmodel in ("solo", "duo", "uno", "solo2", "solose", "zero", "solo4k", "uno4k", "ultimo4k"):
-		remote = "vu_normal"
-	elif procmodel == "duo2":
-		remote = "vu_duo2"
-	elif procmodel == "ultimo":
-		remote = "vu_ultimo"
-	elif procmodel in ("uno4kse", "zero4k", "duo4k"):
-		remote = "vu_normal_02"
-	elif procmodel == "e3hd":
+
+	if model in ("vusolo","vuduo","vuuno","vusolo2","vusolose","vuzero","vusolo4k","vuuno4k","vuultimo4k"):
+		remote = "vu"
+	elif model == "vuultimo":
+		remote = "vu2"
+	elif model == "vuduo2":
+		remote = "vu3"
+	elif model in ("vuuno4kse","vuzero4k","vuduo4k"):
+		remote = "vu4"
+	elif model in ("evoe3hd","geniuse3hd","axase3","axase3c"):
 		remote = "e3hd"
-	elif procmodel in ("et9x00", "et9000", "et9100", "et9200", "et9500"):
+	elif model == "et9x00" and not procmodel == "et9500":
 		remote = "et9x00"
-	elif procmodel in ("et5x00", "et5000", "et6x00", "et6000"):
-		remote = "et5x00"
-	elif procmodel in ("et4x00", "et4000"):
+	elif procmodel == "et9500":
+		remote = "et9500"
+	elif model in ("et5x00","et6x00") and not procmodel == "et6500":
+		remote = "et6x00"
+	elif model == "et4x00":
 		remote = "et4x00"
 	elif procmodel == "et6500":
 		remote = "et6500"
-	elif procmodel in ("et8x00", "et8000", "et8500", "et8500s", "et10000"):
+	elif model in ("et8000","et8500","et10000"):
 		remote = "et8000"
-	elif procmodel in ("et7x00", "et7000", "et7500"):
+	elif model == "et7x00":
 		remote = "et7x00"
-	elif procmodel in ("et7000mini", "et11000"):
-		remote = "et7000mini"
-	elif procmodel == "gbquad":
-		remote = "gigablue"
-	elif procmodel == "gbquadplus":
-		remote = "gbquadplus"
-	elif procmodel in ("gbquad4k", "gbue4k", "quad4k", "ue4k"):
-		remote = "gb7252"
-	elif procmodel in ("formuler1", "formuler3", "formuler4", "formuler4turbo"):
+	elif model in ("et7000mini","et1x000"):
+		remote = "et7x00mini"
+	elif model in ("gbquad","gb800se","gb800ue","gb800solo","gb800seplus","gb800ueplus","gbipbox","gbultrase","gbultraue","gbx1","gbx3"):
+		remote = "gb0"
+	elif model == "gbquadplus":
+		remote = "gb1"
+	elif model in ("gbx2","gbx3h","gbultraueh"):
+		remote = "gb2"
+	elif model in ("gbquad4k","gbue4k","gbtrio4k","gbip4k"):
+		remote = "gb3"
+	elif model in ("formuler1","formuler3","formuler4","formuler4turbo"):
 		remote = "formuler1"
-	elif procmodel in ("azboxme", "azboxminime", "me", "minime"):
-		remote = "me"
-	elif procmodel in ("optimussos1", "optimussos1plus", "optimussos2", "optimussos2plus"):
-		remote = "optimuss"
-	elif procmodel in ("premium", "premium+"):
-		remote = "premium"
-	elif procmodel in ("elite", "ultra"):
-		remote = "elite"
-	elif procmodel in ("ini-1000", "ini-1000ru"):
-		remote = "ini-1000"
-	elif procmodel in ("ini-1000sv", "ini-5000sv", "ini-9000de"):
+	elif model in ("azboxme","azboxminime"):
+		remote = "azboxme"
+	elif model == "azboxhd" and not procmodel in ("elite","ultra"):
+		remote = "azboxhd"
+	elif procmodel in ("elite","ultra"):
+		remote = "azboxelite"
+	elif model in ("optimussos","optimussos1","optimussos1plus","optimussos2","optimussos2plus"):
+		remote = "optimuss1"
+	elif model == "optimussos3plus":
+		remote = "optimuss2"	
+	elif model in ("mbtwinplus","mbmicro","mbmicrov2"):
 		remote = "miraclebox"
-	elif procmodel in ("mbtwinplus", "mbmicro", "mbmicrov2"):
-		remote = "miraclebox2"
-	elif procmodel == "alphatriplehd":
-		remote = "alphatriplehd"
-	elif procmodel == "ini-3000":
-		remote = "ini-3000"
-	elif procmodel in ("ini-7012", "ini-7000", "ini-5000", "ini-5000ru"):
-		remote = "ini-7000"
-	elif procmodel.startswith("spark"):
-		remote = "spark"
-	elif procmodel == "xp1000":
+	elif model == "alphatriplehd":
+		remote = "sab1"
+	elif model == "xp1000":
 		remote = "xp1000"
-	elif procmodel.startswith("xpeedlx"):
-		remote = "xpeedlx"
-	elif procmodel in ("adb2850", "adb2849", "bska", "bsla", "bxzb", "bzzb", "esi88", "uhd88", "dsi87", "arivalink200"):
+	elif brand in ("nbox","ferguson","sagemcom"):
 		remote = "nbox"
-	elif procmodel in ("hd1100", "hd1200", "hd1265", "hd1400", "hd51", "hd11", "hd500c", "hd530c"):
+	elif brand == "fulan":
+		remote = "fulan"
+	elif model in ("hd1100","hd1200","hd1265","hd51","hd11","hd500c","hd1500","vs1000","vs1500"):
 		remote = "hd1x00"
-	elif procmodel == "hd2400":
+	elif model == "hd2400":
 		remote = "hd2400"
-	elif procmodel == "hd60":
+	elif model == "hd530c":
+		remote = "hd530c"
+	elif model in ("hd60","hd61"):
 		remote = "hd60"
-	elif procmodel == "multibox":
-		remote = "multibox"	
-	elif procmodel in ("spycat", "spycatmini", "spycatminiplus", "spycat4kmini"):
-		remote = "spycat"
-	elif procmodel.startswith("ixuss"):
-		remote = procmodel.replace(" ", "")
-	elif procmodel == "vg2000":
-		remote = "xcombo"
-	elif procmodel == "dm8000" and orgdream:
+	elif model in ("multibox","v8plus"):
+		remote = "maxytec1"
+	elif model in ("spycat","spycatmini","spycatminiplus","spycat4kmini","spycat4k","spycat4kcombo"):
+		remote = "xcore1"
+	elif model in ("bcm7358","vp7358ci"):
+		remote = "xcore2"
+	elif model in ("osmini","osminiplus","osmega"):
+		remote = "xcore3"
+	elif model in ("ixussone","ixusszero"):
+		remote = "ixuss"
+	elif model == "dm8000":
+		remote = "dmm0"
+	elif model in ("dm800","dm800se","dm500hd"):
 		remote = "dmm1"
-	elif procmodel in ("dm7080", "dm7020hd", "dm7020hdv2", "dm800sev2", "dm500hdv2", "dm520", "dm820", "dm900", "dm920"):
+	elif model in ("dm7080","dm7020hd","dm7020hdv2","dm800sev2","dm500hdv2","dm520","dm820","dm900","dm920","dreamone"):
 		remote = "dmm2"
-	elif procmodel == "wetekplay":
-		remote = procmodel
-	elif procmodel.startswith("osmio"):
-		remote = "edision4"
-	elif procmodel.startswith("osm"):
-		remote = "osmini"
-	elif procmodel.startswith("osninopr"):
-		remote = "edision3"
-	elif procmodel.startswith("osninopl"):
-		remote = "edision2"
-	elif procmodel.startswith("osn"):
+	elif model == "wetekplay":
+		remote = "wetek"
+	elif model == "wetekplay2":
+		remote = "wetek2"
+	elif model == "wetekhub":
+		remote = "wetek3"
+	elif model in ("osnino","osninoplus"):
 		remote = "edision1"
-	elif procmodel in ("fusionhd"):
-		remote = procmodel
-	elif procmodel in ("fusionhdse"):
-		remote = procmodel
-	elif procmodel in ("purehd", "purehdse"):
-		remote = "purehd"
-	elif procmodel in ("revo4k"):
-		remote = procmodel
-	elif procmodel in ("galaxy4k"):
-		remote = procmodel
-	elif procmodel in ("lunix3-4k", "lunix"):
-		remote = "qviart"
-	elif procmodel in ("lunix4k"):
-		remote = "lunix4k"
-	elif procmodel in ("sh1", "lc"):
-		remote = "sh1"
-	elif procmodel in ("h3", "h4", "h5", "h6", "h7", "h9", "i55plus", "h9combo"):
-		remote = "h3"
-	elif procmodel == "i55":
-		remote = "i55"
-	elif procmodel in ("vipercombo", "vipert2c"):
-		remote = "amiko"
-	elif procmodel in ("vipercombohdd"):
+	elif model == "osninopro":
+		remote = "edision2"
+	elif model in ("osmio4k","osmio4kplus"):
+		remote = "edision3"
+	elif model in ("fusionhd","fusionhdse","purehd","purehdse"):
+		remote = "fusionhd"
+	elif model in ("revo4k","galaxy4k"):
+		remote = "revo"
+	elif model in ("lunix3-4k","lunix"):
+		remote = "qviart1"
+	elif model == "lunix4k":
+		remote = "qviart3"
+	elif model in ("sh1","lc"):
+		remote = "zgemma1"
+	elif model in ("h6","h4","h3","h7","i55plus","h9","h9combo","h10"):
+		remote = "zgemma3"
+	elif model == "i55":
+		remote = "zgemma5"
+	elif model == "vipercombohdd":
 		remote = "amiko1"
-        elif procmodel == "viperslim":
-                remote = "viperslim"
-        elif procmodel.startswith("sf"):
-		remote = "octagon"
-	elif procmodel in ("vs1100", "vs1500"):
-		remote = "vs1x00"
-	elif procmodel in ("e4hd"):
+	elif model in ("vipercombo","vipert2c","viperslim"):
+		remote = "amiko2"
+	elif model in ("alien5","alien4"):
+		remote = "amiko3"
+	elif model == "viper4k":
+		remote = "amiko4"
+	elif model in ("k1pro","k2pro","k2prov2","k1plus","kvim2","c300","c300pro","c400plus"):
+		remote = "k1pro"
+	elif model == "k3pro":
+		remote = "k3pro"
+	elif model in ("e4hd","e4hdhybrid"):
 		remote = "e4hd"
+	elif model in ("e4hdultra","e4hdcombo"):
+		remote = "e4hdcombo"
+	elif model in ("tmtwin","tm2t"):
+		remote = "tm1"
+	elif model in ("tmsingle","tmnano","tmnano2t","tmnano3t","tmnano2super"):
+		remote = "tm2"
+	elif model in ("tmnanose","tmnanosecombo"):
+		remote = "tm3"
+	elif model in ("tmnanosem2","tmnanosem2plus","tmnanoseplus"):
+		remote = "tm4"
+	elif model == "tmnanom3":
+		remote = "tm5"
+	elif model in ("tmtwin4k","tm4ksuper"):
+		remote = "tm6"
+	elif model in ("dinobot4kmini","dinobot4kplus","dinobot4k","dinobot4kse","dinobot4kl","ferguson4k","dinobot4kpro","dinobotu55","dinoboth265"):
+		remote = "dinobot"
+	elif model in ("axashis4kcombo","axashis4kcomboplus"):
+		remote = "axas1"
+	elif model == "axashisc4k":
+		remote = "axas2"
+	elif model == "axashistwin":
+		remote = "axas3"
+	elif model in ("anadol4k","anadol4kv2","anadol4kcombo"):
+		remote = "anadol1"
+	elif model == "anadolprohd5":
+		remote = "anadol3"
+	elif model == "iziboxx3":
+		remote = "izibox1"
+	elif model == "iziboxecohd":
+		remote = "izibox2"
+	elif model == "jdhdduo":
+		remote = "jd1"
+	elif model in ("arivatwin","arivacombo"):
+		remote = "ariva"
+	elif model == "turing":
+		remote = "turing"
+	elif model == "odroidc2":
+		remote = "hardkernel"
+	elif model == "cube":
+		remote = "cube"
+	elif model in ("ebox5000","ebox5100","ebox7358","eboxlumi"):
+		remote = "ebox5000"
+	elif model == "sogno8800hd":
+		remote = "sogno"
+	elif model == "uniboxhde":
+		remote = "uniboxhde"
+	elif model == "ventonhdx" and fp_version.startswith('1'):
+		remote = "ini0"
+	elif model == "ventonhdx" and not fp_version.startswith('1'):
+		remote = "ini2"
+	elif model in ("sezam1000hd","sezam5000hd"):
+		remote = "ini2"
+	elif model in ("mbmini","mbminiplus","mbhybrid","mbtwin","mbultra"):
+		remote = "ini3"
+	elif model in ("atemio5x00","atemio6000","atemio6100","atemio6200","atemionemesis","xpeedlx","xpeedlx3","sezammarvel"):
+		remote = "ini4"
+	elif model == "beyonwizt3":
+		remote = "ini5"
+	elif model in ("bwidowx","bwidowx2"):
+		remote = "ini6"
+	elif model in ("beyonwizt2","beyonwizt4"):
+		remote = "ini7"
+	elif model == "opticumtt":
+		remote = "ini8"
+	elif model == "beyonwizu4":
+		remote = "beyonwiz1"
+	elif model == "beyonwizv2":
+		remote = "beyonwiz2"
+	elif model in ("starsatlx","axodin","axodinc"):
+		remote = "odinm6"
+	elif model in ("classm","genius","evo","galaxym6"):
+		remote = "odinm7"
+	elif model == "maram9":
+		remote = "odinm9"
+	elif model == "ustym4kpro":
+		remote = "uclan"
+	elif model == "valalinux":
+		remote = "vala"
+	elif model == "spycatminiv2":
+		remote = "spycat1"
+	elif model == "cc1":
+		remote = "cc1"
+	elif model in ("force4","iqonios100hd","iqonios200hd","iqonios300hd","iqonios300hdv2","force2se","force2","force2plus","force2plushv","force2nano"):
+		remote = "iqon1"
+	elif model in ("force1","force1plus","worldvisionf1","worldvisionf1plus"):
+		remote = "iqon2"
+	elif model in ("force3uhdplus","force3uhd"):
+		remote = "iqon3"
+	elif model == "twinboxlcd":
+		remote = "red1"
+	elif model in ("singleboxlcd","twinboxlcdci5"):
+		remote = "red2"
+	elif model in ("triplex","ultrabox"):
+		remote = "triplex"
+	elif model == "xpeedc":
+		remote = "gi1"
+	elif model == "mediabox4k":
+		remote = "mediabox4k"
+	elif model == "mediabox":
+		remote = "mediabox"
+	elif model == "9900lx":
+		remote = "protek1"
+	elif model in ("9910lx","9911lx","protek4k","9920lx"):
+		remote = "protek2"
+	elif model == "protek4kx1":
+		remote = "protek3"
+	elif model == "enfinity":
+		remote = "evo1"
+	elif model == "x2plus":
+		remote = "evo2"
+	elif model in ("xcombo","x1plus"):
+		remote = "evo3"
+	elif model == "t2cable":
+		remote = "evo4"
+	elif model in ("evomini","evominiplus"):
+		remote = "evo5"
+	elif model in ("evoslim","evoslimse","evoslimt2c"):
+		remote = "evo8"
+	elif model == "sf108":
+		remote = "sf108"
+	elif model in ("sf208","sf228","sf238"):
+		remote = "sf2x8"
+	elif model in ("sf3038","sf128","sf138","sf4008"):
+		remote = "sf3038"
+	elif model == "sf5008":
+		remote = "sf5008"
+	elif model == "sf8008":
+		remote = "sf8008"
+	elif model == "sf98":
+		remote = "sf98"
+	elif model in ("bre2ze","bre2ze4k","bre2zet2c"):
+		remote = "wwio1"
+	elif model in ("tiviarmin","tiviaraplus"):
+		remote = "tiviar1"
+	elif model in ("odin2hybrid","odinplus"):
+		remote = "ax1"
+	elif model == "axultra":
+		remote = "ax51"
+	elif model == "enibox":
+		remote = "hdbox"
+	elif model == "mago":
+		remote = "relook"
+	elif model == "tyrant":
+		remote = "tyrant"
+	elif model == "marvel1":
+		remote = "visionnet"
 
 	info['remote'] = remote
 
-	kernel = about.getKernelVersionString()[0]
-
-	distro = "unknown"
-	imagever = "unknown"
-	imagebuild = ""
-	driverdate = "unknown"
-
-	# Assume OE 1.6
-	oever = "OE 1.6"
-	if kernel > 2:
-		oever = "OE 2.0"
-
-	if fileExists("/etc/.box"):
-		distro = "HDMU"
-		oever = "private"
-	elif fileExists("/etc/bhversion"):
-		distro = "Black Hole"
-		f = open("/etc/bhversion", 'r')
-		imagever = f.readline().strip()
-		f.close()
-		if kernel > 2:
-			oever = "OpenVuplus 2.1"
-	elif fileExists("/etc/vtiversion.info"):
-		distro = "VTi-Team Image"
-		f = open("/etc/vtiversion.info", 'r')
-		imagever = f.readline().strip().replace("VTi-Team Image ", "").replace("Release ", "").replace("v.", "")
-		f.close()
-		oever = "OE 1.6"
-		imagelist = imagever.split('.')
-		imagebuild = imagelist.pop()
-		imagever = ".".join(imagelist)
-		if kernel > 2:
-			oever = "OpenVuplus 2.1"
-		if ((imagever == "5.1") or (imagever[0] > 5)):
-			oever = "OpenVuplus 2.1"
-	elif fileExists("/var/grun/grcstype"):
-		distro = "Graterlia OS"
-		try:
-			imagever = about.getImageVersionString()
-		except:  # nosec  # noqa: E722
-			pass
-	# ToDo: If your distro gets detected as OpenPLi, feel free to add a detection for your distro here ...
-	else:
-		# OE 2.2 uses apt, not opkg
-		if not fileExists("/etc/opkg/all-feed.conf"):
-			oever = "OE 2.2"
-		else:
-			try:
-				f = open("/etc/opkg/all-feed.conf", 'r')
-				oeline = f.readline().strip().lower()
-				f.close()
-				distro = oeline.split( )[1].replace("-all", "")
-			except:  # nosec  # noqa: E722
-				pass
-
-		if distro in ("openpli", "satdreamgr", "openvision", "openrsi"):
-			oever = "PLi-OE"
-			try:
-				imagelist = open("/etc/issue").readlines()[-2].split()[1].split('.')
-				imagever = imagelist.pop(0)
-				if imagelist:
-					imagebuild = "".join(imagelist)
-				else:
-					# deal with major release versions only
-					if imagever.isnumeric():
-						imagebuild = "0"
-			except:  # nosec  # noqa: E722
-				# just in case
-				pass
-		else:
-			try:
-				imagever = about.getImageVersionString()
-			except:  # nosec  # noqa: E722
-				pass
-
-		if (distro == "unknown" and brand == "Vu+" and fileExists("/etc/version")):
-			# Since OE-A uses boxbranding and bh or vti can be detected, there isn't much else left for Vu+ boxes
-			distro = "Vu+ original"
-			f = open("/etc/version", 'r')
-			imagever = f.readline().strip()
-			f.close()
-			if kernel > 2:
-				oever = "OpenVuplus 2.1"
-
-	# reporting the installed dvb-module version is as close as we get without too much hassle
-	driverdate = 'unknown'
-	try:
-		driverdate = os.popen('/usr/bin/opkg -V0 list_installed *dvb-modules*').readline().split( )[2]  # nosec
-	except:  # noqa: E722
-		try:
-			driverdate = os.popen('/usr/bin/opkg -V0 list_installed *dvb-proxy*').readline().split( )[2]  # nosec
-		except:  # noqa: E722
-			try:
-				driverdate = os.popen('/usr/bin/opkg -V0 list_installed *kernel-core-default-gos*').readline().split( )[2]  # nosec
-			except:  # nosec # noqa: E722
-				pass
-
-	info['oever'] = oever
-	info['distro'] = distro
-	info['imagever'] = imagever
-	info['imagebuild'] = imagebuild
-	info['driverdate'] = driverdate
-	info['lcd'] = distro in ("openpli", "satdreamgr", "openvision", "openrsi") and lcd or 0
-	info['grabpip'] = distro in ("openpli", "satdreamgr", "openvision", "openrsi") and grabpip or 0
 	return info
 
 
@@ -757,42 +345,6 @@ STATIC_INFO_DIC = getAllInfo()
 
 def getMachineBuild():
 	return STATIC_INFO_DIC['procmodel']
-
-
-def getMachineBrand():
-	return STATIC_INFO_DIC['brand']
-
-
-def getMachineName():
-	return STATIC_INFO_DIC['model']
-
-
-def getMachineProcModel():
-	return STATIC_INFO_DIC['procmodel']
-
-
-def getBoxType():
-	return STATIC_INFO_DIC['type']
-
-
-def getOEVersion():
-	return STATIC_INFO_DIC['oever']
-
-
-def getDriverDate():
-	return STATIC_INFO_DIC['driverdate']
-
-
-def getImageVersion():
-	return STATIC_INFO_DIC['imagever']
-
-
-def getImageBuild():
-	return STATIC_INFO_DIC['imagebuild']
-
-
-def getImageDistro():
-	return STATIC_INFO_DIC['distro']
 
 def getLcd():
 	return STATIC_INFO_DIC['lcd']

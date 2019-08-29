@@ -31,7 +31,7 @@ from twisted.web.server import GzipEncoderFactory
 from i18n import _
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
 from Cheetah.Template import Template
-from enigma import eEPGCache
+from enigma import eEPGCache, getBoxType
 from Components.config import config
 from Components.Network import iNetwork
 
@@ -53,11 +53,6 @@ def new_getRequestHostname(self):
 http.Request.getRequestHostname = new_getRequestHostname
 
 REMOTE = ''
-
-try:
-	from boxbranding import getBoxType, getMachineName
-except:  # noqa: E722
-	from models.owibranding import getBoxType, getMachineName  # noqa: F401
 
 try:
 	from Components.RcModel import rc_model

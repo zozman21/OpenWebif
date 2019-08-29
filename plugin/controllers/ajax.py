@@ -38,10 +38,7 @@ from defaults import OPENWEBIFVER, getPublicPath, VIEWS_PATH, TRANSCODING
 # from twisted.web.resource import Resource
 import os
 
-try:
-	from boxbranding import getBoxType, getMachineName, getMachineBrand, getMachineBuild
-except:  # noqa: E722
-	from models.owibranding import getBoxType, getMachineName, getMachineBrand, getMachineBuild  # noqa: F401
+from enigma import getBoxType, getBoxBrand
 
 
 class AjaxController(BaseController):
@@ -169,19 +166,7 @@ class AjaxController(BaseController):
 
 	def P_screenshot(self, request):
 		box = {}
-		box['brand'] = "dmm"
-		if getMachineBrand() == 'Vu+':
-			box['brand'] = "vuplus"
-		elif getMachineBrand() == 'GigaBlue':
-			box['brand'] = "gigablue"
-		elif getMachineBrand() == 'Edision':
-			box['brand'] = "edision"
-		elif getMachineBrand() == 'iQon':
-			box['brand'] = "iqon"
-		elif getMachineBrand() == 'Technomate':
-			box['brand'] = "techomate"
-		elif fileExists("/proc/stb/info/azmodel"):
-			box['brand'] = "azbox"
+		box['brand'] = getBoxBrand()
 		return {"box": box}
 
 	def P_movies(self, request):
@@ -364,7 +349,7 @@ class AjaxController(BaseController):
 		if transcoding:
 			try:
 				transcoder_port = int(config.plugins.transcodingsetup.port.value)
-				if getMachineBuild() in ('inihdp', 'hd2400', 'et10000', 'et13000', 'sf5008', 'ew7356', 'formuler1tc', 'tiviaraplus', '8100s'):
+				if getBoxType() in ("sezammarvel","xpeedlx3","atemionemesis","mbultra","beyonwizt4","hd2400","et10000","et13000","beyonwizu4","sf5008","x2plus","formuler1","tiviaraplus","e4hdultra","protek4k"):
 					transcoder_port = int(config.OpenWebif.streamport.value)
 			except StandardError:
 				transcoder_port = 0

@@ -26,28 +26,22 @@ from RecordTimer import parseEvent
 from timer import TimerEntry
 from Screens.InfoBar import InfoBar
 from Tools.Directories import fileExists, pathExists
-from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference
-from enigma import eEPGCache
-
+from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnigmaVersionString, eEPGCache, getBoxType, getBoxBrand
 
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
+from boxbranding import getImageDistro, getImageVersion, getImageBuild, getOEVersion
+from owibranding import getMachineBuild, getLcd, getGrabPip
 
-try:
-	from boxbranding import getBoxType, getMachineBuild, getMachineBrand, getMachineName, getImageDistro, getImageVersion, getImageBuild, getOEVersion, getDriverDate
-	from enigma import getEnigmaVersionString
-except:  # noqa: E722
-	from owibranding import getBoxType, getMachineBuild, getMachineBrand, getMachineName, getImageDistro, getImageVersion, getImageBuild, getOEVersion, getDriverDate, getLcd, getGrabPip
 
-	def getEnigmaVersionString():
-		return about.getEnigmaVersionString()
+def getEnigmaVersionString():
+	return about.getEnigmaVersionString()
 
 STATICBOXINFO = None
 
 def getFriendlyImageDistro():
-	dist = getImageDistro().replace("openatv", "OpenATV").replace("openhdf", "OpenHDF").replace("openpli", "OpenPLi").replace("openvix", "OpenViX")
+	dist = getImageDistro().replace("openvision", "Open Vision")
 	return dist
-
 
 def getIPMethod(iface):
 	# iNetwork.getAdapterAttribute is crap and not portable
@@ -187,104 +181,26 @@ def getInfo(session=None, need_fullinfo=False):
 	if not (STATICBOXINFO is None or need_fullinfo):
 		return STATICBOXINFO
 
-	info['brand'] = getMachineBrand()
-	info['model'] = getMachineName()
+	info['brand'] = getBoxBrand()
+	info['model'] = getBoxType()
 	info['boxtype'] = getBoxType()
 	info['machinebuild'] = getMachineBuild()
+
 	try:
 		info['lcd'] = getLcd()
 	except: # temporary due OE-A
 		info['lcd'] = 0
+
 	try:
 		info['grabpip'] = getGrabPip()
 	except: # temporary due OE-A
 		info['grabpip'] = 0
 
-	chipset = "unknown"
-	if fileExists("/etc/.box"):
-		f = open("/etc/.box", 'r')
-		model = f.readline().strip().lower()
-		f.close()
-		if model.startswith("ufs") or model.startswith("ufc"):
-			if model in ("ufs910", "ufs922", "ufc960"):
-				chipset = "SH4 @266MHz"
-			else:
-				chipset = "SH4 @450MHz"
-		elif model in ("topf", "tf7700hdpvr"):
-			chipset = "SH4 @266MHz"
-		elif model.startswith("azbox"):
-			f = open("/proc/stb/info/model", 'r')
-			model = f.readline().strip().lower()
-			f.close()
-			if model == "me":
-				chipset = "SIGMA 8655"
-			elif model == "minime":
-				chipset = "SIGMA 8653"
-			else:
-				chipset = "SIGMA 8634"
-		elif model.startswith("spark"):
-			if model == "spark7162":
-				chipset = "SH4 @540MHz"
-			else:
-				chipset = "SH4 @450MHz"
-	elif fileExists("/proc/stb/info/azmodel"):
-		f = open("/proc/stb/info/model", 'r')
-		model = f.readline().strip().lower()
-		f.close()
-		if model == "me":
-			chipset = "SIGMA 8655"
-		elif model == "minime":
-			chipset = "SIGMA 8653"
-		else:
-			chipset = "SIGMA 8634"
-	elif fileExists("/proc/stb/info/model"):
-		f = open("/proc/stb/info/model", 'r')
-		model = f.readline().strip().lower()
-		f.close()
-		if model == "tf7700hdpvr":
-			chipset = "SH4 @266MHz"
-		elif model == "nbox":
-			chipset = "STi7100 @266MHz"
-		elif model == "arivalink200":
-			chipset = "STi7109 @266MHz"
-		elif model in ("adb2850", "adb2849", "dsi87"):
-			chipset = "STi7111 @450MHz"
-		elif model in ("sagemcom88", "esi88"):
-			chipset = "STi7105 @450MHz"
-		elif model.startswith("spark"):
-			if model == "spark7162":
-				chipset = "STi7162 @540MHz"
-			else:
-				chipset = "STi7111 @450MHz"
-		elif model == "dm800":
-			chipset = "bcm7401"
-		elif model == "dm800se":
-			chipset = "bcm7405"
-		elif model == "dm500hd":
-			chipset = "bcm7405"
-		elif model == "dm7020hd":
-			chipset = "bcm7405"
-		elif model == "dm8000":
-			chipset = "bcm7400"
-		elif model == "dm820":
-			chipset = "bcm7435"
-		elif model == "dm7080":
-			chipset = "bcm7435"
-		elif model == "dm520":
-			chipset = "bcm73625"
-		elif model == "dm525":
-			chipset = "bcm73625"
-		elif model == "dm900":
-			chipset = "bcm7252S"
-		elif model == "dm920":
-			chipset = "bcm7252S"
-
-	if fileExists("/proc/stb/info/chipset"):
-		f = open("/proc/stb/info/chipset", 'r')
-		chipset = f.readline().strip()
-		f.close()
-
-	info['chipset'] = chipset
+	cpu = about.getCPUInfoString()
+	info['chipset'] = cpu
+	info['cpubrand'] = about.getCPUBrand()
+	info['cpuarch'] = about.getCPUArch()
+	info['flashtype'] = about.getFlashType()
 
 	memFree = 0
 	for line in open("/proc/meminfo", 'r'):
@@ -309,24 +225,31 @@ def getInfo(session=None, need_fullinfo=False):
 		uptimetext += "%d:%.2d" % (uptime / 3600, (uptime % 3600) / 60)
 	except:  # noqa: E722
 		uptimetext = "?"
+
 	info['uptime'] = uptimetext
 
 	info["webifver"] = OPENWEBIFVER
 	info['imagedistro'] = getImageDistro()
 	info['friendlyimagedistro'] = getFriendlyImageDistro()
 	info['oever'] = getOEVersion()
+	info['visionversion'] = about.getVisionVersion()
+	info['visionrevision'] = about.getVisionRevision()
+	info['visionmodule'] = about.getVisionModule()
 	info['imagever'] = getImageVersion()
+
 	ib = getImageBuild()
 	if ib:
 		info['imagever'] = info['imagever'] + "." + ib
-	info['enigmaver'] = getEnigmaVersionString()
-	info['driverdate'] = getDriverDate()
-	info['kernelver'] = about.getKernelVersionString()
 
-	try:
-		from Tools.StbHardware import getFPVersion
-	except ImportError:
-		from Tools.DreamboxHardware import getFPVersion
+	info['enigmaver'] = getEnigmaVersionString()
+	info['driverdate'] = about.getDriverInstalledDate()
+	info['kernelver'] = about.getKernelVersionString()
+	info['dvbapitype'] = about.getDVBAPI()
+	info['gstreamerversion'] = about.getGStreamerVersionString(cpu)
+	info['ffmpegversion'] = about.getFFmpegVersionString()
+	info['pythonversion'] = about.getPythonVersionString()
+
+	from Tools.StbHardware import getFPVersion
 
 	try:
 		info['fp_version'] = getFPVersion()
@@ -334,9 +257,7 @@ def getInfo(session=None, need_fullinfo=False):
 		info['fp_version'] = None
 
 	friendlychipsetdescription = _("Chipset")
-	friendlychipsettext = info['chipset'].replace("bcm", "Broadcom ")
-	if friendlychipsettext in ("7335", "7356", "7362", "73625", "7424", "7425", "7429"):
-		friendlychipsettext = "Broadcom " + friendlychipsettext
+	friendlychipsettext = info['chipset']
 	if not (info['fp_version'] is None or info['fp_version'] == 0):
 		friendlychipsetdescription = friendlychipsetdescription + " (" + _("Frontprocessor Version") + ")"
 		friendlychipsettext = friendlychipsettext + " (" + str(info['fp_version']) + ")"

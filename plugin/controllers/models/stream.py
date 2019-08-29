@@ -66,9 +66,7 @@ def getStream(session, request, m3ufile):
 	info = getInfo()
 	model = info["model"]
 	machinebuild = info["machinebuild"]
-	urlparam = '?'
-	if info["imagedistro"] in ('openpli', 'satdreamgr', 'openvision'):
-		urlparam = '&'
+	urlparam = '&'
 	transcoder_port = None
 	args = ""
 
@@ -166,9 +164,7 @@ def getTS(self, request):
 		machinebuild = info["machinebuild"]
 		transcoder_port = None
 		args = ""
-		urlparam = '?'
-		if info["imagedistro"] in ('openpli', 'satdreamgr', 'openvision'):
-			urlparam = '&'
+		urlparam = '&'
 		
 		if fileExists("/dev/bcm_enc0"):
 			try:
