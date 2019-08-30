@@ -203,9 +203,11 @@ def getAllInfo():
 		remote = "sogno"
 	elif model == "uniboxhde":
 		remote = "uniboxhde"
-	elif model == "ventonhdx" and fp_version.startswith('1'):
+	elif model == "ventonhdx" or procmodel == "ini-3000" and fp_version.startswith('1'):
 		remote = "ini0"
-	elif model == "ventonhdx" and not fp_version.startswith('1'):
+	elif procmodel in ("ini-5000","ini-7000","ini-7012"):
+		remote = "ini1"
+	elif model == "ventonhdx" or procmodel == "ini-3000" and not fp_version.startswith('1'):
 		remote = "ini2"
 	elif model in ("sezam1000hd","sezam5000hd"):
 		remote = "ini2"
