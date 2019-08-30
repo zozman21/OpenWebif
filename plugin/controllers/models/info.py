@@ -27,11 +27,11 @@ from timer import TimerEntry
 from Screens.InfoBar import InfoBar
 from Tools.Directories import fileExists, pathExists
 from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnigmaVersionString, eEPGCache, getBoxType, getBoxBrand
-
+from Tools.StbHardware import getFPVersion, getBoxProc
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
 from boxbranding import getImageDistro, getImageVersion, getImageBuild, getOEVersion
-from owibranding import getMachineBuild, getLcd, getGrabPip
+from owibranding import getLcd, getGrabPip
 
 
 def getEnigmaVersionString():
@@ -184,7 +184,7 @@ def getInfo(session=None, need_fullinfo=False):
 	info['brand'] = getBoxBrand()
 	info['model'] = getBoxType()
 	info['boxtype'] = getBoxType()
-	info['machinebuild'] = getMachineBuild()
+	info['machinebuild'] = getBoxProc()
 
 	try:
 		info['lcd'] = getLcd()
@@ -248,8 +248,6 @@ def getInfo(session=None, need_fullinfo=False):
 	info['gstreamerversion'] = about.getGStreamerVersionString(cpu)
 	info['ffmpegversion'] = about.getFFmpegVersionString()
 	info['pythonversion'] = about.getPythonVersionString()
-
-	from Tools.StbHardware import getFPVersion
 
 	try:
 		info['fp_version'] = getFPVersion()

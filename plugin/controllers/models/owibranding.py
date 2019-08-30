@@ -14,14 +14,14 @@ from time import time
 import os
 import hashlib
 from enigma import getBoxType, getBoxBrand
-from Tools.StbHardware import getFPVersion
+from Tools.StbHardware import getFPVersion, getBoxProc
 
 def getAllInfo():
 	info = {}
 	fp_version = str(getFPVersion())
 	brand = getBoxBrand()
 	model = getBoxType()
-	procmodel = "unknown"
+	procmodel = getBoxProc()
 
 	grabpip = 0
 	if "4k" or "uhd" or "ultra" in model or model in ("dm900","dm920","multibox","v8plus","hd51","h10","h7","h9","h9combo","vs1500"):
@@ -34,37 +34,6 @@ def getAllInfo():
 		lcd = 1
 
 	info['lcd'] = lcd or 0
-
-	if fileExists("/proc/stb/info/hwmodel"):
-		f = open("/proc/stb/info/hwmodel", 'r')
-		procmodel = f.readline().strip().lower()
-		f.close()
-	elif fileExists("/proc/stb/info/azmodel"):
-		f = open("/proc/stb/info/model", 'r')
-		procmodel = f.readline().strip().lower()
-		f.close()
-	elif fileExists("/proc/stb/info/gbmodel"):
-		f = open("/proc/stb/info/gbmodel", 'r')
-		procmodel = f.readline().strip().lower()
-		f.close()
-	elif fileExists("/proc/stb/info/vumodel") and not fileExists("/proc/stb/info/boxtype"):
-		f = open("/proc/stb/info/vumodel", 'r')
-		procmodel = f.readline().strip().lower()
-		f.close()
-	elif fileExists("/proc/boxtype"):
-		f = open("/proc/boxtype", 'r')
-		procmodel = f.readline().strip().lower()
-		f.close()
-	elif fileExists("/proc/stb/info/boxtype"):
-		f = open("/proc/stb/info/boxtype", 'r')
-		procmodel = f.readline().strip().lower()
-		f.close()
-	elif fileExists("/proc/stb/info/model"):
-		f = open("/proc/stb/info/model", 'r')
-		procmodel = f.readline().strip().lower()
-		f.close()		
-
-	info['procmodel'] = procmodel
 
 	remote = "dmm1"
 
@@ -341,10 +310,6 @@ def getAllInfo():
 
 
 STATIC_INFO_DIC = getAllInfo()
-
-
-def getMachineBuild():
-	return STATIC_INFO_DIC['procmodel']
 
 def getLcd():
 	return STATIC_INFO_DIC['lcd']
