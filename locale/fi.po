@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-29 22:50+0430\n"
+"POT-Creation-Date: 2019-08-30 20:21+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Samzam <http://www.opena.tv>\n"
 "Language-Team: \n"
@@ -20,7 +20,7 @@ msgid "%s %s is locked."
 msgstr "%s %s on lukittu."
 
 #: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/info.py:343
+#: ../plugin/controllers/models/info.py:341
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s vapaana / %s kaikkiaan"
@@ -347,7 +347,7 @@ msgstr "Kanava"
 msgid "Channels"
 msgstr "Kanavat"
 
-#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:259
+#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:257
 msgid "Chipset"
 msgstr "Piirisarja"
 
@@ -537,7 +537,7 @@ msgstr "Ajurit"
 msgid "Duration"
 msgstr "Kesto"
 
-#: ../plugin/controllers/models/info.py:534
+#: ../plugin/controllers/models/info.py:532
 msgid "E"
 msgstr "O"
 
@@ -762,7 +762,7 @@ msgstr "Perjantai"
 msgid "Frontprocessor"
 msgstr "Edustaprosessorin versio"
 
-#: ../plugin/controllers/models/info.py:262
+#: ../plugin/controllers/models/info.py:260
 msgid "Frontprocessor Version"
 msgstr "Edustaprosessorin versio"
 
@@ -772,10 +772,10 @@ msgid "Full remote"
 msgstr "Piilota koko kaukosäädin"
 
 #: ../plugin/controllers/models/movies.py:212
-#: ../plugin/controllers/models/info.py:309
-#: ../plugin/controllers/models/info.py:315
-#: ../plugin/controllers/models/info.py:330
-#: ../plugin/controllers/models/info.py:333
+#: ../plugin/controllers/models/info.py:307
+#: ../plugin/controllers/models/info.py:313
+#: ../plugin/controllers/models/info.py:328
+#: ../plugin/controllers/models/info.py:331
 msgid "GB"
 msgstr "GB"
 
@@ -974,9 +974,9 @@ msgid "MAC address"
 msgstr "MAC-osoite"
 
 #: ../plugin/controllers/models/movies.py:214
-#: ../plugin/controllers/models/info.py:306
-#: ../plugin/controllers/models/info.py:317
-#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:304
+#: ../plugin/controllers/models/info.py:315
+#: ../plugin/controllers/models/info.py:333
 msgid "MB"
 msgstr "MB"
 
@@ -1851,9 +1851,9 @@ msgstr "Su"
 msgid "Sunday"
 msgstr "Sunnuntai"
 
-#: ../plugin/controllers/models/info.py:313
+#: ../plugin/controllers/models/info.py:311
+#: ../plugin/controllers/models/info.py:323
 #: ../plugin/controllers/models/info.py:325
-#: ../plugin/controllers/models/info.py:327
 msgid "TB"
 msgstr "TB"
 
@@ -2182,7 +2182,7 @@ msgstr "Äänenvoimakkuussäädin"
 msgid "Vpid"
 msgstr "Vpid"
 
-#: ../plugin/controllers/models/info.py:537
+#: ../plugin/controllers/models/info.py:535
 msgid "W"
 msgstr "W"
 
@@ -2377,11 +2377,11 @@ msgstr "yksi, kaksi, kolme, tuntematon komento"
 msgid "partial match"
 msgstr "Osittainen vastaavuus"
 
-#: ../plugin/controllers/models/info.py:376
+#: ../plugin/controllers/models/info.py:374
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:372
+#: ../plugin/controllers/models/info.py:370
 msgid "r/w"
 msgstr "r/w"
 
