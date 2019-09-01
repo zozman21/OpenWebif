@@ -139,7 +139,7 @@ def getAllInfo():
 		remote = "qviart3"
 	elif model in ("sh1","lc"):
 		remote = "zgemma1"
-	elif model in ("h6","h4","h3","h7","i55plus","h9","h9combo","h10"):
+	elif model in ("h3","h4","h5","h6","h7","h9","h9combo","h10","i55plus"):
 		remote = "zgemma3"
 	elif model == "i55":
 		remote = "zgemma5"
