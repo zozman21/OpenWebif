@@ -8,7 +8,7 @@ from Components.config import config as comp_config
 
 from enigma import eEnv
 
-OPENWEBIFVER = "OWIF 1.3.9 for Open Vision"
+OPENWEBIFVER = "OWIF 1.4.0 for Open Vision"
 
 PLUGIN_NAME = 'OpenWebif'
 PLUGIN_DESCRIPTION = "OpenWebif Configuration"
@@ -60,6 +60,10 @@ def getPiconPath():
 		"/media/mmc/",
 		"/media/usb/",
 		"/media/hdd/",
+		"/media/sdcard/",
+		"/media/ba/",
+		"/media/meoboot/",
+		"/media/openmultiboot/",
 		"/usr/share/enigma2/",
 		"/"
 	]
