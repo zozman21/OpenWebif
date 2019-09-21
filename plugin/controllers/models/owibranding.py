@@ -94,7 +94,7 @@ def getAllInfo():
 	elif brand == "fulan":
 		remote = "fulan"
 	elif model in ("hd1100","hd1200","hd1265","hd51","hd11","hd500c","hd1500","vs1000","vs1500"):
-		remote = "hd1x00"
+		remote = "hd1100"
 	elif model == "hd2400":
 		remote = "hd2400"
 	elif model == "hd530c":
