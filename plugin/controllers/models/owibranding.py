@@ -69,7 +69,7 @@ def getAllInfo():
 		remote = "gb1"
 	elif model in ("gbx2","gbx3h","gbultraueh"):
 		remote = "gb2"
-	elif model in ("gbquad4k","gbue4k","gbtrio4k","gbip4k"):
+	elif model in ("gbquad4k","gbue4k","gbtrio4k","gbip4k","gbx34k"):
 		remote = "gb3"
 	elif model in ("formuler1","formuler3","formuler4","formuler4turbo"):
 		remote = "formuler1"
@@ -133,7 +133,7 @@ def getAllInfo():
 		remote = "fusionhd"
 	elif model in ("revo4k","galaxy4k"):
 		remote = "revo"
-	elif model in ("lunix3-4k","lunix"):
+	elif model in ("lunix34k","lunix"):
 		remote = "qviart1"
 	elif model == "lunix4k":
 		remote = "qviart3"
