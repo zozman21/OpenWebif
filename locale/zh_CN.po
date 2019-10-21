@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:21+0430\n"
+"POT-Creation-Date: 2019-10-21 11:07+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: satfan <satfan@163.com>\n"
@@ -772,11 +772,11 @@ msgstr "前端版本"
 msgid "Full remote"
 msgstr "隐藏完整的遥控"
 
-#: ../plugin/controllers/models/movies.py:212
 #: ../plugin/controllers/models/info.py:307
 #: ../plugin/controllers/models/info.py:313
 #: ../plugin/controllers/models/info.py:328
 #: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/movies.py:212
 msgid "GB"
 msgstr ""
 
@@ -974,10 +974,10 @@ msgstr "锁定"
 msgid "MAC address"
 msgstr "MAC 地址"
 
-#: ../plugin/controllers/models/movies.py:214
 #: ../plugin/controllers/models/info.py:304
 #: ../plugin/controllers/models/info.py:315
 #: ../plugin/controllers/models/info.py:333
+#: ../plugin/controllers/models/movies.py:214
 msgid "MB"
 msgstr ""
 
@@ -1315,7 +1315,6 @@ msgid "OpenWebif Browser Settings"
 msgstr ""
 
 #: ../plugin/plugin.py:161 ../plugin/plugin.py:226 ../plugin/plugin.py:228
-#: ../plugin/plugin.py:230
 msgid "OpenWebif Configuration"
 msgstr "OpenWebif 配置"
 
@@ -1701,8 +1700,8 @@ msgstr "频道"
 msgid "Set maximum duration"
 msgstr "设置最大持续时间"
 
-#: ../plugin/controllers/base.py:269 ../plugin/controllers/i18n.py:225
-#: ../plugin/controllers/i18n.py:369
+#: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
+#: ../plugin/controllers/base.py:269
 msgid "Settings"
 msgstr "设置"
 
@@ -2334,9 +2333,9 @@ msgstr "从简介"
 msgid "in Title"
 msgstr "从标题"
 
-#: ../plugin/controllers/models/movies.py:216
 #: ../plugin/controllers/models/info.py:210
 #: ../plugin/controllers/models/info.py:213
+#: ../plugin/controllers/models/movies.py:216
 msgid "kB"
 msgstr ""
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:21+0430\n"
+"POT-Creation-Date: 2019-10-21 11:07+0330\n"
 "PO-Revision-Date: 2018-04-08 02:43+0300\n"
 "Last-Translator: t5k6 <t5k6@users.noreply.github.com>\n"
 "Language-Team: Turkish\n"
@@ -776,11 +776,11 @@ msgstr "Ön İşlemci Sürümü"
 msgid "Full remote"
 msgstr "Tüm kumandayı göster"
 
-#: ../plugin/controllers/models/movies.py:212
 #: ../plugin/controllers/models/info.py:307
 #: ../plugin/controllers/models/info.py:313
 #: ../plugin/controllers/models/info.py:328
 #: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/movies.py:212
 msgid "GB"
 msgstr "GB"
 
@@ -977,10 +977,10 @@ msgstr "Kilitli"
 msgid "MAC address"
 msgstr "MAC adresi"
 
-#: ../plugin/controllers/models/movies.py:214
 #: ../plugin/controllers/models/info.py:304
 #: ../plugin/controllers/models/info.py:315
 #: ../plugin/controllers/models/info.py:333
+#: ../plugin/controllers/models/movies.py:214
 msgid "MB"
 msgstr "MB"
 
@@ -1319,7 +1319,6 @@ msgid "OpenWebif Browser Settings"
 msgstr "OpenWebif Tarayıcı Ayarları"
 
 #: ../plugin/plugin.py:161 ../plugin/plugin.py:226 ../plugin/plugin.py:228
-#: ../plugin/plugin.py:230
 msgid "OpenWebif Configuration"
 msgstr "OpenWebif Yapılandırması"
 
@@ -1706,8 +1705,8 @@ msgstr "Kanallar"
 msgid "Set maximum duration"
 msgstr "Maksimum süreyi belirle"
 
-#: ../plugin/controllers/base.py:269 ../plugin/controllers/i18n.py:225
-#: ../plugin/controllers/i18n.py:369
+#: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
+#: ../plugin/controllers/base.py:269
 msgid "Settings"
 msgstr "Ayarlar"
 
@@ -2340,9 +2339,9 @@ msgstr "Kısa Açıklamada"
 msgid "in Title"
 msgstr "Başlıkta"
 
-#: ../plugin/controllers/models/movies.py:216
 #: ../plugin/controllers/models/info.py:210
 #: ../plugin/controllers/models/info.py:213
+#: ../plugin/controllers/models/movies.py:216
 msgid "kB"
 msgstr "kB"
 

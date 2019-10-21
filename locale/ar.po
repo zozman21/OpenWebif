@@ -3,310 +3,312 @@ msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-21 11:07+0330\n"
-"PO-Revision-Date: 2019-01-12 10:46+0200\n"
-"Last-Translator: rimas <rimas@domeen.ee>\n"
-"Language-Team: Estonian\n"
-"Language: et\n"
+"PO-Revision-Date: \n"
+"Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
+"Language-Team: mosad - مساعد الجعيد\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-SearchPath-0: ../plugin\n"
 
 #: ../plugin/controllers/BouquetEditor.py:549
 #, python-format
 msgid "%s %s is locked."
-msgstr "%s %s is locked."
+msgstr "%s %s تم إغلاقه."
 
 #: ../plugin/controllers/models/info.py:214
 #: ../plugin/controllers/models/info.py:341
 #, python-format
 msgid "%s free / %s total"
-msgstr "Vaba %s / kokku %s"
+msgstr "إجمالي %s متوفر/ %s"
 
 #: ../plugin/controllers/i18n.py:227
 msgid "(Shift + Click for Long Press)"
-msgstr "(shift + klõps = pikk nupuvajutus)"
+msgstr "(شفت + أضغط مرتين ضغطه مطوله)"
 
 #: ../plugin/controllers/i18n.py:78
 msgid "AGC"
-msgstr "AGC"
+msgstr "قوة الإشارة"
 
 #: ../plugin/controllers/i18n.py:73
 msgid "About"
-msgstr "Programmist"
+msgstr "حول"
 
 #: ../plugin/controllers/i18n.py:362
 msgid "Add"
-msgstr "Lisa"
+msgstr "إضافة"
 
 #: ../plugin/controllers/i18n.py:75
 msgid "Add AutoTimer"
-msgstr "Lisa autotaimer"
+msgstr "إضافة مؤقت تلقائي"
 
 #: ../plugin/controllers/i18n.py:384
 msgid "Add Autotimer to Tags"
-msgstr "Lisa siltidele 'autotaimer'"
+msgstr "إضافة المؤقت التلقائي في الدلائل"
 
 #: ../plugin/controllers/i18n.py:425
 msgid "Add Bouquet"
-msgstr "Lisa lemmiknimekiri"
+msgstr "إضافة الى الباقة"
 
 #: ../plugin/controllers/i18n.py:428
 msgid "Add Marker"
-msgstr "Lisa märgis"
+msgstr "إضافة علامة"
 
 #: ../plugin/controllers/i18n.py:385
 msgid "Add Name to Tags"
-msgstr "Lisa siltidele nimi"
+msgstr "أضافه اسم إلى العلامات"
 
 #: ../plugin/controllers/i18n.py:420
 msgid "Add Provider as new Bouquet"
-msgstr "Lisa levitaja uue lemmiknimekirjana"
+msgstr "أضافه مزود قنوات كباقة جديدة"
 
 #: ../plugin/controllers/i18n.py:381
 msgid "Add Similar on Conflict"
-msgstr "Vastuolu puhul lisa asendustaimer"
+msgstr "أضف مماثل على المتعارض"
 
 #: ../plugin/controllers/i18n.py:429
 msgid "Add Spacer"
-msgstr "Lisa eraldaja"
+msgstr "أضف مسافة"
 
 #: ../plugin/controllers/i18n.py:74
 msgid "Add Timer"
-msgstr "Lisa taimer"
+msgstr "إضافة مؤقت"
 
 #: ../plugin/controllers/i18n.py:76
 msgid "Add Zap Timer"
-msgstr "Lisa kanalivahetustaimer"
+msgstr "إنتقل لإضافة مؤقت"
 
 #: ../plugin/controllers/i18n.py:422
 msgid "Add channel(s) as alternate"
-msgstr "Lisa asenduskanalina"
+msgstr "إضافة قناة (قنوات) كبديل"
 
 #: ../plugin/controllers/i18n.py:421
 msgid "Add channel(s) to Bouquet"
-msgstr "Lisa lemmiknimekirja"
+msgstr "إضافة قناة (قنوات) إلى الباقة"
 
 #: ../plugin/plugin.py:151
 msgid "Add service name to stream information"
-msgstr "Lisa kanali nimi voo infosse"
+msgstr "إضافة اسم الخدمة إلى معلومات قنوات البث"
 
 #: ../plugin/controllers/BouquetEditor.py:466
 #, python-format
 msgid "Added %s to alternative service %s."
-msgstr "%s lisati asenduskanalile %s."
+msgstr "تم إضافة %s القناة البديلة %s."
 
 #: ../plugin/controllers/i18n.py:77 ../plugin/controllers/i18n.py:401
 msgid "After Event"
-msgstr "Pärast sündmust"
+msgstr "بعد الحدث"
 
 #: ../plugin/controllers/i18n.py:325
 msgid "After event"
-msgstr "Pärast sündmust"
+msgstr "بعد الحدث"
 
 #: ../plugin/controllers/i18n.py:79 ../plugin/controllers/i18n.py:389
 msgid "All"
-msgstr "Kõik"
+msgstr "الكل"
 
 #: ../plugin/controllers/i18n.py:80
 msgid "All Channels"
-msgstr "Kõik kanalid"
+msgstr "كل القنوات"
 
 #: ../plugin/controllers/i18n.py:291
 msgid "All Files of this Software are open source software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation."
-msgstr "Kõik selle tarkvara failid vaba lähtekoodiga; neid võib levitada ja/või muuta vastavalt GNU Üldise Avaliku Litsentsi v.3 tingimustele, avaldajaks Free Software Foundation."
+msgstr "جميع ملفات هذا البرنامج هي برامج مفتوحة المصدر ؛ يمكنك إعادة توزيعه و / أو تعديله بموجب شروط رخصة جنو العمومية العامة الإصدار 3 كما نشرتها مؤسسة البرمجيات الحرة."
 
 #: ../plugin/controllers/BouquetEditor.py:505
 msgid "All alternative services deleted."
-msgstr "Kõik asenduskanalid on kustutatud."
+msgstr "تم حذف كافة القنوات البديلة."
 
 #: ../plugin/plugin.py:152
 msgid "Allow IPK Upload"
-msgstr "Luba IPK üleslaadimine"
+msgstr "السماح برفع الملفات المحمية"
 
 #: ../plugin/controllers/BouquetEditor.py:452
 #, python-format
 msgid "Alternative %s created failed."
-msgstr "Asenduskanali %s loomine nurjus."
+msgstr "فشل إنشاء %s البديل."
 
 #: ../plugin/controllers/i18n.py:406
 msgid "Always"
-msgstr "Alati"
+msgstr "دائما"
 
 #: ../plugin/controllers/i18n.py:335
 msgid "Amount of recordings left"
-msgstr "Järelejäänud salvestuste arv"
+msgstr "ربط التسجيلات على اليسار"
 
 #: ../plugin/controllers/models/message.py:51
 msgid "Answer is NO!"
-msgstr "Vastus - EI!"
+msgstr "الإجابة هي لا!"
 
 #: ../plugin/controllers/models/message.py:51
 msgid "Answer is YES!"
-msgstr "Vastus - JAH!"
+msgstr "الإجابة هي نعم!"
 
 #: ../plugin/controllers/i18n.py:345
 msgid "Any service/recording"
-msgstr "Iga kanal/salvestus"
+msgstr "أي خدمة / التسجيل"
 
 #: ../plugin/controllers/i18n.py:443
 msgid "Apid"
-msgstr "Apid"
+msgstr "معرف مزود الخدمة"
 
 #: ../plugin/controllers/i18n.py:63
 msgid "April"
-msgstr "Aprill"
+msgstr "ابريل"
 
 #: ../plugin/controllers/i18n.py:410
 msgid "Ask, default No"
-msgstr "Küsitakse (vaikimisi 'ei')"
+msgstr "السؤال ، الافتراضي لا"
 
 #: ../plugin/controllers/i18n.py:409
 msgid "Ask, default Yes"
-msgstr "Küsitakse (vaikimisi 'jah')"
+msgstr "السؤال ، الافتراضي نعم"
 
 #: ../plugin/controllers/i18n.py:67
 msgid "August"
-msgstr "August"
+msgstr "أغسطس"
 
 #: ../plugin/controllers/i18n.py:81
 msgid "Authors"
-msgstr "Autorid"
+msgstr "الكاتب"
 
 #: ../plugin/controllers/i18n.py:82 ../plugin/controllers/i18n.py:388
 msgid "Auto"
-msgstr "Auto"
+msgstr "تلقائي"
 
 #: ../plugin/controllers/i18n.py:374
 msgid "AutoPoll"
-msgstr "Automaatne päring"
+msgstr "الاستطلاع التلقائي"
 
 #: ../plugin/controllers/base.py:307
 msgid "AutoTimer"
-msgstr "Autotaimer"
+msgstr "المؤقت التلقائي"
 
 #: ../plugin/controllers/i18n.py:295
 msgid "AutoTimer Edit"
-msgstr "Autotaimeri muutmine"
+msgstr "تعديل المؤقت التلقائي"
 
 #: ../plugin/controllers/i18n.py:294
 msgid "AutoTimer List"
-msgstr "Autotaimerite nimekiri"
+msgstr "قائمه المؤقت التلقائي"
 
 #: ../plugin/controllers/i18n.py:373
 msgid "AutoTimer Settings"
-msgstr "Autotaimeri sätted"
+msgstr "إعدادات المؤقت الالى"
 
 #: ../plugin/controllers/i18n.py:253
 msgid "Autotimer Preview"
-msgstr "Autotaimeri eelvaatus"
+msgstr "معاينه المؤقت التلقائي"
 
 #: ../plugin/controllers/i18n.py:85
 msgid "BER"
-msgstr "BER"
+msgstr "معدل خطاء الإشارة"
 
 #: ../plugin/controllers/i18n.py:83
 msgid "Back"
-msgstr "Tagasi"
+msgstr "خلف"
 
 #: ../plugin/controllers/i18n.py:408
 msgid "Background only"
-msgstr "Ainult taust"
+msgstr "الخلفية فقط"
 
 #: ../plugin/controllers/i18n.py:84 ../plugin/controllers/i18n.py:396
 msgid "Begin"
-msgstr "Algus"
+msgstr "تبدا"
 
 #: ../plugin/controllers/i18n.py:332
 msgid "Begin of \"after event\" timespan"
-msgstr "\"pärast sündmust\" ajaakna algus"
+msgstr "تبدء من\"بعد الحدث\" المدة الزمنية"
 
 #: ../plugin/controllers/i18n.py:316
 msgid "Begin of timespan"
-msgstr "Ajaakna algus"
+msgstr "بداية المدى الزمنى"
 
 #: ../plugin/controllers/i18n.py:477
 msgid "Bookmark"
-msgstr "Järjehoidja"
+msgstr "علامة مرجعية"
 
 #: ../plugin/controllers/i18n.py:476
 msgid "Bookmarks"
-msgstr "Järjehoidjad"
+msgstr "الاشارات المرجعيه"
 
 #: ../plugin/controllers/BouquetEditor.py:127
 #, python-format
 msgid "Bouquet %s already exists."
-msgstr "Lemmiknimekiri %s on juba olemas."
+msgstr "الباقة %s موجودة بالفعل."
 
 #: ../plugin/controllers/BouquetEditor.py:218
 #, python-format
 msgid "Bouquet %s can not be moved."
-msgstr "Lemmiknimekirja %s ei saa liigutada."
+msgstr "الباقة %s لا يمكن نقلها."
 
 #: ../plugin/controllers/BouquetEditor.py:122
 #, python-format
 msgid "Bouquet %s created."
-msgstr "Lemmiknimekiri %s loodud."
+msgstr "الباقة %s تم إنشاءها."
 
 #: ../plugin/controllers/BouquetEditor.py:191
 #, python-format
 msgid "Bouquet %s deleted."
-msgstr "Lemmiknimekiri %s kustutatud."
+msgstr "الباقة %s تم حذفها."
 
 #: ../plugin/controllers/BouquetEditor.py:547
 #, python-format
 msgid "Bouquet %s is locked."
-msgstr "Lemmiknimekiri %s on lukustatud."
+msgstr "الباقة %s تم إغلاقها."
 
 #: ../plugin/controllers/BouquetEditor.py:555
 #, python-format
 msgid "Bouquet %s is unlocked."
-msgstr "Lemmiknimekirja %s lukustus maas."
+msgstr "الباقة %s غير مغلقة."
 
 #: ../plugin/controllers/BouquetEditor.py:216
 #, python-format
 msgid "Bouquet %s moved."
-msgstr "Lemmiknimekiri %s liigutatud."
+msgstr "الباقة %s تم نقلها."
 
 #: ../plugin/controllers/BouquetEditor.py:186
 #, python-format
 msgid "Bouquet %s removed failed, sevicerefence or mutable list is not valid."
-msgstr "Lemmiknimekirja %s eemaldamine nurjus, viitenumber või muutuv nimekiri ei ole kehtivad."
+msgstr "الباقة %s فشل حذفها, تفضيل القناة أو قائمة الجدول غير صالحه."
 
 #: ../plugin/controllers/BouquetEditor.py:184
 #, python-format
 msgid "Bouquet %s removed failed."
-msgstr "Lemmiknimekirja %s eemaldamine nurjus."
+msgstr "الباقة %s فشل حذفها."
 
 #: ../plugin/controllers/i18n.py:226
 msgid "Bouquet Editor"
-msgstr "Lemmiknimekirjad"
+msgstr "محرر الباقة"
 
 #: ../plugin/controllers/BouquetEditor.py:388
 msgid "Bouquet renamed successfully."
-msgstr "Lemmiknimekiri nimetati ümber."
+msgstr "تمت أعاده تسمية الباقة بنجاح."
 
 #: ../plugin/controllers/BouquetEditor.py:649
 msgid "Bouquet-settings were restored successfully"
-msgstr "Lemmiknimekirjad taastati edukalt"
+msgstr "تمت استعاده إعدادات الباقة بنجاح"
 
 #: ../plugin/controllers/base.py:312
 msgid "BouquetEditor"
-msgstr "Lemmiknimekirjad"
+msgstr "محرر الباقة"
 
 #: ../plugin/controllers/BouquetEditor.py:129
 #: ../plugin/controllers/BouquetEditor.py:454
 msgid "Bouquetlist is not editable!"
-msgstr "Lemmiknimekirjade loend ei ole muudetav!"
+msgstr "قائمة الباقة غير قابلة للتعديل!"
 
 #: ../plugin/controllers/i18n.py:86 ../plugin/controllers/i18n.py:351
 msgid "Bouquets"
-msgstr "Lemmiknimekirjad"
+msgstr "الباقات"
 
 #: ../plugin/controllers/i18n.py:91
 msgid "Brand"
-msgstr "Mark"
+msgstr "علامة تجارية"
 
 #: ../plugin/controllers/i18n.py:101
 msgid "CPU architecture"
@@ -318,96 +320,96 @@ msgstr ""
 
 #: ../plugin/controllers/models/services.py:338
 msgid "Cable"
-msgstr "Kaabel"
+msgstr "كيبل"
 
 #: ../plugin/controllers/i18n.py:468
 msgid "Calendar Week"
-msgstr "Kalendrinädal"
+msgstr "تقويم الاسبوع"
 
 #: ../plugin/plugin.py:113 ../plugin/controllers/i18n.py:92
 msgid "Cancel"
-msgstr "Tühista"
+msgstr "إلغاء"
 
 #: ../plugin/controllers/i18n.py:485
 msgid "Cancelled"
-msgstr "Tühistatud"
+msgstr "ملغى"
 
 #: ../plugin/controllers/i18n.py:93
 msgid "Capacity"
-msgstr "Maht"
+msgstr "سعة"
 
 #: ../plugin/controllers/i18n.py:94
 msgid "Channel"
-msgstr "Kanal"
+msgstr "قناة"
 
 #: ../plugin/controllers/i18n.py:95 ../plugin/controllers/i18n.py:349
 msgid "Channels"
-msgstr "Kanalid"
+msgstr "قنوات"
 
 #: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:257
 msgid "Chipset"
-msgstr "Kiip"
+msgstr "المعالج"
 
 #: ../plugin/controllers/i18n.py:97
 msgid "Cleanup Timers"
-msgstr "Kustuta vanad"
+msgstr "تنظيف المؤقتات"
 
 #: ../plugin/controllers/i18n.py:98
 msgid "Close"
-msgstr "Sulge"
+msgstr "إغلاق"
 
 #: ../plugin/controllers/i18n.py:488
 msgid "Common Settings"
-msgstr "Üldseaded"
+msgstr "الإعدادات العامة"
 
 #: ../plugin/controllers/models/timers.py:179
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
-msgstr "Vastuolus taimerid!  %s"
+msgstr "الكشف عن المؤقت (المؤقتات) المتعارضة! %s"
 
 #: ../plugin/controllers/i18n.py:99
 msgid "Contributors"
-msgstr "Kaasautorid"
+msgstr "المساهمون"
 
 #: ../plugin/controllers/i18n.py:100
 msgid "Control"
-msgstr "Juhtimine"
+msgstr "التحكم"
 
 #: ../plugin/controllers/models/timers.py:196
 #, python-format
 msgid "Could not add timer '%s'!"
-msgstr "Taimeri '%s' lisamine nurjus!"
+msgstr "لا يمكن إضافة المؤقت '%s'!"
 
 #: ../plugin/controllers/models/timers.py:312
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
-msgstr "Antud algus- ja lõpuajaga taimerit '%s' ei leitud!"
+msgstr "تعذر العثور على المؤقت '%s' مع وقت البدء والانتهاء المعينين!"
 
 #: ../plugin/controllers/i18n.py:103
 msgid "Current"
-msgstr "Hetkel"
+msgstr "جاری"
 
 #: ../plugin/controllers/i18n.py:104
 msgid "Current Event"
-msgstr "Käesolev saade"
+msgstr "الحدث الحالي"
 
 #: ../plugin/controllers/i18n.py:189
 #, fuzzy
 msgid "Custom STB name"
-msgstr "Kohandatud vastuvõtja nimi"
+msgstr "أسم الجهاز المخصص"
 
 #: ../plugin/plugin.py:136
 msgid "Custom box name"
-msgstr "Kohandatud vastuvõtja nimi"
+msgstr "أسم الجهاز المخصص"
 
 #: ../plugin/controllers/i18n.py:321
 msgid "Custom offset"
-msgstr "Kohandatud nihe"
+msgstr "العوض العادي"
 
 #: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:57
 #: ../plugin/controllers/models/info.py:76
 msgid "DHCP"
-msgstr "DHCP"
+msgstr "برتوكول تكوين المضيف آليا"
 
 #: ../plugin/controllers/i18n.py:124
 msgid "DVB API"
@@ -415,124 +417,124 @@ msgstr ""
 
 #: ../plugin/controllers/i18n.py:105
 msgid "Date"
-msgstr "Kuupäev"
+msgstr "تاريخ"
 
 #: ../plugin/controllers/i18n.py:71
 msgid "December"
-msgstr "Detsember"
+msgstr "ديسمبر"
 
 #: ../plugin/controllers/i18n.py:106
 msgid "Deep-Standby"
-msgstr "Puhkeseisund"
+msgstr "الاستعداد العميق"
 
 #: ../plugin/controllers/i18n.py:107
 msgid "Default"
-msgstr "Vaikimisi"
+msgstr "الإفتراضي"
 
 #: ../plugin/controllers/i18n.py:398
 msgid "Delay Standby"
-msgstr "Ooteseisundi viiteaeg"
+msgstr "تاخير الاستعداد"
 
 #: ../plugin/controllers/i18n.py:108 ../plugin/controllers/i18n.py:363
 msgid "Delete"
-msgstr "Kustuta"
+msgstr "حذف"
 
 #: ../plugin/controllers/i18n.py:478
 #, fuzzy
 msgid "Delete Bookmark"
-msgstr "Järjehoidja"
+msgstr "علامة مرجعية"
 
 #: ../plugin/controllers/i18n.py:427
 msgid "Delete Bouquet"
-msgstr "Kustuta lemmiknimekiri"
+msgstr "حدف الباقة"
 
 #: ../plugin/controllers/i18n.py:109
 msgid "Delete Recording"
-msgstr "Kustuta salvestis"
+msgstr "حذف التسجيل"
 
 #: ../plugin/controllers/i18n.py:111
 msgid "Delete Timer"
-msgstr "Kustuta taimer"
+msgstr "حذف المؤقت"
 
 #: ../plugin/controllers/models/movies.py:300
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
 msgstr ""
-"Kustutamine nurjus, kuna prügikasti ei ole!\n"
-"Selle elemendi kustutamiseks keela seadistustes prügikasti kasutamine"
+"فشل حذف ، لأنه لا يوجد سلة مهملات للفيلم!\n"
+"تعطيل سلة المهملات الفيلم في التشكيل لحذف هذا العنصر"
 
 #: ../plugin/controllers/i18n.py:486
 msgid "Deleted"
-msgstr "Kustutatud"
+msgstr "تم الحذف"
 
 #: ../plugin/controllers/i18n.py:113 ../plugin/controllers/i18n.py:297
 msgid "Description"
-msgstr "Sisututvustus"
+msgstr "الوصـف"
 
 #: ../plugin/controllers/i18n.py:115
 msgid "Disable Timer"
-msgstr "Keela taimer"
+msgstr "تعطيل المؤقت"
 
 #: ../plugin/plugin.py:146
 msgid "Disable remote access for user root"
-msgstr "Keela kaugligipääs kasutaja juurkataloogile"
+msgstr "تعطيل الوصول البعيد لجذر المستخدم"
 
 #: ../plugin/controllers/i18n.py:380
 msgid "Disabled on Conflict"
-msgstr "Vastuolu korral keelatud"
+msgstr "التعارضمعطل"
 
 #: ../plugin/controllers/i18n.py:464
 msgid "Display Mode"
-msgstr "Kava laad"
+msgstr "وضع العرض"
 
 #: ../plugin/controllers/i18n.py:462
 msgid "Display duration (s)"
-msgstr "Kuva kestus"
+msgstr "مده العرض (العروض)"
 
 #: ../plugin/controllers/i18n.py:117
 msgid "Distro"
-msgstr "Distro"
+msgstr "تصنيف"
 
 #: ../plugin/controllers/i18n.py:370
 msgid "Do you really want to delete the AT"
-msgstr "Kas kustutada autotaimer"
+msgstr "هل تريد حقا حذف AT"
 
 #: ../plugin/controllers/i18n.py:432
 msgid "Do you really want to delete the bouquet"
-msgstr "Kas kustutada lemmiknimekiri"
+msgstr "هل تريد حقا حذف الباقة"
 
 #: ../plugin/controllers/i18n.py:431
 msgid "Do you really want to delete the selected item(s)"
-msgstr "Kas kustutad valitud elemendid"
+msgstr "هل تريد حقا حذف العنصر (العناصر) المحدد"
 
 #: ../plugin/controllers/i18n.py:438
 msgid "Do you really want to restore from file"
-msgstr "Kas taastad failist"
+msgstr "هل تريد حقا استعادة من الملف"
 
 #: ../plugin/controllers/i18n.py:118
 msgid "Dolby"
-msgstr "Dolby"
+msgstr "الصوت الدولبي"
 
 #: ../plugin/controllers/i18n.py:119
 msgid "Done"
-msgstr "Tehtud"
+msgstr "إنتهى"
 
 #: ../plugin/controllers/i18n.py:120
 msgid "Download"
-msgstr "Allalaadimine"
+msgstr "تحميل"
 
 #: ../plugin/controllers/i18n.py:121
 msgid "Download Playlist for"
-msgstr "Hangi mängukava"
+msgstr "تحميل قائمة التشغيل"
 
 #: ../plugin/controllers/i18n.py:122
 msgid "Drivers"
-msgstr "ajurid"
+msgstr "التعاريف"
 
 #: ../plugin/controllers/i18n.py:123
 msgid "Duration"
-msgstr "Kestus"
+msgstr "المدة"
 
 #: ../plugin/controllers/models/info.py:532
 msgid "E"
@@ -540,232 +542,231 @@ msgstr "E"
 
 #: ../plugin/controllers/i18n.py:131
 msgid "EPG"
-msgstr "EPG"
+msgstr "دليل البرامج الإلكترونية"
 
 #: ../plugin/controllers/i18n.py:299
 msgid "EPG encoding"
-msgstr "EPG tähemärgistik"
+msgstr "ترميز دليل البرامج اليومي"
 
 #: ../plugin/controllers/base.py:316
 msgid "EPGRefresh"
-msgstr "EPG värskendus"
+msgstr "تحديث دليل البرامج الإلكترونية"
 
 #: ../plugin/controllers/models/timers.py:714
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
-msgstr "VIGA: Unetaimerit ei saa määrata kui vastuvõtja on ooteseisundis"
+msgstr "خطا: لا يمكن ضبط مؤقت النوم أثناء الجهاز في وضع الاستعداد"
 
 #: ../plugin/controllers/i18n.py:125
 msgid "Edit Timer"
-msgstr "Muuda taimerit"
+msgstr "تعديل المؤقت"
 
 #: ../plugin/controllers/i18n.py:390
 msgid "Editor"
-msgstr "Redaktor"
+msgstr "المحرر"
 
 #: ../plugin/plugin.py:145
 msgid "Enable Authentication for streaming"
-msgstr "Voogesituse autentimine"
+msgstr "تمكين مصادقة للتدفق"
 
 #: ../plugin/controllers/i18n.py:353
 msgid "Enable Filtering"
-msgstr "Luba filtrid"
+msgstr "تفعيل الفلاتر"
 
 #: ../plugin/plugin.py:138
 msgid "Enable HTTP Authentication"
-msgstr "HTTP autentimine"
+msgstr "تفعيل توثيق بروتوكول نقل النصوص"
 
 #: ../plugin/plugin.py:139
 msgid "Enable HTTPS"
-msgstr "Luba HTTPS"
+msgstr "تمكين بروتوكول نقل الروابط المحمية"
 
 #: ../plugin/plugin.py:142
 msgid "Enable HTTPS Authentication"
-msgstr "HTTPS autentimine"
+msgstr "تفعيل توثيق بروتوكول نقل النصوص المحمي"
 
 #: ../plugin/controllers/i18n.py:395
 msgid "Enable Messages"
-msgstr "Luba teavitused"
+msgstr "تمكين الرسائل"
 
 #: ../plugin/plugin.py:150
 msgid "Enable Parental Control"
-msgstr "Luba lapselukk"
+msgstr "تمكين الرقابة الابوية"
 
 #: ../plugin/controllers/i18n.py:126
 msgid "Enable Timer"
-msgstr "Luba taimer"
+msgstr "تفعيل المؤقت"
 
 #: ../plugin/plugin.py:149
 msgid "Enable access from VPNs"
-msgstr "Luba ligipääs VPN võrgust"
+msgstr "تمكين الدخول من الشبكة الخاصة"
 
 #: ../plugin/controllers/i18n.py:474
 msgid "Enable/Disable Screenshot on key press or"
-msgstr "Luba/keela ekraanipilt nupuvajutusel või"
+msgstr "تمكين/تعطيل تصوير الشاشة على أضغط مفتاح أو"
 
 #: ../plugin/controllers/i18n.py:129 ../plugin/controllers/i18n.py:296
 #: ../plugin/controllers/i18n.py:394
 msgid "Enabled"
-msgstr "Lubatud"
+msgstr "تم التفعيل"
 
 #: ../plugin/controllers/i18n.py:130
 msgid "Encrypted"
-msgstr "Kodeeritud"
+msgstr "المشفرة"
 
 #: ../plugin/controllers/i18n.py:128 ../plugin/controllers/i18n.py:397
 msgid "End"
-msgstr "Lõpp"
+msgstr "النهاية"
 
 #: ../plugin/controllers/i18n.py:333
 msgid "End of \"after event\" timespan"
-msgstr "\"pärast sündmust\" ajaakna lõpp"
+msgstr "النهاية \"بعد الحدث\" المدة الزمنية"
 
 #: ../plugin/controllers/i18n.py:317
 msgid "End of Timespan"
-msgstr "Ajaakna lõpp"
+msgstr "نهاية المدة الزمنية"
 
 #: ../plugin/controllers/i18n.py:435
 msgid "Enter new name for the bouquet"
-msgstr "Sisesta lemmiknimekirja uus nimi"
+msgstr "ادخل اسم جديد للباقة"
 
 #: ../plugin/controllers/i18n.py:436
 msgid "Enter new name for the marker"
-msgstr "Sisesta märgise uus nimi"
+msgstr "ادخل اسم جديد للعلامة"
 
 #: ../plugin/controllers/i18n.py:132
 msgid "Epg Search"
-msgstr "Epg otsing"
+msgstr "بحث في دليل البرامج"
 
 #: ../plugin/controllers/i18n.py:135
 msgid "Error"
-msgstr "Viga"
+msgstr "خطأ"
 
 #: ../plugin/controllers/models/timers.py:840
 msgid "Error parsing vps.xml"
-msgstr "Viga vps.xml faili parsimisel"
+msgstr "خطا في تحليل الvps. xml"
 
 #: ../plugin/controllers/ipkg.py:281
 msgid "Error upload File"
-msgstr "Viga faili üleslaadimisel"
+msgstr "خطا في رفع الملف"
 
 #: ../plugin/controllers/BouquetEditor.py:592
 #, python-format
 msgid "Error while preparing backup file, %s does not exists."
-msgstr "Viga varukoopia loomisel, %s pole olemas."
+msgstr "خطا اثناء تحضير ملف النسخ الاحتياطي ، %s غير موجود."
 
 #: ../plugin/controllers/BouquetEditor.py:598
 msgid "Error while preparing backup file."
-msgstr "Viga varukoopia loomisel."
+msgstr "خطا اثناء تحضير ملف النسخ الاحتياطي."
 
 #: ../plugin/controllers/ipkg.py:297
 msgid "Error writing File"
-msgstr "Viga faili kirjutamisel"
+msgstr "خطاء في كتابة الملف"
 
 #: ../plugin/controllers/BouquetEditor.py:653
 #, python-format
 msgid "Error, %s does not exists, restore is not possible..."
-msgstr "Viga, %s pole olemas, taastamine ei ole võimalik..."
+msgstr "الخطاء ، %s غير موجود ، الاستعادة غير ممكنة..."
 
 #: ../plugin/controllers/BouquetEditor.py:651
 #, python-format
 msgid "Error, %s was not created with WebBouquetEditor..."
-msgstr "Viga: %s ei ole loodud WebBouquetEditor laiendusega."
+msgstr "خطاء ، لم يتم إنشاء %s باستخدام معدل الباقات عبر الموقع..."
 
 #: ../plugin/controllers/BouquetEditor.py:193
 #, python-format
 msgid "Error: Bouquet %s could not deleted, OSError."
-msgstr "Viga: Lemmiknimekirja %s eemaldamine nurjus, OS viga."
+msgstr "خطاء: تعذر حذف الباقة %s ,خطاء."
 
 #: ../plugin/controllers/i18n.py:454
 msgid "Event not found"
-msgstr "Saadet ei leitud"
+msgstr "لم يتم العثور علي الحدث"
 
 #: ../plugin/controllers/models/timers.py:210
 msgid "EventId not found"
-msgstr "Saate tunnust ei leitud"
+msgstr "لم يتم العثور علي الحدث"
 
 #: ../plugin/controllers/i18n.py:136
 msgid "Every"
-msgstr "Iga"
+msgstr "كل"
 
 #: ../plugin/controllers/i18n.py:355
 msgid "Exclude"
-msgstr "Jäta välja"
+msgstr "إستبعاد"
 
 #: ../plugin/controllers/i18n.py:331
 msgid "Execute \"after event\" during timespan"
-msgstr "Teosta \"pärast sündmust\" ajaakna sees"
+msgstr "تنفيذ \"بعد الحدث\" أثناء المدة الزمنية"
 
 #: ../plugin/controllers/i18n.py:512
 msgid "Export"
-msgstr "Ekspordi"
+msgstr "تصدير"
 
 #: ../plugin/controllers/i18n.py:137
 msgid "Extras"
-msgstr "Lisad"
+msgstr "زوائد"
 
 #: ../plugin/controllers/i18n.py:138
-#, fuzzy
 msgid "FFmpeg"
-msgstr "Püsivara versioon"
+msgstr ""
 
 #: ../plugin/controllers/i18n.py:415
 msgid "Fake Recording"
-msgstr "Võltssalvestus"
+msgstr "تسجيل وهمي"
 
 #: ../plugin/controllers/i18n.py:378
 msgid "Fastscan"
-msgstr "Kiirotsing"
+msgstr "بحث سريع"
 
 #: ../plugin/controllers/i18n.py:61
 msgid "February"
-msgstr "Veebruar"
+msgstr "فبراير"
 
 #: ../plugin/controllers/i18n.py:140
 #, fuzzy
 msgid "Firmware"
-msgstr "Püsivara versioon"
+msgstr "إصدار النظام"
 
 #: ../plugin/controllers/i18n.py:141
 #, fuzzy
 msgid "Flash type"
-msgstr "Otsingu tüüp"
+msgstr "نوع البحث"
 
 #: ../plugin/controllers/i18n.py:402
 msgid "Force"
-msgstr "Sunnitud"
+msgstr "ضغط"
 
 #: ../plugin/controllers/i18n.py:40
 msgid "Fr"
-msgstr "R"
+msgstr "الجمعة"
 
 #: ../plugin/controllers/i18n.py:143
 msgid "Free"
-msgstr "Vaba"
+msgstr "مجاني"
 
 #: ../plugin/controllers/i18n.py:144
 msgid "Free Memory"
-msgstr "Vaba mälu"
+msgstr "ذاكرة متوفرة"
 
 #: ../plugin/controllers/i18n.py:49
 msgid "Fri"
-msgstr "R"
+msgstr "الجمعة"
 
 #: ../plugin/controllers/i18n.py:56
 msgid "Friday"
-msgstr "Reede"
+msgstr "الجمعة"
 
 #: ../plugin/controllers/i18n.py:142
 #, fuzzy
 msgid "Frontprocessor"
-msgstr "Esiprotsessori versioon"
+msgstr "إصدار المعالج الامامي"
 
 #: ../plugin/controllers/models/info.py:260
 msgid "Frontprocessor Version"
-msgstr "Esiprotsessori versioon"
+msgstr "إصدار المعالج الامامي"
 
 #: ../plugin/controllers/i18n.py:509
 msgid "Full remote"
-msgstr "Täielik pult"
+msgstr "جهاز تحكم عن بعد كامل"
 
 #: ../plugin/controllers/models/info.py:307
 #: ../plugin/controllers/models/info.py:313
@@ -773,368 +774,368 @@ msgstr "Täielik pult"
 #: ../plugin/controllers/models/info.py:331
 #: ../plugin/controllers/models/movies.py:212
 msgid "GB"
-msgstr "GB"
+msgstr "جيجابايت"
 
 #: ../plugin/controllers/i18n.py:147
 #, fuzzy
 msgid "GStreamer"
-msgstr "Voogesitus"
+msgstr "‫Stream"
 
 #: ../plugin/controllers/i18n.py:148
 #, fuzzy
 msgid "GUI version"
-msgstr "E2 versioon"
+msgstr "إصدار تشغيل الواجهة"
 
 #: ../plugin/controllers/i18n.py:145
 msgid "Gateway"
-msgstr "Lüüs"
+msgstr "المدخل"
 
 #: ../plugin/controllers/BouquetEditor.py:450
 msgid "Get mutable list for new created alternative failed!"
-msgstr "Uue asenduskanali jaoks muutuva nimekirja hankimine nurjus!"
+msgstr "فشل الحصول على قائمة قابلة للتغيير للبديل الجديد الذي تم إنشاؤه!"
 
 #: ../plugin/controllers/BouquetEditor.py:124
 msgid "Get mutable list for new created bouquet failed!"
-msgstr "Uue lemmiknimekirja jaoks muudetava nimekirja hankimine nurjus!"
+msgstr "فشل الحصول على قائمة قابلة للتغيير للباقات الجديدة التي تم إنشاؤها!"
 
 #: ../plugin/controllers/i18n.py:146
 msgid "Grab Screenshot"
-msgstr "Loo ekraanipilt"
+msgstr "تصوير لقطة الشاشة"
 
 #: ../plugin/plugin.py:137
 msgid "HTTP port"
-msgstr "HTTP port"
+msgstr "منفذ (بروتوكول محمي التشفير)"
 
 #: ../plugin/plugin.py:141
 msgid "HTTPS port"
-msgstr "HTTPS port"
+msgstr "منفذ بروتوكول نقل النصوص المحمي"
 
 #: ../plugin/controllers/i18n.py:151
 msgid "Hard disk model"
-msgstr "Salvesti"
+msgstr "موديل القرص الصلب"
 
 #: ../plugin/controllers/i18n.py:149
 msgid "Hide full remote"
-msgstr "Peida täielik pult"
+msgstr "إخفاء كامل لجهاز التحكم عن بعد"
 
 #: ../plugin/controllers/i18n.py:150
 msgid "High Resolution"
-msgstr "Kõrglahutus"
+msgstr "عالي الدقة"
 
 #: ../plugin/controllers/i18n.py:152
 msgid "Hour"
-msgstr "Tund"
+msgstr "ساعة"
 
 #: ../plugin/controllers/i18n.py:153
 msgid "IPv4 address"
-msgstr "IPv4 aadress"
+msgstr "عنوان IPv4"
 
 #: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:136
 msgid "IPv4-only Python/Twisted"
-msgstr "IPv4-ainult Python/Twisted"
+msgstr "IPv4 فقط بيثون/ملتوية"
 
 #: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:132
 msgid "IPv4-only kernel"
-msgstr "IPv4-ainult kernel"
+msgstr "نواه IPv4 فقط"
 
 #: ../plugin/controllers/i18n.py:157
 msgid "IPv6 address(es)"
-msgstr "IPv6 aadress(id)"
+msgstr "عنوان IPv6 (es)"
 
 #: ../plugin/controllers/i18n.py:513
 msgid "Import"
-msgstr "Impordi"
+msgstr "استيراد"
 
 #: ../plugin/controllers/i18n.py:354
 msgid "Include"
-msgstr "Kaasa"
+msgstr "يشمل"
 
 #: ../plugin/controllers/i18n.py:133
 msgid "Include description"
-msgstr "Hõlma sisututvustus"
+msgstr "يشمل الوصف"
 
 #: ../plugin/controllers/i18n.py:502
 msgid "Include extended description"
-msgstr "Hõlma täpsem sisututvustus"
+msgstr "يشمل الوصف الموسع"
 
 #: ../plugin/controllers/i18n.py:501
 msgid "Include short description"
-msgstr "Hõlma lühitutvustus"
+msgstr "يشمل وصف مختصر"
 
 #: ../plugin/controllers/models/timers.py:422
 msgid "Infinite Instant recording started"
-msgstr "Algas kohene salvestus"
+msgstr "بدأ التسجيل الفوري بلا حدود"
 
 #: ../plugin/controllers/i18n.py:158
 msgid "Infos"
-msgstr "Andmed"
+msgstr "المعلومات"
 
 #: ../plugin/controllers/i18n.py:404
 msgid "Inherit Autotimer"
-msgstr "Päring Autotaimerist"
+msgstr "تركة المؤقت التلقائي"
 
 #: ../plugin/controllers/i18n.py:494
 msgid "Install Package"
-msgstr "Paigalda pakett"
+msgstr "تثبيت الحزمة"
 
 #: ../plugin/controllers/i18n.py:496
 msgid "Installed"
-msgstr "Paigaldatud"
+msgstr "تنصيب"
 
 #: ../plugin/controllers/i18n.py:159
 msgid "Instant Record"
-msgstr "Kohene salvestus"
+msgstr "تسجيل سريع"
 
 #: ../plugin/controllers/models/timers.py:413
 msgid "Instant record for current Event started"
-msgstr "Algas käesoleva saate salvestamine"
+msgstr "بدء تشغيل التسجل الفوري للحدث الحالي"
 
 #: ../plugin/controllers/BouquetEditor.py:350
 msgid "Internal error!"
-msgstr "Sisemine viga!"
+msgstr "خطا داخلي!"
 
 #: ../plugin/controllers/i18n.py:375
 #, python-format
 msgid "Interval (in %s)"
-msgstr "Ajavahemik (%s)"
+msgstr "الفاصل الزمني (في %s)"
 
 #: ../plugin/controllers/i18n.py:399
 msgid "Interval (min.)"
-msgstr "Ajavahemik (min.)"
+msgstr "الفاصل الزمني (دقيقه)"
 
 #: ../plugin/controllers/i18n.py:400
 msgid "Interval (sec.)"
-msgstr "Ajavahemik (sek.)"
+msgstr "الفاصل الزمني (ثانيه)"
 
 #: ../plugin/controllers/i18n.py:60
 msgid "January"
-msgstr "Jaanuar"
+msgstr "يناير"
 
 #: ../plugin/controllers/i18n.py:161
 msgid "Javascript Libraries"
-msgstr "Javascript teegid"
+msgstr "مكتبات جافا سكريبت"
 
 #: ../plugin/controllers/i18n.py:66
 msgid "July"
-msgstr "Juuli"
+msgstr "يوليو"
 
 #: ../plugin/controllers/i18n.py:65
 msgid "June"
-msgstr "Juuni"
+msgstr "يونيو"
 
 #: ../plugin/controllers/i18n.py:162
 msgid "Just play"
-msgstr "Esita"
+msgstr "مجرد تشغيل"
 
 #: ../plugin/controllers/i18n.py:163
 msgid "Kernel"
-msgstr "Kernel"
+msgstr "وحدة النواة"
 
 #: ../plugin/controllers/i18n.py:164
 msgid "LCD"
-msgstr "LCD"
+msgstr "شاشة العرض المصغرة"
 
 #: ../plugin/controllers/base.py:285
 msgid "LCD4Linux Setup"
-msgstr "LCD4Linux seaded"
+msgstr "ضبط شاشة عرض لينكس"
 
 #: ../plugin/controllers/i18n.py:165
 msgid "LICENSE"
-msgstr "LITSENTS"
+msgstr "الترخيص"
 
 #: ../plugin/controllers/i18n.py:371
 msgid "Label series"
-msgstr "Seriaalide pealdis"
+msgstr "سلسله التسمية"
 
 #: ../plugin/controllers/i18n.py:470
 msgid "Link Speed"
-msgstr "Ühenduse kiirus"
+msgstr "سرعه الرابط"
 
 #: ../plugin/controllers/models/timers.py:383
 msgid "List of Timers has been cleaned"
-msgstr "Taimerinimekiri tühjendati"
+msgstr "قائمة الموقتات تم تنظيفها"
 
 #: ../plugin/controllers/i18n.py:167
 msgid "Location"
-msgstr "Asukoht"
+msgstr "مكان"
 
 #: ../plugin/controllers/i18n.py:168
 msgid "Locked"
-msgstr "Lukustatud"
+msgstr "مقفل"
 
 #: ../plugin/controllers/i18n.py:169
 msgid "MAC address"
-msgstr "MAC aadress"
+msgstr "إعدادات شبكة تحكم وصول الوسائط"
 
 #: ../plugin/controllers/models/info.py:304
 #: ../plugin/controllers/models/info.py:315
 #: ../plugin/controllers/models/info.py:333
 #: ../plugin/controllers/models/movies.py:214
 msgid "MB"
-msgstr "MB"
+msgstr "ميجابايت"
 
 #: ../plugin/controllers/i18n.py:170
 msgid "Main"
-msgstr "Peamenüü"
+msgstr "الرئيسية"
 
 #: ../plugin/controllers/i18n.py:257
 msgid "Main Memory"
-msgstr "Põhimälu"
+msgstr "الذاكرة الرئيسية"
 
 #: ../plugin/controllers/i18n.py:62
 msgid "March"
-msgstr "Märts"
+msgstr "مارس"
 
 #: ../plugin/controllers/BouquetEditor.py:348
 msgid "Marker added."
-msgstr "Märgis lisatud."
+msgstr "العلامة مضافة."
 
 #: ../plugin/controllers/i18n.py:298
 msgid "Match title"
-msgstr "Vastab pealkirjale"
+msgstr "مطابقة العنوان"
 
 #: ../plugin/controllers/i18n.py:376
 msgid "Max Days"
-msgstr "Suurim lubatud päevade arv"
+msgstr "اقصي مدي  للأيام"
 
 #: ../plugin/controllers/i18n.py:64
 msgid "May"
-msgstr "Mai"
+msgstr "مايو"
 
 #: ../plugin/controllers/models/message.py:35
 msgid "Message sent successfully!"
-msgstr "Teade edukalt saadetud!"
+msgstr "تم إرسال الرسالة بنجاح!"
 
 #: ../plugin/controllers/i18n.py:411
 msgid "Method"
-msgstr "Meetod"
+msgstr "طريقة"
 
 #: ../plugin/controllers/i18n.py:491
 msgid "Minimal EPG list"
-msgstr "Tihe EPG loend"
+msgstr "الحد الأدنى من قائمة دليل البرامج الإلكترونية"
 
 #: ../plugin/controllers/i18n.py:489
 msgid "Minimal movie list"
-msgstr "Tihe salvestiste loend"
+msgstr "الحد الأدنى من قائمة الأفلام"
 
 #: ../plugin/controllers/i18n.py:490
 msgid "Minimal timer list"
-msgstr "Tihe taimeriloend"
+msgstr "الحد الأدنى لقائمة المؤقتات"
 
 #: ../plugin/controllers/i18n.py:171
 msgid "Minute"
-msgstr "Minut"
+msgstr "دقيقة"
 
 #: ../plugin/controllers/web.py:67
 #, python-format
 msgid "Missing mandatory parameter '%s'"
-msgstr "Puudub kohustuslik parameeter '%s'"
+msgstr "العلامة الإلزامية مفقودة '%s'"
 
 #: ../plugin/controllers/models/timers.py:514
 msgid "Missing requesteter: sRef"
-msgstr "Puudub registri parameeter: sRef"
+msgstr "الطلب مفقود: الرقم التعريفي"
 
 #: ../plugin/controllers/i18n.py:36
 msgid "Mo"
-msgstr "E"
+msgstr "الإثنين"
 
 #: ../plugin/controllers/i18n.py:172
 msgid "Model"
-msgstr "mudel"
+msgstr "نموذج"
 
 #: ../plugin/controllers/i18n.py:45
 msgid "Mon"
-msgstr "E"
+msgstr "الاثنين"
 
 #: ../plugin/controllers/i18n.py:52
 msgid "Monday"
-msgstr "Esmaspäev"
+msgstr "الاثنين"
 
 #: ../plugin/controllers/i18n.py:337
 msgid "Monthly"
-msgstr "Kord kuus"
+msgstr "شهرى"
 
 #: ../plugin/controllers/i18n.py:497
 msgid "More"
-msgstr "Veel"
+msgstr "المزيد"
 
 #: ../plugin/controllers/i18n.py:456
 msgid "Movie database for EPG"
-msgstr "Filmi andmebaas EPG tarbeks"
+msgstr "قاعدة بيانات من دليل البرامج الإلكترونية"
 
 #: ../plugin/controllers/i18n.py:503
 msgid "Movie search"
-msgstr "Filmi otsing"
+msgstr "البحث عن الأفلام"
 
 #: ../plugin/controllers/i18n.py:173
 msgid "Movielist"
-msgstr "Filmilist"
+msgstr "قائمة الأفلام"
 
 #: ../plugin/controllers/i18n.py:174
 msgid "Movies"
-msgstr "Salvestised"
+msgstr "الأفلام"
 
 #: ../plugin/controllers/BouquetEditor.py:131
 #: ../plugin/controllers/BouquetEditor.py:756
 msgid "Multi-Bouquet is not enabled!"
-msgstr "Luba mitme nimekirja kasutus!"
+msgstr "لم يتم تمكين الباقة المتعددة!"
 
 #: ../plugin/controllers/i18n.py:175
 msgid "MultiEPG"
-msgstr "MultiEPG"
+msgstr "دليل البرامج الإلكتروينة المتعدد"
 
 #: ../plugin/controllers/base.py:303
 #, fuzzy
 msgid "NCam Webinterface"
-msgstr "OSCam veebiliides"
+msgstr "واجهة إنترنت الاوسكام"
 
 #: ../plugin/controllers/i18n.py:176
 msgid "Name"
-msgstr "Nimi"
+msgstr "الاسم"
 
 #: ../plugin/controllers/i18n.py:433
 msgid "Name of the Bouquet"
-msgstr "Lemmiknimekirja nimi"
+msgstr "اسم الباقة"
 
 #: ../plugin/controllers/i18n.py:434
 msgid "Name of the Marker"
-msgstr "Märgise nimi"
+msgstr "اسم العلامة"
 
 #: ../plugin/controllers/i18n.py:177
 msgid "Namespace"
-msgstr "Nimeruum"
+msgstr "مسافة للاسم"
 
 #: ../plugin/controllers/i18n.py:178
 msgid "Network Interface"
-msgstr "Võrguliides"
+msgstr "واجهه الشبكة"
 
 #: ../plugin/controllers/i18n.py:471
 msgid "Network Shares"
-msgstr "Võrgujaod"
+msgstr "مشاركات الشبكة"
 
 #: ../plugin/controllers/i18n.py:336 ../plugin/controllers/i18n.py:407
 msgid "Never"
-msgstr "Mitte kunagi"
+msgstr "مطلقا"
 
 #: ../plugin/controllers/models/services.py:331
 msgid "New"
-msgstr "Uus"
+msgstr "جديد"
 
 #: ../plugin/controllers/i18n.py:252
 msgid "New Name"
-msgstr "Uus nimi"
+msgstr "اسم جديد"
 
 #: ../plugin/controllers/i18n.py:342
 msgid "No"
-msgstr "Ei"
+msgstr "لا"
 
 #: ../plugin/controllers/BouquetEditor.py:524
 msgid "No Parent Control Setup Pin given!"
-msgstr "Lapseluku PIN sisestamata!"
+msgstr "لا يوجد تحكم على الرقابة الأبوية وضبط كلمة مرور معينة!"
 
 #: ../plugin/controllers/models/message.py:46
 msgid "No answer in time"
-msgstr "Ajavaru piires vastus puudub"
+msgstr "لا جواب في الوقت المناسب"
 
 #: ../plugin/controllers/BouquetEditor.py:224
 #: ../plugin/controllers/BouquetEditor.py:254
@@ -1142,43 +1143,43 @@ msgstr "Ajavaru piires vastus puudub"
 #: ../plugin/controllers/BouquetEditor.py:324
 #: ../plugin/controllers/BouquetEditor.py:474
 msgid "No bouquet given!"
-msgstr "Lemmiknimekiri andmata!"
+msgstr "لا يوجد باقة!"
 
 #: ../plugin/controllers/BouquetEditor.py:92
 #: ../plugin/controllers/BouquetEditor.py:153
 #: ../plugin/controllers/BouquetEditor.py:199
 msgid "No bouquet name given!"
-msgstr "Lemmiknimekirjal puudub nimi!"
+msgstr "لا يوجد أسم باقة!"
 
 #: ../plugin/controllers/BouquetEditor.py:419
 msgid "No current service given!"
-msgstr "Aktiivne kanal andmata!"
+msgstr "لا يوجد قناة حالية متاحة!"
 
 #: ../plugin/controllers/models/timers.py:407
 msgid "No event found! Not recording!"
-msgstr "Saadet ei leitud! Ei salvestata!"
+msgstr "لم يتم العثور على الحدث! لا يوجد تسجيل!"
 
 #: ../plugin/controllers/BouquetEditor.py:331
 msgid "No marker-name given!"
-msgstr "Märgise nimi andmata!"
+msgstr "لا يوجد أسم علامة معينة!"
 
 #: ../plugin/controllers/models/timers.py:330
 #: ../plugin/controllers/models/timers.py:375
 msgid "No matching Timer found"
-msgstr "Taimeri vastet ei leitud"
+msgstr "لم يتم العثور على مؤقت متطابق"
 
 #: ../plugin/controllers/BouquetEditor.py:364
 msgid "No new servicename given!"
-msgstr "Uue kanali nimi andmata!"
+msgstr "لم يتم ذكر أسم القناة الجديد!"
 
 #: ../plugin/controllers/BouquetEditor.py:209
 #: ../plugin/controllers/BouquetEditor.py:266
 msgid "No position given!"
-msgstr "Asukoht andmata!"
+msgstr "لا يوجد موقع معين!"
 
 #: ../plugin/controllers/BouquetEditor.py:137
 msgid "No provider given!"
-msgstr "Levitaja nimi puudub!"
+msgstr "لا يوجد مزود قناة!"
 
 #: ../plugin/controllers/BouquetEditor.py:230
 #: ../plugin/controllers/BouquetEditor.py:260
@@ -1188,96 +1189,96 @@ msgstr "Levitaja nimi puudub!"
 #: ../plugin/controllers/BouquetEditor.py:480
 #: ../plugin/controllers/BouquetEditor.py:517
 msgid "No service given!"
-msgstr "Kanal andmata!"
+msgstr "لا توجد قناة معينة!"
 
 #: ../plugin/controllers/i18n.py:483
 msgid "No, cancel"
-msgstr "Ei, katkesta"
+msgstr "لا ، الغ"
 
 #: ../plugin/controllers/i18n.py:387
 msgid "None"
-msgstr "Pole"
+msgstr "لاشيئ"
 
 #: ../plugin/controllers/i18n.py:319
 msgid "Not after"
-msgstr "Mitte pärast"
+msgstr "ليس بعد"
 
 #: ../plugin/controllers/i18n.py:320
 msgid "Not before"
-msgstr "Mitte enne"
+msgstr "ليس قبل"
 
 #: ../plugin/controllers/i18n.py:181
 msgid "Nothing"
-msgstr "Mitte midagi"
+msgstr "لا شئ"
 
 #: ../plugin/controllers/i18n.py:182
 msgid "Nothing playing."
-msgstr "Midagi ei esitata."
+msgstr "لا شيء مشغل."
 
 #: ../plugin/controllers/i18n.py:382
 msgid "Notify if Conflict"
-msgstr "Vastuolu korral teavitamine"
+msgstr "أبلغ عن التعارض"
 
 #: ../plugin/controllers/i18n.py:383
 msgid "Notify if Similar"
-msgstr "Sarnastest teavitamine"
+msgstr "أبلغ عن المماثل"
 
 #: ../plugin/controllers/i18n.py:70
 msgid "November"
-msgstr "November"
+msgstr "نوفمبر"
 
 #: ../plugin/controllers/i18n.py:183
 msgid "Now"
-msgstr "Hetkel"
+msgstr "الان"
 
 #: ../plugin/controllers/i18n.py:184
 #, fuzzy
 msgid "OE version"
-msgstr "E2 versioon"
+msgstr "إصدار تشغيل الواجهة"
 
 #: ../plugin/controllers/base.py:301
 msgid "OSCam Webinterface"
-msgstr "OSCam veebiliides"
+msgstr "واجهة إنترنت الاوسكام"
 
 #: ../plugin/controllers/i18n.py:190
 msgid "OSD"
-msgstr "OSD"
+msgstr "شاشة العرض"
 
 #: ../plugin/controllers/i18n.py:69
 msgid "October"
-msgstr "Oktoober"
+msgstr "أكتوبر"
 
 #: ../plugin/controllers/i18n.py:323
 msgid "Offset after recording (in m)"
-msgstr "Salvestuse lõppu lisatakse (min)"
+msgstr "تعطيل بعد التسجيل (في دقيقة)"
 
 #: ../plugin/controllers/i18n.py:322
 msgid "Offset before recording (in m)"
-msgstr "Salvestuse algusesse lisatakse (min)"
+msgstr "تعطيل قبل التسجيل (في دقيقة)"
 
 #: ../plugin/controllers/i18n.py:185
 msgid "On"
-msgstr "Sees"
+msgstr "تشغيل"
 
 #: ../plugin/controllers/i18n.py:344
 msgid "On any service"
-msgstr "Igal kanalil"
+msgstr "على أى خدمة"
 
 #: ../plugin/controllers/i18n.py:343
 msgid "On same service"
-msgstr "Samal kanalil"
+msgstr "على نفس الخدمة"
 
 #: ../plugin/controllers/i18n.py:447
 msgid "Onid"
-msgstr "Onid"
+msgstr "معرف الشبكة الاصلي"
 
 #: ../plugin/controllers/i18n.py:315
 msgid "Only match during timespan"
-msgstr "Vaste ainult ajaaknas"
+msgstr "تطابق اثناء المدى الزمني فقط"
 
 #: ../plugin/controllers/i18n.py:186
 msgid "Open Source Web Interface for Linux set-top box"
-msgstr "Veebiliides linux vastuvõtjale"
+msgstr "واجهة الانترنت بمصدر مفتوح لضبط جهاز اللينكس"
 
 #: ../plugin/controllers/i18n.py:277
 msgid "Open Vision module"
@@ -1290,117 +1291,117 @@ msgstr ""
 #: ../plugin/controllers/i18n.py:279
 #, fuzzy
 msgid "Open Vision version"
-msgstr "E2 versioon"
+msgstr "إصدار تشغيل الواجهة"
 
 #: ../plugin/controllers/i18n.py:191
 msgid "Open in new window"
-msgstr "Ava uues aknas"
+msgstr "فتح في نافذة جديد"
 
 #: ../plugin/plugin.py:129
 msgid "OpenWebInterface Enabled"
-msgstr "Luba OpenWebIf"
+msgstr "تميكن فتح واجهة المستخدم"
 
 #: ../plugin/controllers/i18n.py:458
 msgid "OpenWebif Browser Settings"
-msgstr "OpenWebif brauseri seaded"
+msgstr "إعدادات متصفح الإنترنت المفتوح"
 
 #: ../plugin/plugin.py:161 ../plugin/plugin.py:226 ../plugin/plugin.py:228
 msgid "OpenWebif Configuration"
-msgstr "Veebiliidese seaded"
+msgstr "تكوين فتح واجهة إستخدام الويب"
 
 #: ../plugin/controllers/i18n.py:459
 msgid "OpenWebif Settings"
-msgstr "OpenWebif seaded"
+msgstr "إعدادات الإنترنت المفتوح"
 
 #: ../plugin/plugin.py:115
 msgid "OpenWebif url: http://yourip:port"
-msgstr "OpenWebif url: http://sinu_ip:port"
+msgstr "رابط الإنترنت المفتوح: http://yourip:port"
 
 #: ../plugin/controllers/i18n.py:450
 #: ../plugin/controllers/models/services.py:225
 msgid "Orbital Position"
-msgstr "Orbitaalpositsioon"
+msgstr "الموقع المداري"
 
 #: ../plugin/controllers/i18n.py:314
 msgid "Override found with alternative service"
-msgstr "Eelista asenduskanalit"
+msgstr "وجود تجاوز مع الخدمة بديلة"
 
 #: ../plugin/controllers/i18n.py:480
 msgid "Packages"
-msgstr "Paketid"
+msgstr "الباقات"
 
 #: ../plugin/controllers/BouquetEditor.py:528
 #: ../plugin/controllers/BouquetEditor.py:530
 msgid "Parent Control Setup Pin is wrong!"
-msgstr "Lapseluku PIN on vale!"
+msgstr "ضبط كلمة المرور للرقابة الأبوية غير صحيح!"
 
 #: ../plugin/controllers/BouquetEditor.py:511
 msgid "Parent Control is not activated."
-msgstr "Lapselukk ei ole sees."
+msgstr "لم يتم تنشيط الرقابة الأبوية."
 
 #: ../plugin/controllers/i18n.py:366
 msgid "Parse"
-msgstr "Analüüs"
+msgstr "تحليل"
 
 #: ../plugin/controllers/i18n.py:405
 msgid "Parse Autotimer"
-msgstr "Otsi vasteid Autotaimerist"
+msgstr "تحليل المؤقت التلقائي"
 
 #: ../plugin/controllers/i18n.py:445
 msgid "Pcrpid"
-msgstr "Pcrpid"
+msgstr "معرف البي سي ار"
 
 #: ../plugin/controllers/i18n.py:192
 msgid "PiP"
-msgstr "PiP"
+msgstr "خاصية قناة داخل قناة"
 
 #: ../plugin/controllers/i18n.py:413
 msgid "Picture in Picture"
-msgstr "Pilt pildis"
+msgstr "صورة داخل صورة"
 
 #: ../plugin/controllers/i18n.py:414
 msgid "Picture in Picture (hidden)"
-msgstr "PiP (varjatud)"
+msgstr "قناة داخل داخل (مخفي)"
 
 #: ../plugin/controllers/i18n.py:391
 msgid "Plain"
-msgstr "Tavaline"
+msgstr "واضح"
 
 #: ../plugin/controllers/i18n.py:193
 msgid "Playback"
-msgstr "Taasesitus"
+msgstr "تشغيل"
 
 #: ../plugin/controllers/i18n.py:194
 msgid "Playlist"
-msgstr "Pleilist"
+msgstr "قائمة التشغيل"
 
 #: ../plugin/controllers/i18n.py:437
 msgid "Please enter filename"
-msgstr "Sisesta failinimi"
+msgstr "الرجاء إدخال اسم الملف"
 
 #: ../plugin/controllers/i18n.py:442
 msgid "Pmtpid"
-msgstr "Pmtpid"
+msgstr "معرف البي أم تي"
 
 #: ../plugin/controllers/i18n.py:195
 msgid "Power Control"
-msgstr "Seiskamine"
+msgstr "التحكم في الطاقة"
 
 #: ../plugin/controllers/models/timers.py:596
 msgid "PowerTimer feature not available"
-msgstr "Toitetaimeri võimalus puudub"
+msgstr "ميزة مؤقت الأغلاق غير متوفرة"
 
 #: ../plugin/controllers/i18n.py:473
 msgid "Primetimes"
-msgstr "Tippajad"
+msgstr "الأوقات الرئيسية"
 
 #: ../plugin/controllers/i18n.py:196
 msgid "Provider"
-msgstr "Levitaja"
+msgstr "مزود"
 
 #: ../plugin/controllers/i18n.py:197
 msgid "Providers"
-msgstr "Levitajad"
+msgstr "مزودي القنوات"
 
 #: ../plugin/controllers/i18n.py:198
 msgid "Python"
@@ -1408,114 +1409,114 @@ msgstr ""
 
 #: ../plugin/controllers/i18n.py:199
 msgid "Radio"
-msgstr "Raadio"
+msgstr "القنوات الاذاعية"
 
 #: ../plugin/controllers/i18n.py:110
 msgid "Really delete the recording"
-msgstr "Kas kustutada salvestis"
+msgstr "حقا حذف التسجيل"
 
 #: ../plugin/controllers/i18n.py:112
 msgid "Really delete the timer"
-msgstr "Kas kustutada taimer"
+msgstr "حقا تريد حذف المؤقت"
 
 #: ../plugin/controllers/i18n.py:207
 msgid "Really rename the recording"
-msgstr "Kas nimetada salvestis ümber"
+msgstr "حقا تريد إعادة تسمية التسجيل"
 
 #: ../plugin/controllers/i18n.py:160
 #, fuzzy
 msgid "Really start instant record now?"
-msgstr "Salvesta kohe"
+msgstr "تشغيل التسجل الفوري"
 
 #: ../plugin/controllers/i18n.py:200
 #, fuzzy
 msgid "Reboot STB"
-msgstr "Taaskäivitus"
+msgstr "إعادة تشغيل الجهاز"
 
 #: ../plugin/controllers/i18n.py:334
 msgid "Record a maximum of x times"
-msgstr "Salvesta maksimaalselt x korda"
+msgstr "تسجيل كحد أقصى من المرات"
 
 #: ../plugin/controllers/i18n.py:441
 msgid "Record+ZAP"
-msgstr "Salvestus+kanalivahetus"
+msgstr "سجل+أنتقل"
 
 #: ../plugin/controllers/i18n.py:201
 msgid "Recording Status"
-msgstr "Salvestamine"
+msgstr "حاله التسجيل"
 
 #: ../plugin/controllers/i18n.py:202 ../plugin/controllers/i18n.py:386
 msgid "Refresh"
-msgstr "Värskenda"
+msgstr "تحديث"
 
 #: ../plugin/controllers/i18n.py:204
 msgid "Refresh Timer"
-msgstr "Värskenda taimer"
+msgstr "تحديث المؤقت"
 
 #: ../plugin/controllers/i18n.py:203
 msgid "Refresh automatically every"
-msgstr "Automaatne värskendus iga"
+msgstr "تحديث الكل تلقائي"
 
 #: ../plugin/controllers/i18n.py:418
 msgid "Refresh now"
-msgstr "Värskenda kohe"
+msgstr "التحديث الآن"
 
 #: ../plugin/controllers/i18n.py:364 ../plugin/controllers/i18n.py:416
 #: ../plugin/controllers/i18n.py:424
 msgid "Reload"
-msgstr "Värskenda"
+msgstr "إعادة تحميل"
 
 #: ../plugin/controllers/i18n.py:205
 msgid "Remote"
-msgstr "Pult"
+msgstr "ريموت التحكم عن بعد"
 
 #: ../plugin/controllers/i18n.py:492
 msgid "Remove Package"
-msgstr "Eemalda pakett"
+msgstr "بسته را حذف کنید"
 
 #: ../plugin/controllers/i18n.py:430
 msgid "Rename"
-msgstr "Nimeta ümber"
+msgstr "إعادة التسميه"
 
 #: ../plugin/controllers/i18n.py:426
 msgid "Rename Bouquet"
-msgstr "Nimeta lemmiknimekiri ümber"
+msgstr "أعاده تسمية الباقة"
 
 #: ../plugin/controllers/i18n.py:206
 msgid "Rename Recording"
-msgstr "Nimeta salvestis ümber"
+msgstr "أعاده تسمية التسجيل"
 
 #: ../plugin/controllers/i18n.py:208
 msgid "Repeated"
-msgstr "Korduv"
+msgstr "مكرر"
 
 #: ../plugin/plugin.py:143
 msgid "Require client cert for HTTPS"
-msgstr "HTTPS nõuab kliendi serti"
+msgstr "يتطلب شهادة العميل لصيغة تشفير الصفحة المحمية"
 
 #: ../plugin/controllers/i18n.py:341
 msgid "Require description to be unique"
-msgstr "Nõua täpselt vastavat sisukirjeldust"
+msgstr "يحتاج وصف ليكون فريدا من نوعه"
 
 #: ../plugin/controllers/i18n.py:340
 msgid "Reset count"
-msgstr "Lähtesta arvestus"
+msgstr "إعادة تعيين العد"
 
 #: ../plugin/controllers/i18n.py:209
 msgid "Restart GUI"
-msgstr "E2 taaskäivitus"
+msgstr "إعادة تشغيل الاينجما"
 
 #: ../plugin/controllers/i18n.py:134
 msgid "Restrict to Bouquets"
-msgstr "Ainult kindlas nimekirjas"
+msgstr "حصر الباقات"
 
 #: ../plugin/controllers/i18n.py:318
 msgid "Restrict to events on certain dates"
-msgstr "Ainult kindlal kuupäeval"
+msgstr "تقييد للأحداث في تواريخ معينة"
 
 #: ../plugin/controllers/i18n.py:292
 msgid "Root"
-msgstr "Juur"
+msgstr "الجذر"
 
 #: ../plugin/controllers/models/info.py:48
 msgid "SLAAC"
@@ -1523,650 +1524,650 @@ msgstr "SLAAC"
 
 #: ../plugin/controllers/i18n.py:233
 msgid "SNR"
-msgstr "SNR"
+msgstr "جودة الإشارة"
 
 #: ../plugin/controllers/i18n.py:504
 msgid "START TYPING"
-msgstr "KIRJUTA SIIA"
+msgstr "أبدا الكتابة"
 
 #: ../plugin/controllers/i18n.py:88
 #, fuzzy
 msgid "STB"
-msgstr "TB"
+msgstr "تيرابايت"
 
 #: ../plugin/controllers/i18n.py:89
 #, fuzzy
 msgid "STB Control"
-msgstr "Vastuvõtja juhtimine"
+msgstr "التحكم بالجهاز"
 
 #: ../plugin/controllers/i18n.py:87
 #, fuzzy
 msgid "STB Info"
-msgstr "Vastuvõtja andmed"
+msgstr "معلومات الجهاز"
 
 #: ../plugin/controllers/i18n.py:90
 #, fuzzy
 msgid "STB Uptime"
-msgstr "Vastuvõtja tööaeg"
+msgstr "مدة تشغيل الجهاز"
 
 #: ../plugin/controllers/i18n.py:41
 msgid "Sa"
-msgstr "L"
+msgstr "سبت"
 
 #: ../plugin/controllers/i18n.py:211
 msgid "Safe mode"
-msgstr "Turberežiim"
+msgstr "الوضع الأمن"
 
 #: ../plugin/controllers/i18n.py:50
 msgid "Sat"
-msgstr "L"
+msgstr "السبت"
 
 #: ../plugin/controllers/i18n.py:212
 msgid "Satellites"
-msgstr "Satelliidid"
+msgstr "أقمار صناعية"
 
 #: ../plugin/controllers/i18n.py:213
 msgid "Satfinder"
-msgstr "Signaalimõõdik"
+msgstr "الباحث عن الأقمار"
 
 #: ../plugin/controllers/i18n.py:57
 msgid "Saturday"
-msgstr "Laupäev"
+msgstr "السبت"
 
 #: ../plugin/plugin.py:114 ../plugin/controllers/i18n.py:214
 #: ../plugin/controllers/i18n.py:365 ../plugin/controllers/i18n.py:417
 msgid "Save"
-msgstr "Salvesta"
+msgstr "Save"
 
 #: ../plugin/controllers/i18n.py:215
 msgid "Screenshot"
-msgstr "Ekraanipilt"
+msgstr "لقطة الشاشة"
 
 #: ../plugin/controllers/i18n.py:216 ../plugin/controllers/i18n.py:423
 msgid "Search"
-msgstr "Otsi"
+msgstr "بحث"
 
 #: ../plugin/controllers/i18n.py:217
 msgid "Search CSFD"
-msgstr "CSFD otsing"
+msgstr "البحث في بيانات الأفلام التشيكية والسلوفاكية"
 
 #: ../plugin/controllers/i18n.py:218
 msgid "Search IMDb"
-msgstr "IMDb otsing"
+msgstr "البحث في قاعدة بيانات معلومات الأفلام على الإنترنت"
 
 #: ../plugin/controllers/i18n.py:219
 msgid "Search KinoPoisk"
-msgstr "KinoPoisk otsing"
+msgstr "البحث عن كينو بويسك"
 
 #: ../plugin/controllers/i18n.py:308
 msgid "Search strictness"
-msgstr "Otsingu rangus"
+msgstr "دقة البحث"
 
 #: ../plugin/controllers/i18n.py:300
 msgid "Search type"
-msgstr "Otsingu tüüp"
+msgstr "نوع البحث"
 
 #: ../plugin/controllers/i18n.py:505
 msgid "Select IPK File for Upload"
-msgstr "Üleslaaditav IPK fail"
+msgstr "أختار ملف النظام المحمي لرفعه"
 
 #: ../plugin/controllers/i18n.py:221
 msgid "Send Message"
-msgstr "Saada sõnum"
+msgstr "إرسال رسالة"
 
 #: ../plugin/controllers/i18n.py:223
 msgid "Send a Message"
-msgstr "Saada sõnum"
+msgstr "إرسال رسالة"
 
 #: ../plugin/controllers/i18n.py:68
 msgid "September"
-msgstr "September"
+msgstr "سبتمبر"
 
 #: ../plugin/controllers/i18n.py:224
 msgid "Service"
-msgstr "Kanal"
+msgstr "قنوات"
 
 #: ../plugin/controllers/BouquetEditor.py:314
 #, python-format
 msgid "Service %s added."
-msgstr "Kanal '%s' lisatud."
+msgstr "القناة %s تم إضافتها."
 
 #: ../plugin/controllers/BouquetEditor.py:317
 #, python-format
 msgid "Service %s already exists in bouquet %s."
-msgstr "Kanal %s on lemmiknimekirjas %s juba olemas."
+msgstr "القناة %s موجودة بالفعل في الباقة %s."
 
 #: ../plugin/controllers/BouquetEditor.py:248
 #, python-format
 msgid "Service %s can not be removed."
-msgstr "Kanalit %s ei saa eemaldada."
+msgstr "القناة %s لا يمكن حذفها."
 
 #: ../plugin/controllers/BouquetEditor.py:545
 #, python-format
 msgid "Service %s is locked."
-msgstr "Kanal %s on lukustatud."
+msgstr "القناة %s تم إقفالها."
 
 #: ../plugin/controllers/BouquetEditor.py:553
 #, python-format
 msgid "Service %s is unlocked."
-msgstr "Kanali %s lukustus maas."
+msgstr "القناة %s غير مقفلة."
 
 #: ../plugin/controllers/BouquetEditor.py:273
 #, python-format
 msgid "Service %s moved."
-msgstr "Kanal %s liigutatud."
+msgstr "القناة %s تم تقلها."
 
 #: ../plugin/controllers/BouquetEditor.py:247
 #, python-format
 msgid "Service %s removed from bouquet %s."
-msgstr "Kanal %s eemaldati lemmiknimekirjast %s."
+msgstr "القناة %s تم حذفها من الباقة %s."
 
 #: ../plugin/controllers/BouquetEditor.py:239
 #, python-format
 msgid "Service %s removed."
-msgstr "Kanal %s eemaldatud."
+msgstr "القناة %s تم حذفها."
 
 #: ../plugin/controllers/BouquetEditor.py:274
 msgid "Service can not be moved."
-msgstr "Kanalit ei saa liigutada."
+msgstr "لا يمكن نقل الخدمة."
 
 #: ../plugin/controllers/BouquetEditor.py:405
 msgid "Service can not be renamed."
-msgstr "Kanalit ei saa ümber nimetada."
+msgstr "لا يمكن أعاده تسمية القناة."
 
 #: ../plugin/controllers/BouquetEditor.py:497
 msgid "Service is not an alternative."
-msgstr "See ei ole asenduskanal."
+msgstr "القناة ليس لها بديل."
 
 #: ../plugin/controllers/BouquetEditor.py:404
 msgid "Service renamed successfully."
-msgstr "Kanal nimetati ümber."
+msgstr "تمت أعاده تسميه القناة بنجاح."
 
 #: ../plugin/controllers/models/services.py:333
 msgid "Services"
-msgstr "Kanalid"
+msgstr "القنوات"
 
 #: ../plugin/controllers/i18n.py:324
 msgid "Set maximum duration"
-msgstr "Määra suurim kestus"
+msgstr "حدد أقصى مده"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
 #: ../plugin/controllers/base.py:269
 msgid "Settings"
-msgstr "Seaded"
+msgstr "إعدادات"
 
 #: ../plugin/controllers/i18n.py:230
 msgid "Show EPG for"
-msgstr "EPG kanalile"
+msgstr "عرض دليل البرامج الإلكترونية"
 
 #: ../plugin/controllers/i18n.py:228
 msgid "Show Full OpenWebif"
-msgstr "Kuva täielik OpenWebif"
+msgstr "عرض كامل لصفحة واجهة الانترنت مفتوحة"
 
 #: ../plugin/controllers/i18n.py:455
 msgid "Show Picon in channel list"
-msgstr "Kuva kanalinimekirjas pikonid"
+msgstr "عرض الايقونة في قائمة القنوات"
 
 #: ../plugin/controllers/i18n.py:187
 #, fuzzy
 msgid "Show STB name in header"
-msgstr "Kuva päises vastuvõtja nimi"
+msgstr "عرض أسم الجهاز في العنوان الرئيسي"
 
 #: ../plugin/controllers/i18n.py:511
 msgid "Show Service type in channel list"
-msgstr "Kuva edastusmoodus kanalinimekirjas"
+msgstr "عرض نوع القناة في قائمة القنوات"
 
 #: ../plugin/plugin.py:132
 msgid "Show box name in header"
-msgstr "Kuva päises vastuvõtja nimi"
+msgstr "عرض أسم الجهاز في العنوان الرئيسي"
 
 #: ../plugin/controllers/i18n.py:510
 msgid "Show details"
-msgstr "Kuva üksikasjad"
+msgstr "مشاهدة التفاصيل"
 
 #: ../plugin/controllers/i18n.py:229
 msgid "Show full remote"
-msgstr "Kuva  täielik pult"
+msgstr "عرض وحدة التحكم عن بعد بشكل كامل"
 
 #: ../plugin/controllers/i18n.py:379
 msgid "Show in Extensionsmenu"
-msgstr "Kuva laienduste menüüs"
+msgstr "عرض في قائمة الملحقات"
 
 #: ../plugin/controllers/i18n.py:231
 msgid "Shutdown"
-msgstr "Seiska"
+msgstr "إغلاق"
 
 #: ../plugin/controllers/i18n.py:448
 msgid "Sid"
-msgstr "Sid"
+msgstr "معرف القناة"
 
 #: ../plugin/controllers/i18n.py:367
 msgid "Simulate"
-msgstr "Matki"
+msgstr "يتظاهر"
 
 #: ../plugin/controllers/i18n.py:232
 msgid "Site and sources"
-msgstr "Lähtekood"
+msgstr "الموقع والمصادر"
 
 #: ../plugin/controllers/models/timers.py:674
 #: ../plugin/controllers/models/timers.py:701
 #: ../plugin/controllers/models/timers.py:730
 #: ../plugin/controllers/models/timers.py:811
 msgid "SleepTimer error"
-msgstr "Unetaimeri viga"
+msgstr "خطاء مؤقت النوم"
 
 #: ../plugin/controllers/models/timers.py:719
 #: ../plugin/controllers/models/timers.py:788
 #: ../plugin/controllers/models/timers.py:806
 msgid "Sleeptimer has been disabled"
-msgstr "Unetaimer keelati"
+msgstr "تم تعطيل مؤقت النوم"
 
 #: ../plugin/controllers/models/timers.py:669
 #: ../plugin/controllers/models/timers.py:695
 msgid "Sleeptimer is disabled"
-msgstr "Unetaimer keelati"
+msgstr "تم تعطيل مؤقت النوم"
 
 #: ../plugin/controllers/models/timers.py:669
 #: ../plugin/controllers/models/timers.py:695
 msgid "Sleeptimer is enabled"
-msgstr "Unetaimer lubati"
+msgstr "تم تفعيل مؤقت النوم"
 
 #: ../plugin/controllers/models/timers.py:725
 #: ../plugin/controllers/models/timers.py:788
 #: ../plugin/controllers/models/timers.py:801
 #, python-format
 msgid "Sleeptimer set to %d minutes"
-msgstr "Unetaimer määratud %d minutile"
+msgstr "ضبط مؤقت النوم %d بالدقائق"
 
 #: ../plugin/controllers/i18n.py:234
 msgid "Software"
-msgstr "Tarkvara"
+msgstr "البرامج"
 
 #: ../plugin/controllers/i18n.py:180
 msgid "Sorry this page is not yet implemented"
-msgstr "See leht ei ole veel kasutuses"
+msgstr "عذرا لم يتم تنفيذ هذه الصفحة بعد"
 
 #: ../plugin/controllers/i18n.py:461
 msgid "Spinner"
-msgstr "Spinner"
+msgstr "الغزال"
 
 #: ../plugin/controllers/i18n.py:449
 msgid "Sref"
-msgstr "Sref"
+msgstr "مرجع القناة"
 
 #: ../plugin/controllers/i18n.py:235
 msgid "Standby"
-msgstr "Ooteseisund"
+msgstr "وضع الإستعداد"
 
 #: ../plugin/controllers/i18n.py:236
 msgid "Standby Toggle"
-msgstr "Toitelüliti"
+msgstr "تبديل الاستعداد"
 
 #: ../plugin/controllers/i18n.py:127
 msgid "Start"
-msgstr "Käivita"
+msgstr "تشغيل"
 
 #: ../plugin/controllers/i18n.py:239
 msgid "Start Instant Record"
-msgstr "Salvesta kohe"
+msgstr "تشغيل التسجل الفوري"
 
 #: ../plugin/controllers/i18n.py:238
 msgid "Start time is after end time"
-msgstr "Algusaeg on lõpuajast hilisem"
+msgstr "تشغيل الوقت هو بعد انتهاء الوقت"
 
 #: ../plugin/controllers/i18n.py:240
 msgid "Stream"
-msgstr "Voogesitus"
+msgstr "‫Stream"
 
 #: ../plugin/controllers/i18n.py:42
 msgid "Su"
-msgstr "P"
+msgstr "الأحد"
 
 #: ../plugin/controllers/i18n.py:241
 msgid "Subnet mask"
-msgstr "Alamvõrgu mask"
+msgstr "قناع الشبكة الفرعية"
 
 #: ../plugin/controllers/i18n.py:242
 msgid "Subservices"
-msgstr "Alamkanalid"
+msgstr "القنوات الفرعية"
 
 #: ../plugin/controllers/i18n.py:44
 msgid "Sun"
-msgstr "P"
+msgstr "الاحد"
 
 #: ../plugin/controllers/i18n.py:58
 msgid "Sunday"
-msgstr "Pühapäev"
+msgstr "الاحد"
 
 #: ../plugin/controllers/models/info.py:311
 #: ../plugin/controllers/models/info.py:323
 #: ../plugin/controllers/models/info.py:325
 msgid "TB"
-msgstr "TB"
+msgstr "تيرابايت"
 
 #: ../plugin/controllers/i18n.py:268
 msgid "TV"
-msgstr "TV"
+msgstr "التلفزيون"
 
 #: ../plugin/controllers/i18n.py:465
 msgid "TV Guide"
-msgstr "Telekava"
+msgstr "دليل التلفزيون"
 
 #: ../plugin/controllers/i18n.py:269
 msgid "TV Multi EPG"
-msgstr "TV Multi EPG"
+msgstr "دليل البرامج الإلكترونية المتعدد"
 
 #: ../plugin/controllers/i18n.py:243 ../plugin/controllers/i18n.py:347
 msgid "Tags"
-msgstr "Sildid"
+msgstr "علامات"
 
 #: ../plugin/controllers/i18n.py:244
 msgid "Teletext"
-msgstr "Teletekst"
+msgstr "النص التليفزيوني"
 
 #: ../plugin/controllers/i18n.py:245
 msgid "Television"
-msgstr "Televisioon"
+msgstr "التلفزيون"
 
 #: ../plugin/controllers/i18n.py:246
 msgid "Template Engine"
-msgstr "Malli mootor"
+msgstr "قالب الانجما"
 
 #: ../plugin/controllers/base.py:334
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "محطة"
 
 #: ../plugin/controllers/models/services.py:340
 msgid "Terrestrial"
-msgstr "Maapealne"
+msgstr "أرضي"
 
 #: ../plugin/controllers/i18n.py:247
 msgid "Text"
-msgstr "Tekst"
+msgstr "النصوص"
 
 #: ../plugin/controllers/i18n.py:39
 msgid "Th"
-msgstr "N"
+msgstr "خميس"
 
 #: ../plugin/controllers/web.py:73
 #, python-format
 msgid "The parameter '%s' can't be empty"
-msgstr "Parameeter '%s' ei tohi olla tühi"
+msgstr "المؤشر '%s' لا يمكن أن يكون فارغا"
 
 #: ../plugin/controllers/web.py:322
 msgid "The parameter 'command' must be a number"
-msgstr "Parameeter 'käsk' peab olema number"
+msgstr "مؤشر 'الأمر' يجب أن يكون رقما"
 
 #: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "The timer '%s' has been %s successfully"
-msgstr "Taimer '%s' on edukalt %s"
+msgstr "إكتمال '%s' المؤقت %s بنجاح"
 
 #: ../plugin/controllers/models/timers.py:325
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
-msgstr "Taimer '%s' kustutati edukalt"
+msgstr "تم حذف المؤقت' %s ' بنجاح"
 
 #: ../plugin/controllers/models/timers.py:361
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
-msgstr "Taimer '%s' on nüüd salvestav! Mitte keelatud!"
+msgstr "المؤقت '%s' الأن يسجل! ليس معطلا!"
 
 #: ../plugin/controllers/i18n.py:460
 msgid "Theme"
-msgstr "Kujundus"
+msgstr "سمة"
 
 #: ../plugin/controllers/BouquetEditor.py:318
 msgid "This service can not be added."
-msgstr "Seda kanalit ei saa lisada."
+msgstr "لا يمكن إضافة هذه القناة."
 
 #: ../plugin/controllers/i18n.py:48
 msgid "Thu"
-msgstr "N"
+msgstr "الخميس"
 
 #: ../plugin/controllers/i18n.py:55
 msgid "Thursday"
-msgstr "Neljapäev"
+msgstr "الخميس"
 
 #: ../plugin/controllers/i18n.py:248
 msgid "Time"
-msgstr "Aeg"
+msgstr "الوقت"
 
 #: ../plugin/controllers/i18n.py:466
 msgid "Timeline"
-msgstr "Ajakava"
+msgstr "الجدول الزمني"
 
 #: ../plugin/controllers/i18n.py:249
 msgid "Timeout"
-msgstr "Ajapiirang"
+msgstr "نفذ الوقت"
 
 #: ../plugin/controllers/i18n.py:254
 msgid "Timer"
-msgstr "Taimer"
+msgstr "المؤقت"
 
 #: ../plugin/controllers/models/timers.py:201
 #, python-format
 msgid "Timer '%s' added"
-msgstr "Taimer '%s' lisatud"
+msgstr "تمت إضافة '%s' المؤقت"
 
 #: ../plugin/controllers/models/timers.py:355
 #, python-format
 msgid "Timer '%s' already exists!"
-msgstr "Taimer '%s' on juba olemas!"
+msgstr "المؤقت ' %s ' موجود بالفعل!"
 
 #: ../plugin/controllers/models/timers.py:287
 #, python-format
 msgid "Timer '%s' changed"
-msgstr "Taimerit '%s' muudeti"
+msgstr "تم تغيير '%s' المؤقت"
 
 #: ../plugin/controllers/models/timers.py:349
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
-msgstr "Taimerit '%s' ei lubatud vastuolu tõttu"
+msgstr "لم يتم تمكين المؤقت ' %s ' اثناء التعارض"
 
 #: ../plugin/controllers/models/timers.py:306
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
-msgstr "Taimerit '%s' ei salvestatud vastuolu tõttu"
+msgstr "لم يتم حفظ المؤقت ' %s ' اثناء التعارض"
 
 #: ../plugin/controllers/i18n.py:453
 msgid "Timer Added"
-msgstr "Taimer lisatud"
+msgstr "وأضاف المؤقت"
 
 #: ../plugin/controllers/i18n.py:250
 msgid "Timer added"
-msgstr "Taimer lisatud"
+msgstr "وأضاف المؤقت"
 
 #: ../plugin/controllers/models/timers.py:441
 msgid "Timer conflict detected! Not recording!"
-msgstr "Taimerite ajad kattuvad! Ei salvestata!"
+msgstr "الكشف عن المؤقت المتعارض! بدون تسجيل!"
 
 #: ../plugin/controllers/i18n.py:311
 msgid "Timer type"
-msgstr "Taimeri tüüp"
+msgstr "نوع المؤقت"
 
 #: ../plugin/controllers/models/timers.py:391
 msgid "TimerList has been saved"
-msgstr "Taimerinimekiri salvestati"
+msgstr "تم حفظ قائمة المؤقت"
 
 #: ../plugin/controllers/i18n.py:251
 msgid "Timerlist"
-msgstr "Taimeriloend"
+msgstr "قائمة المؤقت"
 
 #: ../plugin/controllers/i18n.py:255 ../plugin/controllers/i18n.py:368
 msgid "Timers"
-msgstr "Taimerid"
+msgstr "المؤقتات"
 
 #: ../plugin/controllers/i18n.py:256
 msgid "Title"
-msgstr "Nimi"
+msgstr "عنوان"
 
 #: ../plugin/controllers/i18n.py:259
 msgid "Transcode"
-msgstr "Transkodeeri"
+msgstr "تحويل الترميز"
 
 #: ../plugin/controllers/i18n.py:290
 msgid "Translation to Spanish"
-msgstr "Hispaaniakeelne tõlge"
+msgstr "الترجمة إلى الاسبانية"
 
 #: ../plugin/controllers/i18n.py:377
 msgid "Try Guessing"
-msgstr "Ürita pakkuda"
+msgstr "محاولة التخمين"
 
 #: ../plugin/controllers/i18n.py:446
 msgid "Tsid"
-msgstr "Tsid"
+msgstr "إرسال معرف المحطة"
 
 #: ../plugin/controllers/i18n.py:37
 msgid "Tu"
-msgstr "T"
+msgstr "الثلاثاء"
 
 #: ../plugin/controllers/i18n.py:46
 msgid "Tue"
-msgstr "T"
+msgstr "الثلاثاء"
 
 #: ../plugin/controllers/i18n.py:53
 msgid "Tuesday"
-msgstr "Teisipäev"
+msgstr "الثلاثاء"
 
 #: ../plugin/controllers/i18n.py:260
 msgid "Tuner Bit Error Rate BER"
-msgstr "Signaali bitiveategur BER"
+msgstr "معدل خطاء المؤالف بالبت"
 
 #: ../plugin/controllers/i18n.py:261
 msgid "Tuner Number"
-msgstr "Tuuneri number"
+msgstr "رقم المؤالف"
 
 #: ../plugin/controllers/i18n.py:262
 msgid "Tuner Signal"
-msgstr "Tuuneri signaal"
+msgstr "إشارة المؤالف"
 
 #: ../plugin/controllers/i18n.py:265
 msgid "Tuner Signal Power AGC"
-msgstr "Signaali tugevus AGC"
+msgstr "مؤالف قوة الاشارة"
 
 #: ../plugin/controllers/i18n.py:263
 msgid "Tuner Signal Quality SNR"
-msgstr "Signaali kvaliteet SNR"
+msgstr "مؤالف جودة الإشارة"
 
 #: ../plugin/controllers/i18n.py:264
 msgid "Tuner Signal Quality SNR_DB"
-msgstr "Signaali kvaliteet SNR_DB"
+msgstr "مؤالف جودة الإشارة بالديسيبل"
 
 #: ../plugin/controllers/i18n.py:266
 msgid "Tuner Type"
-msgstr "Tuuneri tüüp"
+msgstr "نوع المؤالف"
 
 #: ../plugin/controllers/i18n.py:267
 msgid "Tuners"
-msgstr "Tuunerid"
+msgstr "مؤالفات"
 
 #: ../plugin/controllers/i18n.py:270
 msgid "Type"
-msgstr "Tüüp"
+msgstr "النوع"
 
 #: ../plugin/controllers/web.py:228
 #, python-format
 msgid "Unknown Volume command %s"
-msgstr "Tundmatu helitugevuse käsk %s"
+msgstr "أمر الصوت مجهول %s"
 
 #: ../plugin/controllers/models/timers.py:536
 #, python-format
 msgid "Unknown command: '%s'"
-msgstr "Tundmatu käsk: '%s'"
+msgstr "أمر مجهول: ' %s '"
 
 #: ../plugin/controllers/i18n.py:271
 msgid "Upcoming Events"
-msgstr "Algavad saated"
+msgstr "الأحداث القادمة"
 
 #: ../plugin/controllers/i18n.py:495
 msgid "Update"
-msgstr "Uuendus"
+msgstr "التحديث"
 
 #: ../plugin/controllers/i18n.py:493
 msgid "Update Package"
-msgstr "Uuenda pakett"
+msgstr "تحديث الباقة"
 
 #: ../plugin/controllers/i18n.py:498
 msgid "Update from Feed"
-msgstr "Uuendus hoidlast"
+msgstr "تحديث من الفييد"
 
 #: ../plugin/controllers/i18n.py:499
 msgid "Upgrade all Packages"
-msgstr "Uuenda kõik paketid"
+msgstr "قم بترقية جميع الحزم"
 
 #: ../plugin/controllers/i18n.py:508
 msgid "Upload File Error"
-msgstr "Viga faili üleslaadimisel"
+msgstr "خطاء رفع الملف"
 
 #: ../plugin/controllers/i18n.py:507
 msgid "Upload package"
-msgstr "Paketi üleslaadimine"
+msgstr "آپلود بسته"
 
 #: ../plugin/controllers/i18n.py:506
 msgid "Uploaded Files"
-msgstr "Üleslaetud failid"
+msgstr "الملفات التي تم رفعها"
 
 #: ../plugin/controllers/i18n.py:346
 msgid "Use a custom location"
-msgstr "Kasuta kohandatud asukohta"
+msgstr "استخدام موقع مخصص"
 
 #: ../plugin/controllers/i18n.py:188
 #, fuzzy
 msgid "Use custom STB name"
-msgstr "Kasuta kohandatud vastuvõtja nime"
+msgstr "إستخدام مخصص لإسم الجهاز"
 
 #: ../plugin/plugin.py:134
 msgid "Use custom box name"
-msgstr "Kasuta kohandatud vastuvõtja nime"
+msgstr "إستخدام مخصص لإسم الجهاز"
 
 #: ../plugin/plugin.py:131 ../plugin/controllers/i18n.py:482
 msgid "Use new design"
-msgstr "Kasuta uut disaini"
+msgstr "استخدام التصميم الجديد"
 
 #: ../plugin/controllers/i18n.py:280
 msgid "VPS"
-msgstr "VPS"
+msgstr "الخادم الإفتراضي الخاص"
 
 #: ../plugin/controllers/models/timers.py:845
 msgid "VPS plugin not found"
-msgstr "VPS pluginat ei leitud"
+msgstr "لم يتم العثور على بلج أنز الخادم الإفتراضي الخاص"
 
 #: ../plugin/controllers/i18n.py:272
 msgid "Version"
-msgstr "Versioon"
+msgstr "الإصدار"
 
 #: ../plugin/controllers/i18n.py:273
 msgid "Video"
-msgstr "Video"
+msgstr "الفديو"
 
 #: ../plugin/controllers/i18n.py:274
 msgid "Video Height"
-msgstr "Pildi kõrgus"
+msgstr "ارتفاع الفيديو"
 
 #: ../plugin/controllers/i18n.py:275
 msgid "Video Wide"
-msgstr "Pildi suurus"
+msgstr "فديو واسع"
 
 #: ../plugin/controllers/i18n.py:276
 msgid "Video Width"
-msgstr "Pildi laius"
+msgstr "فيديو عريض"
 
 #: ../plugin/controllers/i18n.py:412
 msgid "Visibly"
-msgstr "Nähtavalt"
+msgstr "واضح"
 
 #: ../plugin/controllers/i18n.py:281
 msgid "Volume"
-msgstr "Helitugevus"
+msgstr "درجه الصوت"
 
 #: ../plugin/controllers/i18n.py:282
 msgid "Volume Control"
-msgstr "Helitugevus"
+msgstr "التحكم في مستوي الصوت"
 
 #: ../plugin/controllers/i18n.py:444
 msgid "Vpid"
-msgstr "Vpid"
+msgstr "معرف الفديو"
 
 #: ../plugin/controllers/models/info.py:535
 msgid "W"
@@ -2174,191 +2175,191 @@ msgstr "W"
 
 #: ../plugin/controllers/i18n.py:222
 msgid "Waiting for answer ..."
-msgstr "Vastuse ootel..."
+msgstr "في انتظار الاجابه..."
 
 #: ../plugin/controllers/i18n.py:237
 msgid "Wake Up"
-msgstr "Käivitus"
+msgstr "استيقظ"
 
 #: ../plugin/controllers/i18n.py:403
 msgid "Wakeup"
-msgstr "Käivitus"
+msgstr "إستيقظ"
 
 #: ../plugin/controllers/i18n.py:284
 msgid "Warning"
-msgstr "Hoiatus"
+msgstr "تحذير"
 
 #: ../plugin/controllers/i18n.py:38
 msgid "We"
-msgstr "K"
+msgstr "الأربعاء"
 
 #: ../plugin/controllers/i18n.py:467
 msgid "Web TV"
-msgstr "Veebi TV"
+msgstr "التلفزيون عبر الانترنت"
 
 #: ../plugin/controllers/i18n.py:47
 msgid "Wed"
-msgstr "K"
+msgstr "الاربعاء"
 
 #: ../plugin/controllers/i18n.py:54
 msgid "Wednesday"
-msgstr "Kolmapäev"
+msgstr "الاربعاء"
 
 #: ../plugin/controllers/i18n.py:361
 msgid "Weekday"
-msgstr "Tööpäev"
+msgstr "ايام الاسبوع"
 
 #: ../plugin/controllers/i18n.py:360
 msgid "Weekend"
-msgstr "Nädalavahetus"
+msgstr "نهاية الاسبوع"
 
 #: ../plugin/controllers/i18n.py:339
 msgid "Weekly (Monday)"
-msgstr "Kord nädalas (esmaspäev)"
+msgstr "اسبوعيا (الاثنين)"
 
 #: ../plugin/controllers/i18n.py:338
 msgid "Weekly (Sunday)"
-msgstr "Kord nädalas (pühapäev)"
+msgstr "اسبوعيا (الاحد)"
 
 #: ../plugin/plugin.py:148
 msgid "Without auth only local access is allowed!"
-msgstr "Autentimata on lubatud ainult kohalik aadress!"
+msgstr "دون المصادقة يسمح فقط الوصول المحلي!"
 
 #: ../plugin/controllers/i18n.py:392
 msgid "Wizzard"
-msgstr "Abiline"
+msgstr "النافذة"
 
 #: ../plugin/controllers/web.py:223
 #, python-format
 msgid "Wrong parameter format 'set=%s'. Use set=set15 "
-msgstr "Vale parameetri vorming 'set=%s'. Kasuta set=set15 "
+msgstr "تنسيق المعلمة الخاطئ ' ضبط = %s '. استخدام مجموعه = ضبط15 "
 
 #: ../plugin/controllers/i18n.py:500
 msgid "Yes"
-msgstr "Jah"
+msgstr "نعم"
 
 #: ../plugin/controllers/i18n.py:484
 msgid "Yes, delete it"
-msgstr "Jah, kustuta see"
+msgstr "نعم، أحذفه"
 
 #: ../plugin/controllers/i18n.py:285
 msgid "Yes/No"
-msgstr "Jah/Ei"
+msgstr "نعم/لا"
 
 #: ../plugin/controllers/i18n.py:487
 msgid "You need to write something!"
-msgstr "Midagi tuleb kirjutada!"
+msgstr "يجب ان تكتب شيئا"
 
 #: ../plugin/controllers/i18n.py:286
 msgid "Zap"
-msgstr "Kanalivahetus"
+msgstr "التنقل"
 
 #: ../plugin/controllers/i18n.py:288
 msgid "Zap to"
-msgstr "Kanalile"
+msgstr "إنتقل إلى"
 
 #: ../plugin/controllers/i18n.py:289
 msgid "Zapped to"
-msgstr "Vahetatud kanalile"
+msgstr "الانتقال إلى"
 
 #: ../plugin/controllers/i18n.py:327
 msgid "auto"
-msgstr "auto"
+msgstr "تلقائي"
 
 #: ../plugin/controllers/i18n.py:310
 msgid "case-insensitive search"
-msgstr "tõusutundetu otsing"
+msgstr "البحث عن طريق الحروف الأبجدية"
 
 #: ../plugin/controllers/i18n.py:309
 msgid "case-sensitive search"
-msgstr "tõusutundlik otsing"
+msgstr "البحث عن طريق الحروف الأبجدية"
 
 #: ../plugin/controllers/i18n.py:303
 msgid "description match"
-msgstr "sisututvustuse vaste"
+msgstr "تطابق الوصف"
 
 #: ../plugin/controllers/i18n.py:116
 msgid "disabled"
-msgstr "keelatud"
+msgstr "تم التعطيل"
 
 #: ../plugin/controllers/i18n.py:328
 msgid "do nothing"
-msgstr "ära tee midagi"
+msgstr "لا تفعل شيئ"
 
 #: ../plugin/controllers/i18n.py:452
 msgid "error! Loading Page"
-msgstr "Tõrge lehe laadimisel"
+msgstr "الخطا! تحميل الصفحة"
 
 #: ../plugin/controllers/i18n.py:302
 msgid "exact match"
-msgstr "täpne vaste"
+msgstr "تطابق كامل"
 
 #: ../plugin/controllers/i18n.py:139
 msgid "finished"
-msgstr "lõpetatud"
+msgstr "استُكمِلت"
 
 #: ../plugin/controllers/i18n.py:330
 msgid "go to deep standby"
-msgstr "mine puhkeseisundisse"
+msgstr "الذهاب الى وضع الاستعداد العميق"
 
 #: ../plugin/controllers/i18n.py:329
 msgid "go to standby"
-msgstr "mine ooteseisundisse"
+msgstr "الذهاب لوضع الاستعداد"
 
 #: ../plugin/controllers/i18n.py:31
 msgid "hour"
-msgstr "tund"
+msgstr "ساعه"
 
 #: ../plugin/controllers/i18n.py:358
 msgid "in Description"
-msgstr "sisututvustuses"
+msgstr "فى الوصف"
 
 #: ../plugin/controllers/i18n.py:357
 msgid "in Shortdescription"
-msgstr "lühitutvustusest"
+msgstr "فى وصف مختصر"
 
 #: ../plugin/controllers/i18n.py:356
 msgid "in Title"
-msgstr "nimest"
+msgstr "فى عنوان"
 
 #: ../plugin/controllers/models/info.py:210
 #: ../plugin/controllers/models/info.py:213
 #: ../plugin/controllers/models/movies.py:216
 msgid "kB"
-msgstr "kB"
+msgstr "كيلوبايت"
 
 #: ../plugin/controllers/i18n.py:166
 msgid "loading"
-msgstr "laadimine"
+msgstr "تحميل"
 
 #: ../plugin/controllers/models/info.py:59
 #: ../plugin/controllers/models/info.py:78
 msgid "manual/disabled"
-msgstr "käsitsi/keelatud"
+msgstr "يدوي/معطل"
 
 #: ../plugin/controllers/i18n.py:31
 msgid "minute"
-msgstr "minut"
+msgstr "دقيقة"
 
 #: ../plugin/controllers/i18n.py:179
 msgid "no description available"
-msgstr "sisututvustus puudub"
+msgstr "لايوجد وصف متوفر."
 
 #: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:165
 msgid "none/IPv4-only network"
-msgstr "Pole/ainult IPv4 võrk"
+msgstr "شبكه لا شيء/IPv4 فقط"
 
 #: ../plugin/controllers/i18n.py:359
 msgid "on Weekday"
-msgstr "tööpäeval"
+msgstr "يوم في الاسبوع"
 
 #: ../plugin/controllers/BouquetEditor.py:86
 msgid "one two three four unknown command"
-msgstr "üks kaks kolm neli tundmatu käsk"
+msgstr "1 2 3 4 أمر غير معروف"
 
 #: ../plugin/controllers/i18n.py:301
 msgid "partial match"
-msgstr "osaline vaste"
+msgstr "تطابق جزئي"
 
 #: ../plugin/controllers/models/info.py:374
 msgid "r/o"
@@ -2370,92 +2371,92 @@ msgstr "r/w"
 
 #: ../plugin/controllers/i18n.py:312
 msgid "record"
-msgstr "salvestus"
+msgstr "x تسجيل"
 
 #: ../plugin/controllers/models/movies.py:294
 msgid "remove"
-msgstr "eemalda"
+msgstr "حذف"
 
 #: ../plugin/controllers/i18n.py:210
 msgid "running"
-msgstr "töös"
+msgstr "تشغيل"
 
 #: ../plugin/controllers/i18n.py:220
 msgid "seconds"
-msgstr "sekundit"
+msgstr "ثواني"
 
 #: ../plugin/controllers/i18n.py:352
 msgid "select Bouquets"
-msgstr "Vali lemmiknimekirjad"
+msgstr "حدد الباقات"
 
 #: ../plugin/controllers/i18n.py:350
 msgid "select Channels"
-msgstr "Vali kanalid"
+msgstr "حدد القنوات"
 
 #: ../plugin/controllers/i18n.py:348
 msgid "select Tags"
-msgstr "Vali sildid"
+msgstr "حدد العلامات"
 
 #: ../plugin/controllers/i18n.py:306
 msgid "short description match"
-msgstr "lühitutvustuse vaste"
+msgstr "تطابق وصف مختصر"
 
 #: ../plugin/controllers/i18n.py:326
 msgid "standard"
-msgstr "tavaline"
+msgstr "قياسي"
 
 #: ../plugin/controllers/i18n.py:307
 msgid "start match"
-msgstr "vaste algus"
+msgstr "بدء التطابق"
 
 #: ../plugin/controllers/models/info.py:55
 #: ../plugin/controllers/models/info.py:67
 #: ../plugin/controllers/models/info.py:74
 msgid "static"
-msgstr "staatiline"
+msgstr "ثابت"
 
 #: ../plugin/controllers/i18n.py:304
 msgid "title or description match"
-msgstr "nime või sisututvustuse vaste"
+msgstr "العنوان أو تطابق الوصف"
 
 #: ../plugin/controllers/i18n.py:305
 msgid "title or short description match"
-msgstr "nime või lühitutvustuse vaste"
+msgstr "عنوان أو تطابق وصف مختصر"
 
 #: ../plugin/controllers/i18n.py:258
 msgid "transcoded"
-msgstr "transkodeeritud"
+msgstr "المحولة"
 
 #: ../plugin/controllers/web.py:684
 #, python-format
 msgid "type %s is not a number"
-msgstr "tüüp %s ei ole number"
+msgstr "النوع %s ليس رقما"
 
 #: ../plugin/controllers/models/info.py:87
 #: ../plugin/controllers/models/info.py:95
 msgid "unknown"
-msgstr "tundmatu"
+msgstr "غير معروف"
 
 #: ../plugin/controllers/i18n.py:472
 msgid "using"
-msgstr "kasutades"
+msgstr "استخدام"
 
 #: ../plugin/controllers/i18n.py:440
 msgid "via"
-msgstr ">"
+msgstr "بواسطة"
 
 #: ../plugin/controllers/i18n.py:283
 msgid "waiting"
-msgstr "ootel"
+msgstr "فى الانتظار"
 
 #: ../plugin/controllers/ipkg.py:284
 msgid "wrong filetype"
-msgstr "vale failitüüp"
+msgstr "نوع الملف خطاء"
 
 #: ../plugin/controllers/i18n.py:313
 msgid "zap"
-msgstr "kanalivahetus"
+msgstr "الانتقال"
 
 #: ../plugin/controllers/i18n.py:287
 msgid "zap before Stream"
-msgstr "Kanalivahetus enne voogesitust"
+msgstr "أنتقل قبل التدفق"
