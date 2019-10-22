@@ -6,7 +6,7 @@ OpenWebif is an open source web interface for Enigma2 based set-top boxes (STBs)
 [Link](http://e2openplugins.github.io/e2openplugin-OpenWebif/)
 
 ## API Wiki
-[Link](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/wiki/OpenWebif-API-documentation)
+[Link](https://github.com/OpenVisionE2/OpenWebif/wiki/OpenWebif-API-documentation)
 
 ## Screenshots
 [Link](screenshots/SCREENSHOTS.md)
@@ -22,11 +22,11 @@ OpenWebif is an open source web interface for Enigma2 based set-top boxes (STBs)
 [Link](http://e2openplugins.github.io/e2openplugin-OpenWebif/flake8_report.txt)
 
 ## License
-Licensed under the GNU General Public License, Version 3. See [LICENSE](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/blob/master/LICENSE.txt) for more details.
+Licensed under the GNU General Public License, Version 3. See [LICENSE](https://github.com/OpenVisionE2/OpenWebif/blob/master/LICENSE.txt) for more details.
 
 ## Latest Package
 
-The most recent package may be downloaded [here](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/gh-pages) (ipk package).
+The most recent package may be downloaded [here](https://github.com/OpenVisionE2/OpenWebif/tree/gh-pages) (ipk package).
 
 ### Installation
 
@@ -36,7 +36,7 @@ cd /tmp
 init 4                        # graceful enigma2 shutdown
 # fetching -- wget '<URL of .ipk file>'
 # example:
-wget 'https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/blob/gh-pages/enigma2-plugin-extensions-openwebif_1.2.7-e2openpluginsgit20171014_all.ipk'
+wget 'https://github.com/OpenVisionE2/OpenWebif/blob/gh-pages/enigma2-plugin-extensions-openwebif_1.2.7-e2openpluginsgit20171014_all.ipk'
 # installing -- opkg install <.ipk file>
 # example:
 opkg install ./enigma2-plugin-extensions-openwebif_1.2.7-e2openpluginsgit20171014_all.ipk
