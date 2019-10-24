@@ -99,8 +99,10 @@ def getAllInfo():
 		remote = "hd2400"
 	elif model == "hd530c":
 		remote = "hd530c"
-	elif model in ("hd60","hd61"):
+	elif model == "hd60":
 		remote = "hd60"
+	elif model == "hd61":
+		remote = "ax4"
 	elif model in ("multibox","v8plus"):
 		remote = "maxytec1"
 	elif model in ("spycat","spycatmini","spycatminiplus","spycat4kmini","spycat4k","spycat4kcombo"):
