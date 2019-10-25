@@ -173,7 +173,7 @@ def getAllInfo():
 		remote = "tm5"
 	elif model in ("tmtwin4k","tm4ksuper"):
 		remote = "tm6"
-	elif model in ("dinobot4kmini","dinobot4kplus","dinobot4k","dinobot4kse","dinobot4kl","ferguson4k","dinobot4kpro","dinobotu55","dinoboth265"):
+	elif model in ("dinobot4kmini","dinobot4kplus","dinobot4k","dinobot4kse","dinobot4kl","dinobot4kpro","dinobotu55","dinoboth265"):
 		remote = "dinobot"
 	elif model in ("axashis4kcombo","axashis4kcomboplus"):
 		remote = "axas1"
@@ -181,7 +181,7 @@ def getAllInfo():
 		remote = "axas2"
 	elif model == "axashistwin":
 		remote = "axas3"
-	elif model in ("anadol4k","anadol4kv2","anadol4kcombo"):
+	elif model in ("anadol4k","anadol4kv2"):
 		remote = "anadol1"
 	elif model == "anadolprohd5":
 		remote = "anadol3"
@@ -257,8 +257,6 @@ def getAllInfo():
 		remote = "triplex"
 	elif model == "xpeedc":
 		remote = "gi1"
-	elif model == "mediabox4k":
-		remote = "mediabox4k"
 	elif model == "mediabox":
 		remote = "mediabox"
 	elif model == "9900lx":
