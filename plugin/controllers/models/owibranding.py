@@ -129,7 +129,7 @@ def getAllInfo():
 		remote = "edision1"
 	elif model == "osninopro":
 		remote = "edision2"
-	elif model in ("osmio4k","osmio4kplus"):
+	elif model in ("osmio4k","osmio4kplus","osmini4k"):
 		remote = "edision3"
 	elif model in ("fusionhd","fusionhdse","purehd","purehdse"):
 		remote = "fusionhd"
