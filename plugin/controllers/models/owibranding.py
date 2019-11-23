@@ -291,7 +291,7 @@ def getAllInfo():
 		remote = "sf3038"
 	elif model == "sf5008":
 		remote = "sf5008"
-	elif model == "sf8008":
+	elif model in ("sf8008","sf8008m"):
 		remote = "sf8008"
 	elif model == "sf98":
 		remote = "sf98"
