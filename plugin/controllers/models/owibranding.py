@@ -16,12 +16,13 @@ import hashlib
 from enigma import getBoxType, getBoxBrand
 from Tools.StbHardware import getFPVersion, getBoxProc
 
+fp_version = str(getFPVersion())
+brand = getBoxBrand()
+model = getBoxType()
+procmodel = getBoxProc()
+
 def getAllInfo():
 	info = {}
-	fp_version = str(getFPVersion())
-	brand = getBoxBrand()
-	model = getBoxType()
-	procmodel = getBoxProc()
 
 	grabpip = 0
 	if "4k" or "uhd" or "ultra" in model or model in ("dm900","dm920","multibox","v8plus","hd51","h10","h7","h9","h9combo","vs1500"):
