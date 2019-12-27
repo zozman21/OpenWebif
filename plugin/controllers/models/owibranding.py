@@ -136,10 +136,12 @@ def getAllInfo():
 		remote = "fusionhd"
 	elif model in ("revo4k","galaxy4k"):
 		remote = "revo"
-	elif model in ("lunix34k","lunix","lunixco"):
+	elif model in ("lunix34k","lunix"):
 		remote = "qviart1"
 	elif model == "lunix4k":
 		remote = "qviart3"
+	elif model == "lunixco":
+		remote = "qviart4"
 	elif model == "sh1":
 		remote = "zgemma1"
 	elif model == "lc":
