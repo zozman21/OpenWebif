@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: satfan <satfan@163.com>\n"
@@ -185,7 +185,7 @@ msgstr "自动"
 msgid "AutoPoll"
 msgstr "自动轮巡"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "自动定时器"
 
@@ -294,7 +294,7 @@ msgstr "节目分组改名完成."
 msgid "Bouquet-settings were restored successfully"
 msgstr "节目分组设置已成功恢复"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "编辑节目分组"
 
@@ -550,7 +550,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "EPG 编码"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "EPG 刷新"
 
@@ -942,7 +942,7 @@ msgstr "内核版本"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "LCD设置"
 
@@ -1093,7 +1093,7 @@ msgstr "多个节目分组不能编辑!"
 msgid "MultiEPG"
 msgstr "多路EPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 msgid "NCam Webinterface"
 msgstr ""
 
@@ -1245,7 +1245,7 @@ msgstr "现在"
 msgid "OE version"
 msgstr "GUI 版本"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr ""
 
@@ -1701,7 +1701,7 @@ msgid "Set maximum duration"
 msgstr "设置最大持续时间"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "设置"
 
@@ -1882,7 +1882,7 @@ msgstr "电视节目"
 msgid "Template Engine"
 msgstr "模板引擎"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr ""
 

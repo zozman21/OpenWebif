@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: 2019-09-11 12:00+0200\n"
 "Last-Translator: mickey <mickeyreg@gmail.com>\n"
 "Language-Team: none\n"
@@ -181,7 +181,7 @@ msgstr "Automatycznie"
 msgid "AutoPoll"
 msgstr "AutoPoll"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "AutoTimer"
 
@@ -291,7 +291,7 @@ msgstr "Zmiana nazwy bukietu zakończona powodzeniem."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Ustawienia bukietów zostały przywrócone poprawnie"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Edytor bukietów"
 
@@ -549,7 +549,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "Kodowanie EPG"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "EPGRefresh"
 
@@ -940,7 +940,7 @@ msgstr "Wersja jądra"
 msgid "LCD"
 msgstr "LCD"
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "Ustawienia LCD4Linux"
 
@@ -1091,7 +1091,7 @@ msgstr "Tryb multi-bukietów nie jest włączony!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "Interfejs WWW NCam"
@@ -1244,7 +1244,7 @@ msgstr "Teraz"
 msgid "OE version"
 msgstr "Wersja GUI"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr "Interfejs WWW OSCam"
 
@@ -1701,7 +1701,7 @@ msgid "Set maximum duration"
 msgstr "Ustaw maksymalny czas trwania"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Ustawienia"
 
@@ -1883,7 +1883,7 @@ msgstr "Telewizja"
 msgid "Template Engine"
 msgstr "Szablon"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr "Terminal"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: 2019-01-12 10:46+0200\n"
 "Last-Translator: rimas <rimas@domeen.ee>\n"
 "Language-Team: Estonian\n"
@@ -182,7 +182,7 @@ msgstr "Auto"
 msgid "AutoPoll"
 msgstr "Automaatne päring"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "Autotaimer"
 
@@ -291,7 +291,7 @@ msgstr "Lemmiknimekiri nimetati ümber."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Lemmiknimekirjad taastati edukalt"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Lemmiknimekirjad"
 
@@ -546,7 +546,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "EPG tähemärgistik"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "EPG värskendus"
 
@@ -934,7 +934,7 @@ msgstr "Kernel"
 msgid "LCD"
 msgstr "LCD"
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "LCD4Linux seaded"
 
@@ -1083,7 +1083,7 @@ msgstr "Luba mitme nimekirja kasutus!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "OSCam veebiliides"
@@ -1235,7 +1235,7 @@ msgstr "Hetkel"
 msgid "OE version"
 msgstr "E2 versioon"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr "OSCam veebiliides"
 
@@ -1691,7 +1691,7 @@ msgid "Set maximum duration"
 msgstr "Määra suurim kestus"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Seaded"
 
@@ -1872,7 +1872,7 @@ msgstr "Televisioon"
 msgid "Template Engine"
 msgstr "Malli mootor"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr "Terminal"
 

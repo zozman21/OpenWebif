@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dominik Paľo <dominik@palo.sk>\n"
 "Language-Team: \n"
@@ -182,7 +182,7 @@ msgstr "Auto"
 msgid "AutoPoll"
 msgstr "AutoPoll"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "Automatický časovač"
 
@@ -292,7 +292,7 @@ msgstr "Prehľad úspešne premenovaný."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Obnovenie nastavení prehľadu bolo úspešné"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Editor prehľadov"
 
@@ -548,7 +548,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "Znaková sada EPG"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "Obnovovanie EPG"
 
@@ -940,7 +940,7 @@ msgstr "Verzia jadra"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "Nastavenie LCD4Linux"
 
@@ -1091,7 +1091,7 @@ msgstr "Multi-prehľad nie je zapnutý!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "OSCam webrozhranie"
@@ -1244,7 +1244,7 @@ msgstr "Teraz"
 msgid "OE version"
 msgstr "Verzia GUI"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr "OSCam webrozhranie"
 
@@ -1700,7 +1700,7 @@ msgid "Set maximum duration"
 msgstr "Nastaviť maximálnu dĺžku"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Nastavenia"
 
@@ -1882,7 +1882,7 @@ msgstr "Televízia"
 msgid "Template Engine"
 msgstr "Engine šablóny"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr "Terminál"
 

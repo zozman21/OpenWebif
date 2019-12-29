@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: 2017-11-10 22:14+0100\n"
 "Last-Translator: JR <openspateam@gmail.com>\n"
 "Language-Team: OpenSPA\n"
@@ -186,7 +186,7 @@ msgstr "Automàtic"
 msgid "AutoPoll"
 msgstr ""
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "AutoProgramació"
 
@@ -296,7 +296,7 @@ msgstr "Llista renombrada correctament."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Configuració de llistes s'ha restaurat amb èxit"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Editor de llistes"
 
@@ -552,7 +552,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "Codificació EPG"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr ""
 
@@ -944,7 +944,7 @@ msgstr "Versió Kernel"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "Configurar LCD4Linux"
 
@@ -1095,7 +1095,7 @@ msgstr "Multi-llistes no està habilitat!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 msgid "NCam Webinterface"
 msgstr ""
 
@@ -1247,7 +1247,7 @@ msgstr "Ara"
 msgid "OE version"
 msgstr "Versió GUI"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr ""
 
@@ -1703,7 +1703,7 @@ msgid "Set maximum duration"
 msgstr "Configurar duració màxima"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Configuració"
 
@@ -1885,7 +1885,7 @@ msgstr "Televisió"
 msgid "Template Engine"
 msgstr "Motor de la Plantilla"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr ""
 

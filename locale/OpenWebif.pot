@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,7 +186,7 @@ msgstr ""
 msgid "AutoPoll"
 msgstr ""
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgstr ""
 msgid "Bouquet-settings were restored successfully"
 msgstr ""
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr ""
 
@@ -546,7 +546,7 @@ msgstr ""
 msgid "EPG encoding"
 msgstr ""
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr ""
 
@@ -928,7 +928,7 @@ msgstr ""
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr ""
 
@@ -1077,7 +1077,7 @@ msgstr ""
 msgid "MultiEPG"
 msgstr ""
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 msgid "NCam Webinterface"
 msgstr ""
 
@@ -1227,7 +1227,7 @@ msgstr ""
 msgid "OE version"
 msgstr ""
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr ""
 
@@ -1676,7 +1676,7 @@ msgid "Set maximum duration"
 msgstr ""
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr ""
 
@@ -1856,7 +1856,7 @@ msgstr ""
 msgid "Template Engine"
 msgstr ""
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr ""
 

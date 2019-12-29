@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: 2017-06-08 10:02+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: Linux-Box\n"
@@ -186,7 +186,7 @@ msgstr "Automático"
 msgid "AutoPoll"
 msgstr ""
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "AutoProgramación"
 
@@ -296,7 +296,7 @@ msgstr "Favorito renombrado correctamente"
 msgid "Bouquet-settings were restored successfully"
 msgstr "Configuración favoritos se ha restaurado con éxito"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Editor de Favoritos"
 
@@ -552,7 +552,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "Codificación EPG"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr ""
 
@@ -944,7 +944,7 @@ msgstr "Versión Kernel"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "Configurar LCD4Linux"
 
@@ -1095,7 +1095,7 @@ msgstr "Multi-Favoritos no está habilitado!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 msgid "NCam Webinterface"
 msgstr ""
 
@@ -1247,7 +1247,7 @@ msgstr "Ahora"
 msgid "OE version"
 msgstr "Versión Interfaz de Usuario"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr ""
 
@@ -1703,7 +1703,7 @@ msgid "Set maximum duration"
 msgstr "Seleccionar duración máxima"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Configuración"
 
@@ -1885,7 +1885,7 @@ msgstr "Televisión"
 msgid "Template Engine"
 msgstr "Motor de la Plantilla"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr ""
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebIf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: satdreamgr\n"
@@ -183,7 +183,7 @@ msgstr "Αυτόματα"
 msgid "AutoPoll"
 msgstr "Αυτόματος Έλεγχος"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "Αυτόματος Χρονοδιακόπτης"
 
@@ -293,7 +293,7 @@ msgstr "Επιτυχία μετονομασίας Μπουκέτου."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Επιτυχία επαναφοράς ρυθμίσεων μπουκέτου"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Επεξεργασία Μπουκέτων"
 
@@ -548,7 +548,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "Κωδικοποίηση EPG"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "Ανανέωση EPG"
 
@@ -936,7 +936,7 @@ msgstr "Kernel"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "Ρυθμίσεις LCD4Linux"
 
@@ -1085,7 +1085,7 @@ msgstr "Τα Πολλαπλά Μπουκέτα είναι ανενεργά!"
 msgid "MultiEPG"
 msgstr "Πολλαπλός EPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "Διεπαφή Δικτύου OSCam"
@@ -1237,7 +1237,7 @@ msgstr "Τώρα"
 msgid "OE version"
 msgstr "Έκδοση Επιφάνειας Χρήστη"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr "Διεπαφή Δικτύου OSCam"
 
@@ -1694,7 +1694,7 @@ msgid "Set maximum duration"
 msgstr "Ορισμός μέγιστης διάρκειας"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
@@ -1876,7 +1876,7 @@ msgstr "Τηλεόραση"
 msgid "Template Engine"
 msgstr "Μηχανή Προτύπου"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr "Τερματικό"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Samzam <http://www.opena.tv>\n"
 "Language-Team: \n"
@@ -183,7 +183,7 @@ msgstr "Automaattinen"
 msgid "AutoPoll"
 msgstr "Automaattinen haku"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "Automaattiajastus"
 
@@ -293,7 +293,7 @@ msgstr "Suosikkilistan uudelleen nimeäminen onnistui."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Suosikkilistojen asetuksien palautus onnistui"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Suosikkien järjestely"
 
@@ -549,7 +549,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "EPG:n enkoodaaus"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "EPGRefresh"
 
@@ -941,7 +941,7 @@ msgstr "Kernel"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "LCD4Linux-asetukset"
 
@@ -1092,7 +1092,7 @@ msgstr "Useiden suosikkilistojen käyttö ei ole päällä!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "OSCam Webinterface"
@@ -1245,7 +1245,7 @@ msgstr "Nyt"
 msgid "OE version"
 msgstr "GUI-Versio"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr "OSCam Webinterface"
 
@@ -1702,7 +1702,7 @@ msgid "Set maximum duration"
 msgstr "Aseta maksimikesto"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Asetukset"
 
@@ -1884,7 +1884,7 @@ msgstr "Televisio"
 msgid "Template Engine"
 msgstr "Teema"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr ""
 

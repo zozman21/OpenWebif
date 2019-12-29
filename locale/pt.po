@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: 2018-01-16 21:32+0000\n"
 "Last-Translator: nunigaia\n"
 "Language-Team: BH Team\n"
@@ -185,7 +185,7 @@ msgstr "Auto"
 msgid "AutoPoll"
 msgstr "Pesquisa automática"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "AutoTimer"
 
@@ -294,7 +294,7 @@ msgstr "Bouquet renomeado com sucesso."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Bouquet - definições restauradas com sucesso."
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Editor de Bouquets"
 
@@ -550,7 +550,7 @@ msgstr "Configuração do EPG"
 msgid "EPG encoding"
 msgstr "Codificação do EPG"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "EPGRefresh"
 
@@ -942,7 +942,7 @@ msgstr "Kernel"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "Definições LCD4Linux"
 
@@ -1093,7 +1093,7 @@ msgstr "Múltiplos Bouquet não está ativo"
 msgid "MultiEPG"
 msgstr "Multi EPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "Interface Web para OSCam"
@@ -1246,7 +1246,7 @@ msgstr "Agora"
 msgid "OE version"
 msgstr "Versão Gui"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr "Interface Web para OSCam"
 
@@ -1703,7 +1703,7 @@ msgid "Set maximum duration"
 msgstr "Definir a duração máxima"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Definições"
 
@@ -1885,7 +1885,7 @@ msgstr "Televisão"
 msgid "Template Engine"
 msgstr "Mecanismo modelo"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr "Terminal Linux"
 

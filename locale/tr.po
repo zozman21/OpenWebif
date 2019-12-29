@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:07+0330\n"
+"POT-Creation-Date: 2019-12-29 17:39+0330\n"
 "PO-Revision-Date: 2018-04-08 02:43+0300\n"
 "Last-Translator: t5k6 <t5k6@users.noreply.github.com>\n"
 "Language-Team: Turkish\n"
@@ -186,7 +186,7 @@ msgstr "Otomatik"
 msgid "AutoPoll"
 msgstr "AutoPoll"
 
-#: ../plugin/controllers/base.py:307
+#: ../plugin/controllers/base.py:322
 msgid "AutoTimer"
 msgstr "AutoTimer"
 
@@ -296,7 +296,7 @@ msgstr "Buket başarıyla yeniden adlandırıldı."
 msgid "Bouquet-settings were restored successfully"
 msgstr "Buket ayarları başarıyla geri yüklendi"
 
-#: ../plugin/controllers/base.py:312
+#: ../plugin/controllers/base.py:327
 msgid "BouquetEditor"
 msgstr "Buket düzenleyici"
 
@@ -554,7 +554,7 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "EPG kodlaması"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:331
 msgid "EPGRefresh"
 msgstr "EPGRefresh"
 
@@ -945,7 +945,7 @@ msgstr "Çekirdek"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:285
+#: ../plugin/controllers/base.py:294
 msgid "LCD4Linux Setup"
 msgstr "LCD4Linux Kurulumu"
 
@@ -1096,7 +1096,7 @@ msgstr "Çoklu buket etkin değil!"
 msgid "MultiEPG"
 msgstr "Çoklu EPG"
 
-#: ../plugin/controllers/base.py:303
+#: ../plugin/controllers/base.py:318
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "OSCam Web arayüzü"
@@ -1249,7 +1249,7 @@ msgstr "Şimdi"
 msgid "OE version"
 msgstr "Arayüz sürümü"
 
-#: ../plugin/controllers/base.py:301
+#: ../plugin/controllers/base.py:316
 msgid "OSCam Webinterface"
 msgstr "OSCam Web arayüzü"
 
@@ -1706,7 +1706,7 @@ msgid "Set maximum duration"
 msgstr "Maksimum süreyi belirle"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:269
+#: ../plugin/controllers/base.py:278
 msgid "Settings"
 msgstr "Ayarlar"
 
@@ -1888,7 +1888,7 @@ msgstr "Televizyon"
 msgid "Template Engine"
 msgstr "Şablon Motoru"
 
-#: ../plugin/controllers/base.py:334
+#: ../plugin/controllers/base.py:349
 msgid "Terminal"
 msgstr "Terminal"
 
