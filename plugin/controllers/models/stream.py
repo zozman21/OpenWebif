@@ -166,7 +166,7 @@ def getTS(self, request):
 		args = ""
 		urlparam = '&'
 		
-		if fileExists("/dev/bcm_enc0"):
+		if fileExists("/dev/bcm_enc0") or fileExists("/dev/encoder0") or fileExists("/proc/stb/encoder/0/apply"):
 			try:
 				transcoder_port = int(config.plugins.transcodingsetup.port.value)
 			except StandardError:
@@ -177,8 +177,6 @@ def getTS(self, request):
 					portNumber = transcoder_port
 			if "port" in request.args:
 				portNumber = request.args["port"][0]
-		elif fileExists("/dev/encoder0") or fileExists("/proc/stb/encoder/0/apply"):
-			portNumber = config.OpenWebif.streamport.value
 
 		if fileExists("/dev/bcm_enc0") or fileExists("/dev/encoder0") or fileExists("/proc/stb/encoder/0/apply"):
 			if "device" in request.args:
