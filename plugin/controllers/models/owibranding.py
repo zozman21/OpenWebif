@@ -248,8 +248,6 @@ def getAllInfo():
 		remote = "uclan"
 	elif model == "valalinux":
 		remote = "vala"
-	elif model == "spycatminiv2":
-		remote = "spycat1"
 	elif model == "cc1":
 		remote = "cc1"
 	elif model in ("force4","iqonios100hd","iqonios200hd","iqonios300hd","iqonios300hdv2","force2se","force2","force2plus","force2plushv","force2nano"):
