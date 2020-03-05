@@ -88,7 +88,7 @@ tstrings = {
 	'box': _("STB"),
 	'boxcontrol': _("STB Control"),
 	'box_uptime': _("STB Uptime"),
-	'brand': _("Brand"),
+	'brand': _("Brand/Meta"),
 	'cancel': _("Cancel"),
 	'capacity': _("Capacity"),
 	'channel': _("Channel"),
