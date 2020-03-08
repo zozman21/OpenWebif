@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-29 17:39+0330\n"
+"POT-Creation-Date: 2020-03-08 23:37+0330\n"
 "PO-Revision-Date: 2017-11-10 22:14+0100\n"
 "Last-Translator: JR <openspateam@gmail.com>\n"
 "Language-Team: OpenSPA\n"
@@ -310,7 +310,8 @@ msgid "Bouquets"
 msgstr "Llistes"
 
 #: ../plugin/controllers/i18n.py:91
-msgid "Brand"
+#, fuzzy
+msgid "Brand/Meta"
 msgstr "Marca"
 
 #: ../plugin/controllers/i18n.py:101
@@ -367,7 +368,7 @@ msgstr "Tancar"
 msgid "Common Settings"
 msgstr "Configuració"
 
-#: ../plugin/controllers/models/timers.py:179
+#: ../plugin/controllers/models/timers.py:187
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Temporitzador(s) conflictiu(s) detectat(s)! %s"
@@ -380,12 +381,12 @@ msgstr "Col·laboradors"
 msgid "Control"
 msgstr "Control"
 
-#: ../plugin/controllers/models/timers.py:196
+#: ../plugin/controllers/models/timers.py:204
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "No es pot afegir el temporitzador '%s'!"
 
-#: ../plugin/controllers/models/timers.py:312
+#: ../plugin/controllers/models/timers.py:320
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "No s'ha trobat el temporitzador '%s' amb aquests temps d'inici i fi."
@@ -556,7 +557,7 @@ msgstr "Codificació EPG"
 msgid "EPGRefresh"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:714
+#: ../plugin/controllers/models/timers.py:722
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "ERROR: No es pot configurar un temporitzador d'apagat si el dispositiu està en mode d'espera"
 
@@ -645,7 +646,7 @@ msgstr "Buscar EPG"
 msgid "Error"
 msgstr "Error"
 
-#: ../plugin/controllers/models/timers.py:840
+#: ../plugin/controllers/models/timers.py:848
 msgid "Error parsing vps.xml"
 msgstr ""
 
@@ -685,7 +686,7 @@ msgstr "Error: Llista %s no es pot esborrar, OSError."
 msgid "Event not found"
 msgstr "Event no trobat"
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:218
 msgid "EventId not found"
 msgstr "ID de programa no trobat"
 
@@ -870,7 +871,7 @@ msgstr "Incloure descripció"
 msgid "Include short description"
 msgstr "Incloure descripció"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:430
 msgid "Infinite Instant recording started"
 msgstr "Gravació instantània infinita iniciada"
 
@@ -895,7 +896,7 @@ msgstr "Gravació instantània"
 msgid "Instant Record"
 msgstr "Gravació instantània"
 
-#: ../plugin/controllers/models/timers.py:413
+#: ../plugin/controllers/models/timers.py:421
 msgid "Instant record for current Event started"
 msgstr "Gravació instantània iniciada per al programa actual"
 
@@ -960,7 +961,7 @@ msgstr "Sèrie d'etiquetes"
 msgid "Link Speed"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:391
 msgid "List of Timers has been cleaned"
 msgstr "La llista de temporitzadors s'ha netejat"
 
@@ -1041,7 +1042,7 @@ msgstr "Minut"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Falta paràmetre obligatori '%s'"
 
-#: ../plugin/controllers/models/timers.py:514
+#: ../plugin/controllers/models/timers.py:522
 msgid "Missing requesteter: sRef"
 msgstr ""
 
@@ -1165,7 +1166,7 @@ msgstr "Cap nom de llista introduït!"
 msgid "No current service given!"
 msgstr "Cap servei actual introduït!"
 
-#: ../plugin/controllers/models/timers.py:407
+#: ../plugin/controllers/models/timers.py:415
 msgid "No event found! Not recording!"
 msgstr "No s'ha trobat programa! No s'està gravant!"
 
@@ -1173,8 +1174,8 @@ msgstr "No s'ha trobat programa! No s'està gravant!"
 msgid "No marker-name given!"
 msgstr "Cap nom de marcador introduït!"
 
-#: ../plugin/controllers/models/timers.py:330
-#: ../plugin/controllers/models/timers.py:375
+#: ../plugin/controllers/models/timers.py:338
+#: ../plugin/controllers/models/timers.py:383
 msgid "No matching Timer found"
 msgstr "No s'ha trobat coincidència als temporitzadors"
 
@@ -1398,7 +1399,7 @@ msgstr ""
 msgid "Power Control"
 msgstr "Control d'encesa"
 
-#: ../plugin/controllers/models/timers.py:596
+#: ../plugin/controllers/models/timers.py:604
 msgid "PowerTimer feature not available"
 msgstr "La característica temporitzador d'alimentació no està disponible."
 
@@ -1761,32 +1762,32 @@ msgstr "Simular"
 msgid "Site and sources"
 msgstr "Lloc i fonts"
 
-#: ../plugin/controllers/models/timers.py:674
-#: ../plugin/controllers/models/timers.py:701
-#: ../plugin/controllers/models/timers.py:730
-#: ../plugin/controllers/models/timers.py:811
+#: ../plugin/controllers/models/timers.py:682
+#: ../plugin/controllers/models/timers.py:709
+#: ../plugin/controllers/models/timers.py:738
+#: ../plugin/controllers/models/timers.py:819
 msgid "SleepTimer error"
 msgstr "Error temporitzador d'apagat"
 
-#: ../plugin/controllers/models/timers.py:719
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:806
+#: ../plugin/controllers/models/timers.py:727
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:814
 msgid "Sleeptimer has been disabled"
 msgstr "El temporitzador d'apagat s'ha desactivat"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is disabled"
 msgstr "Temporitzador d'apagat desactivat"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is enabled"
 msgstr "Temporitzador d'apagat activat"
 
-#: ../plugin/controllers/models/timers.py:725
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:801
+#: ../plugin/controllers/models/timers.py:733
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:809
 #, fuzzy, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Temporitzador d'apagat configurat a %d minuts"
@@ -1910,17 +1911,17 @@ msgstr "El paràmetre '%s' no pot estar buit"
 msgid "The parameter 'command' must be a number"
 msgstr "El paràmetre 'ordre' ha de ser un número"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:377
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "El temporitzador '%s' ha sigut %s satisfactòriament"
 
-#: ../plugin/controllers/models/timers.py:325
+#: ../plugin/controllers/models/timers.py:333
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "El tmeporitzador '%s' s'ha eliminat satisfactòriament"
 
-#: ../plugin/controllers/models/timers.py:361
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "Temporitzador '%s' s'ha gravat! No està deshabilitat!"
@@ -1957,27 +1958,27 @@ msgstr "Temps d'espera"
 msgid "Timer"
 msgstr "Gravació"
 
-#: ../plugin/controllers/models/timers.py:201
+#: ../plugin/controllers/models/timers.py:209
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Temporitzador '%s' afegit"
 
-#: ../plugin/controllers/models/timers.py:355
+#: ../plugin/controllers/models/timers.py:363
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "Temporitzador '%s' ja existeix!"
 
-#: ../plugin/controllers/models/timers.py:287
+#: ../plugin/controllers/models/timers.py:295
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Temporitzador '%s' canviat"
 
-#: ../plugin/controllers/models/timers.py:349
+#: ../plugin/controllers/models/timers.py:357
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "Temporitzador %s no habilitat durant el conflicte"
 
-#: ../plugin/controllers/models/timers.py:306
+#: ../plugin/controllers/models/timers.py:314
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "El temporitzador '%s' no s'ha guardat per un conflicte"
@@ -1990,7 +1991,7 @@ msgstr "Temporitzador afegit"
 msgid "Timer added"
 msgstr "Afegir gravació"
 
-#: ../plugin/controllers/models/timers.py:441
+#: ../plugin/controllers/models/timers.py:449
 msgid "Timer conflict detected! Not recording!"
 msgstr "Detectat conflicte entre temporitzadors. No s'està gravant."
 
@@ -1998,7 +1999,7 @@ msgstr "Detectat conflicte entre temporitzadors. No s'està gravant."
 msgid "Timer type"
 msgstr "Tipus gravació"
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:399
 msgid "TimerList has been saved"
 msgstr "La llista de temporitzadors s'ha guardat"
 
@@ -2083,7 +2084,7 @@ msgstr "Tipus"
 msgid "Unknown Volume command %s"
 msgstr "Ordre %s de Volum Desconeguda"
 
-#: ../plugin/controllers/models/timers.py:536
+#: ../plugin/controllers/models/timers.py:544
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Ordre desconeguda: '%s'"
@@ -2142,7 +2143,7 @@ msgstr "Utilitzar nou diseny"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:845
+#: ../plugin/controllers/models/timers.py:853
 msgid "VPS plugin not found"
 msgstr "Plugin VPS no trobat"
 
@@ -2443,7 +2444,7 @@ msgstr "coincidència en títul o descripció curta"
 msgid "transcoded"
 msgstr "transcodificat"
 
-#: ../plugin/controllers/web.py:684
+#: ../plugin/controllers/web.py:686
 #, python-format
 msgid "type %s is not a number"
 msgstr "El tipus %s no és un número"

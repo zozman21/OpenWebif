@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-29 17:39+0330\n"
+"POT-Creation-Date: 2020-03-08 23:37+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: satfan <satfan@163.com>\n"
@@ -308,7 +308,8 @@ msgid "Bouquets"
 msgstr "节目分组"
 
 #: ../plugin/controllers/i18n.py:91
-msgid "Brand"
+#, fuzzy
+msgid "Brand/Meta"
 msgstr "品牌"
 
 #: ../plugin/controllers/i18n.py:101
@@ -365,7 +366,7 @@ msgstr "关闭"
 msgid "Common Settings"
 msgstr "设置"
 
-#: ../plugin/controllers/models/timers.py:179
+#: ../plugin/controllers/models/timers.py:187
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "检测到的计时器！%s"
@@ -378,12 +379,12 @@ msgstr "贡献者"
 msgid "Control"
 msgstr "控制"
 
-#: ../plugin/controllers/models/timers.py:196
+#: ../plugin/controllers/models/timers.py:204
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "不能添加定时器“%s”!"
 
-#: ../plugin/controllers/models/timers.py:312
+#: ../plugin/controllers/models/timers.py:320
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "未找到指定开始时间和结束时间的定时器 '%s' ！"
@@ -554,7 +555,7 @@ msgstr "EPG 编码"
 msgid "EPGRefresh"
 msgstr "EPG 刷新"
 
-#: ../plugin/controllers/models/timers.py:714
+#: ../plugin/controllers/models/timers.py:722
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "错误：无法设置SleepTimer当设备处于待机模式"
 
@@ -643,7 +644,7 @@ msgstr "EPG 搜索"
 msgid "Error"
 msgstr "错误"
 
-#: ../plugin/controllers/models/timers.py:840
+#: ../plugin/controllers/models/timers.py:848
 msgid "Error parsing vps.xml"
 msgstr "分析vps.xml出错"
 
@@ -683,7 +684,7 @@ msgstr "错误: 节目分组%s不能被删除, 系统错误"
 msgid "Event not found"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:218
 msgid "EventId not found"
 msgstr "未找到事件ID"
 
@@ -868,7 +869,7 @@ msgstr "包含描述"
 msgid "Include short description"
 msgstr "包含描述"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:430
 msgid "Infinite Instant recording started"
 msgstr "开始录制（不限时长）"
 
@@ -893,7 +894,7 @@ msgstr "录制"
 msgid "Instant Record"
 msgstr "录制"
 
-#: ../plugin/controllers/models/timers.py:413
+#: ../plugin/controllers/models/timers.py:421
 msgid "Instant record for current Event started"
 msgstr "开始录制当前事件"
 
@@ -958,7 +959,7 @@ msgstr "标签系列"
 msgid "Link Speed"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:391
 msgid "List of Timers has been cleaned"
 msgstr "定时器列表已被清除"
 
@@ -1039,7 +1040,7 @@ msgstr "分钟"
 msgid "Missing mandatory parameter '%s'"
 msgstr "缺少强制参数 '%s'"
 
-#: ../plugin/controllers/models/timers.py:514
+#: ../plugin/controllers/models/timers.py:522
 msgid "Missing requesteter: sRef"
 msgstr "缺少请求: sRef"
 
@@ -1163,7 +1164,7 @@ msgstr "没有指定节目分组名称!"
 msgid "No current service given!"
 msgstr "没有指定当前频道!"
 
-#: ../plugin/controllers/models/timers.py:407
+#: ../plugin/controllers/models/timers.py:415
 msgid "No event found! Not recording!"
 msgstr "定时器事件未找到！未录制！"
 
@@ -1171,8 +1172,8 @@ msgstr "定时器事件未找到！未录制！"
 msgid "No marker-name given!"
 msgstr "没有指定标记名称"
 
-#: ../plugin/controllers/models/timers.py:330
-#: ../plugin/controllers/models/timers.py:375
+#: ../plugin/controllers/models/timers.py:338
+#: ../plugin/controllers/models/timers.py:383
 msgid "No matching Timer found"
 msgstr "无找到匹配的定时器"
 
@@ -1396,7 +1397,7 @@ msgstr ""
 msgid "Power Control"
 msgstr "电源控制"
 
-#: ../plugin/controllers/models/timers.py:596
+#: ../plugin/controllers/models/timers.py:604
 msgid "PowerTimer feature not available"
 msgstr "电源定时器功能不可用"
 
@@ -1758,32 +1759,32 @@ msgstr "模拟"
 msgid "Site and sources"
 msgstr "来源站点"
 
-#: ../plugin/controllers/models/timers.py:674
-#: ../plugin/controllers/models/timers.py:701
-#: ../plugin/controllers/models/timers.py:730
-#: ../plugin/controllers/models/timers.py:811
+#: ../plugin/controllers/models/timers.py:682
+#: ../plugin/controllers/models/timers.py:709
+#: ../plugin/controllers/models/timers.py:738
+#: ../plugin/controllers/models/timers.py:819
 msgid "SleepTimer error"
 msgstr "定时休眠出错"
 
-#: ../plugin/controllers/models/timers.py:719
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:806
+#: ../plugin/controllers/models/timers.py:727
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:814
 msgid "Sleeptimer has been disabled"
 msgstr "定时休眠已禁用"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is disabled"
 msgstr "定时休眠已禁用"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is enabled"
 msgstr "定时休眠已启用"
 
-#: ../plugin/controllers/models/timers.py:725
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:801
+#: ../plugin/controllers/models/timers.py:733
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:809
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "定时休眠设置为%d分钟"
@@ -1907,17 +1908,17 @@ msgstr "参数 “%s” 不能为空"
 msgid "The parameter 'command' must be a number"
 msgstr "命令参数必须是数字"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:377
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "定时器 '%s' 已 %s 成功"
 
-#: ../plugin/controllers/models/timers.py:325
+#: ../plugin/controllers/models/timers.py:333
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "定时器'%s'已被成功删除"
 
-#: ../plugin/controllers/models/timers.py:361
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "定时器 '%s' 正在录制! 不能禁用!"
@@ -1954,27 +1955,27 @@ msgstr "超时设置"
 msgid "Timer"
 msgstr "定时器"
 
-#: ../plugin/controllers/models/timers.py:201
+#: ../plugin/controllers/models/timers.py:209
 #, python-format
 msgid "Timer '%s' added"
 msgstr "定时器 '%s' 已添加"
 
-#: ../plugin/controllers/models/timers.py:355
+#: ../plugin/controllers/models/timers.py:363
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "定时器 '%s' 已存在!"
 
-#: ../plugin/controllers/models/timers.py:287
+#: ../plugin/controllers/models/timers.py:295
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "定时器 '%s' 已更改"
 
-#: ../plugin/controllers/models/timers.py:349
+#: ../plugin/controllers/models/timers.py:357
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "定时器 '%s' 冲突，未保存。"
 
-#: ../plugin/controllers/models/timers.py:306
+#: ../plugin/controllers/models/timers.py:314
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "定时器 '%s' 冲突，未保存。"
@@ -1987,7 +1988,7 @@ msgstr ""
 msgid "Timer added"
 msgstr "添加定时器"
 
-#: ../plugin/controllers/models/timers.py:441
+#: ../plugin/controllers/models/timers.py:449
 msgid "Timer conflict detected! Not recording!"
 msgstr "检测到定时器冲突！停止录制！"
 
@@ -1995,7 +1996,7 @@ msgstr "检测到定时器冲突！停止录制！"
 msgid "Timer type"
 msgstr "计时器类型"
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:399
 msgid "TimerList has been saved"
 msgstr "定时器列表已保存"
 
@@ -2080,7 +2081,7 @@ msgstr "类型"
 msgid "Unknown Volume command %s"
 msgstr "未知音量命令 %s"
 
-#: ../plugin/controllers/models/timers.py:536
+#: ../plugin/controllers/models/timers.py:544
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "未知命令： '%s'"
@@ -2138,7 +2139,7 @@ msgstr ""
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:845
+#: ../plugin/controllers/models/timers.py:853
 msgid "VPS plugin not found"
 msgstr "未找到VPS插件"
 
@@ -2439,7 +2440,7 @@ msgstr "标题或简介匹配"
 msgid "transcoded"
 msgstr "转码"
 
-#: ../plugin/controllers/web.py:684
+#: ../plugin/controllers/web.py:686
 #, python-format
 msgid "type %s is not a number"
 msgstr "类型 %s 的不是数字"

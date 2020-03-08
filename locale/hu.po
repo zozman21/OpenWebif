@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-29 17:39+0330\n"
+"POT-Creation-Date: 2020-03-08 23:37+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: mcfly82 <https://github.com/mcfly822>\n"
 "Language-Team: mcfly82\n"
@@ -306,7 +306,8 @@ msgid "Bouquets"
 msgstr "Listák"
 
 #: ../plugin/controllers/i18n.py:91
-msgid "Brand"
+#, fuzzy
+msgid "Brand/Meta"
 msgstr "Márka"
 
 #: ../plugin/controllers/i18n.py:101
@@ -361,7 +362,7 @@ msgstr "Bezár"
 msgid "Common Settings"
 msgstr "Közös beállítások"
 
-#: ../plugin/controllers/models/timers.py:179
+#: ../plugin/controllers/models/timers.py:187
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Időzítő(k) ütközése észlelve! %s"
@@ -374,12 +375,12 @@ msgstr "Közreműködők"
 msgid "Control"
 msgstr "Ellenőrzés"
 
-#: ../plugin/controllers/models/timers.py:196
+#: ../plugin/controllers/models/timers.py:204
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "Nem lehet hozzáadni az '%s' időzítőt!"
 
-#: ../plugin/controllers/models/timers.py:312
+#: ../plugin/controllers/models/timers.py:320
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "Az '%s' időzítő nem található az adott kezdő és befejező időpontban!"
@@ -551,7 +552,7 @@ msgstr "EPG kódolás"
 msgid "EPGRefresh"
 msgstr "EPG frissítés"
 
-#: ../plugin/controllers/models/timers.py:714
+#: ../plugin/controllers/models/timers.py:722
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "HIBA: Nem állítható be az elalvás időzítő, amíg az eszköz készenléti állapotban van"
 
@@ -640,7 +641,7 @@ msgstr "Epg keresés"
 msgid "Error"
 msgstr "Hiba"
 
-#: ../plugin/controllers/models/timers.py:840
+#: ../plugin/controllers/models/timers.py:848
 msgid "Error parsing vps.xml"
 msgstr "Hiba történt a vps.xml elemzésében"
 
@@ -680,7 +681,7 @@ msgstr "Hiba: %s lista nem törölhető, OSError."
 msgid "Event not found"
 msgstr "Esemény nem található"
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:218
 msgid "EventId not found"
 msgstr "Esemény Id nem található"
 
@@ -862,7 +863,7 @@ msgstr "Bővített leírással"
 msgid "Include short description"
 msgstr "Rövid leírással"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:430
 msgid "Infinite Instant recording started"
 msgstr "Végtelen azonnali felvétel elkezdődött"
 
@@ -886,7 +887,7 @@ msgstr "Telepített"
 msgid "Instant Record"
 msgstr "Azonnali felvétel"
 
-#: ../plugin/controllers/models/timers.py:413
+#: ../plugin/controllers/models/timers.py:421
 msgid "Instant record for current Event started"
 msgstr "Az aktuális esemény azonnali felvétele megkezdődött"
 
@@ -951,7 +952,7 @@ msgstr "Címke sorozat"
 msgid "Link Speed"
 msgstr "Link sebesség"
 
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:391
 msgid "List of Timers has been cleaned"
 msgstr "Az időzítők listája kiürítve"
 
@@ -1031,7 +1032,7 @@ msgstr "Perc"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Hiányzó kötelező paraméter '%s'"
 
-#: ../plugin/controllers/models/timers.py:514
+#: ../plugin/controllers/models/timers.py:522
 msgid "Missing requesteter: sRef"
 msgstr "Hiányzó kérelem: sRef"
 
@@ -1155,7 +1156,7 @@ msgstr "Nem adott nevet a listának!"
 msgid "No current service given!"
 msgstr "Nincs aktuális szolgáltatás!"
 
-#: ../plugin/controllers/models/timers.py:407
+#: ../plugin/controllers/models/timers.py:415
 msgid "No event found! Not recording!"
 msgstr "Esemény nem található! Nincs felvétel!"
 
@@ -1163,8 +1164,8 @@ msgstr "Esemény nem található! Nincs felvétel!"
 msgid "No marker-name given!"
 msgstr "Nincs megadva marker-név!"
 
-#: ../plugin/controllers/models/timers.py:330
-#: ../plugin/controllers/models/timers.py:375
+#: ../plugin/controllers/models/timers.py:338
+#: ../plugin/controllers/models/timers.py:383
 msgid "No matching Timer found"
 msgstr "Nincs megfelelő időzítő"
 
@@ -1387,7 +1388,7 @@ msgstr "Pmtpid"
 msgid "Power Control"
 msgstr "Kikapcsolás"
 
-#: ../plugin/controllers/models/timers.py:596
+#: ../plugin/controllers/models/timers.py:604
 msgid "PowerTimer feature not available"
 msgstr "PowerTimer funkció nem áll rendelkezésre"
 
@@ -1749,32 +1750,32 @@ msgstr "Szimulálás"
 msgid "Site and sources"
 msgstr "Webhely és források"
 
-#: ../plugin/controllers/models/timers.py:674
-#: ../plugin/controllers/models/timers.py:701
-#: ../plugin/controllers/models/timers.py:730
-#: ../plugin/controllers/models/timers.py:811
+#: ../plugin/controllers/models/timers.py:682
+#: ../plugin/controllers/models/timers.py:709
+#: ../plugin/controllers/models/timers.py:738
+#: ../plugin/controllers/models/timers.py:819
 msgid "SleepTimer error"
 msgstr "Elalvás időzítő hiba"
 
-#: ../plugin/controllers/models/timers.py:719
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:806
+#: ../plugin/controllers/models/timers.py:727
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:814
 msgid "Sleeptimer has been disabled"
 msgstr "Az elalvás időzítő le lett tiltva"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is disabled"
 msgstr "Az elalvás időzítő le van tiltva"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is enabled"
 msgstr "Az elalvás időzítő engedélyezve van"
 
-#: ../plugin/controllers/models/timers.py:725
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:801
+#: ../plugin/controllers/models/timers.py:733
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:809
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Az elalvás időzítő beállítása %d percben"
@@ -1898,17 +1899,17 @@ msgstr "A paraméter '%s' nem lehet üres"
 msgid "The parameter 'command' must be a number"
 msgstr "A 'parancs' paraméternek számnak kell lennie"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:377
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "Az időzítő '%s' sikeres %s volt"
 
-#: ../plugin/controllers/models/timers.py:325
+#: ../plugin/controllers/models/timers.py:333
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "Az '%s' időzítő sikeresen törölve lett"
 
-#: ../plugin/controllers/models/timers.py:361
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "Az '%s' időzítő éppen felvételt készít! Nem lehet tiltani!"
@@ -1945,27 +1946,27 @@ msgstr "Időtúllépés"
 msgid "Timer"
 msgstr "Időzítő"
 
-#: ../plugin/controllers/models/timers.py:201
+#: ../plugin/controllers/models/timers.py:209
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Időzítő '%s' hozzáadva"
 
-#: ../plugin/controllers/models/timers.py:355
+#: ../plugin/controllers/models/timers.py:363
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "Az időzítő '%s' már létezik!"
 
-#: ../plugin/controllers/models/timers.py:287
+#: ../plugin/controllers/models/timers.py:295
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Időzítő '%s' megváltozott"
 
-#: ../plugin/controllers/models/timers.py:349
+#: ../plugin/controllers/models/timers.py:357
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "A '%s' időzítő nem engedélyezett ütközés miatt"
 
-#: ../plugin/controllers/models/timers.py:306
+#: ../plugin/controllers/models/timers.py:314
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "Az '%s' időzítő nem menthető ütközés miatt"
@@ -1978,7 +1979,7 @@ msgstr "Időzítés hozzáadva"
 msgid "Timer added"
 msgstr "Időzítés hozzáadva"
 
-#: ../plugin/controllers/models/timers.py:441
+#: ../plugin/controllers/models/timers.py:449
 msgid "Timer conflict detected! Not recording!"
 msgstr "Időzítő ütközés észlelhető! Nem lesz felvétel!"
 
@@ -1986,7 +1987,7 @@ msgstr "Időzítő ütközés észlelhető! Nem lesz felvétel!"
 msgid "Timer type"
 msgstr "Időzítő típusa"
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:399
 msgid "TimerList has been saved"
 msgstr "Az időzítő lista mentésre került"
 
@@ -2071,7 +2072,7 @@ msgstr "Típus"
 msgid "Unknown Volume command %s"
 msgstr "Ismeretlen Hangerő parancs %s"
 
-#: ../plugin/controllers/models/timers.py:536
+#: ../plugin/controllers/models/timers.py:544
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Ismeretlen parancs: '%s'"
@@ -2129,7 +2130,7 @@ msgstr "Az új kinézet használata"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:845
+#: ../plugin/controllers/models/timers.py:853
 msgid "VPS plugin not found"
 msgstr "A VPS bővítmény nem található"
 
@@ -2427,7 +2428,7 @@ msgstr "cím vagy rövid leírás egyezés"
 msgid "transcoded"
 msgstr "átkódolt"
 
-#: ../plugin/controllers/web.py:684
+#: ../plugin/controllers/web.py:686
 #, python-format
 msgid "type %s is not a number"
 msgstr "a %s típus nem számjegy"

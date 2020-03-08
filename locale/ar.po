@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-29 17:39+0330\n"
+"POT-Creation-Date: 2020-03-08 23:37+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -307,7 +307,8 @@ msgid "Bouquets"
 msgstr "الباقات"
 
 #: ../plugin/controllers/i18n.py:91
-msgid "Brand"
+#, fuzzy
+msgid "Brand/Meta"
 msgstr "علامة تجارية"
 
 #: ../plugin/controllers/i18n.py:101
@@ -362,7 +363,7 @@ msgstr "إغلاق"
 msgid "Common Settings"
 msgstr "الإعدادات العامة"
 
-#: ../plugin/controllers/models/timers.py:179
+#: ../plugin/controllers/models/timers.py:187
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "الكشف عن المؤقت (المؤقتات) المتعارضة! %s"
@@ -375,12 +376,12 @@ msgstr "المساهمون"
 msgid "Control"
 msgstr "التحكم"
 
-#: ../plugin/controllers/models/timers.py:196
+#: ../plugin/controllers/models/timers.py:204
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "لا يمكن إضافة المؤقت '%s'!"
 
-#: ../plugin/controllers/models/timers.py:312
+#: ../plugin/controllers/models/timers.py:320
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "تعذر العثور على المؤقت '%s' مع وقت البدء والانتهاء المعينين!"
@@ -552,7 +553,7 @@ msgstr "ترميز دليل البرامج اليومي"
 msgid "EPGRefresh"
 msgstr "تحديث دليل البرامج الإلكترونية"
 
-#: ../plugin/controllers/models/timers.py:714
+#: ../plugin/controllers/models/timers.py:722
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "خطا: لا يمكن ضبط مؤقت النوم أثناء الجهاز في وضع الاستعداد"
 
@@ -641,7 +642,7 @@ msgstr "بحث في دليل البرامج"
 msgid "Error"
 msgstr "خطأ"
 
-#: ../plugin/controllers/models/timers.py:840
+#: ../plugin/controllers/models/timers.py:848
 msgid "Error parsing vps.xml"
 msgstr "خطا في تحليل الvps. xml"
 
@@ -681,7 +682,7 @@ msgstr "خطاء: تعذر حذف الباقة %s ,خطاء."
 msgid "Event not found"
 msgstr "لم يتم العثور علي الحدث"
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:218
 msgid "EventId not found"
 msgstr "لم يتم العثور علي الحدث"
 
@@ -862,7 +863,7 @@ msgstr "يشمل الوصف الموسع"
 msgid "Include short description"
 msgstr "يشمل وصف مختصر"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:430
 msgid "Infinite Instant recording started"
 msgstr "بدأ التسجيل الفوري بلا حدود"
 
@@ -886,7 +887,7 @@ msgstr "تنصيب"
 msgid "Instant Record"
 msgstr "تسجيل سريع"
 
-#: ../plugin/controllers/models/timers.py:413
+#: ../plugin/controllers/models/timers.py:421
 msgid "Instant record for current Event started"
 msgstr "بدء تشغيل التسجل الفوري للحدث الحالي"
 
@@ -951,7 +952,7 @@ msgstr "سلسله التسمية"
 msgid "Link Speed"
 msgstr "سرعه الرابط"
 
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:391
 msgid "List of Timers has been cleaned"
 msgstr "قائمة الموقتات تم تنظيفها"
 
@@ -1031,7 +1032,7 @@ msgstr "دقيقة"
 msgid "Missing mandatory parameter '%s'"
 msgstr "العلامة الإلزامية مفقودة '%s'"
 
-#: ../plugin/controllers/models/timers.py:514
+#: ../plugin/controllers/models/timers.py:522
 msgid "Missing requesteter: sRef"
 msgstr "الطلب مفقود: الرقم التعريفي"
 
@@ -1155,7 +1156,7 @@ msgstr "لا يوجد أسم باقة!"
 msgid "No current service given!"
 msgstr "لا يوجد قناة حالية متاحة!"
 
-#: ../plugin/controllers/models/timers.py:407
+#: ../plugin/controllers/models/timers.py:415
 msgid "No event found! Not recording!"
 msgstr "لم يتم العثور على الحدث! لا يوجد تسجيل!"
 
@@ -1163,8 +1164,8 @@ msgstr "لم يتم العثور على الحدث! لا يوجد تسجيل!"
 msgid "No marker-name given!"
 msgstr "لا يوجد أسم علامة معينة!"
 
-#: ../plugin/controllers/models/timers.py:330
-#: ../plugin/controllers/models/timers.py:375
+#: ../plugin/controllers/models/timers.py:338
+#: ../plugin/controllers/models/timers.py:383
 msgid "No matching Timer found"
 msgstr "لم يتم العثور على مؤقت متطابق"
 
@@ -1387,7 +1388,7 @@ msgstr "معرف البي أم تي"
 msgid "Power Control"
 msgstr "التحكم في الطاقة"
 
-#: ../plugin/controllers/models/timers.py:596
+#: ../plugin/controllers/models/timers.py:604
 msgid "PowerTimer feature not available"
 msgstr "ميزة مؤقت الأغلاق غير متوفرة"
 
@@ -1749,32 +1750,32 @@ msgstr "يتظاهر"
 msgid "Site and sources"
 msgstr "الموقع والمصادر"
 
-#: ../plugin/controllers/models/timers.py:674
-#: ../plugin/controllers/models/timers.py:701
-#: ../plugin/controllers/models/timers.py:730
-#: ../plugin/controllers/models/timers.py:811
+#: ../plugin/controllers/models/timers.py:682
+#: ../plugin/controllers/models/timers.py:709
+#: ../plugin/controllers/models/timers.py:738
+#: ../plugin/controllers/models/timers.py:819
 msgid "SleepTimer error"
 msgstr "خطاء مؤقت النوم"
 
-#: ../plugin/controllers/models/timers.py:719
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:806
+#: ../plugin/controllers/models/timers.py:727
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:814
 msgid "Sleeptimer has been disabled"
 msgstr "تم تعطيل مؤقت النوم"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is disabled"
 msgstr "تم تعطيل مؤقت النوم"
 
-#: ../plugin/controllers/models/timers.py:669
-#: ../plugin/controllers/models/timers.py:695
+#: ../plugin/controllers/models/timers.py:677
+#: ../plugin/controllers/models/timers.py:703
 msgid "Sleeptimer is enabled"
 msgstr "تم تفعيل مؤقت النوم"
 
-#: ../plugin/controllers/models/timers.py:725
-#: ../plugin/controllers/models/timers.py:788
-#: ../plugin/controllers/models/timers.py:801
+#: ../plugin/controllers/models/timers.py:733
+#: ../plugin/controllers/models/timers.py:796
+#: ../plugin/controllers/models/timers.py:809
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "ضبط مؤقت النوم %d بالدقائق"
@@ -1898,17 +1899,17 @@ msgstr "المؤشر '%s' لا يمكن أن يكون فارغا"
 msgid "The parameter 'command' must be a number"
 msgstr "مؤشر 'الأمر' يجب أن يكون رقما"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:377
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "إكتمال '%s' المؤقت %s بنجاح"
 
-#: ../plugin/controllers/models/timers.py:325
+#: ../plugin/controllers/models/timers.py:333
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "تم حذف المؤقت' %s ' بنجاح"
 
-#: ../plugin/controllers/models/timers.py:361
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "المؤقت '%s' الأن يسجل! ليس معطلا!"
@@ -1945,27 +1946,27 @@ msgstr "نفذ الوقت"
 msgid "Timer"
 msgstr "المؤقت"
 
-#: ../plugin/controllers/models/timers.py:201
+#: ../plugin/controllers/models/timers.py:209
 #, python-format
 msgid "Timer '%s' added"
 msgstr "تمت إضافة '%s' المؤقت"
 
-#: ../plugin/controllers/models/timers.py:355
+#: ../plugin/controllers/models/timers.py:363
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "المؤقت ' %s ' موجود بالفعل!"
 
-#: ../plugin/controllers/models/timers.py:287
+#: ../plugin/controllers/models/timers.py:295
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "تم تغيير '%s' المؤقت"
 
-#: ../plugin/controllers/models/timers.py:349
+#: ../plugin/controllers/models/timers.py:357
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "لم يتم تمكين المؤقت ' %s ' اثناء التعارض"
 
-#: ../plugin/controllers/models/timers.py:306
+#: ../plugin/controllers/models/timers.py:314
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "لم يتم حفظ المؤقت ' %s ' اثناء التعارض"
@@ -1978,7 +1979,7 @@ msgstr "وأضاف المؤقت"
 msgid "Timer added"
 msgstr "وأضاف المؤقت"
 
-#: ../plugin/controllers/models/timers.py:441
+#: ../plugin/controllers/models/timers.py:449
 msgid "Timer conflict detected! Not recording!"
 msgstr "الكشف عن المؤقت المتعارض! بدون تسجيل!"
 
@@ -1986,7 +1987,7 @@ msgstr "الكشف عن المؤقت المتعارض! بدون تسجيل!"
 msgid "Timer type"
 msgstr "نوع المؤقت"
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:399
 msgid "TimerList has been saved"
 msgstr "تم حفظ قائمة المؤقت"
 
@@ -2071,7 +2072,7 @@ msgstr "النوع"
 msgid "Unknown Volume command %s"
 msgstr "أمر الصوت مجهول %s"
 
-#: ../plugin/controllers/models/timers.py:536
+#: ../plugin/controllers/models/timers.py:544
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "أمر مجهول: ' %s '"
@@ -2129,7 +2130,7 @@ msgstr "استخدام التصميم الجديد"
 msgid "VPS"
 msgstr "الخادم الإفتراضي الخاص"
 
-#: ../plugin/controllers/models/timers.py:845
+#: ../plugin/controllers/models/timers.py:853
 msgid "VPS plugin not found"
 msgstr "لم يتم العثور على بلج أنز الخادم الإفتراضي الخاص"
 
@@ -2427,7 +2428,7 @@ msgstr "عنوان أو تطابق وصف مختصر"
 msgid "transcoded"
 msgstr "المحولة"
 
-#: ../plugin/controllers/web.py:684
+#: ../plugin/controllers/web.py:686
 #, python-format
 msgid "type %s is not a number"
 msgstr "النوع %s ليس رقما"
