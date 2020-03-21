@@ -9,6 +9,7 @@
 #                                                                            #
 ##############################################################################
 
+from __future__ import print_function
 from enigma import eEPGCache, eServiceReference
 from Components.UsageConfig import preferredTimerPath, preferredInstantRecordPath
 from Components.config import config
@@ -198,7 +199,7 @@ def addTimer(session, serviceref, begin, end, name, description, disabled, justp
 				timer.always_zap = always_zap == 1
 
 	except Exception, e:
-		print e
+		print(e)
 		return {
 			"result": False,
 			"message": _("Could not add timer '%s'!") % name
@@ -598,7 +599,7 @@ def getPowerTimer(session):
 			"timers": timers
 		}
 	except Exception, e:
-		print e
+		print(e)
 		return {
 			"result": False,
 			"message": _("PowerTimer feature not available")
@@ -653,7 +654,7 @@ def setPowerTimer(session, request):
 		entry.autosleepinstandbyonly = autosleepinstandbyonly
 		entry.autosleepdelay = int(autosleepdelay)
 		entry.autosleeprepeat = autosleeprepeat
-		print "[PowerTimer]", str(entry)
+		print("[PowerTimer]", str(entry))
 
 	#change
 	# pos = 0

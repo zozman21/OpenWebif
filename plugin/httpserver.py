@@ -9,6 +9,7 @@
 #                                                                            #
 ##############################################################################
 
+from __future__ import print_function
 import enigma
 from Screens.MessageBox import MessageBox
 from Components.config import config
@@ -75,10 +76,10 @@ def getAllNetworks():
 
 def verifyCallback(connection, x509, errnum, errdepth, ok):
 	if not ok:
-		print '[OpenWebif] Invalid cert from subject: ', x509.get_subject()
+		print('[OpenWebif] Invalid cert from subject: ', x509.get_subject())
 		return False
 	else:
-		print '[OpenWebif] Successful cert authed as: ', x509.get_subject()
+		print('[OpenWebif] Successful cert authed as: ', x509.get_subject())
 	return True
 
 
@@ -98,7 +99,7 @@ def buildRootTree(session):
 		origwebifpath = enigma.eEnv.resolve('${libdir}/enigma2/python/Plugins/Extensions/WebInterface')
 		hookpath = enigma.eEnv.resolve('${libdir}/enigma2/python/Plugins/Extensions/OpenWebif/pluginshook.src')
 		if not os.path.islink(origwebifpath + "/WebChilds/Toplevel.py"):
-			print "[OpenWebif] hooking original webif plugins"
+			print("[OpenWebif] hooking original webif plugins")
 
 			cleanuplist = [
 				"/__init__.py",
@@ -128,7 +129,7 @@ def buildRootTree(session):
 			os.symlink(hookpath, origwebifpath + "/WebChilds/Toplevel.py")
 
 		# import modules
-		# print "[OpenWebif] loading external plugins..."
+		# print("[OpenWebif] loading external plugins...")
 		from Plugins.Extensions.WebInterface.WebChilds.Toplevel import loaded_plugins
 		if len(loaded_plugins) == 0:
 			externals = os.listdir(origwebifpath + "/WebChilds/External")
@@ -157,9 +158,9 @@ def buildRootTree(session):
 		if len(loaded_plugins) > 0:
 			for plugin in loaded_plugins:
 				root.putChild(plugin[0], plugin[1])
-				# print "[OpenWebif] plugin '%s' loaded on path '/%s'" % (plugin[2], plugin[0])
+				# print("[OpenWebif] plugin '%s' loaded on path '/%s'" % (plugin[2], plugin[0]))
 		else:
-			print "[OpenWebif] no plugins to load"
+			print("[OpenWebif] no plugins to load")
 	return root
 
 
@@ -186,10 +187,10 @@ def HttpdStart(session):
 			else:
 				# ipv4 only
 				listener.append( reactor.listenTCP(port, site) )
-			print "[OpenWebif] started on %i"% (port)
+			print("[OpenWebif] started on %i"% (port))
 			BJregisterService('http',port)
 		except CannotListenError:
-			print "[OpenWebif] failed to listen on Port %i" % (port)
+			print("[OpenWebif] failed to listen on Port %i" % (port))
 
 		if config.OpenWebif.https_clientcert.value is True and not os.path.exists(CA_FILE):
 			# Disable https
@@ -206,15 +207,15 @@ def HttpdStart(session):
 				try:
 					key = crypto.load_privatekey(crypto.FILETYPE_PEM, open(KEY_FILE, 'rt').read())
 					cert = crypto.load_certificate(crypto.FILETYPE_PEM, open(CERT_FILE, 'rt').read())
-					print "[OpenWebif] CHAIN_FILE = %s" % CHAIN_FILE
+					print("[OpenWebif] CHAIN_FILE = %s" % CHAIN_FILE)
 					chain = None
 					if os.path.exists(CHAIN_FILE):
 						chain = [crypto.load_certificate(crypto.FILETYPE_PEM, open(CHAIN_FILE, 'rt').read())]
-						print "[OpenWebif] ssl chain file found - loading"
+						print("[OpenWebif] ssl chain file found - loading")
 					context = ssl.CertificateOptions(privateKey=key, certificate=cert, extraCertChain=chain)
 				except:
 					# THIS EXCEPTION IS ONLY CATCHED WHEN CERT FILES ARE BAD (look below for error)
-					print "[OpenWebif] failed to get valid cert files. (It could occure bad file save or format, removing...)"
+					print("[OpenWebif] failed to get valid cert files. (It could occure bad file save or format, removing...)")
 					# removing bad files
 					if os.path.exists(KEY_FILE):
 						os.remove(KEY_FILE)
@@ -241,12 +242,12 @@ def HttpdStart(session):
 				else:
 					# ipv4 only
 					listener.append( reactor.listenSSL(httpsPort, sslsite, context) )
-				print "[OpenWebif] started on", httpsPort
+				print("[OpenWebif] started on", httpsPort)
 				BJregisterService('https',httpsPort)
 			except CannotListenError:
-				print "[OpenWebif] failed to listen on Port", httpsPort
+				print("[OpenWebif] failed to listen on Port", httpsPort)
 			except:
-				print "[OpenWebif] failed to start https, disabling..."
+				print("[OpenWebif] failed to start https, disabling...")
 				# Disable https
 				config.OpenWebif.https_enabled.value = False
 				config.OpenWebif.https_enabled.save()
@@ -262,9 +263,9 @@ def HttpdStart(session):
 				else:
 					# ipv4 only
 					listener.append( reactor.listenTCP(80, site, interface='127.0.0.1') )
-				print "[OpenWebif] started stream listening on port 80"
+				print("[OpenWebif] started stream listening on port 80")
 			except CannotListenError:
-				print "[OpenWebif] port 80 busy"
+				print("[OpenWebif] port 80 busy")
 
 
 def HttpdStop(session):
@@ -428,7 +429,7 @@ class StopServer:
 		global listener
 		self.server_to_stop = 0
 		for interface in listener:
-			print "[OpenWebif] Stopping server on port", interface.port
+			print("[OpenWebif] Stopping server on port", interface.port)
 			deferred = interface.stopListening()
 			try:
 				self.server_to_stop += 1

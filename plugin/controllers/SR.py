@@ -20,6 +20,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 ##########################################################################
 
+from __future__ import print_function
 from twisted.web import resource, http
 
 
@@ -33,7 +34,7 @@ class SRController(resource.Resource):
 		try:
 			from Plugins.Extensions.serienrecorder.SerienRecorderResource import addWebInterfaceForOpenWebInterface
 		except ImportError:
-			print "SerienRecorder plugin not found"
+			print("SerienRecorder plugin not found")
 			return
 
 		(root, childs) = addWebInterfaceForOpenWebInterface()

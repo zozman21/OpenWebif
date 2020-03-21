@@ -20,6 +20,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 ##########################################################################
 
+from __future__ import print_function
 from twisted.web import resource, http
 
 
@@ -33,7 +34,7 @@ class ERController(resource.Resource):
 				EPGRefreshChangeSettingsResource, EPGRefreshAddRemoveServiceResource, \
 				EPGRefreshStartRefreshResource
 		except ImportError:
-			print "EPG Refresh Plugin not found"
+			print("EPG Refresh Plugin not found")
 			return
 		self.putChild('get', EPGRefreshSettingsResource())
 		self.putChild('set', EPGRefreshChangeSettingsResource())

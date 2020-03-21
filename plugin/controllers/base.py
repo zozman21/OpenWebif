@@ -20,6 +20,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 ##########################################################################
 
+from __future__ import print_function
 import os
 import imp
 import json
@@ -166,11 +167,11 @@ class BaseController(resource.Resource):
 			data = func(request)
 			if data is None:
 				# if not self.suppresslog:
-					# print "[OpenWebif] page '%s' without content" % request.uri
+					# print("[OpenWebif] page '%s' without content" % request.uri)
 				self.error404(request)
 			elif self.isCustom:
 				# if not self.suppresslog:
-					# print "[OpenWebif] page '%s' ok (custom)" % request.uri
+					# print("[OpenWebif] page '%s' ok (custom)" % request.uri)
 				request.write(data)
 				request.finish()
 			elif self.isJson:
@@ -183,12 +184,12 @@ class BaseController(resource.Resource):
 					pass
 			elif type(data) is str:
 				# if not self.suppresslog:
-					# print "[OpenWebif] page '%s' ok (simple string)" % request.uri
+					# print("[OpenWebif] page '%s' ok (simple string)" % request.uri)
 				request.setHeader("content-type", "text/plain")
 				request.write(data)
 				request.finish()
 			else:
-				# print "[OpenWebif] page '%s' ok (cheetah template)" % request.uri
+				# print("[OpenWebif] page '%s' ok (cheetah template)" % request.uri)
 				module = request.path
 				if module[-1] == "/":
 					module += "index"
@@ -198,7 +199,7 @@ class BaseController(resource.Resource):
 				module = module.replace(".", "")
 				out = self.loadTemplate(module, self.path, data)
 				if out is None:
-					print "[OpenWebif] ERROR! Template not found for page '%s'" % request.uri
+					print("[OpenWebif] ERROR! Template not found for page '%s'" % request.uri)
 					self.error404(request)
 				else:
 					if self.isMobile:
@@ -216,7 +217,7 @@ class BaseController(resource.Resource):
 					request.finish()
 
 		else:
-			print "[OpenWebif] page '%s' not found" % request.uri
+			print("[OpenWebif] page '%s' not found" % request.uri)
 			self.error404(request)
 
 		# restore cached data

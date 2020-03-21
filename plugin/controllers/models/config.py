@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
 from enigma import eEnv
 from Components.SystemInfo import SystemInfo
 from Components.config import config
@@ -115,7 +116,7 @@ def getJsonFromConfig(cnf):
 			"current": cnf.value
 		}
 
-	print "[OpenWebif] Unknown class ", cnf.__class__.__name__
+	print("[OpenWebif] Unknown class ", cnf.__class__.__name__)
 	return {
 		"result": False,
 		"type": "unknown"
@@ -125,7 +126,7 @@ def saveConfig(path, value):
 	try:
 		cnf = get_config_attribute(path, root_obj=config)
 	except Exception as exc:
-		print "[OpenWebif] ", exc
+		print("[OpenWebif] ", exc)
 		return {
 			"result": False,
 			"message": "I'm sorry Dave, I'm afraid I can't do that"
@@ -156,7 +157,7 @@ def saveConfig(path, value):
 			cnf.value = value
 		cnf.save()
 	except Exception, e:
-		print "[OpenWebif] ", e
+		print("[OpenWebif] ", e)
 		return {
 			"result": False
 		}

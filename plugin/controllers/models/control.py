@@ -8,6 +8,7 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
+from __future__ import print_function
 from Components.config import config
 from enigma import eServiceReference, eActionMap, eServiceCenter
 from services import getProtection
@@ -165,7 +166,7 @@ def remoteControl(key, type="", rcu=""):
 			if getBoxType() in ("xp1000","formuler1","formuler3","hd1100","hd1200") or getBoxProc() in ("et9000","et9200"):
 				remotetype = "dreambox advanced remote control (native)"
 		except:  # noqa: E722
-			print "[OpenWebIf] wrong hw detection"
+			print("[OpenWebIf] wrong hw detection")
 
 	amap = eActionMap.getInstance()
 	if type == "long":
@@ -206,7 +207,7 @@ def setPowerState(session, state):
 			session.open(Standby)
 
 	elif state == 6:
-		print "HAHA"
+		print("HAHA")
 
 	return {
 		"result": True,

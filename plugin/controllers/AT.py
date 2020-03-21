@@ -20,6 +20,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 ##########################################################################
 
+from __future__ import print_function
 from twisted.web import static, resource, http
 import os
 import json
@@ -144,7 +145,7 @@ class ATController(resource.Resource):
 				AutoTimerRemoveAutoTimerResource, AutoTimerSettingsResource, \
 				AutoTimerSimulateResource
 		except ImportError:
-			# print "AT plugin not found"
+			# print("AT plugin not found")
 			return
 		self.putChild('parse', AutoTimerDoParseResource())
 		self.putChild('remove', AutoTimerRemoveAutoTimerResource())

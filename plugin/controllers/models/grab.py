@@ -8,6 +8,7 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
+from __future__ import print_function
 from enigma import eConsoleAppContainer
 from Screens.InfoBar import InfoBar
 from twisted.web import resource, server
@@ -93,7 +94,7 @@ class GrabRequest(object):
 		try:
 			self.request.finish()
 		except RuntimeError, error:
-			print "[OpenWebif] grabFinished error: %s" % error
+			print("[OpenWebif] grabFinished error: %s" % error)
 		# Break the chain of ownership
 		del self.request
 

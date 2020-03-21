@@ -9,6 +9,7 @@
 #                                                                            #
 ##############################################################################
 
+from __future__ import print_function
 import os
 import sys
 import time
@@ -264,7 +265,7 @@ def getInfo(session=None, need_fullinfo=False):
 	info['friendlychipsettext'] = friendlychipsettext
 	info['tuners'] = []
 	for i in range(0, nimmanager.getSlotCount()):
-		print "[OpenWebif] -D- tuner '%d' '%s' '%s'" % (i, nimmanager.getNimName(i), nimmanager.getNim(i).getSlotName())
+		print("[OpenWebif] -D- tuner '%d' '%s' '%s'" % (i, nimmanager.getNimName(i), nimmanager.getNim(i).getSlotName()))
 		info['tuners'].append({
 			"name": nimmanager.getNim(i).getSlotName(),
 			"type": nimmanager.getNimName(i) + " (" + nimmanager.getNim(i).getFriendlyType() + ")",
@@ -446,7 +447,7 @@ def getInfo(session=None, need_fullinfo=False):
 							"type": strtype
 						})
 			except Exception, error:
-				print "[OpenWebif] -D- no eStreamServer %s" % error
+				print("[OpenWebif] -D- no eStreamServer %s" % error)
 			
 			recs = NavigationInstance.instance.getRecordings()
 			if recs:
@@ -455,7 +456,7 @@ def getInfo(session=None, need_fullinfo=False):
 				s_name = ''
 				# s_cip = ''
 
-				print "[OpenWebif] -D- streamList count '%d'" % len(streamList)
+				print("[OpenWebif] -D- streamList count '%d'" % len(streamList))
 				if len(streamList) == 1:
 					from Screens.ChannelSelection import service_types_tv
 					# from enigma import eEPGCache
@@ -469,19 +470,19 @@ def getInfo(session=None, need_fullinfo=False):
 						if srefs == channel[0]:
 							s_name = channel[1] + ' (' + s.clientIP + ')'
 							break
-				print "[OpenWebif] -D- s_name '%s'" % s_name
+				print("[OpenWebif] -D- s_name '%s'" % s_name)
 
 # only for debug
 				for stream in streamList:
 					srefs = stream.ref.toString()
-					print "[OpenWebif] -D- srefs '%s'" % srefs
+					print("[OpenWebif] -D- srefs '%s'" % srefs)
 
 				sname = ''
 				timers = []
 				for timer in NavigationInstance.instance.RecordTimer.timer_list:
 					if timer.isRunning() and not timer.justplay:
 						timers.append(timer.service_ref.getServiceName().replace('\xc2\x86', '').replace('\xc2\x87', ''))
-						print "[OpenWebif] -D- timer '%s'" % timer.service_ref.getServiceName()
+						print("[OpenWebif] -D- timer '%s'" % timer.service_ref.getServiceName())
 # TODO: more than one recording
 				if len(timers) == 1:
 					sname = timers[0]
@@ -489,7 +490,7 @@ def getInfo(session=None, need_fullinfo=False):
 				if sname == '' and s_name != '':
 					sname = s_name
 
-				print "[OpenWebif] -D- recs count '%d'" % len(recs)
+				print("[OpenWebif] -D- recs count '%d'" % len(recs))
 
 				for rec in recs:
 					feinfo = rec.frontendInfo()

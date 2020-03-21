@@ -8,6 +8,7 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
+from __future__ import print_function
 import re
 import unicodedata
 from time import time, localtime, strftime, mktime
@@ -128,7 +129,7 @@ def getCurrentService(session):
 			"bqname": bqname
 		}
 	except Exception, e:
-		print str(e)
+		print(str(e))
 		return {
 			"result": False,
 			"name": "",
@@ -607,7 +608,7 @@ def getSubServices(session):
 		})
 		subservices = service.subServices()
 		if subservices and subservices.getNumberOfSubservices() > 0:
-			print subservices.getNumberOfSubservices()
+			print(subservices.getNumberOfSubservices())
 			for i in range(subservices.getNumberOfSubservices()):
 				sub = subservices.getSubservice(i)
 				services.append({

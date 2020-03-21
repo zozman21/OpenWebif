@@ -20,6 +20,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 ##########################################################################
 
+from __future__ import print_function
 import os
 import struct
 
@@ -274,7 +275,7 @@ def removeMovie(session, sRef, Force=False):
 					message = "trashcan exception"
 					pass
 				except Exception, e:
-					print "Failed to move to .Trash folder:", e
+					print("Failed to move to .Trash folder:", e)
 					message = "Failed to move to .Trash folder: %s" + str(e)
 				deleted = True
 		elif hasattr(config.usage, 'movielist_use_trash_dir'):
@@ -302,7 +303,7 @@ def removeMovie(session, sRef, Force=False):
 					message = "trashdir exception"
 					pass
 				except Exception, e:
-					print "Failed to move to trashdir:", e
+					print("Failed to move to trashdir:", e)
 					message = "Failed to move to trashdir: %s" + str(e)
 				deleted = True
 		if not deleted:
@@ -504,7 +505,7 @@ def getMovieInfo(sRef=None, addtag=None, deltag=None, title=None, cuts=None, New
 							)
 						f.close()
 					except:
-						print 'Error'
+						print('Error')
 						pass
 
 					if cuts is not None:

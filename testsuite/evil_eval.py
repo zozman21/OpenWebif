@@ -16,6 +16,7 @@ Unit Test for Code Trying to Mitigate a Remote Code Execution Vulnerability
     uid=0(root) gid=0(root)
 
 """
+from __future__ import print_function
 import os
 import sys
 import unittest
@@ -121,7 +122,7 @@ class EvilEvalTestCase(unittest.TestCase):
 
 			configfile.save()
 			config.save()
-			print config.pickle()
+			print(config.pickle())
 
 		"""
 		self.config_obj = ConfigObjectMockup()

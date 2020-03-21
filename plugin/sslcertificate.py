@@ -9,6 +9,7 @@
 #                                                                            #
 ##############################################################################
 
+from __future__ import print_function
 from OpenSSL import crypto
 from socket import gethostname
 from time import time
@@ -41,7 +42,7 @@ class SSLCertificateGenerator:
 			return
 		keypair = self.__genKeyPair()
 		certificate = self.__genCertificate(keypair)
-		print "[OpenWebif] Install newly generated key pair and certificate"
+		print("[OpenWebif] Install newly generated key pair and certificate")
 		open(KEY_FILE, "wt").write(crypto.dump_privatekey(crypto.FILETYPE_PEM, keypair))
 		open(CERT_FILE, "wt").write(crypto.dump_certificate(crypto.FILETYPE_PEM, certificate))
 
