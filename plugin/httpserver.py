@@ -151,7 +151,7 @@ def buildRootTree(session):
 				loaded.append(modulename)
 				try:
 					imp.load_source(modulename, origwebifpath + "/WebChilds/External/" + modulename + ".py")
-				except Exception, e:
+				except Exception as e:
 					# maybe there's only the compiled version
 					imp.load_compiled(modulename, origwebifpath + "/WebChilds/External/" + external)
 
@@ -456,7 +456,7 @@ def installCertificates(session):
 	certGenerator = SSLCertificateGenerator()
 	try:
 		certGenerator.installCertificates()
-	except IOError, e:
+	except IOError as e:
 		# Disable https
 		config.OpenWebif.https_enabled.value = False
 		config.OpenWebif.https_enabled.save()

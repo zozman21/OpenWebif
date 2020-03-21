@@ -156,7 +156,7 @@ def saveConfig(path, value):
 		else:
 			cnf.value = value
 		cnf.save()
-	except Exception, e:
+	except Exception as e:
 		print("[OpenWebif] ", e)
 		return {
 			"result": False

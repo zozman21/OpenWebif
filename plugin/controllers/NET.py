@@ -136,7 +136,7 @@ class NetController(resource.Resource):
 				iAutoMount.writeMountsConfig()
 				self.result["result"] = True
 				self.result["message"] = "mount changed"
-			except Exception, error:
+			except Exception as error:
 				self.result["message"] = "mount not changed"
 				self.result["error"] = error
 		else:
@@ -209,7 +209,7 @@ class NetController(resource.Resource):
 					iAutoMount.writeMountsConfig()
 					self.result["result"] = True
 					self.result["message"] = "mount added"
-				except Exception, error:
+				except Exception as error:
 					self.result["message"] = "mount not added"
 					self.result["error"] = error
 		else:
@@ -227,7 +227,7 @@ class NetController(resource.Resource):
 					iAutoMount.writeMountsConfig()
 					self.result["result"] = True
 					self.result["message"] = "mount changed"
-				except Exception, error:
+				except Exception as error:
 					self.result["message"] = "mount not changed"
 					self.result["error"] = error
 			else:

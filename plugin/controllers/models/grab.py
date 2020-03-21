@@ -62,7 +62,7 @@ class GrabRequest(object):
 		self.container.setBufferSize(32768)
 		if mode == "lcd":
 			if self.container.execute(command):
-				raise Exception, "failed to execute: ", command
+				raise Exception("failed to execute: ", command)
 			sref = 'lcdshot'
 		else:
 			self.container.execute(GRAB_PATH, *graboptions)
@@ -93,7 +93,7 @@ class GrabRequest(object):
 	def grabFinished(self, retval=None):
 		try:
 			self.request.finish()
-		except RuntimeError, error:
+		except RuntimeError as error:
 			print("[OpenWebif] grabFinished error: %s" % error)
 		# Break the chain of ownership
 		del self.request

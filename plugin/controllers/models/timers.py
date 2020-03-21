@@ -198,7 +198,7 @@ def addTimer(session, serviceref, begin, end, name, description, disabled, justp
 			if hasattr(timer, "always_zap"):
 				timer.always_zap = always_zap == 1
 
-	except Exception, e:
+	except Exception as e:
 		print(e)
 		return {
 			"result": False,
@@ -598,7 +598,7 @@ def getPowerTimer(session):
 			"result": True,
 			"timers": timers
 		}
-	except Exception, e:
+	except Exception as e:
 		print(e)
 		return {
 			"result": False,

@@ -446,9 +446,8 @@ def getInfo(session=None, need_fullinfo=False):
 							"ip": x[0],
 							"type": strtype
 						})
-			except Exception, error:
+			except Exception as error:
 				print("[OpenWebif] -D- no eStreamServer %s" % error)
-			
 			recs = NavigationInstance.instance.getRecordings()
 			if recs:
 # only one stream and only TV
@@ -511,7 +510,7 @@ def getInfo(session=None, need_fullinfo=False):
 					if cur_info:
 						nr = frontendData['tuner_number']
 						info['tuners'][nr]['live'] = getOrbitalText(cur_info) + ' / ' + sname
-		except Exception, error:
+		except Exception as error:
 			info['EX'] = error
 
 	STATICBOXINFO = info

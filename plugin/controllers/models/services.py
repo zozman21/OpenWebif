@@ -128,7 +128,7 @@ def getCurrentService(session):
 			"bqref": quote(bqref, safe=' ~@#$&()*!+=:;,.?/\''),
 			"bqname": bqname
 		}
-	except Exception, e:
+	except Exception as e:
 		print(str(e))
 		return {
 			"result": False,

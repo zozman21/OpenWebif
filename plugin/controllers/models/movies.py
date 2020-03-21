@@ -274,7 +274,7 @@ def removeMovie(session, sRef, Force=False):
 				except ImportError:
 					message = "trashcan exception"
 					pass
-				except Exception, e:
+				except Exception as e:
 					print("Failed to move to .Trash folder:", e)
 					message = "Failed to move to .Trash folder: %s" + str(e)
 				deleted = True
@@ -302,7 +302,7 @@ def removeMovie(session, sRef, Force=False):
 				except ImportError:
 					message = "trashdir exception"
 					pass
-				except Exception, e:
+				except Exception as e:
 					print("Failed to move to trashdir:", e)
 					message = "Failed to move to trashdir: %s" + str(e)
 				deleted = True
@@ -375,7 +375,7 @@ def _moveMovie(session, sRef, destpath=None, newname=None):
 								move(src, srcpath + newname + suffix)
 						else:
 							move(src, destpath + fileName + suffix)
-					except IOError, e:
+					except IOError as e:
 						errorlist.append("I/O error({0})".format(e))
 						break
 					except OSError as ose:
