@@ -20,14 +20,14 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 ##########################################################################
 
-from base import BaseController
-from models.movies import getMovieList
-from models.timers import getTimers
-from models.services import getBouquets, getChannels, getChannelEpg, getEvent, getPicon
+from Plugins.Extensions.OpenWebif.controllers.base import BaseController
+from Plugins.Extensions.OpenWebif.controllers.models.movies import getMovieList
+from Plugins.Extensions.OpenWebif.controllers.models.timers import getTimers
+from Plugins.Extensions.OpenWebif.controllers.models.services import getBouquets, getChannels, getChannelEpg, getEvent, getPicon
 from urllib import quote
 from time import localtime, strftime
 
-from defaults import TRANSCODING
+from Plugins.Extensions.OpenWebif.controllers.defaults import TRANSCODING
 
 
 class MobileController(BaseController):

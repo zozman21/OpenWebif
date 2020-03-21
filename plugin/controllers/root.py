@@ -25,21 +25,21 @@ import os
 from twisted.web import static, http, proxy
 from Components.config import config
 
-from models.grab import grabScreenshot
-from base import BaseController
-from web import WebController, ApiController
-from ajax import AjaxController
-from mobile import MobileController
-from opkg import OpkgController
-from AT import ATController
-from SR import SRController
-from ER import ERController
-from BQE import BQEController
-from transcoding import TranscodingController
-from wol import WOLSetupController, WOLClientController
+from Plugins.Extensions.OpenWebif.controllers.models.grab import grabScreenshot
+from Plugins.Extensions.OpenWebif.controllers.base import BaseController
+from Plugins.Extensions.OpenWebif.controllers.web import WebController, ApiController
+from Plugins.Extensions.OpenWebif.controllers.ajax import AjaxController
+from Plugins.Extensions.OpenWebif.controllers.mobile import MobileController
+from Plugins.Extensions.OpenWebif.controllers.opkg import OpkgController
+from Plugins.Extensions.OpenWebif.controllers.AT import ATController
+from Plugins.Extensions.OpenWebif.controllers.SR import SRController
+from Plugins.Extensions.OpenWebif.controllers.ER import ERController
+from Plugins.Extensions.OpenWebif.controllers.BQE import BQEController
+from Plugins.Extensions.OpenWebif.controllers.transcoding import TranscodingController
+from Plugins.Extensions.OpenWebif.controllers.wol import WOLSetupController, WOLClientController
 from file import FileController
 
-from defaults import PICON_PATH, getPublicPath, VIEWS_PATH
+from Plugins.Extensions.OpenWebif.controllers.defaults import PICON_PATH, getPublicPath, VIEWS_PATH
 
 class RootController(BaseController):
 	"""

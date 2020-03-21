@@ -10,7 +10,7 @@
 ##############################################################################
 from enigma import eServiceReference, getBestPlayableServiceReference
 from ServiceReference import ServiceReference
-from info import getInfo
+from Plugins.Extensions.OpenWebif.controllers.models.info import getInfo
 from urllib import unquote, quote
 import os
 import re

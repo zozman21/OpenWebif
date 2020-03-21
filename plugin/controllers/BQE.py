@@ -22,7 +22,7 @@
 
 from twisted.web import static, resource, http, server
 from enigma import eServiceCenter, eServiceReference, iServiceInformation
-from base import BaseController
+from Plugins.Extensions.OpenWebif.controllers.base import BaseController
 from Components.config import config
 from Components.ParentalControl import parentalControl
 import os

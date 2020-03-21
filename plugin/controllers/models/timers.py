@@ -18,7 +18,7 @@ from RecordTimer import RecordTimerEntry, RecordTimer, parseEvent
 from ServiceReference import ServiceReference
 from time import time, strftime, localtime, mktime
 from urllib import unquote
-from info import GetWithAlternative
+from Plugins.Extensions.OpenWebif.controllers.models.info import GetWithAlternative
 from ..i18n import _
 
 def getTimers(session):

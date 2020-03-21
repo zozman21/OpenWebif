@@ -24,10 +24,10 @@ from Components.Label import Label
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry, ConfigSubsection, ConfigInteger, ConfigYesNo, ConfigText, ConfigSelection, configfile
 from enigma import getDesktop
-from controllers.models.info import getInfo
+from Plugins.Extensions.OpenWebif.controllers.models.info import getInfo
 from controllers.defaults import getKinopoisk
 
-from httpserver import HttpdStart, HttpdStop, HttpdRestart
+from Plugins.Extensions.OpenWebif.httpserver import HttpdStart, HttpdStop, HttpdRestart
 
 from controllers.i18n import _
 
