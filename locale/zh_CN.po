@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-08 23:37+0330\n"
+"POT-Creation-Date: 2020-03-26 17:40+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: satfan <satfan@163.com>\n"
@@ -16,13 +16,13 @@ msgstr ""
 "X-Poedit-SearchPath-0: plugin\n"
 "X-Poedit-SearchPath-1: U\n"
 
-#: ../plugin/controllers/BouquetEditor.py:549
+#: ../plugin/controllers/BouquetEditor.py:550
 #, python-format
 msgid "%s %s is locked."
 msgstr "%s %s 已加锁."
 
-#: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/info.py:341
+#: ../plugin/controllers/models/info.py:215
+#: ../plugin/controllers/models/info.py:342
 #, python-format
 msgid "%s free / %s total"
 msgstr ""
@@ -95,7 +95,7 @@ msgstr "添加频道到节目分组"
 msgid "Add service name to stream information"
 msgstr "添加频道名称到数据流信息"
 
-#: ../plugin/controllers/BouquetEditor.py:466
+#: ../plugin/controllers/BouquetEditor.py:467
 #, python-format
 msgid "Added %s to alternative service %s."
 msgstr "添加 %s 到替代频道 %s."
@@ -120,7 +120,7 @@ msgstr "全部频道"
 msgid "All Files of this Software are open source software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation."
 msgstr "本软件的所有文件都是开源软件；您可以在遵循GPL V3协议的基础上重新分配和修改它。"
 
-#: ../plugin/controllers/BouquetEditor.py:505
+#: ../plugin/controllers/BouquetEditor.py:506
 msgid "All alternative services deleted."
 msgstr "删除所有的替代频道."
 
@@ -128,7 +128,7 @@ msgstr "删除所有的替代频道."
 msgid "Allow IPK Upload"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:452
+#: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
 msgid "Alternative %s created failed."
 msgstr "替代%s创建失败."
@@ -185,7 +185,7 @@ msgstr "自动"
 msgid "AutoPoll"
 msgstr "自动轮巡"
 
-#: ../plugin/controllers/base.py:322
+#: ../plugin/controllers/base.py:323
 msgid "AutoTimer"
 msgstr "自动定时器"
 
@@ -237,47 +237,47 @@ msgstr ""
 msgid "Bookmarks"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:127
+#: ../plugin/controllers/BouquetEditor.py:128
 #, python-format
 msgid "Bouquet %s already exists."
 msgstr "自定义组%s已经存在。"
 
-#: ../plugin/controllers/BouquetEditor.py:218
+#: ../plugin/controllers/BouquetEditor.py:219
 #, python-format
 msgid "Bouquet %s can not be moved."
 msgstr "节目分组%s不能移动"
 
-#: ../plugin/controllers/BouquetEditor.py:122
+#: ../plugin/controllers/BouquetEditor.py:123
 #, python-format
 msgid "Bouquet %s created."
 msgstr "自定义组%s 已创建"
 
-#: ../plugin/controllers/BouquetEditor.py:191
+#: ../plugin/controllers/BouquetEditor.py:192
 #, python-format
 msgid "Bouquet %s deleted."
 msgstr "节目分组%s已删除."
 
-#: ../plugin/controllers/BouquetEditor.py:547
+#: ../plugin/controllers/BouquetEditor.py:548
 #, python-format
 msgid "Bouquet %s is locked."
 msgstr "节目分组%s已加锁。"
 
-#: ../plugin/controllers/BouquetEditor.py:555
+#: ../plugin/controllers/BouquetEditor.py:556
 #, python-format
 msgid "Bouquet %s is unlocked."
 msgstr "节目分组 %s 已解锁."
 
-#: ../plugin/controllers/BouquetEditor.py:216
+#: ../plugin/controllers/BouquetEditor.py:217
 #, python-format
 msgid "Bouquet %s moved."
 msgstr "移动自定义组 %s."
 
-#: ../plugin/controllers/BouquetEditor.py:186
+#: ../plugin/controllers/BouquetEditor.py:187
 #, python-format
 msgid "Bouquet %s removed failed, sevicerefence or mutable list is not valid."
 msgstr "移除节目分组%s失败, 服务或名称无效."
 
-#: ../plugin/controllers/BouquetEditor.py:184
+#: ../plugin/controllers/BouquetEditor.py:185
 #, python-format
 msgid "Bouquet %s removed failed."
 msgstr "移除节目分组%s失败"
@@ -286,20 +286,20 @@ msgstr "移除节目分组%s失败"
 msgid "Bouquet Editor"
 msgstr "节目分组编辑器"
 
-#: ../plugin/controllers/BouquetEditor.py:388
+#: ../plugin/controllers/BouquetEditor.py:389
 msgid "Bouquet renamed successfully."
 msgstr "节目分组改名完成."
 
-#: ../plugin/controllers/BouquetEditor.py:649
+#: ../plugin/controllers/BouquetEditor.py:650
 msgid "Bouquet-settings were restored successfully"
 msgstr "节目分组设置已成功恢复"
 
-#: ../plugin/controllers/base.py:327
+#: ../plugin/controllers/base.py:328
 msgid "BouquetEditor"
 msgstr "编辑节目分组"
 
-#: ../plugin/controllers/BouquetEditor.py:129
-#: ../plugin/controllers/BouquetEditor.py:454
+#: ../plugin/controllers/BouquetEditor.py:130
+#: ../plugin/controllers/BouquetEditor.py:455
 msgid "Bouquetlist is not editable!"
 msgstr "节目分组列表不可编辑!"
 
@@ -320,7 +320,7 @@ msgstr ""
 msgid "CPU brand"
 msgstr ""
 
-#: ../plugin/controllers/models/services.py:338
+#: ../plugin/controllers/models/services.py:339
 msgid "Cable"
 msgstr "有线"
 
@@ -349,7 +349,7 @@ msgstr "频道"
 msgid "Channels"
 msgstr "频道"
 
-#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:257
+#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:258
 msgid "Chipset"
 msgstr "芯片组"
 
@@ -366,7 +366,7 @@ msgstr "关闭"
 msgid "Common Settings"
 msgstr "设置"
 
-#: ../plugin/controllers/models/timers.py:187
+#: ../plugin/controllers/models/timers.py:188
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "检测到的计时器！%s"
@@ -379,12 +379,12 @@ msgstr "贡献者"
 msgid "Control"
 msgstr "控制"
 
-#: ../plugin/controllers/models/timers.py:204
+#: ../plugin/controllers/models/timers.py:205
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "不能添加定时器“%s”!"
 
-#: ../plugin/controllers/models/timers.py:320
+#: ../plugin/controllers/models/timers.py:321
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "未找到指定开始时间和结束时间的定时器 '%s' ！"
@@ -410,8 +410,8 @@ msgstr "自定义名称"
 msgid "Custom offset"
 msgstr "自定义偏移"
 
-#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:57
-#: ../plugin/controllers/models/info.py:76
+#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:58
+#: ../plugin/controllers/models/info.py:77
 msgid "DHCP"
 msgstr "DHCP"
 
@@ -460,7 +460,7 @@ msgstr "删除录制"
 msgid "Delete Timer"
 msgstr "删除定时器"
 
-#: ../plugin/controllers/models/movies.py:300
+#: ../plugin/controllers/models/movies.py:301
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -551,11 +551,11 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "EPG 编码"
 
-#: ../plugin/controllers/base.py:331
+#: ../plugin/controllers/base.py:332
 msgid "EPGRefresh"
 msgstr "EPG 刷新"
 
-#: ../plugin/controllers/models/timers.py:722
+#: ../plugin/controllers/models/timers.py:723
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "错误：无法设置SleepTimer当设备处于待机模式"
 
@@ -644,7 +644,7 @@ msgstr "EPG 搜索"
 msgid "Error"
 msgstr "错误"
 
-#: ../plugin/controllers/models/timers.py:848
+#: ../plugin/controllers/models/timers.py:849
 msgid "Error parsing vps.xml"
 msgstr "分析vps.xml出错"
 
@@ -652,12 +652,12 @@ msgstr "分析vps.xml出错"
 msgid "Error upload File"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:592
+#: ../plugin/controllers/BouquetEditor.py:593
 #, python-format
 msgid "Error while preparing backup file, %s does not exists."
 msgstr "创建备份文件错误！%s不存在。"
 
-#: ../plugin/controllers/BouquetEditor.py:598
+#: ../plugin/controllers/BouquetEditor.py:599
 msgid "Error while preparing backup file."
 msgstr "创建备份文件错误。"
 
@@ -665,17 +665,17 @@ msgstr "创建备份文件错误。"
 msgid "Error writing File"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:653
+#: ../plugin/controllers/BouquetEditor.py:654
 #, python-format
 msgid "Error, %s does not exists, restore is not possible..."
 msgstr "错误，%s不存在，不能恢复..."
 
-#: ../plugin/controllers/BouquetEditor.py:651
+#: ../plugin/controllers/BouquetEditor.py:652
 #, python-format
 msgid "Error, %s was not created with WebBouquetEditor..."
 msgstr "错误。创建节目分组%s失败..."
 
-#: ../plugin/controllers/BouquetEditor.py:193
+#: ../plugin/controllers/BouquetEditor.py:194
 #, python-format
 msgid "Error: Bouquet %s could not deleted, OSError."
 msgstr "错误: 节目分组%s不能被删除, 系统错误"
@@ -684,7 +684,7 @@ msgstr "错误: 节目分组%s不能被删除, 系统错误"
 msgid "Event not found"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:218
+#: ../plugin/controllers/models/timers.py:219
 msgid "EventId not found"
 msgstr "未找到事件ID"
 
@@ -764,7 +764,7 @@ msgstr "星期五"
 msgid "Frontprocessor"
 msgstr "前端版本"
 
-#: ../plugin/controllers/models/info.py:260
+#: ../plugin/controllers/models/info.py:261
 msgid "Frontprocessor Version"
 msgstr "前端版本"
 
@@ -773,11 +773,12 @@ msgstr "前端版本"
 msgid "Full remote"
 msgstr "隐藏完整的遥控"
 
-#: ../plugin/controllers/models/info.py:307
-#: ../plugin/controllers/models/info.py:313
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/movies.py:212
+#: ../plugin/controllers/models/info.py:308
+#: ../plugin/controllers/models/info.py:314
+#: ../plugin/controllers/models/info.py:329
+#: ../plugin/controllers/models/info.py:332
+#: ../plugin/controllers/models/movies.py:213
+#: ../plugin/controllers/models/movies.py:630
 msgid "GB"
 msgstr ""
 
@@ -795,11 +796,11 @@ msgstr "GUI 版本"
 msgid "Gateway"
 msgstr "网关地址"
 
-#: ../plugin/controllers/BouquetEditor.py:450
+#: ../plugin/controllers/BouquetEditor.py:451
 msgid "Get mutable list for new created alternative failed!"
 msgstr "创建新的自定义组失败！"
 
-#: ../plugin/controllers/BouquetEditor.py:124
+#: ../plugin/controllers/BouquetEditor.py:125
 msgid "Get mutable list for new created bouquet failed!"
 msgstr "创建新的自定义组失败！"
 
@@ -835,11 +836,11 @@ msgstr "小时"
 msgid "IPv4 address"
 msgstr "IPv4地址"
 
-#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:136
+#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:137
 msgid "IPv4-only Python/Twisted"
 msgstr "IPv4-only Python/Twisted"
 
-#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:132
+#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:133
 msgid "IPv4-only kernel"
 msgstr "IPv4-only kernel"
 
@@ -869,7 +870,7 @@ msgstr "包含描述"
 msgid "Include short description"
 msgstr "包含描述"
 
-#: ../plugin/controllers/models/timers.py:430
+#: ../plugin/controllers/models/timers.py:431
 msgid "Infinite Instant recording started"
 msgstr "开始录制（不限时长）"
 
@@ -894,11 +895,11 @@ msgstr "录制"
 msgid "Instant Record"
 msgstr "录制"
 
-#: ../plugin/controllers/models/timers.py:421
+#: ../plugin/controllers/models/timers.py:422
 msgid "Instant record for current Event started"
 msgstr "开始录制当前事件"
 
-#: ../plugin/controllers/BouquetEditor.py:350
+#: ../plugin/controllers/BouquetEditor.py:351
 msgid "Internal error!"
 msgstr "内部错误!"
 
@@ -943,7 +944,7 @@ msgstr "内核版本"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:294
+#: ../plugin/controllers/base.py:295
 msgid "LCD4Linux Setup"
 msgstr "LCD设置"
 
@@ -959,7 +960,7 @@ msgstr "标签系列"
 msgid "Link Speed"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:392
 msgid "List of Timers has been cleaned"
 msgstr "定时器列表已被清除"
 
@@ -975,10 +976,11 @@ msgstr "锁定"
 msgid "MAC address"
 msgstr "MAC 地址"
 
-#: ../plugin/controllers/models/info.py:304
-#: ../plugin/controllers/models/info.py:315
-#: ../plugin/controllers/models/info.py:333
-#: ../plugin/controllers/models/movies.py:214
+#: ../plugin/controllers/models/info.py:305
+#: ../plugin/controllers/models/info.py:316
+#: ../plugin/controllers/models/info.py:334
+#: ../plugin/controllers/models/movies.py:215
+#: ../plugin/controllers/models/movies.py:632
 msgid "MB"
 msgstr ""
 
@@ -994,7 +996,7 @@ msgstr "总内存"
 msgid "March"
 msgstr "三月"
 
-#: ../plugin/controllers/BouquetEditor.py:348
+#: ../plugin/controllers/BouquetEditor.py:349
 msgid "Marker added."
 msgstr "标记已添加."
 
@@ -1040,7 +1042,7 @@ msgstr "分钟"
 msgid "Missing mandatory parameter '%s'"
 msgstr "缺少强制参数 '%s'"
 
-#: ../plugin/controllers/models/timers.py:522
+#: ../plugin/controllers/models/timers.py:523
 msgid "Missing requesteter: sRef"
 msgstr "缺少请求: sRef"
 
@@ -1085,8 +1087,8 @@ msgstr "电影列表"
 msgid "Movies"
 msgstr "影音"
 
-#: ../plugin/controllers/BouquetEditor.py:131
-#: ../plugin/controllers/BouquetEditor.py:756
+#: ../plugin/controllers/BouquetEditor.py:132
+#: ../plugin/controllers/BouquetEditor.py:757
 msgid "Multi-Bouquet is not enabled!"
 msgstr "多个节目分组不能编辑!"
 
@@ -1094,7 +1096,7 @@ msgstr "多个节目分组不能编辑!"
 msgid "MultiEPG"
 msgstr "多路EPG"
 
-#: ../plugin/controllers/base.py:318
+#: ../plugin/controllers/base.py:319
 msgid "NCam Webinterface"
 msgstr ""
 
@@ -1126,7 +1128,7 @@ msgstr ""
 msgid "Never"
 msgstr "从不"
 
-#: ../plugin/controllers/models/services.py:331
+#: ../plugin/controllers/models/services.py:332
 msgid "New"
 msgstr "新的"
 
@@ -1138,7 +1140,7 @@ msgstr "新的名称"
 msgid "No"
 msgstr "No"
 
-#: ../plugin/controllers/BouquetEditor.py:524
+#: ../plugin/controllers/BouquetEditor.py:525
 msgid "No Parent Control Setup Pin given!"
 msgstr "没有指定PIN码!"
 
@@ -1146,57 +1148,57 @@ msgstr "没有指定PIN码!"
 msgid "No answer in time"
 msgstr "无响应"
 
-#: ../plugin/controllers/BouquetEditor.py:224
-#: ../plugin/controllers/BouquetEditor.py:254
-#: ../plugin/controllers/BouquetEditor.py:280
-#: ../plugin/controllers/BouquetEditor.py:324
-#: ../plugin/controllers/BouquetEditor.py:474
+#: ../plugin/controllers/BouquetEditor.py:225
+#: ../plugin/controllers/BouquetEditor.py:255
+#: ../plugin/controllers/BouquetEditor.py:281
+#: ../plugin/controllers/BouquetEditor.py:325
+#: ../plugin/controllers/BouquetEditor.py:475
 msgid "No bouquet given!"
 msgstr "没有指定节目分组名称!"
 
-#: ../plugin/controllers/BouquetEditor.py:92
-#: ../plugin/controllers/BouquetEditor.py:153
-#: ../plugin/controllers/BouquetEditor.py:199
+#: ../plugin/controllers/BouquetEditor.py:93
+#: ../plugin/controllers/BouquetEditor.py:154
+#: ../plugin/controllers/BouquetEditor.py:200
 msgid "No bouquet name given!"
 msgstr "没有指定节目分组名称!"
 
-#: ../plugin/controllers/BouquetEditor.py:419
+#: ../plugin/controllers/BouquetEditor.py:420
 msgid "No current service given!"
 msgstr "没有指定当前频道!"
 
-#: ../plugin/controllers/models/timers.py:415
+#: ../plugin/controllers/models/timers.py:416
 msgid "No event found! Not recording!"
 msgstr "定时器事件未找到！未录制！"
 
-#: ../plugin/controllers/BouquetEditor.py:331
+#: ../plugin/controllers/BouquetEditor.py:332
 msgid "No marker-name given!"
 msgstr "没有指定标记名称"
 
-#: ../plugin/controllers/models/timers.py:338
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:339
+#: ../plugin/controllers/models/timers.py:384
 msgid "No matching Timer found"
 msgstr "无找到匹配的定时器"
 
-#: ../plugin/controllers/BouquetEditor.py:364
+#: ../plugin/controllers/BouquetEditor.py:365
 msgid "No new servicename given!"
 msgstr "没有指定新的频道名."
 
-#: ../plugin/controllers/BouquetEditor.py:209
-#: ../plugin/controllers/BouquetEditor.py:266
+#: ../plugin/controllers/BouquetEditor.py:210
+#: ../plugin/controllers/BouquetEditor.py:267
 msgid "No position given!"
 msgstr "没有指定位置!"
 
-#: ../plugin/controllers/BouquetEditor.py:137
+#: ../plugin/controllers/BouquetEditor.py:138
 msgid "No provider given!"
 msgstr "没有指定服务商!"
 
-#: ../plugin/controllers/BouquetEditor.py:230
-#: ../plugin/controllers/BouquetEditor.py:260
-#: ../plugin/controllers/BouquetEditor.py:297
-#: ../plugin/controllers/BouquetEditor.py:358
-#: ../plugin/controllers/BouquetEditor.py:416
-#: ../plugin/controllers/BouquetEditor.py:480
-#: ../plugin/controllers/BouquetEditor.py:517
+#: ../plugin/controllers/BouquetEditor.py:231
+#: ../plugin/controllers/BouquetEditor.py:261
+#: ../plugin/controllers/BouquetEditor.py:298
+#: ../plugin/controllers/BouquetEditor.py:359
+#: ../plugin/controllers/BouquetEditor.py:417
+#: ../plugin/controllers/BouquetEditor.py:481
+#: ../plugin/controllers/BouquetEditor.py:518
 msgid "No service given!"
 msgstr "没有指定频道!"
 
@@ -1246,7 +1248,7 @@ msgstr "现在"
 msgid "OE version"
 msgstr "GUI 版本"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:317
 msgid "OSCam Webinterface"
 msgstr ""
 
@@ -1328,7 +1330,7 @@ msgid "OpenWebif url: http://yourip:port"
 msgstr "OpenWebif 访问: http://您的IP地址:端口"
 
 #: ../plugin/controllers/i18n.py:450
-#: ../plugin/controllers/models/services.py:225
+#: ../plugin/controllers/models/services.py:226
 msgid "Orbital Position"
 msgstr ""
 
@@ -1340,12 +1342,12 @@ msgstr "覆盖替代频道"
 msgid "Packages"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:528
-#: ../plugin/controllers/BouquetEditor.py:530
+#: ../plugin/controllers/BouquetEditor.py:529
+#: ../plugin/controllers/BouquetEditor.py:531
 msgid "Parent Control Setup Pin is wrong!"
 msgstr "PIN码错误！"
 
-#: ../plugin/controllers/BouquetEditor.py:511
+#: ../plugin/controllers/BouquetEditor.py:512
 msgid "Parent Control is not activated."
 msgstr "未启用家长控制。"
 
@@ -1397,7 +1399,7 @@ msgstr ""
 msgid "Power Control"
 msgstr "电源控制"
 
-#: ../plugin/controllers/models/timers.py:604
+#: ../plugin/controllers/models/timers.py:605
 msgid "PowerTimer feature not available"
 msgstr "电源定时器功能不可用"
 
@@ -1528,7 +1530,7 @@ msgstr "限制在特定日期的事件"
 msgid "Root"
 msgstr "Root"
 
-#: ../plugin/controllers/models/info.py:48
+#: ../plugin/controllers/models/info.py:49
 msgid "SLAAC"
 msgstr ""
 
@@ -1637,63 +1639,63 @@ msgstr "九月"
 msgid "Service"
 msgstr "频道"
 
-#: ../plugin/controllers/BouquetEditor.py:314
+#: ../plugin/controllers/BouquetEditor.py:315
 #, python-format
 msgid "Service %s added."
 msgstr "频道%s已添加"
 
-#: ../plugin/controllers/BouquetEditor.py:317
+#: ../plugin/controllers/BouquetEditor.py:318
 #, python-format
 msgid "Service %s already exists in bouquet %s."
 msgstr "频道%s已经存在于节目分组%s."
 
-#: ../plugin/controllers/BouquetEditor.py:248
+#: ../plugin/controllers/BouquetEditor.py:249
 #, python-format
 msgid "Service %s can not be removed."
 msgstr "频道%s不能被移除."
 
-#: ../plugin/controllers/BouquetEditor.py:545
+#: ../plugin/controllers/BouquetEditor.py:546
 #, python-format
 msgid "Service %s is locked."
 msgstr "频道%s已加锁。"
 
-#: ../plugin/controllers/BouquetEditor.py:553
+#: ../plugin/controllers/BouquetEditor.py:554
 #, python-format
 msgid "Service %s is unlocked."
 msgstr "频道 %s 已解锁."
 
-#: ../plugin/controllers/BouquetEditor.py:273
+#: ../plugin/controllers/BouquetEditor.py:274
 #, python-format
 msgid "Service %s moved."
 msgstr "移动频道%s."
 
-#: ../plugin/controllers/BouquetEditor.py:247
+#: ../plugin/controllers/BouquetEditor.py:248
 #, python-format
 msgid "Service %s removed from bouquet %s."
 msgstr "频道%s已从节目分组%s中移除."
 
-#: ../plugin/controllers/BouquetEditor.py:239
+#: ../plugin/controllers/BouquetEditor.py:240
 #, python-format
 msgid "Service %s removed."
 msgstr "移除频道%s"
 
-#: ../plugin/controllers/BouquetEditor.py:274
+#: ../plugin/controllers/BouquetEditor.py:275
 msgid "Service can not be moved."
 msgstr "频道不能被移动"
 
-#: ../plugin/controllers/BouquetEditor.py:405
+#: ../plugin/controllers/BouquetEditor.py:406
 msgid "Service can not be renamed."
 msgstr "频道不能改名."
 
-#: ../plugin/controllers/BouquetEditor.py:497
+#: ../plugin/controllers/BouquetEditor.py:498
 msgid "Service is not an alternative."
 msgstr "当前频道不是替代频道。"
 
-#: ../plugin/controllers/BouquetEditor.py:404
+#: ../plugin/controllers/BouquetEditor.py:405
 msgid "Service renamed successfully."
 msgstr "频道改名完成."
 
-#: ../plugin/controllers/models/services.py:333
+#: ../plugin/controllers/models/services.py:334
 msgid "Services"
 msgstr "频道"
 
@@ -1702,7 +1704,7 @@ msgid "Set maximum duration"
 msgstr "设置最大持续时间"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:278
+#: ../plugin/controllers/base.py:279
 msgid "Settings"
 msgstr "设置"
 
@@ -1759,32 +1761,32 @@ msgstr "模拟"
 msgid "Site and sources"
 msgstr "来源站点"
 
-#: ../plugin/controllers/models/timers.py:682
-#: ../plugin/controllers/models/timers.py:709
-#: ../plugin/controllers/models/timers.py:738
-#: ../plugin/controllers/models/timers.py:819
+#: ../plugin/controllers/models/timers.py:683
+#: ../plugin/controllers/models/timers.py:710
+#: ../plugin/controllers/models/timers.py:739
+#: ../plugin/controllers/models/timers.py:820
 msgid "SleepTimer error"
 msgstr "定时休眠出错"
 
-#: ../plugin/controllers/models/timers.py:727
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:814
+#: ../plugin/controllers/models/timers.py:728
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:815
 msgid "Sleeptimer has been disabled"
 msgstr "定时休眠已禁用"
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is disabled"
 msgstr "定时休眠已禁用"
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is enabled"
 msgstr "定时休眠已启用"
 
-#: ../plugin/controllers/models/timers.py:733
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:809
+#: ../plugin/controllers/models/timers.py:734
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:810
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "定时休眠设置为%d分钟"
@@ -1849,9 +1851,9 @@ msgstr "星期日"
 msgid "Sunday"
 msgstr "星期日"
 
-#: ../plugin/controllers/models/info.py:311
-#: ../plugin/controllers/models/info.py:323
-#: ../plugin/controllers/models/info.py:325
+#: ../plugin/controllers/models/info.py:312
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:326
 msgid "TB"
 msgstr ""
 
@@ -1883,11 +1885,11 @@ msgstr "电视节目"
 msgid "Template Engine"
 msgstr "模板引擎"
 
-#: ../plugin/controllers/base.py:349
+#: ../plugin/controllers/base.py:350
 msgid "Terminal"
 msgstr ""
 
-#: ../plugin/controllers/models/services.py:340
+#: ../plugin/controllers/models/services.py:341
 msgid "Terrestrial"
 msgstr "地面波"
 
@@ -1908,17 +1910,17 @@ msgstr "参数 “%s” 不能为空"
 msgid "The parameter 'command' must be a number"
 msgstr "命令参数必须是数字"
 
-#: ../plugin/controllers/models/timers.py:377
+#: ../plugin/controllers/models/timers.py:378
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "定时器 '%s' 已 %s 成功"
 
-#: ../plugin/controllers/models/timers.py:333
+#: ../plugin/controllers/models/timers.py:334
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "定时器'%s'已被成功删除"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:370
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "定时器 '%s' 正在录制! 不能禁用!"
@@ -1927,7 +1929,7 @@ msgstr "定时器 '%s' 正在录制! 不能禁用!"
 msgid "Theme"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:318
+#: ../plugin/controllers/BouquetEditor.py:319
 msgid "This service can not be added."
 msgstr "频道不能被添加."
 
@@ -1955,27 +1957,27 @@ msgstr "超时设置"
 msgid "Timer"
 msgstr "定时器"
 
-#: ../plugin/controllers/models/timers.py:209
+#: ../plugin/controllers/models/timers.py:210
 #, python-format
 msgid "Timer '%s' added"
 msgstr "定时器 '%s' 已添加"
 
-#: ../plugin/controllers/models/timers.py:363
+#: ../plugin/controllers/models/timers.py:364
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "定时器 '%s' 已存在!"
 
-#: ../plugin/controllers/models/timers.py:295
+#: ../plugin/controllers/models/timers.py:296
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "定时器 '%s' 已更改"
 
-#: ../plugin/controllers/models/timers.py:357
+#: ../plugin/controllers/models/timers.py:358
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "定时器 '%s' 冲突，未保存。"
 
-#: ../plugin/controllers/models/timers.py:314
+#: ../plugin/controllers/models/timers.py:315
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "定时器 '%s' 冲突，未保存。"
@@ -1988,7 +1990,7 @@ msgstr ""
 msgid "Timer added"
 msgstr "添加定时器"
 
-#: ../plugin/controllers/models/timers.py:449
+#: ../plugin/controllers/models/timers.py:450
 msgid "Timer conflict detected! Not recording!"
 msgstr "检测到定时器冲突！停止录制！"
 
@@ -1996,7 +1998,7 @@ msgstr "检测到定时器冲突！停止录制！"
 msgid "Timer type"
 msgstr "计时器类型"
 
-#: ../plugin/controllers/models/timers.py:399
+#: ../plugin/controllers/models/timers.py:400
 msgid "TimerList has been saved"
 msgstr "定时器列表已保存"
 
@@ -2081,7 +2083,7 @@ msgstr "类型"
 msgid "Unknown Volume command %s"
 msgstr "未知音量命令 %s"
 
-#: ../plugin/controllers/models/timers.py:544
+#: ../plugin/controllers/models/timers.py:545
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "未知命令： '%s'"
@@ -2139,7 +2141,7 @@ msgstr ""
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:853
+#: ../plugin/controllers/models/timers.py:854
 msgid "VPS plugin not found"
 msgstr "未找到VPS插件"
 
@@ -2334,9 +2336,10 @@ msgstr "从简介"
 msgid "in Title"
 msgstr "从标题"
 
-#: ../plugin/controllers/models/info.py:210
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/movies.py:216
+#: ../plugin/controllers/models/info.py:211
+#: ../plugin/controllers/models/info.py:214
+#: ../plugin/controllers/models/movies.py:217
+#: ../plugin/controllers/models/movies.py:634
 msgid "kB"
 msgstr ""
 
@@ -2344,8 +2347,8 @@ msgstr ""
 msgid "loading"
 msgstr "加载中"
 
-#: ../plugin/controllers/models/info.py:59
-#: ../plugin/controllers/models/info.py:78
+#: ../plugin/controllers/models/info.py:60
+#: ../plugin/controllers/models/info.py:79
 msgid "manual/disabled"
 msgstr ""
 
@@ -2358,7 +2361,7 @@ msgstr "分钟"
 msgid "no description available"
 msgstr "无可用说明"
 
-#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:165
+#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:166
 msgid "none/IPv4-only network"
 msgstr "仅IPv4网络"
 
@@ -2366,7 +2369,7 @@ msgstr "仅IPv4网络"
 msgid "on Weekday"
 msgstr "在工作日"
 
-#: ../plugin/controllers/BouquetEditor.py:86
+#: ../plugin/controllers/BouquetEditor.py:87
 msgid "one two three four unknown command"
 msgstr "1 2 3 4 未知的命令"
 
@@ -2374,11 +2377,11 @@ msgstr "1 2 3 4 未知的命令"
 msgid "partial match"
 msgstr "部分匹配"
 
-#: ../plugin/controllers/models/info.py:374
+#: ../plugin/controllers/models/info.py:375
 msgid "r/o"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:370
+#: ../plugin/controllers/models/info.py:371
 msgid "r/w"
 msgstr ""
 
@@ -2386,7 +2389,7 @@ msgstr ""
 msgid "record"
 msgstr "录制"
 
-#: ../plugin/controllers/models/movies.py:294
+#: ../plugin/controllers/models/movies.py:295
 msgid "remove"
 msgstr ""
 
@@ -2422,9 +2425,9 @@ msgstr "标准"
 msgid "start match"
 msgstr "开始匹配"
 
-#: ../plugin/controllers/models/info.py:55
-#: ../plugin/controllers/models/info.py:67
-#: ../plugin/controllers/models/info.py:74
+#: ../plugin/controllers/models/info.py:56
+#: ../plugin/controllers/models/info.py:68
+#: ../plugin/controllers/models/info.py:75
 msgid "static"
 msgstr ""
 
@@ -2440,13 +2443,13 @@ msgstr "标题或简介匹配"
 msgid "transcoded"
 msgstr "转码"
 
-#: ../plugin/controllers/web.py:686
+#: ../plugin/controllers/web.py:720
 #, python-format
 msgid "type %s is not a number"
 msgstr "类型 %s 的不是数字"
 
-#: ../plugin/controllers/models/info.py:87
-#: ../plugin/controllers/models/info.py:95
+#: ../plugin/controllers/models/info.py:88
+#: ../plugin/controllers/models/info.py:96
 msgid "unknown"
 msgstr ""
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-08 23:37+0330\n"
+"POT-Creation-Date: 2020-03-26 17:40+0430\n"
 "PO-Revision-Date: 2017-06-08 10:02+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: \n"
@@ -16,13 +16,13 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ../plugin\n"
 
-#: ../plugin/controllers/BouquetEditor.py:549
+#: ../plugin/controllers/BouquetEditor.py:550
 #, python-format
 msgid "%s %s is locked."
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/info.py:341
+#: ../plugin/controllers/models/info.py:215
+#: ../plugin/controllers/models/info.py:342
 #, python-format
 msgid "%s free / %s total"
 msgstr ""
@@ -95,7 +95,7 @@ msgstr "Tilføj kanal(er) til en favoritliste"
 msgid "Add service name to stream information"
 msgstr "Tilføj distributørens navn til streaming informationerne"
 
-#: ../plugin/controllers/BouquetEditor.py:466
+#: ../plugin/controllers/BouquetEditor.py:467
 #, python-format
 msgid "Added %s to alternative service %s."
 msgstr ""
@@ -120,7 +120,7 @@ msgstr "Alle kanaler"
 msgid "All Files of this Software are open source software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation."
 msgstr "Alle filer i denne software er open source software; du kan gengive det og/eller ændre det under de regler for GNU General Public License version 3 der er udgivet af the Free Software Foundation."
 
-#: ../plugin/controllers/BouquetEditor.py:505
+#: ../plugin/controllers/BouquetEditor.py:506
 msgid "All alternative services deleted."
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr ""
 msgid "Allow IPK Upload"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:452
+#: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
 msgid "Alternative %s created failed."
 msgstr ""
@@ -185,7 +185,7 @@ msgstr "Automatisk"
 msgid "AutoPoll"
 msgstr "Automatisk overvågning"
 
-#: ../plugin/controllers/base.py:322
+#: ../plugin/controllers/base.py:323
 msgid "AutoTimer"
 msgstr "AutoTimer"
 
@@ -238,47 +238,47 @@ msgstr ""
 msgid "Bookmarks"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:127
+#: ../plugin/controllers/BouquetEditor.py:128
 #, python-format
 msgid "Bouquet %s already exists."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:218
+#: ../plugin/controllers/BouquetEditor.py:219
 #, python-format
 msgid "Bouquet %s can not be moved."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:122
+#: ../plugin/controllers/BouquetEditor.py:123
 #, python-format
 msgid "Bouquet %s created."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:191
+#: ../plugin/controllers/BouquetEditor.py:192
 #, python-format
 msgid "Bouquet %s deleted."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:547
+#: ../plugin/controllers/BouquetEditor.py:548
 #, python-format
 msgid "Bouquet %s is locked."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:555
+#: ../plugin/controllers/BouquetEditor.py:556
 #, python-format
 msgid "Bouquet %s is unlocked."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:216
+#: ../plugin/controllers/BouquetEditor.py:217
 #, python-format
 msgid "Bouquet %s moved."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:186
+#: ../plugin/controllers/BouquetEditor.py:187
 #, python-format
 msgid "Bouquet %s removed failed, sevicerefence or mutable list is not valid."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:184
+#: ../plugin/controllers/BouquetEditor.py:185
 #, python-format
 msgid "Bouquet %s removed failed."
 msgstr ""
@@ -287,20 +287,20 @@ msgstr ""
 msgid "Bouquet Editor"
 msgstr "Rediger favoritlister"
 
-#: ../plugin/controllers/BouquetEditor.py:388
+#: ../plugin/controllers/BouquetEditor.py:389
 msgid "Bouquet renamed successfully."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:649
+#: ../plugin/controllers/BouquetEditor.py:650
 msgid "Bouquet-settings were restored successfully"
 msgstr ""
 
-#: ../plugin/controllers/base.py:327
+#: ../plugin/controllers/base.py:328
 msgid "BouquetEditor"
 msgstr "Redigere Favoritlister"
 
-#: ../plugin/controllers/BouquetEditor.py:129
-#: ../plugin/controllers/BouquetEditor.py:454
+#: ../plugin/controllers/BouquetEditor.py:130
+#: ../plugin/controllers/BouquetEditor.py:455
 msgid "Bouquetlist is not editable!"
 msgstr ""
 
@@ -321,7 +321,7 @@ msgstr ""
 msgid "CPU brand"
 msgstr ""
 
-#: ../plugin/controllers/models/services.py:338
+#: ../plugin/controllers/models/services.py:339
 msgid "Cable"
 msgstr "Kabel-TV"
 
@@ -350,7 +350,7 @@ msgstr "Kanal"
 msgid "Channels"
 msgstr "Kanaler"
 
-#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:257
+#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:258
 msgid "Chipset"
 msgstr "Chipset"
 
@@ -368,7 +368,7 @@ msgstr "Luk"
 msgid "Common Settings"
 msgstr "Indstillinger"
 
-#: ../plugin/controllers/models/timers.py:187
+#: ../plugin/controllers/models/timers.py:188
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Timerkonflikt(er) opdaget %s"
@@ -381,12 +381,12 @@ msgstr "Andre som har bidraget"
 msgid "Control"
 msgstr "Kontrol"
 
-#: ../plugin/controllers/models/timers.py:204
+#: ../plugin/controllers/models/timers.py:205
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "Kunne ikke tilføje timer '%s'!"
 
-#: ../plugin/controllers/models/timers.py:320
+#: ../plugin/controllers/models/timers.py:321
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "Kunne ikke finde en timer '%s' med den angivne start og stop tid"
@@ -412,8 +412,8 @@ msgstr "Tilpasset boxnavn"
 msgid "Custom offset"
 msgstr "Afpasset tidsafgrænsning"
 
-#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:57
-#: ../plugin/controllers/models/info.py:76
+#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:58
+#: ../plugin/controllers/models/info.py:77
 msgid "DHCP"
 msgstr "DHCP"
 
@@ -462,7 +462,7 @@ msgstr "Slet optagelse"
 msgid "Delete Timer"
 msgstr "Slet timer"
 
-#: ../plugin/controllers/models/movies.py:300
+#: ../plugin/controllers/models/movies.py:301
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -553,11 +553,11 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "EPG kodning"
 
-#: ../plugin/controllers/base.py:331
+#: ../plugin/controllers/base.py:332
 msgid "EPGRefresh"
 msgstr "EPGRefresh"
 
-#: ../plugin/controllers/models/timers.py:722
+#: ../plugin/controllers/models/timers.py:723
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "FEJL: Kan ikke indstille Sleeptimer mens enheden er i standby mode."
 
@@ -646,7 +646,7 @@ msgstr "Søg i EPG"
 msgid "Error"
 msgstr "Fejl"
 
-#: ../plugin/controllers/models/timers.py:848
+#: ../plugin/controllers/models/timers.py:849
 msgid "Error parsing vps.xml"
 msgstr ""
 
@@ -654,12 +654,12 @@ msgstr ""
 msgid "Error upload File"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:592
+#: ../plugin/controllers/BouquetEditor.py:593
 #, python-format
 msgid "Error while preparing backup file, %s does not exists."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:598
+#: ../plugin/controllers/BouquetEditor.py:599
 msgid "Error while preparing backup file."
 msgstr ""
 
@@ -667,17 +667,17 @@ msgstr ""
 msgid "Error writing File"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:653
+#: ../plugin/controllers/BouquetEditor.py:654
 #, python-format
 msgid "Error, %s does not exists, restore is not possible..."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:651
+#: ../plugin/controllers/BouquetEditor.py:652
 #, python-format
 msgid "Error, %s was not created with WebBouquetEditor..."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:193
+#: ../plugin/controllers/BouquetEditor.py:194
 #, python-format
 msgid "Error: Bouquet %s could not deleted, OSError."
 msgstr ""
@@ -686,7 +686,7 @@ msgstr ""
 msgid "Event not found"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:218
+#: ../plugin/controllers/models/timers.py:219
 msgid "EventId not found"
 msgstr "Begivenheds ID kunne ikke findes"
 
@@ -766,7 +766,7 @@ msgstr "Fredag"
 msgid "Frontprocessor"
 msgstr "Frontprocessorversion"
 
-#: ../plugin/controllers/models/info.py:260
+#: ../plugin/controllers/models/info.py:261
 msgid "Frontprocessor Version"
 msgstr "Frontprocessorversion"
 
@@ -775,11 +775,12 @@ msgstr "Frontprocessorversion"
 msgid "Full remote"
 msgstr "Skjul fuld fjernbetjening"
 
-#: ../plugin/controllers/models/info.py:307
-#: ../plugin/controllers/models/info.py:313
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/movies.py:212
+#: ../plugin/controllers/models/info.py:308
+#: ../plugin/controllers/models/info.py:314
+#: ../plugin/controllers/models/info.py:329
+#: ../plugin/controllers/models/info.py:332
+#: ../plugin/controllers/models/movies.py:213
+#: ../plugin/controllers/models/movies.py:630
 msgid "GB"
 msgstr ""
 
@@ -797,11 +798,11 @@ msgstr "Gui version"
 msgid "Gateway"
 msgstr "Gateway"
 
-#: ../plugin/controllers/BouquetEditor.py:450
+#: ../plugin/controllers/BouquetEditor.py:451
 msgid "Get mutable list for new created alternative failed!"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:124
+#: ../plugin/controllers/BouquetEditor.py:125
 msgid "Get mutable list for new created bouquet failed!"
 msgstr ""
 
@@ -837,11 +838,11 @@ msgstr "Time"
 msgid "IPv4 address"
 msgstr "IPv4 adresse"
 
-#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:136
+#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:137
 msgid "IPv4-only Python/Twisted"
 msgstr "Kun IPv4 Python/twisted"
 
-#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:132
+#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:133
 msgid "IPv4-only kernel"
 msgstr "Kun IPv4 kernel"
 
@@ -870,7 +871,7 @@ msgstr ""
 msgid "Include short description"
 msgstr "i kortfattet beskrivelse"
 
-#: ../plugin/controllers/models/timers.py:430
+#: ../plugin/controllers/models/timers.py:431
 msgid "Infinite Instant recording started"
 msgstr "En direkte optagelse med uendelig tidsgrænse er startet"
 
@@ -895,11 +896,11 @@ msgstr "Direkte optagelse"
 msgid "Instant Record"
 msgstr "Direkte optagelse"
 
-#: ../plugin/controllers/models/timers.py:421
+#: ../plugin/controllers/models/timers.py:422
 msgid "Instant record for current Event started"
 msgstr "En direkte optagelse af den aktuelle begivenhed er startet"
 
-#: ../plugin/controllers/BouquetEditor.py:350
+#: ../plugin/controllers/BouquetEditor.py:351
 msgid "Internal error!"
 msgstr ""
 
@@ -944,7 +945,7 @@ msgstr "Kernel"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:294
+#: ../plugin/controllers/base.py:295
 msgid "LCD4Linux Setup"
 msgstr "LCD4Linux opsætning"
 
@@ -960,7 +961,7 @@ msgstr "Tilføj etiket til serien"
 msgid "Link Speed"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:392
 msgid "List of Timers has been cleaned"
 msgstr "Timerlisten er slettet"
 
@@ -976,10 +977,11 @@ msgstr "Låst"
 msgid "MAC address"
 msgstr "MAC adresse"
 
-#: ../plugin/controllers/models/info.py:304
-#: ../plugin/controllers/models/info.py:315
-#: ../plugin/controllers/models/info.py:333
-#: ../plugin/controllers/models/movies.py:214
+#: ../plugin/controllers/models/info.py:305
+#: ../plugin/controllers/models/info.py:316
+#: ../plugin/controllers/models/info.py:334
+#: ../plugin/controllers/models/movies.py:215
+#: ../plugin/controllers/models/movies.py:632
 msgid "MB"
 msgstr ""
 
@@ -995,7 +997,7 @@ msgstr "Total hukommelse"
 msgid "March"
 msgstr "Marts"
 
-#: ../plugin/controllers/BouquetEditor.py:348
+#: ../plugin/controllers/BouquetEditor.py:349
 msgid "Marker added."
 msgstr ""
 
@@ -1041,7 +1043,7 @@ msgstr "Minut"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Mangler obligatorisk parameter '%s'"
 
-#: ../plugin/controllers/models/timers.py:522
+#: ../plugin/controllers/models/timers.py:523
 msgid "Missing requesteter: sRef"
 msgstr "Manglende efterspørgsel: sRef"
 
@@ -1086,8 +1088,8 @@ msgstr "Filmliste"
 msgid "Movies"
 msgstr "Film"
 
-#: ../plugin/controllers/BouquetEditor.py:131
-#: ../plugin/controllers/BouquetEditor.py:756
+#: ../plugin/controllers/BouquetEditor.py:132
+#: ../plugin/controllers/BouquetEditor.py:757
 msgid "Multi-Bouquet is not enabled!"
 msgstr ""
 
@@ -1095,7 +1097,7 @@ msgstr ""
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:318
+#: ../plugin/controllers/base.py:319
 msgid "NCam Webinterface"
 msgstr ""
 
@@ -1127,7 +1129,7 @@ msgstr ""
 msgid "Never"
 msgstr "Aldrig"
 
-#: ../plugin/controllers/models/services.py:331
+#: ../plugin/controllers/models/services.py:332
 msgid "New"
 msgstr "Ny"
 
@@ -1139,7 +1141,7 @@ msgstr "Nyt navn"
 msgid "No"
 msgstr "Nej"
 
-#: ../plugin/controllers/BouquetEditor.py:524
+#: ../plugin/controllers/BouquetEditor.py:525
 msgid "No Parent Control Setup Pin given!"
 msgstr ""
 
@@ -1147,57 +1149,57 @@ msgstr ""
 msgid "No answer in time"
 msgstr "Ingen svar i tide"
 
-#: ../plugin/controllers/BouquetEditor.py:224
-#: ../plugin/controllers/BouquetEditor.py:254
-#: ../plugin/controllers/BouquetEditor.py:280
-#: ../plugin/controllers/BouquetEditor.py:324
-#: ../plugin/controllers/BouquetEditor.py:474
+#: ../plugin/controllers/BouquetEditor.py:225
+#: ../plugin/controllers/BouquetEditor.py:255
+#: ../plugin/controllers/BouquetEditor.py:281
+#: ../plugin/controllers/BouquetEditor.py:325
+#: ../plugin/controllers/BouquetEditor.py:475
 msgid "No bouquet given!"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:92
-#: ../plugin/controllers/BouquetEditor.py:153
-#: ../plugin/controllers/BouquetEditor.py:199
+#: ../plugin/controllers/BouquetEditor.py:93
+#: ../plugin/controllers/BouquetEditor.py:154
+#: ../plugin/controllers/BouquetEditor.py:200
 msgid "No bouquet name given!"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:419
+#: ../plugin/controllers/BouquetEditor.py:420
 msgid "No current service given!"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:415
+#: ../plugin/controllers/models/timers.py:416
 msgid "No event found! Not recording!"
 msgstr "Ingen aktivitet fundet. Ingen optagelse."
 
-#: ../plugin/controllers/BouquetEditor.py:331
+#: ../plugin/controllers/BouquetEditor.py:332
 msgid "No marker-name given!"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:338
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:339
+#: ../plugin/controllers/models/timers.py:384
 msgid "No matching Timer found"
 msgstr "Kunne ikke finde en matchende timer"
 
-#: ../plugin/controllers/BouquetEditor.py:364
+#: ../plugin/controllers/BouquetEditor.py:365
 msgid "No new servicename given!"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:209
-#: ../plugin/controllers/BouquetEditor.py:266
+#: ../plugin/controllers/BouquetEditor.py:210
+#: ../plugin/controllers/BouquetEditor.py:267
 msgid "No position given!"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:137
+#: ../plugin/controllers/BouquetEditor.py:138
 msgid "No provider given!"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:230
-#: ../plugin/controllers/BouquetEditor.py:260
-#: ../plugin/controllers/BouquetEditor.py:297
-#: ../plugin/controllers/BouquetEditor.py:358
-#: ../plugin/controllers/BouquetEditor.py:416
-#: ../plugin/controllers/BouquetEditor.py:480
-#: ../plugin/controllers/BouquetEditor.py:517
+#: ../plugin/controllers/BouquetEditor.py:231
+#: ../plugin/controllers/BouquetEditor.py:261
+#: ../plugin/controllers/BouquetEditor.py:298
+#: ../plugin/controllers/BouquetEditor.py:359
+#: ../plugin/controllers/BouquetEditor.py:417
+#: ../plugin/controllers/BouquetEditor.py:481
+#: ../plugin/controllers/BouquetEditor.py:518
 msgid "No service given!"
 msgstr ""
 
@@ -1247,7 +1249,7 @@ msgstr "Nu"
 msgid "OE version"
 msgstr "Gui version"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:317
 msgid "OSCam Webinterface"
 msgstr ""
 
@@ -1330,7 +1332,7 @@ msgid "OpenWebif url: http://yourip:port"
 msgstr "OpenWebif url: http://din_ipadresse:port"
 
 #: ../plugin/controllers/i18n.py:450
-#: ../plugin/controllers/models/services.py:225
+#: ../plugin/controllers/models/services.py:226
 msgid "Orbital Position"
 msgstr ""
 
@@ -1343,12 +1345,12 @@ msgstr "Gennemtving alternativ distributør over det fundne"
 msgid "Packages"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:528
-#: ../plugin/controllers/BouquetEditor.py:530
+#: ../plugin/controllers/BouquetEditor.py:529
+#: ../plugin/controllers/BouquetEditor.py:531
 msgid "Parent Control Setup Pin is wrong!"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:511
+#: ../plugin/controllers/BouquetEditor.py:512
 msgid "Parent Control is not activated."
 msgstr ""
 
@@ -1400,7 +1402,7 @@ msgstr ""
 msgid "Power Control"
 msgstr "Strømstyring"
 
-#: ../plugin/controllers/models/timers.py:604
+#: ../plugin/controllers/models/timers.py:605
 msgid "PowerTimer feature not available"
 msgstr "Powertimer funktion ikke tilgængelig"
 
@@ -1532,7 +1534,7 @@ msgstr "Begræns til begivenheder på specifikke datoer"
 msgid "Root"
 msgstr "Root"
 
-#: ../plugin/controllers/models/info.py:48
+#: ../plugin/controllers/models/info.py:49
 msgid "SLAAC"
 msgstr ""
 
@@ -1642,63 +1644,63 @@ msgstr "September"
 msgid "Service"
 msgstr "Distributør"
 
-#: ../plugin/controllers/BouquetEditor.py:314
+#: ../plugin/controllers/BouquetEditor.py:315
 #, python-format
 msgid "Service %s added."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:317
+#: ../plugin/controllers/BouquetEditor.py:318
 #, python-format
 msgid "Service %s already exists in bouquet %s."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:248
+#: ../plugin/controllers/BouquetEditor.py:249
 #, python-format
 msgid "Service %s can not be removed."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:545
+#: ../plugin/controllers/BouquetEditor.py:546
 #, python-format
 msgid "Service %s is locked."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:553
+#: ../plugin/controllers/BouquetEditor.py:554
 #, python-format
 msgid "Service %s is unlocked."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:273
+#: ../plugin/controllers/BouquetEditor.py:274
 #, python-format
 msgid "Service %s moved."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:247
+#: ../plugin/controllers/BouquetEditor.py:248
 #, python-format
 msgid "Service %s removed from bouquet %s."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:239
+#: ../plugin/controllers/BouquetEditor.py:240
 #, python-format
 msgid "Service %s removed."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:274
+#: ../plugin/controllers/BouquetEditor.py:275
 msgid "Service can not be moved."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:405
+#: ../plugin/controllers/BouquetEditor.py:406
 msgid "Service can not be renamed."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:497
+#: ../plugin/controllers/BouquetEditor.py:498
 msgid "Service is not an alternative."
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:404
+#: ../plugin/controllers/BouquetEditor.py:405
 msgid "Service renamed successfully."
 msgstr ""
 
-#: ../plugin/controllers/models/services.py:333
+#: ../plugin/controllers/models/services.py:334
 msgid "Services"
 msgstr "Tjenester"
 
@@ -1707,7 +1709,7 @@ msgid "Set maximum duration"
 msgstr "Indstil maksimal varighed (i min)"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:278
+#: ../plugin/controllers/base.py:279
 msgid "Settings"
 msgstr "Indstillinger"
 
@@ -1764,32 +1766,32 @@ msgstr "Simuler"
 msgid "Site and sources"
 msgstr "Hjemmeside og kilder"
 
-#: ../plugin/controllers/models/timers.py:682
-#: ../plugin/controllers/models/timers.py:709
-#: ../plugin/controllers/models/timers.py:738
-#: ../plugin/controllers/models/timers.py:819
+#: ../plugin/controllers/models/timers.py:683
+#: ../plugin/controllers/models/timers.py:710
+#: ../plugin/controllers/models/timers.py:739
+#: ../plugin/controllers/models/timers.py:820
 msgid "SleepTimer error"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:727
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:814
+#: ../plugin/controllers/models/timers.py:728
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:815
 msgid "Sleeptimer has been disabled"
 msgstr "Sleeptimeren er blevet afbrudt."
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is disabled"
 msgstr "Sleeptimer er afbrudt"
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is enabled"
 msgstr "Sleeptimer er aktiveret"
 
-#: ../plugin/controllers/models/timers.py:733
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:809
+#: ../plugin/controllers/models/timers.py:734
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:810
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Sleeptimeren er sat til %d minutter"
@@ -1854,9 +1856,9 @@ msgstr "Søn"
 msgid "Sunday"
 msgstr "Søndag"
 
-#: ../plugin/controllers/models/info.py:311
-#: ../plugin/controllers/models/info.py:323
-#: ../plugin/controllers/models/info.py:325
+#: ../plugin/controllers/models/info.py:312
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:326
 msgid "TB"
 msgstr ""
 
@@ -1888,11 +1890,11 @@ msgstr "TV"
 msgid "Template Engine"
 msgstr "Webudviklingsværktøj"
 
-#: ../plugin/controllers/base.py:349
+#: ../plugin/controllers/base.py:350
 msgid "Terminal"
 msgstr ""
 
-#: ../plugin/controllers/models/services.py:340
+#: ../plugin/controllers/models/services.py:341
 msgid "Terrestrial"
 msgstr "Antenne-TV"
 
@@ -1914,17 +1916,17 @@ msgid "The parameter 'command' must be a number"
 msgstr "Parameteren 'command' skal være numerisk"
 
 # The word framgångsrikt to get a string to  end the sentence
-#: ../plugin/controllers/models/timers.py:377
+#: ../plugin/controllers/models/timers.py:378
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "Timeren '%s' er blevet %s med succes"
 
-#: ../plugin/controllers/models/timers.py:333
+#: ../plugin/controllers/models/timers.py:334
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "Timeren '%s' er slettet"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:370
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr ""
@@ -1933,7 +1935,7 @@ msgstr ""
 msgid "Theme"
 msgstr ""
 
-#: ../plugin/controllers/BouquetEditor.py:318
+#: ../plugin/controllers/BouquetEditor.py:319
 msgid "This service can not be added."
 msgstr ""
 
@@ -1961,27 +1963,27 @@ msgstr "Timeout"
 msgid "Timer"
 msgstr "Timer"
 
-#: ../plugin/controllers/models/timers.py:209
+#: ../plugin/controllers/models/timers.py:210
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Timer '%s' tilføjet"
 
-#: ../plugin/controllers/models/timers.py:363
+#: ../plugin/controllers/models/timers.py:364
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:295
+#: ../plugin/controllers/models/timers.py:296
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Timer '%s' ændret"
 
-#: ../plugin/controllers/models/timers.py:357
+#: ../plugin/controllers/models/timers.py:358
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr ""
 
-#: ../plugin/controllers/models/timers.py:314
+#: ../plugin/controllers/models/timers.py:315
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "Timer '%s' kunne ikke gemmes pga. en konflikt"
@@ -1994,7 +1996,7 @@ msgstr ""
 msgid "Timer added"
 msgstr "Timer tilføjet"
 
-#: ../plugin/controllers/models/timers.py:449
+#: ../plugin/controllers/models/timers.py:450
 msgid "Timer conflict detected! Not recording!"
 msgstr "Timerkonflikt opdaget. Optager ikke."
 
@@ -2002,7 +2004,7 @@ msgstr "Timerkonflikt opdaget. Optager ikke."
 msgid "Timer type"
 msgstr "Timertype"
 
-#: ../plugin/controllers/models/timers.py:399
+#: ../plugin/controllers/models/timers.py:400
 msgid "TimerList has been saved"
 msgstr "Timerlisten er gemt"
 
@@ -2088,7 +2090,7 @@ msgstr "Type"
 msgid "Unknown Volume command %s"
 msgstr "Forkert Volumen kommando %s"
 
-#: ../plugin/controllers/models/timers.py:544
+#: ../plugin/controllers/models/timers.py:545
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Ukendt kommando: '%s'"
@@ -2146,7 +2148,7 @@ msgstr ""
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:853
+#: ../plugin/controllers/models/timers.py:854
 msgid "VPS plugin not found"
 msgstr ""
 
@@ -2341,9 +2343,10 @@ msgstr "i kortfattet beskrivelse"
 msgid "in Title"
 msgstr "i tittelen"
 
-#: ../plugin/controllers/models/info.py:210
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/movies.py:216
+#: ../plugin/controllers/models/info.py:211
+#: ../plugin/controllers/models/info.py:214
+#: ../plugin/controllers/models/movies.py:217
+#: ../plugin/controllers/models/movies.py:634
 msgid "kB"
 msgstr ""
 
@@ -2351,8 +2354,8 @@ msgstr ""
 msgid "loading"
 msgstr "indlæser"
 
-#: ../plugin/controllers/models/info.py:59
-#: ../plugin/controllers/models/info.py:78
+#: ../plugin/controllers/models/info.py:60
+#: ../plugin/controllers/models/info.py:79
 msgid "manual/disabled"
 msgstr ""
 
@@ -2365,7 +2368,7 @@ msgstr "Minut"
 msgid "no description available"
 msgstr "ingen beskrivelse"
 
-#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:165
+#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:166
 msgid "none/IPv4-only network"
 msgstr "ingen/IPv4-only network"
 
@@ -2373,7 +2376,7 @@ msgstr "ingen/IPv4-only network"
 msgid "on Weekday"
 msgstr "på ugedage"
 
-#: ../plugin/controllers/BouquetEditor.py:86
+#: ../plugin/controllers/BouquetEditor.py:87
 msgid "one two three four unknown command"
 msgstr ""
 
@@ -2381,11 +2384,11 @@ msgstr ""
 msgid "partial match"
 msgstr "ufuldstændig match"
 
-#: ../plugin/controllers/models/info.py:374
+#: ../plugin/controllers/models/info.py:375
 msgid "r/o"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:370
+#: ../plugin/controllers/models/info.py:371
 msgid "r/w"
 msgstr ""
 
@@ -2393,7 +2396,7 @@ msgstr ""
 msgid "record"
 msgstr "optag"
 
-#: ../plugin/controllers/models/movies.py:294
+#: ../plugin/controllers/models/movies.py:295
 msgid "remove"
 msgstr ""
 
@@ -2429,9 +2432,9 @@ msgstr "standard"
 msgid "start match"
 msgstr "start match"
 
-#: ../plugin/controllers/models/info.py:55
-#: ../plugin/controllers/models/info.py:67
-#: ../plugin/controllers/models/info.py:74
+#: ../plugin/controllers/models/info.py:56
+#: ../plugin/controllers/models/info.py:68
+#: ../plugin/controllers/models/info.py:75
 msgid "static"
 msgstr ""
 
@@ -2447,13 +2450,13 @@ msgstr ""
 msgid "transcoded"
 msgstr "transkodet"
 
-#: ../plugin/controllers/web.py:686
+#: ../plugin/controllers/web.py:720
 #, python-format
 msgid "type %s is not a number"
 msgstr "typen %s er ikke et ciffer"
 
-#: ../plugin/controllers/models/info.py:87
-#: ../plugin/controllers/models/info.py:95
+#: ../plugin/controllers/models/info.py:88
+#: ../plugin/controllers/models/info.py:96
 msgid "unknown"
 msgstr ""
 

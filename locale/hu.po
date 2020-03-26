@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-08 23:37+0330\n"
+"POT-Creation-Date: 2020-03-26 17:40+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: mcfly82 <https://github.com/mcfly822>\n"
 "Language-Team: mcfly82\n"
@@ -14,13 +14,13 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: ../plugin\n"
 
-#: ../plugin/controllers/BouquetEditor.py:549
+#: ../plugin/controllers/BouquetEditor.py:550
 #, python-format
 msgid "%s %s is locked."
 msgstr "%s %s zárolva van."
 
-#: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/info.py:341
+#: ../plugin/controllers/models/info.py:215
+#: ../plugin/controllers/models/info.py:342
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s szabad /%s összesen"
@@ -93,7 +93,7 @@ msgstr "Csatornák hozzáadása listához"
 msgid "Add service name to stream information"
 msgstr "Adja hozzá a szolgáltatás nevét az adatfolyam információihoz"
 
-#: ../plugin/controllers/BouquetEditor.py:466
+#: ../plugin/controllers/BouquetEditor.py:467
 #, python-format
 msgid "Added %s to alternative service %s."
 msgstr "A %s hozzáadva az %s alternatív szolgáltatáshoz."
@@ -118,7 +118,7 @@ msgstr "Minden csatorna"
 msgid "All Files of this Software are open source software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation."
 msgstr "A szoftver összes fájlja nyílt forráskódú szoftver; továbbadhatja és/vagy módosíthatja azokat a Free Software Foundation által kiadott GNU General Public License 3. verziójának megfelelően."
 
-#: ../plugin/controllers/BouquetEditor.py:505
+#: ../plugin/controllers/BouquetEditor.py:506
 msgid "All alternative services deleted."
 msgstr "Minden alternatív szolgáltatás törölve."
 
@@ -126,7 +126,7 @@ msgstr "Minden alternatív szolgáltatás törölve."
 msgid "Allow IPK Upload"
 msgstr "IPK feltöltés engedélyezése"
 
-#: ../plugin/controllers/BouquetEditor.py:452
+#: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
 msgid "Alternative %s created failed."
 msgstr "A %s alternatíva létrehozása sikertelen."
@@ -183,7 +183,7 @@ msgstr "Auto"
 msgid "AutoPoll"
 msgstr "Automatikus szavazás"
 
-#: ../plugin/controllers/base.py:322
+#: ../plugin/controllers/base.py:323
 msgid "AutoTimer"
 msgstr "Automatikus időzítő"
 
@@ -235,47 +235,47 @@ msgstr "Könyvjelző"
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
-#: ../plugin/controllers/BouquetEditor.py:127
+#: ../plugin/controllers/BouquetEditor.py:128
 #, python-format
 msgid "Bouquet %s already exists."
 msgstr "Bouquet %s már létezik."
 
-#: ../plugin/controllers/BouquetEditor.py:218
+#: ../plugin/controllers/BouquetEditor.py:219
 #, python-format
 msgid "Bouquet %s can not be moved."
 msgstr "Bouquet %s nem mozgatható."
 
-#: ../plugin/controllers/BouquetEditor.py:122
+#: ../plugin/controllers/BouquetEditor.py:123
 #, python-format
 msgid "Bouquet %s created."
 msgstr "A %s lista létrehozva."
 
-#: ../plugin/controllers/BouquetEditor.py:191
+#: ../plugin/controllers/BouquetEditor.py:192
 #, python-format
 msgid "Bouquet %s deleted."
 msgstr "Bouquet %s törölve."
 
-#: ../plugin/controllers/BouquetEditor.py:547
+#: ../plugin/controllers/BouquetEditor.py:548
 #, python-format
 msgid "Bouquet %s is locked."
 msgstr "Bouquet %s zárolva van."
 
-#: ../plugin/controllers/BouquetEditor.py:555
+#: ../plugin/controllers/BouquetEditor.py:556
 #, python-format
 msgid "Bouquet %s is unlocked."
 msgstr "Bouquet %s nyitva van."
 
-#: ../plugin/controllers/BouquetEditor.py:216
+#: ../plugin/controllers/BouquetEditor.py:217
 #, python-format
 msgid "Bouquet %s moved."
 msgstr "Bouquet %s mozgatás."
 
-#: ../plugin/controllers/BouquetEditor.py:186
+#: ../plugin/controllers/BouquetEditor.py:187
 #, python-format
 msgid "Bouquet %s removed failed, sevicerefence or mutable list is not valid."
 msgstr "A Bouquet %s eltávolítva nem sikerült,A sürgősségi vagy módosítható lista nem érvényes."
 
-#: ../plugin/controllers/BouquetEditor.py:184
+#: ../plugin/controllers/BouquetEditor.py:185
 #, python-format
 msgid "Bouquet %s removed failed."
 msgstr "Bouquet %s eltávolítva nem sikerült."
@@ -284,20 +284,20 @@ msgstr "Bouquet %s eltávolítva nem sikerült."
 msgid "Bouquet Editor"
 msgstr "Bouquet szerkesztő"
 
-#: ../plugin/controllers/BouquetEditor.py:388
+#: ../plugin/controllers/BouquetEditor.py:389
 msgid "Bouquet renamed successfully."
 msgstr "Bouquet sikeresen átnevezve."
 
-#: ../plugin/controllers/BouquetEditor.py:649
+#: ../plugin/controllers/BouquetEditor.py:650
 msgid "Bouquet-settings were restored successfully"
 msgstr "A Bouquet-beállítások sikeresen helyreálltak"
 
-#: ../plugin/controllers/base.py:327
+#: ../plugin/controllers/base.py:328
 msgid "BouquetEditor"
 msgstr "Bouquet szerkesztő"
 
-#: ../plugin/controllers/BouquetEditor.py:129
-#: ../plugin/controllers/BouquetEditor.py:454
+#: ../plugin/controllers/BouquetEditor.py:130
+#: ../plugin/controllers/BouquetEditor.py:455
 msgid "Bouquetlist is not editable!"
 msgstr "A Bouquetlistát nem lehet szerkeszteni!"
 
@@ -318,7 +318,7 @@ msgstr ""
 msgid "CPU brand"
 msgstr ""
 
-#: ../plugin/controllers/models/services.py:338
+#: ../plugin/controllers/models/services.py:339
 msgid "Cable"
 msgstr "Kábel"
 
@@ -346,7 +346,7 @@ msgstr "Csatorna"
 msgid "Channels"
 msgstr "Csatornák"
 
-#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:257
+#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:258
 msgid "Chipset"
 msgstr "Chipset"
 
@@ -362,7 +362,7 @@ msgstr "Bezár"
 msgid "Common Settings"
 msgstr "Közös beállítások"
 
-#: ../plugin/controllers/models/timers.py:187
+#: ../plugin/controllers/models/timers.py:188
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Időzítő(k) ütközése észlelve! %s"
@@ -375,12 +375,12 @@ msgstr "Közreműködők"
 msgid "Control"
 msgstr "Ellenőrzés"
 
-#: ../plugin/controllers/models/timers.py:204
+#: ../plugin/controllers/models/timers.py:205
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "Nem lehet hozzáadni az '%s' időzítőt!"
 
-#: ../plugin/controllers/models/timers.py:320
+#: ../plugin/controllers/models/timers.py:321
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "Az '%s' időzítő nem található az adott kezdő és befejező időpontban!"
@@ -406,8 +406,8 @@ msgstr "Egyéni box név"
 msgid "Custom offset"
 msgstr "Egyéni eltolás"
 
-#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:57
-#: ../plugin/controllers/models/info.py:76
+#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:58
+#: ../plugin/controllers/models/info.py:77
 msgid "DHCP"
 msgstr "DHCP"
 
@@ -456,7 +456,7 @@ msgstr "Felvétel törlése"
 msgid "Delete Timer"
 msgstr "Időzítő törlése"
 
-#: ../plugin/controllers/models/movies.py:300
+#: ../plugin/controllers/models/movies.py:301
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -548,11 +548,11 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "EPG kódolás"
 
-#: ../plugin/controllers/base.py:331
+#: ../plugin/controllers/base.py:332
 msgid "EPGRefresh"
 msgstr "EPG frissítés"
 
-#: ../plugin/controllers/models/timers.py:722
+#: ../plugin/controllers/models/timers.py:723
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "HIBA: Nem állítható be az elalvás időzítő, amíg az eszköz készenléti állapotban van"
 
@@ -641,7 +641,7 @@ msgstr "Epg keresés"
 msgid "Error"
 msgstr "Hiba"
 
-#: ../plugin/controllers/models/timers.py:848
+#: ../plugin/controllers/models/timers.py:849
 msgid "Error parsing vps.xml"
 msgstr "Hiba történt a vps.xml elemzésében"
 
@@ -649,12 +649,12 @@ msgstr "Hiba történt a vps.xml elemzésében"
 msgid "Error upload File"
 msgstr "Hiba történt a fájl feltöltése közben"
 
-#: ../plugin/controllers/BouquetEditor.py:592
+#: ../plugin/controllers/BouquetEditor.py:593
 #, python-format
 msgid "Error while preparing backup file, %s does not exists."
 msgstr "Hiba történt a mentési fájl előkészítésénél, %s nem létezik."
 
-#: ../plugin/controllers/BouquetEditor.py:598
+#: ../plugin/controllers/BouquetEditor.py:599
 msgid "Error while preparing backup file."
 msgstr "Hiba történt a mentési fájl előkészítésénél."
 
@@ -662,17 +662,17 @@ msgstr "Hiba történt a mentési fájl előkészítésénél."
 msgid "Error writing File"
 msgstr "Hiba történt a fájl írása közben"
 
-#: ../plugin/controllers/BouquetEditor.py:653
+#: ../plugin/controllers/BouquetEditor.py:654
 #, python-format
 msgid "Error, %s does not exists, restore is not possible..."
 msgstr "Hiba, %s nem létezik, a visszaállítás nem lehetséges..."
 
-#: ../plugin/controllers/BouquetEditor.py:651
+#: ../plugin/controllers/BouquetEditor.py:652
 #, python-format
 msgid "Error, %s was not created with WebBouquetEditor..."
 msgstr "Hiba, %s nem jött létre a WebBouquetEditor segítségével..."
 
-#: ../plugin/controllers/BouquetEditor.py:193
+#: ../plugin/controllers/BouquetEditor.py:194
 #, python-format
 msgid "Error: Bouquet %s could not deleted, OSError."
 msgstr "Hiba: %s lista nem törölhető, OSError."
@@ -681,7 +681,7 @@ msgstr "Hiba: %s lista nem törölhető, OSError."
 msgid "Event not found"
 msgstr "Esemény nem található"
 
-#: ../plugin/controllers/models/timers.py:218
+#: ../plugin/controllers/models/timers.py:219
 msgid "EventId not found"
 msgstr "Esemény Id nem található"
 
@@ -761,7 +761,7 @@ msgstr "Péntek"
 msgid "Frontprocessor"
 msgstr "Frontprocesszor verzió"
 
-#: ../plugin/controllers/models/info.py:260
+#: ../plugin/controllers/models/info.py:261
 msgid "Frontprocessor Version"
 msgstr "Frontprocesszor verzió"
 
@@ -769,11 +769,12 @@ msgstr "Frontprocesszor verzió"
 msgid "Full remote"
 msgstr "Teljes távvezérlő"
 
-#: ../plugin/controllers/models/info.py:307
-#: ../plugin/controllers/models/info.py:313
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/movies.py:212
+#: ../plugin/controllers/models/info.py:308
+#: ../plugin/controllers/models/info.py:314
+#: ../plugin/controllers/models/info.py:329
+#: ../plugin/controllers/models/info.py:332
+#: ../plugin/controllers/models/movies.py:213
+#: ../plugin/controllers/models/movies.py:630
 msgid "GB"
 msgstr "GB"
 
@@ -791,11 +792,11 @@ msgstr "Gui version"
 msgid "Gateway"
 msgstr "Átjáró"
 
-#: ../plugin/controllers/BouquetEditor.py:450
+#: ../plugin/controllers/BouquetEditor.py:451
 msgid "Get mutable list for new created alternative failed!"
 msgstr "A változás lista létrehozása az új alternatívákhoz nem sikerült!"
 
-#: ../plugin/controllers/BouquetEditor.py:124
+#: ../plugin/controllers/BouquetEditor.py:125
 msgid "Get mutable list for new created bouquet failed!"
 msgstr "A változás lista létrehozása az új bouquethez nem sikerült!"
 
@@ -831,11 +832,11 @@ msgstr "Óra"
 msgid "IPv4 address"
 msgstr "IPv4 cím"
 
-#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:136
+#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:137
 msgid "IPv4-only Python/Twisted"
 msgstr "IPv4-only Python/Twisted"
 
-#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:132
+#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:133
 msgid "IPv4-only kernel"
 msgstr "IPv4-only kernel"
 
@@ -863,7 +864,7 @@ msgstr "Bővített leírással"
 msgid "Include short description"
 msgstr "Rövid leírással"
 
-#: ../plugin/controllers/models/timers.py:430
+#: ../plugin/controllers/models/timers.py:431
 msgid "Infinite Instant recording started"
 msgstr "Végtelen azonnali felvétel elkezdődött"
 
@@ -887,11 +888,11 @@ msgstr "Telepített"
 msgid "Instant Record"
 msgstr "Azonnali felvétel"
 
-#: ../plugin/controllers/models/timers.py:421
+#: ../plugin/controllers/models/timers.py:422
 msgid "Instant record for current Event started"
 msgstr "Az aktuális esemény azonnali felvétele megkezdődött"
 
-#: ../plugin/controllers/BouquetEditor.py:350
+#: ../plugin/controllers/BouquetEditor.py:351
 msgid "Internal error!"
 msgstr "Belső hiba!"
 
@@ -936,7 +937,7 @@ msgstr "Kernel"
 msgid "LCD"
 msgstr "LCD"
 
-#: ../plugin/controllers/base.py:294
+#: ../plugin/controllers/base.py:295
 msgid "LCD4Linux Setup"
 msgstr "LCD4Linux Beállítás"
 
@@ -952,7 +953,7 @@ msgstr "Címke sorozat"
 msgid "Link Speed"
 msgstr "Link sebesség"
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:392
 msgid "List of Timers has been cleaned"
 msgstr "Az időzítők listája kiürítve"
 
@@ -968,10 +969,11 @@ msgstr "Zárolt"
 msgid "MAC address"
 msgstr "MAC cím"
 
-#: ../plugin/controllers/models/info.py:304
-#: ../plugin/controllers/models/info.py:315
-#: ../plugin/controllers/models/info.py:333
-#: ../plugin/controllers/models/movies.py:214
+#: ../plugin/controllers/models/info.py:305
+#: ../plugin/controllers/models/info.py:316
+#: ../plugin/controllers/models/info.py:334
+#: ../plugin/controllers/models/movies.py:215
+#: ../plugin/controllers/models/movies.py:632
 msgid "MB"
 msgstr "MB"
 
@@ -987,7 +989,7 @@ msgstr "Fő memória"
 msgid "March"
 msgstr "Március"
 
-#: ../plugin/controllers/BouquetEditor.py:348
+#: ../plugin/controllers/BouquetEditor.py:349
 msgid "Marker added."
 msgstr "Marker hozzáadva."
 
@@ -1032,7 +1034,7 @@ msgstr "Perc"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Hiányzó kötelező paraméter '%s'"
 
-#: ../plugin/controllers/models/timers.py:522
+#: ../plugin/controllers/models/timers.py:523
 msgid "Missing requesteter: sRef"
 msgstr "Hiányzó kérelem: sRef"
 
@@ -1076,8 +1078,8 @@ msgstr "Film lista"
 msgid "Movies"
 msgstr "Filmek"
 
-#: ../plugin/controllers/BouquetEditor.py:131
-#: ../plugin/controllers/BouquetEditor.py:756
+#: ../plugin/controllers/BouquetEditor.py:132
+#: ../plugin/controllers/BouquetEditor.py:757
 msgid "Multi-Bouquet is not enabled!"
 msgstr "Multi-lista nem engedélyezett!"
 
@@ -1085,7 +1087,7 @@ msgstr "Multi-lista nem engedélyezett!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:318
+#: ../plugin/controllers/base.py:319
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "OSCam Webinterface"
@@ -1118,7 +1120,7 @@ msgstr "Hálózati megosztások"
 msgid "Never"
 msgstr "Soha"
 
-#: ../plugin/controllers/models/services.py:331
+#: ../plugin/controllers/models/services.py:332
 msgid "New"
 msgstr "Új"
 
@@ -1130,7 +1132,7 @@ msgstr "Új név"
 msgid "No"
 msgstr "Nem"
 
-#: ../plugin/controllers/BouquetEditor.py:524
+#: ../plugin/controllers/BouquetEditor.py:525
 msgid "No Parent Control Setup Pin given!"
 msgstr "Nincs szülő felügyeleti PIN beállítva!"
 
@@ -1138,57 +1140,57 @@ msgstr "Nincs szülő felügyeleti PIN beállítva!"
 msgid "No answer in time"
 msgstr "Nincs válasz időben"
 
-#: ../plugin/controllers/BouquetEditor.py:224
-#: ../plugin/controllers/BouquetEditor.py:254
-#: ../plugin/controllers/BouquetEditor.py:280
-#: ../plugin/controllers/BouquetEditor.py:324
-#: ../plugin/controllers/BouquetEditor.py:474
+#: ../plugin/controllers/BouquetEditor.py:225
+#: ../plugin/controllers/BouquetEditor.py:255
+#: ../plugin/controllers/BouquetEditor.py:281
+#: ../plugin/controllers/BouquetEditor.py:325
+#: ../plugin/controllers/BouquetEditor.py:475
 msgid "No bouquet given!"
 msgstr "Nincs lista!"
 
-#: ../plugin/controllers/BouquetEditor.py:92
-#: ../plugin/controllers/BouquetEditor.py:153
-#: ../plugin/controllers/BouquetEditor.py:199
+#: ../plugin/controllers/BouquetEditor.py:93
+#: ../plugin/controllers/BouquetEditor.py:154
+#: ../plugin/controllers/BouquetEditor.py:200
 msgid "No bouquet name given!"
 msgstr "Nem adott nevet a listának!"
 
-#: ../plugin/controllers/BouquetEditor.py:419
+#: ../plugin/controllers/BouquetEditor.py:420
 msgid "No current service given!"
 msgstr "Nincs aktuális szolgáltatás!"
 
-#: ../plugin/controllers/models/timers.py:415
+#: ../plugin/controllers/models/timers.py:416
 msgid "No event found! Not recording!"
 msgstr "Esemény nem található! Nincs felvétel!"
 
-#: ../plugin/controllers/BouquetEditor.py:331
+#: ../plugin/controllers/BouquetEditor.py:332
 msgid "No marker-name given!"
 msgstr "Nincs megadva marker-név!"
 
-#: ../plugin/controllers/models/timers.py:338
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:339
+#: ../plugin/controllers/models/timers.py:384
 msgid "No matching Timer found"
 msgstr "Nincs megfelelő időzítő"
 
-#: ../plugin/controllers/BouquetEditor.py:364
+#: ../plugin/controllers/BouquetEditor.py:365
 msgid "No new servicename given!"
 msgstr "Nincs új szolgáltatásnév!"
 
-#: ../plugin/controllers/BouquetEditor.py:209
-#: ../plugin/controllers/BouquetEditor.py:266
+#: ../plugin/controllers/BouquetEditor.py:210
+#: ../plugin/controllers/BouquetEditor.py:267
 msgid "No position given!"
 msgstr "Nincs megadva pozíció!"
 
-#: ../plugin/controllers/BouquetEditor.py:137
+#: ../plugin/controllers/BouquetEditor.py:138
 msgid "No provider given!"
 msgstr "Nincs megadva szolgáltató!"
 
-#: ../plugin/controllers/BouquetEditor.py:230
-#: ../plugin/controllers/BouquetEditor.py:260
-#: ../plugin/controllers/BouquetEditor.py:297
-#: ../plugin/controllers/BouquetEditor.py:358
-#: ../plugin/controllers/BouquetEditor.py:416
-#: ../plugin/controllers/BouquetEditor.py:480
-#: ../plugin/controllers/BouquetEditor.py:517
+#: ../plugin/controllers/BouquetEditor.py:231
+#: ../plugin/controllers/BouquetEditor.py:261
+#: ../plugin/controllers/BouquetEditor.py:298
+#: ../plugin/controllers/BouquetEditor.py:359
+#: ../plugin/controllers/BouquetEditor.py:417
+#: ../plugin/controllers/BouquetEditor.py:481
+#: ../plugin/controllers/BouquetEditor.py:518
 msgid "No service given!"
 msgstr "Nincs szolgáltatás!"
 
@@ -1237,7 +1239,7 @@ msgstr "Most"
 msgid "OE version"
 msgstr "Gui version"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:317
 msgid "OSCam Webinterface"
 msgstr "OSCam Webinterface"
 
@@ -1319,7 +1321,7 @@ msgid "OpenWebif url: http://yourip:port"
 msgstr "OpenWebif url: http://yourip:port"
 
 #: ../plugin/controllers/i18n.py:450
-#: ../plugin/controllers/models/services.py:225
+#: ../plugin/controllers/models/services.py:226
 msgid "Orbital Position"
 msgstr "Orbitális pozíció"
 
@@ -1331,12 +1333,12 @@ msgstr "A megtalált felülbírálata alternatív szolgáltatással"
 msgid "Packages"
 msgstr "Csomagok"
 
-#: ../plugin/controllers/BouquetEditor.py:528
-#: ../plugin/controllers/BouquetEditor.py:530
+#: ../plugin/controllers/BouquetEditor.py:529
+#: ../plugin/controllers/BouquetEditor.py:531
 msgid "Parent Control Setup Pin is wrong!"
 msgstr "A szülői felügyelet PIN hibás!"
 
-#: ../plugin/controllers/BouquetEditor.py:511
+#: ../plugin/controllers/BouquetEditor.py:512
 msgid "Parent Control is not activated."
 msgstr "A szülői felügyelet nincs aktiválva."
 
@@ -1388,7 +1390,7 @@ msgstr "Pmtpid"
 msgid "Power Control"
 msgstr "Kikapcsolás"
 
-#: ../plugin/controllers/models/timers.py:604
+#: ../plugin/controllers/models/timers.py:605
 msgid "PowerTimer feature not available"
 msgstr "PowerTimer funkció nem áll rendelkezésre"
 
@@ -1519,7 +1521,7 @@ msgstr "Korlátozza az eseményeket bizonyos időpontokban"
 msgid "Root"
 msgstr "Root"
 
-#: ../plugin/controllers/models/info.py:48
+#: ../plugin/controllers/models/info.py:49
 msgid "SLAAC"
 msgstr "SLAAC"
 
@@ -1628,63 +1630,63 @@ msgstr "Szeptember"
 msgid "Service"
 msgstr "Szolgáltatás"
 
-#: ../plugin/controllers/BouquetEditor.py:314
+#: ../plugin/controllers/BouquetEditor.py:315
 #, python-format
 msgid "Service %s added."
 msgstr "A %s szolgáltatás hozzáadva."
 
-#: ../plugin/controllers/BouquetEditor.py:317
+#: ../plugin/controllers/BouquetEditor.py:318
 #, python-format
 msgid "Service %s already exists in bouquet %s."
 msgstr "A %s szolgáltatás már létezik a %s listában."
 
-#: ../plugin/controllers/BouquetEditor.py:248
+#: ../plugin/controllers/BouquetEditor.py:249
 #, python-format
 msgid "Service %s can not be removed."
 msgstr "A %s szolgáltatás nem távolítható el."
 
-#: ../plugin/controllers/BouquetEditor.py:545
+#: ../plugin/controllers/BouquetEditor.py:546
 #, python-format
 msgid "Service %s is locked."
 msgstr "A %s szolgáltatás zárolva van."
 
-#: ../plugin/controllers/BouquetEditor.py:553
+#: ../plugin/controllers/BouquetEditor.py:554
 #, python-format
 msgid "Service %s is unlocked."
 msgstr "A %s szolgáltatás nincs zárolva."
 
-#: ../plugin/controllers/BouquetEditor.py:273
+#: ../plugin/controllers/BouquetEditor.py:274
 #, python-format
 msgid "Service %s moved."
 msgstr "A %s szolgáltatás áthelyezve."
 
-#: ../plugin/controllers/BouquetEditor.py:247
+#: ../plugin/controllers/BouquetEditor.py:248
 #, python-format
 msgid "Service %s removed from bouquet %s."
 msgstr "A %s szolgáltatás törölve a %s listából."
 
-#: ../plugin/controllers/BouquetEditor.py:239
+#: ../plugin/controllers/BouquetEditor.py:240
 #, python-format
 msgid "Service %s removed."
 msgstr "A %s szolgáltatás eltávolítva."
 
-#: ../plugin/controllers/BouquetEditor.py:274
+#: ../plugin/controllers/BouquetEditor.py:275
 msgid "Service can not be moved."
 msgstr "A szolgáltatást nem lehet áthelyezni."
 
-#: ../plugin/controllers/BouquetEditor.py:405
+#: ../plugin/controllers/BouquetEditor.py:406
 msgid "Service can not be renamed."
 msgstr "A szolgáltatás nem nevezhető át."
 
-#: ../plugin/controllers/BouquetEditor.py:497
+#: ../plugin/controllers/BouquetEditor.py:498
 msgid "Service is not an alternative."
 msgstr "A szolgáltatás nem alternatíva."
 
-#: ../plugin/controllers/BouquetEditor.py:404
+#: ../plugin/controllers/BouquetEditor.py:405
 msgid "Service renamed successfully."
 msgstr "A szolgáltatás átnevezése sikeres."
 
-#: ../plugin/controllers/models/services.py:333
+#: ../plugin/controllers/models/services.py:334
 msgid "Services"
 msgstr "Szolgáltatások"
 
@@ -1693,7 +1695,7 @@ msgid "Set maximum duration"
 msgstr "Állítsa be a maximális időt"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:278
+#: ../plugin/controllers/base.py:279
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -1750,32 +1752,32 @@ msgstr "Szimulálás"
 msgid "Site and sources"
 msgstr "Webhely és források"
 
-#: ../plugin/controllers/models/timers.py:682
-#: ../plugin/controllers/models/timers.py:709
-#: ../plugin/controllers/models/timers.py:738
-#: ../plugin/controllers/models/timers.py:819
+#: ../plugin/controllers/models/timers.py:683
+#: ../plugin/controllers/models/timers.py:710
+#: ../plugin/controllers/models/timers.py:739
+#: ../plugin/controllers/models/timers.py:820
 msgid "SleepTimer error"
 msgstr "Elalvás időzítő hiba"
 
-#: ../plugin/controllers/models/timers.py:727
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:814
+#: ../plugin/controllers/models/timers.py:728
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:815
 msgid "Sleeptimer has been disabled"
 msgstr "Az elalvás időzítő le lett tiltva"
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is disabled"
 msgstr "Az elalvás időzítő le van tiltva"
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is enabled"
 msgstr "Az elalvás időzítő engedélyezve van"
 
-#: ../plugin/controllers/models/timers.py:733
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:809
+#: ../plugin/controllers/models/timers.py:734
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:810
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Az elalvás időzítő beállítása %d percben"
@@ -1840,9 +1842,9 @@ msgstr "Vasárnap"
 msgid "Sunday"
 msgstr "Vasárnap"
 
-#: ../plugin/controllers/models/info.py:311
-#: ../plugin/controllers/models/info.py:323
-#: ../plugin/controllers/models/info.py:325
+#: ../plugin/controllers/models/info.py:312
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:326
 msgid "TB"
 msgstr "TB"
 
@@ -1874,11 +1876,11 @@ msgstr "Televízió"
 msgid "Template Engine"
 msgstr "Sablon motor"
 
-#: ../plugin/controllers/base.py:349
+#: ../plugin/controllers/base.py:350
 msgid "Terminal"
 msgstr "Terminál"
 
-#: ../plugin/controllers/models/services.py:340
+#: ../plugin/controllers/models/services.py:341
 msgid "Terrestrial"
 msgstr "Földi"
 
@@ -1899,17 +1901,17 @@ msgstr "A paraméter '%s' nem lehet üres"
 msgid "The parameter 'command' must be a number"
 msgstr "A 'parancs' paraméternek számnak kell lennie"
 
-#: ../plugin/controllers/models/timers.py:377
+#: ../plugin/controllers/models/timers.py:378
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "Az időzítő '%s' sikeres %s volt"
 
-#: ../plugin/controllers/models/timers.py:333
+#: ../plugin/controllers/models/timers.py:334
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "Az '%s' időzítő sikeresen törölve lett"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:370
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "Az '%s' időzítő éppen felvételt készít! Nem lehet tiltani!"
@@ -1918,7 +1920,7 @@ msgstr "Az '%s' időzítő éppen felvételt készít! Nem lehet tiltani!"
 msgid "Theme"
 msgstr "Téma"
 
-#: ../plugin/controllers/BouquetEditor.py:318
+#: ../plugin/controllers/BouquetEditor.py:319
 msgid "This service can not be added."
 msgstr "Szolgáltatást nem lehet hozzáadni."
 
@@ -1946,27 +1948,27 @@ msgstr "Időtúllépés"
 msgid "Timer"
 msgstr "Időzítő"
 
-#: ../plugin/controllers/models/timers.py:209
+#: ../plugin/controllers/models/timers.py:210
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Időzítő '%s' hozzáadva"
 
-#: ../plugin/controllers/models/timers.py:363
+#: ../plugin/controllers/models/timers.py:364
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "Az időzítő '%s' már létezik!"
 
-#: ../plugin/controllers/models/timers.py:295
+#: ../plugin/controllers/models/timers.py:296
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Időzítő '%s' megváltozott"
 
-#: ../plugin/controllers/models/timers.py:357
+#: ../plugin/controllers/models/timers.py:358
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "A '%s' időzítő nem engedélyezett ütközés miatt"
 
-#: ../plugin/controllers/models/timers.py:314
+#: ../plugin/controllers/models/timers.py:315
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "Az '%s' időzítő nem menthető ütközés miatt"
@@ -1979,7 +1981,7 @@ msgstr "Időzítés hozzáadva"
 msgid "Timer added"
 msgstr "Időzítés hozzáadva"
 
-#: ../plugin/controllers/models/timers.py:449
+#: ../plugin/controllers/models/timers.py:450
 msgid "Timer conflict detected! Not recording!"
 msgstr "Időzítő ütközés észlelhető! Nem lesz felvétel!"
 
@@ -1987,7 +1989,7 @@ msgstr "Időzítő ütközés észlelhető! Nem lesz felvétel!"
 msgid "Timer type"
 msgstr "Időzítő típusa"
 
-#: ../plugin/controllers/models/timers.py:399
+#: ../plugin/controllers/models/timers.py:400
 msgid "TimerList has been saved"
 msgstr "Az időzítő lista mentésre került"
 
@@ -2072,7 +2074,7 @@ msgstr "Típus"
 msgid "Unknown Volume command %s"
 msgstr "Ismeretlen Hangerő parancs %s"
 
-#: ../plugin/controllers/models/timers.py:544
+#: ../plugin/controllers/models/timers.py:545
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Ismeretlen parancs: '%s'"
@@ -2130,7 +2132,7 @@ msgstr "Az új kinézet használata"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:853
+#: ../plugin/controllers/models/timers.py:854
 msgid "VPS plugin not found"
 msgstr "A VPS bővítmény nem található"
 
@@ -2323,9 +2325,10 @@ msgstr "a rövid leírásban"
 msgid "in Title"
 msgstr "a címben"
 
-#: ../plugin/controllers/models/info.py:210
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/movies.py:216
+#: ../plugin/controllers/models/info.py:211
+#: ../plugin/controllers/models/info.py:214
+#: ../plugin/controllers/models/movies.py:217
+#: ../plugin/controllers/models/movies.py:634
 msgid "kB"
 msgstr "kB"
 
@@ -2333,8 +2336,8 @@ msgstr "kB"
 msgid "loading"
 msgstr "töltés"
 
-#: ../plugin/controllers/models/info.py:59
-#: ../plugin/controllers/models/info.py:78
+#: ../plugin/controllers/models/info.py:60
+#: ../plugin/controllers/models/info.py:79
 msgid "manual/disabled"
 msgstr "kézi/tiltva"
 
@@ -2346,7 +2349,7 @@ msgstr "perc"
 msgid "no description available"
 msgstr "nincs elérhető leírás"
 
-#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:165
+#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:166
 msgid "none/IPv4-only network"
 msgstr "egyik sem/Csak IPv4-alapú hálózat"
 
@@ -2354,7 +2357,7 @@ msgstr "egyik sem/Csak IPv4-alapú hálózat"
 msgid "on Weekday"
 msgstr "hétköznap"
 
-#: ../plugin/controllers/BouquetEditor.py:86
+#: ../plugin/controllers/BouquetEditor.py:87
 msgid "one two three four unknown command"
 msgstr "egy kettő három négy ismeretlen parancs"
 
@@ -2362,11 +2365,11 @@ msgstr "egy kettő három négy ismeretlen parancs"
 msgid "partial match"
 msgstr "részleges egyezés"
 
-#: ../plugin/controllers/models/info.py:374
+#: ../plugin/controllers/models/info.py:375
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:370
+#: ../plugin/controllers/models/info.py:371
 msgid "r/w"
 msgstr "r/w"
 
@@ -2374,7 +2377,7 @@ msgstr "r/w"
 msgid "record"
 msgstr "felvétel"
 
-#: ../plugin/controllers/models/movies.py:294
+#: ../plugin/controllers/models/movies.py:295
 msgid "remove"
 msgstr "eltávolít"
 
@@ -2410,9 +2413,9 @@ msgstr "alapértelmezett"
 msgid "start match"
 msgstr "start egyezés"
 
-#: ../plugin/controllers/models/info.py:55
-#: ../plugin/controllers/models/info.py:67
-#: ../plugin/controllers/models/info.py:74
+#: ../plugin/controllers/models/info.py:56
+#: ../plugin/controllers/models/info.py:68
+#: ../plugin/controllers/models/info.py:75
 msgid "static"
 msgstr "statikus"
 
@@ -2428,13 +2431,13 @@ msgstr "cím vagy rövid leírás egyezés"
 msgid "transcoded"
 msgstr "átkódolt"
 
-#: ../plugin/controllers/web.py:686
+#: ../plugin/controllers/web.py:720
 #, python-format
 msgid "type %s is not a number"
 msgstr "a %s típus nem számjegy"
 
-#: ../plugin/controllers/models/info.py:87
-#: ../plugin/controllers/models/info.py:95
+#: ../plugin/controllers/models/info.py:88
+#: ../plugin/controllers/models/info.py:96
 msgid "unknown"
 msgstr "ismeretlen"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-08 23:37+0330\n"
+"POT-Creation-Date: 2020-03-26 17:40+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dominik Paľo <dominik@palo.sk>\n"
 "Language-Team: \n"
@@ -13,13 +13,13 @@ msgstr ""
 "X-Generator: Poedit 2.0.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: ../plugin/controllers/BouquetEditor.py:549
+#: ../plugin/controllers/BouquetEditor.py:550
 #, python-format
 msgid "%s %s is locked."
 msgstr "%s %s je zamknutý."
 
-#: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/info.py:341
+#: ../plugin/controllers/models/info.py:215
+#: ../plugin/controllers/models/info.py:342
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s voľné / %s celkom"
@@ -92,7 +92,7 @@ msgstr "Pridať stanicu(e) do prehľadu"
 msgid "Add service name to stream information"
 msgstr "Pridať názov služby do informácie o prúde"
 
-#: ../plugin/controllers/BouquetEditor.py:466
+#: ../plugin/controllers/BouquetEditor.py:467
 #, python-format
 msgid "Added %s to alternative service %s."
 msgstr "%s pridaná k alternatívam stanice %s."
@@ -117,7 +117,7 @@ msgstr "Všetky stanice"
 msgid "All Files of this Software are open source software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation."
 msgstr "Všetky súbory v tomto softvéri sú open source; môžete ho šíriť a/alebo upravovať podľa podmienok GNU General Public License verzie 3 v znení publikovanom Free Software Foundation."
 
-#: ../plugin/controllers/BouquetEditor.py:505
+#: ../plugin/controllers/BouquetEditor.py:506
 msgid "All alternative services deleted."
 msgstr "Všetky alternatívne stanice odstránené."
 
@@ -125,7 +125,7 @@ msgstr "Všetky alternatívne stanice odstránené."
 msgid "Allow IPK Upload"
 msgstr "Povoliť nahratie IPK"
 
-#: ../plugin/controllers/BouquetEditor.py:452
+#: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
 msgid "Alternative %s created failed."
 msgstr "Vytváranie alternatívy %s zlyhalo."
@@ -182,7 +182,7 @@ msgstr "Auto"
 msgid "AutoPoll"
 msgstr "AutoPoll"
 
-#: ../plugin/controllers/base.py:322
+#: ../plugin/controllers/base.py:323
 msgid "AutoTimer"
 msgstr "Automatický časovač"
 
@@ -235,47 +235,47 @@ msgstr "Záložka"
 msgid "Bookmarks"
 msgstr "Záložky"
 
-#: ../plugin/controllers/BouquetEditor.py:127
+#: ../plugin/controllers/BouquetEditor.py:128
 #, python-format
 msgid "Bouquet %s already exists."
 msgstr "Prehľad %s už existuje."
 
-#: ../plugin/controllers/BouquetEditor.py:218
+#: ../plugin/controllers/BouquetEditor.py:219
 #, python-format
 msgid "Bouquet %s can not be moved."
 msgstr "Prehľad %s nemôže byť presunutý."
 
-#: ../plugin/controllers/BouquetEditor.py:122
+#: ../plugin/controllers/BouquetEditor.py:123
 #, python-format
 msgid "Bouquet %s created."
 msgstr "Prehľad %s vytvorený."
 
-#: ../plugin/controllers/BouquetEditor.py:191
+#: ../plugin/controllers/BouquetEditor.py:192
 #, python-format
 msgid "Bouquet %s deleted."
 msgstr "Prehľad %s zmazaný."
 
-#: ../plugin/controllers/BouquetEditor.py:547
+#: ../plugin/controllers/BouquetEditor.py:548
 #, python-format
 msgid "Bouquet %s is locked."
 msgstr "Prehľad %s je zamknutý."
 
-#: ../plugin/controllers/BouquetEditor.py:555
+#: ../plugin/controllers/BouquetEditor.py:556
 #, python-format
 msgid "Bouquet %s is unlocked."
 msgstr "Prehľad %s nie je zamknutý."
 
-#: ../plugin/controllers/BouquetEditor.py:216
+#: ../plugin/controllers/BouquetEditor.py:217
 #, python-format
 msgid "Bouquet %s moved."
 msgstr "Prehľad %s presunutý."
 
-#: ../plugin/controllers/BouquetEditor.py:186
+#: ../plugin/controllers/BouquetEditor.py:187
 #, python-format
 msgid "Bouquet %s removed failed, sevicerefence or mutable list is not valid."
 msgstr "Odstránenie prehľadu %s zlyhalo, zoznam referencií je neplatný."
 
-#: ../plugin/controllers/BouquetEditor.py:184
+#: ../plugin/controllers/BouquetEditor.py:185
 #, python-format
 msgid "Bouquet %s removed failed."
 msgstr "Odstránenie prehľadu %s zlyhalo."
@@ -284,20 +284,20 @@ msgstr "Odstránenie prehľadu %s zlyhalo."
 msgid "Bouquet Editor"
 msgstr "Editor prehľadu"
 
-#: ../plugin/controllers/BouquetEditor.py:388
+#: ../plugin/controllers/BouquetEditor.py:389
 msgid "Bouquet renamed successfully."
 msgstr "Prehľad úspešne premenovaný."
 
-#: ../plugin/controllers/BouquetEditor.py:649
+#: ../plugin/controllers/BouquetEditor.py:650
 msgid "Bouquet-settings were restored successfully"
 msgstr "Obnovenie nastavení prehľadu bolo úspešné"
 
-#: ../plugin/controllers/base.py:327
+#: ../plugin/controllers/base.py:328
 msgid "BouquetEditor"
 msgstr "Editor prehľadov"
 
-#: ../plugin/controllers/BouquetEditor.py:129
-#: ../plugin/controllers/BouquetEditor.py:454
+#: ../plugin/controllers/BouquetEditor.py:130
+#: ../plugin/controllers/BouquetEditor.py:455
 msgid "Bouquetlist is not editable!"
 msgstr "Zoznam prehľadov sa nedá upraviť!"
 
@@ -318,7 +318,7 @@ msgstr ""
 msgid "CPU brand"
 msgstr ""
 
-#: ../plugin/controllers/models/services.py:338
+#: ../plugin/controllers/models/services.py:339
 msgid "Cable"
 msgstr "Káblové"
 
@@ -347,7 +347,7 @@ msgstr "Stanica"
 msgid "Channels"
 msgstr "Stanice"
 
-#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:257
+#: ../plugin/controllers/i18n.py:96 ../plugin/controllers/models/info.py:258
 msgid "Chipset"
 msgstr "Čipset"
 
@@ -364,7 +364,7 @@ msgstr "Zatvoriť"
 msgid "Common Settings"
 msgstr "Všeobecné nastavenia"
 
-#: ../plugin/controllers/models/timers.py:187
+#: ../plugin/controllers/models/timers.py:188
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Nájdené konfliktné časovače! %s"
@@ -377,12 +377,12 @@ msgstr "Prispievatelia"
 msgid "Control"
 msgstr "Ovládanie"
 
-#: ../plugin/controllers/models/timers.py:204
+#: ../plugin/controllers/models/timers.py:205
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "Časovač '%s' sa nepodarilo pridať!"
 
-#: ../plugin/controllers/models/timers.py:320
+#: ../plugin/controllers/models/timers.py:321
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "Nepodarilo sa nájsť časovač '%s' so zadaným časom začatia a ukončenia!"
@@ -408,8 +408,8 @@ msgstr "Vlastný názov prijímača"
 msgid "Custom offset"
 msgstr "Vlastná rezerva"
 
-#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:57
-#: ../plugin/controllers/models/info.py:76
+#: ../plugin/controllers/i18n.py:114 ../plugin/controllers/models/info.py:58
+#: ../plugin/controllers/models/info.py:77
 msgid "DHCP"
 msgstr "DHCP"
 
@@ -458,7 +458,7 @@ msgstr "Zmazať nahrávku"
 msgid "Delete Timer"
 msgstr "Zmazať časovač"
 
-#: ../plugin/controllers/models/movies.py:300
+#: ../plugin/controllers/models/movies.py:301
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -549,11 +549,11 @@ msgstr "EPG"
 msgid "EPG encoding"
 msgstr "Znaková sada EPG"
 
-#: ../plugin/controllers/base.py:331
+#: ../plugin/controllers/base.py:332
 msgid "EPGRefresh"
 msgstr "Obnovovanie EPG"
 
-#: ../plugin/controllers/models/timers.py:722
+#: ../plugin/controllers/models/timers.py:723
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "Chyba: Nie je možné nastaviť automatické vypnutie, keď zariadenie je v pohotovostnom režime"
 
@@ -642,7 +642,7 @@ msgstr "Hľadanie v EPG"
 msgid "Error"
 msgstr "Chyba"
 
-#: ../plugin/controllers/models/timers.py:848
+#: ../plugin/controllers/models/timers.py:849
 msgid "Error parsing vps.xml"
 msgstr "Chyba pri analýze vps.xml"
 
@@ -650,12 +650,12 @@ msgstr "Chyba pri analýze vps.xml"
 msgid "Error upload File"
 msgstr "Chyba pri odovzdávaní súboru"
 
-#: ../plugin/controllers/BouquetEditor.py:592
+#: ../plugin/controllers/BouquetEditor.py:593
 #, python-format
 msgid "Error while preparing backup file, %s does not exists."
 msgstr "Chyba pri príprave záložného súboru, %s neexistuje."
 
-#: ../plugin/controllers/BouquetEditor.py:598
+#: ../plugin/controllers/BouquetEditor.py:599
 msgid "Error while preparing backup file."
 msgstr "Chyba pri príprave záložného súboru."
 
@@ -663,17 +663,17 @@ msgstr "Chyba pri príprave záložného súboru."
 msgid "Error writing File"
 msgstr "Chyba pri zápise súboru"
 
-#: ../plugin/controllers/BouquetEditor.py:653
+#: ../plugin/controllers/BouquetEditor.py:654
 #, python-format
 msgid "Error, %s does not exists, restore is not possible..."
 msgstr "Chyba %s neexistuje, obnovenie nie je možné ..."
 
-#: ../plugin/controllers/BouquetEditor.py:651
+#: ../plugin/controllers/BouquetEditor.py:652
 #, python-format
 msgid "Error, %s was not created with WebBouquetEditor..."
 msgstr "Chyba, %s nebol vytvorený web editorom prehľadov..."
 
-#: ../plugin/controllers/BouquetEditor.py:193
+#: ../plugin/controllers/BouquetEditor.py:194
 #, python-format
 msgid "Error: Bouquet %s could not deleted, OSError."
 msgstr "Chyba: Prehľad  %s sa nedá zmazať, OSerror."
@@ -682,7 +682,7 @@ msgstr "Chyba: Prehľad  %s sa nedá zmazať, OSerror."
 msgid "Event not found"
 msgstr "Relácia nebola nájdená"
 
-#: ../plugin/controllers/models/timers.py:218
+#: ../plugin/controllers/models/timers.py:219
 msgid "EventId not found"
 msgstr "Id relácie nenájdené"
 
@@ -762,7 +762,7 @@ msgstr "Piatok"
 msgid "Frontprocessor"
 msgstr "Verzia frontprocesora"
 
-#: ../plugin/controllers/models/info.py:260
+#: ../plugin/controllers/models/info.py:261
 msgid "Frontprocessor Version"
 msgstr "Verzia frontprocesora"
 
@@ -771,11 +771,12 @@ msgstr "Verzia frontprocesora"
 msgid "Full remote"
 msgstr "Skryť úplné diaľkové"
 
-#: ../plugin/controllers/models/info.py:307
-#: ../plugin/controllers/models/info.py:313
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/movies.py:212
+#: ../plugin/controllers/models/info.py:308
+#: ../plugin/controllers/models/info.py:314
+#: ../plugin/controllers/models/info.py:329
+#: ../plugin/controllers/models/info.py:332
+#: ../plugin/controllers/models/movies.py:213
+#: ../plugin/controllers/models/movies.py:630
 msgid "GB"
 msgstr ""
 
@@ -793,11 +794,11 @@ msgstr "Verzia GUI"
 msgid "Gateway"
 msgstr "Brána"
 
-#: ../plugin/controllers/BouquetEditor.py:450
+#: ../plugin/controllers/BouquetEditor.py:451
 msgid "Get mutable list for new created alternative failed!"
 msgstr "Získanie premenlivého zoznamu pre novovytvorenú alternatívu zlyhalo!"
 
-#: ../plugin/controllers/BouquetEditor.py:124
+#: ../plugin/controllers/BouquetEditor.py:125
 msgid "Get mutable list for new created bouquet failed!"
 msgstr "Získanie premenlivého zoznamu pre novovytvorený prehľad zlyhalo!"
 
@@ -833,11 +834,11 @@ msgstr "Hodina"
 msgid "IPv4 address"
 msgstr "IPv4 adresa"
 
-#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:136
+#: ../plugin/controllers/i18n.py:156 ../plugin/controllers/models/info.py:137
 msgid "IPv4-only Python/Twisted"
 msgstr "Python/Twisted len IPv4"
 
-#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:132
+#: ../plugin/controllers/i18n.py:154 ../plugin/controllers/models/info.py:133
 msgid "IPv4-only kernel"
 msgstr "Jadro len IPv4"
 
@@ -867,7 +868,7 @@ msgstr "Zahrnúť popis"
 msgid "Include short description"
 msgstr "Zahrnúť popis"
 
-#: ../plugin/controllers/models/timers.py:430
+#: ../plugin/controllers/models/timers.py:431
 msgid "Infinite Instant recording started"
 msgstr "Nekonečné okamžité nahrávanie začalo"
 
@@ -892,11 +893,11 @@ msgstr "Okamžité nahrávanie"
 msgid "Instant Record"
 msgstr "Okamžité nahrávanie"
 
-#: ../plugin/controllers/models/timers.py:421
+#: ../plugin/controllers/models/timers.py:422
 msgid "Instant record for current Event started"
 msgstr "Okamžitý záznam aktuálnej relácie začal"
 
-#: ../plugin/controllers/BouquetEditor.py:350
+#: ../plugin/controllers/BouquetEditor.py:351
 msgid "Internal error!"
 msgstr "Vnútorná chyba!"
 
@@ -941,7 +942,7 @@ msgstr "Verzia jadra"
 msgid "LCD"
 msgstr ""
 
-#: ../plugin/controllers/base.py:294
+#: ../plugin/controllers/base.py:295
 msgid "LCD4Linux Setup"
 msgstr "Nastavenie LCD4Linux"
 
@@ -957,7 +958,7 @@ msgstr "Série menoviek"
 msgid "Link Speed"
 msgstr "Rýchlosť pripojenia"
 
-#: ../plugin/controllers/models/timers.py:391
+#: ../plugin/controllers/models/timers.py:392
 msgid "List of Timers has been cleaned"
 msgstr "Zoznam časovačov bol vyčistený"
 
@@ -973,10 +974,11 @@ msgstr "Uzamknutý"
 msgid "MAC address"
 msgstr "MAC adresa"
 
-#: ../plugin/controllers/models/info.py:304
-#: ../plugin/controllers/models/info.py:315
-#: ../plugin/controllers/models/info.py:333
-#: ../plugin/controllers/models/movies.py:214
+#: ../plugin/controllers/models/info.py:305
+#: ../plugin/controllers/models/info.py:316
+#: ../plugin/controllers/models/info.py:334
+#: ../plugin/controllers/models/movies.py:215
+#: ../plugin/controllers/models/movies.py:632
 msgid "MB"
 msgstr ""
 
@@ -992,7 +994,7 @@ msgstr "Celková pamäť"
 msgid "March"
 msgstr "Marec"
 
-#: ../plugin/controllers/BouquetEditor.py:348
+#: ../plugin/controllers/BouquetEditor.py:349
 msgid "Marker added."
 msgstr "Značka pridaná."
 
@@ -1038,7 +1040,7 @@ msgstr "Minúta"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Chýba povinný parameter '%s'"
 
-#: ../plugin/controllers/models/timers.py:522
+#: ../plugin/controllers/models/timers.py:523
 msgid "Missing requesteter: sRef"
 msgstr "Chýbajúci žiadateľ: sRef"
 
@@ -1083,8 +1085,8 @@ msgstr "Zoznam filmov"
 msgid "Movies"
 msgstr "Filmy"
 
-#: ../plugin/controllers/BouquetEditor.py:131
-#: ../plugin/controllers/BouquetEditor.py:756
+#: ../plugin/controllers/BouquetEditor.py:132
+#: ../plugin/controllers/BouquetEditor.py:757
 msgid "Multi-Bouquet is not enabled!"
 msgstr "Multi-prehľad nie je zapnutý!"
 
@@ -1092,7 +1094,7 @@ msgstr "Multi-prehľad nie je zapnutý!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: ../plugin/controllers/base.py:318
+#: ../plugin/controllers/base.py:319
 #, fuzzy
 msgid "NCam Webinterface"
 msgstr "OSCam webrozhranie"
@@ -1125,7 +1127,7 @@ msgstr "Sieťové zdieľania"
 msgid "Never"
 msgstr "Nikdy"
 
-#: ../plugin/controllers/models/services.py:331
+#: ../plugin/controllers/models/services.py:332
 msgid "New"
 msgstr "Nový"
 
@@ -1137,7 +1139,7 @@ msgstr "Nový názov"
 msgid "No"
 msgstr "Nie"
 
-#: ../plugin/controllers/BouquetEditor.py:524
+#: ../plugin/controllers/BouquetEditor.py:525
 msgid "No Parent Control Setup Pin given!"
 msgstr "Nebol zadaný PIN rodičovskej kontroly!"
 
@@ -1145,57 +1147,57 @@ msgstr "Nebol zadaný PIN rodičovskej kontroly!"
 msgid "No answer in time"
 msgstr "Žiadna odpoveď načas"
 
-#: ../plugin/controllers/BouquetEditor.py:224
-#: ../plugin/controllers/BouquetEditor.py:254
-#: ../plugin/controllers/BouquetEditor.py:280
-#: ../plugin/controllers/BouquetEditor.py:324
-#: ../plugin/controllers/BouquetEditor.py:474
+#: ../plugin/controllers/BouquetEditor.py:225
+#: ../plugin/controllers/BouquetEditor.py:255
+#: ../plugin/controllers/BouquetEditor.py:281
+#: ../plugin/controllers/BouquetEditor.py:325
+#: ../plugin/controllers/BouquetEditor.py:475
 msgid "No bouquet given!"
 msgstr "Nie je uvedený prehľad!"
 
-#: ../plugin/controllers/BouquetEditor.py:92
-#: ../plugin/controllers/BouquetEditor.py:153
-#: ../plugin/controllers/BouquetEditor.py:199
+#: ../plugin/controllers/BouquetEditor.py:93
+#: ../plugin/controllers/BouquetEditor.py:154
+#: ../plugin/controllers/BouquetEditor.py:200
 msgid "No bouquet name given!"
 msgstr "Nie je uvedený názov prehľadu!"
 
-#: ../plugin/controllers/BouquetEditor.py:419
+#: ../plugin/controllers/BouquetEditor.py:420
 msgid "No current service given!"
 msgstr "Nezadaná aktuálna stanica!"
 
-#: ../plugin/controllers/models/timers.py:415
+#: ../plugin/controllers/models/timers.py:416
 msgid "No event found! Not recording!"
 msgstr "Nenájdená žiadna relácia! Nenahráva sa!"
 
-#: ../plugin/controllers/BouquetEditor.py:331
+#: ../plugin/controllers/BouquetEditor.py:332
 msgid "No marker-name given!"
 msgstr "Nie je uvedený názov značky!"
 
-#: ../plugin/controllers/models/timers.py:338
-#: ../plugin/controllers/models/timers.py:383
+#: ../plugin/controllers/models/timers.py:339
+#: ../plugin/controllers/models/timers.py:384
 msgid "No matching Timer found"
 msgstr "Zhodný časovač sa nenašiel"
 
-#: ../plugin/controllers/BouquetEditor.py:364
+#: ../plugin/controllers/BouquetEditor.py:365
 msgid "No new servicename given!"
 msgstr "Nie je zadaný nový názov stanice!"
 
-#: ../plugin/controllers/BouquetEditor.py:209
-#: ../plugin/controllers/BouquetEditor.py:266
+#: ../plugin/controllers/BouquetEditor.py:210
+#: ../plugin/controllers/BouquetEditor.py:267
 msgid "No position given!"
 msgstr "Nebola zadaná pozícia!"
 
-#: ../plugin/controllers/BouquetEditor.py:137
+#: ../plugin/controllers/BouquetEditor.py:138
 msgid "No provider given!"
 msgstr "Nebol zadaný poskytovateľ!"
 
-#: ../plugin/controllers/BouquetEditor.py:230
-#: ../plugin/controllers/BouquetEditor.py:260
-#: ../plugin/controllers/BouquetEditor.py:297
-#: ../plugin/controllers/BouquetEditor.py:358
-#: ../plugin/controllers/BouquetEditor.py:416
-#: ../plugin/controllers/BouquetEditor.py:480
-#: ../plugin/controllers/BouquetEditor.py:517
+#: ../plugin/controllers/BouquetEditor.py:231
+#: ../plugin/controllers/BouquetEditor.py:261
+#: ../plugin/controllers/BouquetEditor.py:298
+#: ../plugin/controllers/BouquetEditor.py:359
+#: ../plugin/controllers/BouquetEditor.py:417
+#: ../plugin/controllers/BouquetEditor.py:481
+#: ../plugin/controllers/BouquetEditor.py:518
 msgid "No service given!"
 msgstr "Nie je uvedená stanica!"
 
@@ -1245,7 +1247,7 @@ msgstr "Teraz"
 msgid "OE version"
 msgstr "Verzia GUI"
 
-#: ../plugin/controllers/base.py:316
+#: ../plugin/controllers/base.py:317
 msgid "OSCam Webinterface"
 msgstr "OSCam webrozhranie"
 
@@ -1327,7 +1329,7 @@ msgid "OpenWebif url: http://yourip:port"
 msgstr "OpenWebif adresa: http://vašaIP:port"
 
 #: ../plugin/controllers/i18n.py:450
-#: ../plugin/controllers/models/services.py:225
+#: ../plugin/controllers/models/services.py:226
 msgid "Orbital Position"
 msgstr "Orbitálna pozícia"
 
@@ -1339,12 +1341,12 @@ msgstr "Nájdenú prepísať alternatívnou stanicou"
 msgid "Packages"
 msgstr "Balíčky"
 
-#: ../plugin/controllers/BouquetEditor.py:528
-#: ../plugin/controllers/BouquetEditor.py:530
+#: ../plugin/controllers/BouquetEditor.py:529
+#: ../plugin/controllers/BouquetEditor.py:531
 msgid "Parent Control Setup Pin is wrong!"
 msgstr "Zadaný PIN rodičovskej kontroly je nesprávny!"
 
-#: ../plugin/controllers/BouquetEditor.py:511
+#: ../plugin/controllers/BouquetEditor.py:512
 msgid "Parent Control is not activated."
 msgstr "Rodičovská kontrola nie je aktivovaná."
 
@@ -1396,7 +1398,7 @@ msgstr ""
 msgid "Power Control"
 msgstr "Ovládanie napájania"
 
-#: ../plugin/controllers/models/timers.py:604
+#: ../plugin/controllers/models/timers.py:605
 msgid "PowerTimer feature not available"
 msgstr "Časovač napájania nie je k dispozícii"
 
@@ -1527,7 +1529,7 @@ msgstr "Obmedziť na relácie v určených dátumoch"
 msgid "Root"
 msgstr "Koreňový adresár"
 
-#: ../plugin/controllers/models/info.py:48
+#: ../plugin/controllers/models/info.py:49
 msgid "SLAAC"
 msgstr ""
 
@@ -1636,63 +1638,63 @@ msgstr "September"
 msgid "Service"
 msgstr "Stanica"
 
-#: ../plugin/controllers/BouquetEditor.py:314
+#: ../plugin/controllers/BouquetEditor.py:315
 #, python-format
 msgid "Service %s added."
 msgstr "Stanica %s pridaná."
 
-#: ../plugin/controllers/BouquetEditor.py:317
+#: ../plugin/controllers/BouquetEditor.py:318
 #, python-format
 msgid "Service %s already exists in bouquet %s."
 msgstr "Stanica %s už existuje v prehľade %s."
 
-#: ../plugin/controllers/BouquetEditor.py:248
+#: ../plugin/controllers/BouquetEditor.py:249
 #, python-format
 msgid "Service %s can not be removed."
 msgstr "Stanica %s sa nedá odstrániť."
 
-#: ../plugin/controllers/BouquetEditor.py:545
+#: ../plugin/controllers/BouquetEditor.py:546
 #, python-format
 msgid "Service %s is locked."
 msgstr "Služba %s je zamknutá."
 
-#: ../plugin/controllers/BouquetEditor.py:553
+#: ../plugin/controllers/BouquetEditor.py:554
 #, python-format
 msgid "Service %s is unlocked."
 msgstr "Služba %s nie je zamknutá."
 
-#: ../plugin/controllers/BouquetEditor.py:273
+#: ../plugin/controllers/BouquetEditor.py:274
 #, python-format
 msgid "Service %s moved."
 msgstr "Stanica %s presunutá."
 
-#: ../plugin/controllers/BouquetEditor.py:247
+#: ../plugin/controllers/BouquetEditor.py:248
 #, python-format
 msgid "Service %s removed from bouquet %s."
 msgstr "Stanica %s odstránená z prehľadu %s."
 
-#: ../plugin/controllers/BouquetEditor.py:239
+#: ../plugin/controllers/BouquetEditor.py:240
 #, python-format
 msgid "Service %s removed."
 msgstr "Stanica %s zmazaná."
 
-#: ../plugin/controllers/BouquetEditor.py:274
+#: ../plugin/controllers/BouquetEditor.py:275
 msgid "Service can not be moved."
 msgstr "Stanica sa nedá presunúť."
 
-#: ../plugin/controllers/BouquetEditor.py:405
+#: ../plugin/controllers/BouquetEditor.py:406
 msgid "Service can not be renamed."
 msgstr "Stanica sa nedá premenovať."
 
-#: ../plugin/controllers/BouquetEditor.py:497
+#: ../plugin/controllers/BouquetEditor.py:498
 msgid "Service is not an alternative."
 msgstr "Stanica nie je alternatívnou."
 
-#: ../plugin/controllers/BouquetEditor.py:404
+#: ../plugin/controllers/BouquetEditor.py:405
 msgid "Service renamed successfully."
 msgstr "Stanica úspešne premenovaná."
 
-#: ../plugin/controllers/models/services.py:333
+#: ../plugin/controllers/models/services.py:334
 msgid "Services"
 msgstr "Stanice"
 
@@ -1701,7 +1703,7 @@ msgid "Set maximum duration"
 msgstr "Nastaviť maximálnu dĺžku"
 
 #: ../plugin/controllers/i18n.py:225 ../plugin/controllers/i18n.py:369
-#: ../plugin/controllers/base.py:278
+#: ../plugin/controllers/base.py:279
 msgid "Settings"
 msgstr "Nastavenia"
 
@@ -1759,32 +1761,32 @@ msgstr "Simulovať"
 msgid "Site and sources"
 msgstr "Stránky a zdroje"
 
-#: ../plugin/controllers/models/timers.py:682
-#: ../plugin/controllers/models/timers.py:709
-#: ../plugin/controllers/models/timers.py:738
-#: ../plugin/controllers/models/timers.py:819
+#: ../plugin/controllers/models/timers.py:683
+#: ../plugin/controllers/models/timers.py:710
+#: ../plugin/controllers/models/timers.py:739
+#: ../plugin/controllers/models/timers.py:820
 msgid "SleepTimer error"
 msgstr "Chyba časovača vypnutia"
 
-#: ../plugin/controllers/models/timers.py:727
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:814
+#: ../plugin/controllers/models/timers.py:728
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:815
 msgid "Sleeptimer has been disabled"
 msgstr "Časovač uspania bol vypnutý"
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is disabled"
 msgstr "Časovač uspania je vypnutý"
 
-#: ../plugin/controllers/models/timers.py:677
-#: ../plugin/controllers/models/timers.py:703
+#: ../plugin/controllers/models/timers.py:678
+#: ../plugin/controllers/models/timers.py:704
 msgid "Sleeptimer is enabled"
 msgstr "Časovač uspania je povolený"
 
-#: ../plugin/controllers/models/timers.py:733
-#: ../plugin/controllers/models/timers.py:796
-#: ../plugin/controllers/models/timers.py:809
+#: ../plugin/controllers/models/timers.py:734
+#: ../plugin/controllers/models/timers.py:797
+#: ../plugin/controllers/models/timers.py:810
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Časovač uspania nastavený na %d minút"
@@ -1849,9 +1851,9 @@ msgstr "Ned"
 msgid "Sunday"
 msgstr "Nedeľa"
 
-#: ../plugin/controllers/models/info.py:311
-#: ../plugin/controllers/models/info.py:323
-#: ../plugin/controllers/models/info.py:325
+#: ../plugin/controllers/models/info.py:312
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:326
 msgid "TB"
 msgstr ""
 
@@ -1883,11 +1885,11 @@ msgstr "Televízia"
 msgid "Template Engine"
 msgstr "Engine šablóny"
 
-#: ../plugin/controllers/base.py:349
+#: ../plugin/controllers/base.py:350
 msgid "Terminal"
 msgstr "Terminál"
 
-#: ../plugin/controllers/models/services.py:340
+#: ../plugin/controllers/models/services.py:341
 msgid "Terrestrial"
 msgstr "Pozemné"
 
@@ -1908,17 +1910,17 @@ msgstr "Parameter '%s' nemôže byť prázdny"
 msgid "The parameter 'command' must be a number"
 msgstr "Parameter \"príkaz\" musí byť číslo"
 
-#: ../plugin/controllers/models/timers.py:377
+#: ../plugin/controllers/models/timers.py:378
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "Časovač '%s' bol %s úspešne"
 
-#: ../plugin/controllers/models/timers.py:333
+#: ../plugin/controllers/models/timers.py:334
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "Časovač '%s' bol úspešne odstránený"
 
-#: ../plugin/controllers/models/timers.py:369
+#: ../plugin/controllers/models/timers.py:370
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "Časovač '%s' zaznamenaný! Nezakázaný!"
@@ -1927,7 +1929,7 @@ msgstr "Časovač '%s' zaznamenaný! Nezakázaný!"
 msgid "Theme"
 msgstr "Vzhľad"
 
-#: ../plugin/controllers/BouquetEditor.py:318
+#: ../plugin/controllers/BouquetEditor.py:319
 msgid "This service can not be added."
 msgstr "Táto stanica sa nedá pridať."
 
@@ -1955,27 +1957,27 @@ msgstr "Časový limit"
 msgid "Timer"
 msgstr "Časovač"
 
-#: ../plugin/controllers/models/timers.py:209
+#: ../plugin/controllers/models/timers.py:210
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Časovač '%s' pridaný"
 
-#: ../plugin/controllers/models/timers.py:363
+#: ../plugin/controllers/models/timers.py:364
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "Časovač '%s 'už existuje!"
 
-#: ../plugin/controllers/models/timers.py:295
+#: ../plugin/controllers/models/timers.py:296
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Časovač '%s' sa zmenil"
 
-#: ../plugin/controllers/models/timers.py:357
+#: ../plugin/controllers/models/timers.py:358
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "Časovač '%s' je počas konfliktu zakázaný"
 
-#: ../plugin/controllers/models/timers.py:314
+#: ../plugin/controllers/models/timers.py:315
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "Časovač '%s' sa počas konfliktu neuložil"
@@ -1988,7 +1990,7 @@ msgstr "Časovač pridaný"
 msgid "Timer added"
 msgstr "Časovač pridaný"
 
-#: ../plugin/controllers/models/timers.py:449
+#: ../plugin/controllers/models/timers.py:450
 msgid "Timer conflict detected! Not recording!"
 msgstr "Bol zistený konflikt časovača! Nenahráva sa!"
 
@@ -1996,7 +1998,7 @@ msgstr "Bol zistený konflikt časovača! Nenahráva sa!"
 msgid "Timer type"
 msgstr "Typ časovača"
 
-#: ../plugin/controllers/models/timers.py:399
+#: ../plugin/controllers/models/timers.py:400
 msgid "TimerList has been saved"
 msgstr "Zoznam časovačov bol uložený"
 
@@ -2081,7 +2083,7 @@ msgstr "Typ"
 msgid "Unknown Volume command %s"
 msgstr "Neznámy príkaz hlasitosti %s"
 
-#: ../plugin/controllers/models/timers.py:544
+#: ../plugin/controllers/models/timers.py:545
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Neznámy príkaz: '%s'"
@@ -2140,7 +2142,7 @@ msgstr "Používať nový dizajn"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:853
+#: ../plugin/controllers/models/timers.py:854
 msgid "VPS plugin not found"
 msgstr "VPS plugin nebol nájdený"
 
@@ -2335,9 +2337,10 @@ msgstr "v stručnom popise"
 msgid "in Title"
 msgstr "v názve"
 
-#: ../plugin/controllers/models/info.py:210
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/movies.py:216
+#: ../plugin/controllers/models/info.py:211
+#: ../plugin/controllers/models/info.py:214
+#: ../plugin/controllers/models/movies.py:217
+#: ../plugin/controllers/models/movies.py:634
 msgid "kB"
 msgstr ""
 
@@ -2345,8 +2348,8 @@ msgstr ""
 msgid "loading"
 msgstr "načítava sa"
 
-#: ../plugin/controllers/models/info.py:59
-#: ../plugin/controllers/models/info.py:78
+#: ../plugin/controllers/models/info.py:60
+#: ../plugin/controllers/models/info.py:79
 msgid "manual/disabled"
 msgstr "manuálne/zakázané"
 
@@ -2359,7 +2362,7 @@ msgstr "min."
 msgid "no description available"
 msgstr "popis nie je k dispozícii"
 
-#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:165
+#: ../plugin/controllers/i18n.py:155 ../plugin/controllers/models/info.py:166
 msgid "none/IPv4-only network"
 msgstr "žiadna/len IPv4 sieť"
 
@@ -2367,7 +2370,7 @@ msgstr "žiadna/len IPv4 sieť"
 msgid "on Weekday"
 msgstr "v pracovný deň"
 
-#: ../plugin/controllers/BouquetEditor.py:86
+#: ../plugin/controllers/BouquetEditor.py:87
 msgid "one two three four unknown command"
 msgstr "jeden dva tri štyri neznámy príkaz"
 
@@ -2375,11 +2378,11 @@ msgstr "jeden dva tri štyri neznámy príkaz"
 msgid "partial match"
 msgstr "čiastočná zhoda"
 
-#: ../plugin/controllers/models/info.py:374
+#: ../plugin/controllers/models/info.py:375
 msgid "r/o"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:370
+#: ../plugin/controllers/models/info.py:371
 msgid "r/w"
 msgstr ""
 
@@ -2387,7 +2390,7 @@ msgstr ""
 msgid "record"
 msgstr "nahrať"
 
-#: ../plugin/controllers/models/movies.py:294
+#: ../plugin/controllers/models/movies.py:295
 msgid "remove"
 msgstr "odstrániť"
 
@@ -2423,9 +2426,9 @@ msgstr "štandardné"
 msgid "start match"
 msgstr "zhoda v čase začiatku"
 
-#: ../plugin/controllers/models/info.py:55
-#: ../plugin/controllers/models/info.py:67
-#: ../plugin/controllers/models/info.py:74
+#: ../plugin/controllers/models/info.py:56
+#: ../plugin/controllers/models/info.py:68
+#: ../plugin/controllers/models/info.py:75
 msgid "static"
 msgstr "statická"
 
@@ -2441,13 +2444,13 @@ msgstr "zhoda v nadpise alebo krátkom popise"
 msgid "transcoded"
 msgstr "transkódované"
 
-#: ../plugin/controllers/web.py:686
+#: ../plugin/controllers/web.py:720
 #, python-format
 msgid "type %s is not a number"
 msgstr "typ %s nie je číslo"
 
-#: ../plugin/controllers/models/info.py:87
-#: ../plugin/controllers/models/info.py:95
+#: ../plugin/controllers/models/info.py:88
+#: ../plugin/controllers/models/info.py:96
 msgid "unknown"
 msgstr "neznáme"
 
