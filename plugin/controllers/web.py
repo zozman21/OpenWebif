@@ -526,6 +526,7 @@ class WebController(BaseController):
 			auth = ''
 		services["host"] = "%s:8001" % request.getRequestHostname()
 		services["auth"] = auth
+		services["bname"] = bname
 		return services
 
 	def P_servicesm3u(self, request):
