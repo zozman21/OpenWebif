@@ -158,11 +158,11 @@ def getAllInfo():
 		remote = "amiko1"
 	elif model in ("vipercombo","vipert2c","viperslim"):
 		remote = "amiko2"
-	elif model in ("alien5","alien4"):
+	elif model == "alien5":
 		remote = "amiko3"
 	elif model == "viper4k":
 		remote = "amiko4"
-	elif model in ("k1pro","k2pro","k2prov2","k1plus","kvim2","c300","c300pro","c400plus"):
+	elif model in ("k1pro","k2pro","k2prov2","k1plus"):
 		remote = "k1pro"
 	elif model == "k3pro":
 		remote = "k3pro"
