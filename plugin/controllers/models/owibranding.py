@@ -162,7 +162,7 @@ def getAllInfo():
 		remote = "amiko3"
 	elif model == "viper4k":
 		remote = "amiko4"
-	elif model in ("k1pro","k2pro","k2prov2","k1plus"):
+	elif model in ("k1pro","k2pro","k2prov2","k1plus","k1plusv2"):
 		remote = "k1pro"
 	elif model == "k3pro":
 		remote = "k3pro"
