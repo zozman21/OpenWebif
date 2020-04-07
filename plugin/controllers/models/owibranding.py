@@ -9,7 +9,7 @@
 #                                                                            #
 ##############################################################################
 
-from Tools.Directories import fileExists
+from Tools.Directories import fileExists, pathExists
 from time import time
 import os
 import hashlib
@@ -25,7 +25,7 @@ def getAllInfo():
 	info = {}
 
 	grabpip = 0
-	if "4k" or "uhd" or "ultra" in model or model in ("dm900","dm920","multibox","v8plus","hd51","h10","h7","h9","h9combo","vs1500"):
+	if "4k" or "uhd" or "ultra" in model or brand in ("dinobot","maxytec") or model in ("dm900","dm920","sf8008","sf8008m","cc1","beyonwizv2","hd60","hd61","h9","h9combo","h10","i55plus") or pathExists("/proc/hisi") or fileExists("/usr/bin/hihalt"):
 		grabpip = 1
 
 	info['grabpip'] = grabpip or 0
