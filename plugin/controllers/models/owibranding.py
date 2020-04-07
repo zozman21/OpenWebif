@@ -146,12 +146,10 @@ def getAllInfo():
 		remote = "zgemma1"
 	elif model == "lc":
 		remote = "zgemma2"
-	elif model in ("h3","h4","h5","h6","h7","h9combo","i55plus"):
+	elif model in ("h3","h4","h5","h6","h7","h9","h9combo","i55plus"):
 		remote = "zgemma3"
 	elif model == "i55":
 		remote = "zgemma5"
-	elif model == "h9":
-		remote = "zgemma6"
 	elif model == "h10":
 		remote = "zgemma7"
 	elif model == "vipercombohdd":
