@@ -56,8 +56,8 @@ class AjaxController(BaseController):
 
 	def P_edittimer(self, request):
 		imagedistro = getInfo()['imagedistro']
-		vti = imagedistro in ("VTi-Team Image") and 1 or 0
-		pipzap = imagedistro in ("openpli", "satdreamgr", "openvision", "openrsi") and 1 or 0
+		vti = imagedistro in ("vti") and 1 or 0
+		pipzap = imagedistro in ("openvision") and 1 or 0
 		return {"vti": vti , "pipzap" : pipzap}
 
 	def P_current(self, request):

@@ -238,7 +238,7 @@ def addTimer(session, serviceref, begin, end, name, description, disabled, justp
 				timer.pipzap = pipzap == 1
 
 	except Exception as e:
-		print (e)
+		print(e)
 		return {
 			"result": False,
 			"message": _("Could not add timer '%s'!") % name
@@ -653,7 +653,7 @@ def getPowerTimer(session):
 			"timers": timers
 		}
 	except Exception as e:
-		print (e)
+		print(e)
 		return {
 			"result": False,
 			"message": _("PowerTimer feature not available")

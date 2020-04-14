@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-26 17:40+0430\n"
+"POT-Creation-Date: 2020-04-15 00:49+0430\n"
 "PO-Revision-Date: 2018-04-08 02:43+0300\n"
 "Last-Translator: t5k6 <t5k6@users.noreply.github.com>\n"
 "Language-Team: Turkish\n"
@@ -101,6 +101,10 @@ msgstr "Akış bilgilerine servis adı ekle"
 msgid "Added %s to alternative service %s."
 msgstr "%s %s alternatif hizmetine eklendi."
 
+#: ../plugin/controllers/i18n.py:518
+msgid "Adjust recording time to real event time"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:77 ../plugin/controllers/i18n.py:401
 msgid "After Event"
 msgstr "Etkinlikten sonra"
@@ -128,6 +132,10 @@ msgstr "Tüm alternatif hizmetler silinmiştir."
 #: ../plugin/plugin.py:152
 msgid "Allow IPK Upload"
 msgstr "IPK Yükleme'ye İzin Ver"
+
+#: ../plugin/controllers/i18n.py:517
+msgid "Allow duplicates"
+msgstr ""
 
 #: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
@@ -368,7 +376,7 @@ msgstr "Kapat"
 msgid "Common Settings"
 msgstr "Genel Ayarlar"
 
-#: ../plugin/controllers/models/timers.py:188
+#: ../plugin/controllers/models/timers.py:215
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Çakışan Zamanlayıcı (lar) tespit edildi! %s"
@@ -381,12 +389,12 @@ msgstr "Katkıda bulunanlar"
 msgid "Control"
 msgstr "Kontrol"
 
-#: ../plugin/controllers/models/timers.py:205
+#: ../plugin/controllers/models/timers.py:244
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "' %s ' zamanlayıcı eklenemedi!"
 
-#: ../plugin/controllers/models/timers.py:321
+#: ../plugin/controllers/models/timers.py:375
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "%s  zamanlayıcısı girilen başlangıç ve bitiş zamanlarıyla bulunamadı!"
@@ -462,7 +470,7 @@ msgstr "Kaydı sil"
 msgid "Delete Timer"
 msgstr "Zamanlayıcıyı Sil"
 
-#: ../plugin/controllers/models/movies.py:301
+#: ../plugin/controllers/models/movies.py:424
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -559,7 +567,7 @@ msgstr "EPG kodlaması"
 msgid "EPGRefresh"
 msgstr "EPGRefresh"
 
-#: ../plugin/controllers/models/timers.py:723
+#: ../plugin/controllers/models/timers.py:777
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "HATA: Cihaz Bekleme Modundayken uyku zamanlayıcısı ayarlanamıyor"
 
@@ -648,7 +656,7 @@ msgstr "Epg Arama"
 msgid "Error"
 msgstr "Hata"
 
-#: ../plugin/controllers/models/timers.py:849
+#: ../plugin/controllers/models/timers.py:903
 msgid "Error parsing vps.xml"
 msgstr "Vps.xml ayrıştırılırken hata oluştu"
 
@@ -688,7 +696,7 @@ msgstr "Hata: Buket %s silinemedi, OSError."
 msgid "Event not found"
 msgstr "Etkinlik bulunamadı"
 
-#: ../plugin/controllers/models/timers.py:219
+#: ../plugin/controllers/models/timers.py:258
 msgid "EventId not found"
 msgstr "EventId bulunamadı"
 
@@ -781,8 +789,9 @@ msgstr "Tüm kumandayı göster"
 #: ../plugin/controllers/models/info.py:314
 #: ../plugin/controllers/models/info.py:329
 #: ../plugin/controllers/models/info.py:332
-#: ../plugin/controllers/models/movies.py:213
-#: ../plugin/controllers/models/movies.py:630
+#: ../plugin/controllers/models/movies.py:220
+#: ../plugin/controllers/models/movies.py:344
+#: ../plugin/controllers/models/movies.py:753
 msgid "GB"
 msgstr "GB"
 
@@ -874,7 +883,7 @@ msgstr "Genişletilmiş açıklama ekle"
 msgid "Include short description"
 msgstr "Kısa açıklama ekle"
 
-#: ../plugin/controllers/models/timers.py:431
+#: ../plugin/controllers/models/timers.py:485
 msgid "Infinite Instant recording started"
 msgstr "Sonsuz Hızlı kayıt başlatıldı"
 
@@ -898,7 +907,7 @@ msgstr "Yüklü"
 msgid "Instant Record"
 msgstr "Anında Kayıt"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:476
 msgid "Instant record for current Event started"
 msgstr "Mevcut Etkinlik için anlık kayıt başladı"
 
@@ -963,7 +972,7 @@ msgstr "Seriye etiket ver"
 msgid "Link Speed"
 msgstr "Bağlantı hızı"
 
-#: ../plugin/controllers/models/timers.py:392
+#: ../plugin/controllers/models/timers.py:446
 msgid "List of Timers has been cleaned"
 msgstr "Zamanlayıcıların listesi temizlendi"
 
@@ -982,8 +991,9 @@ msgstr "MAC adresi"
 #: ../plugin/controllers/models/info.py:305
 #: ../plugin/controllers/models/info.py:316
 #: ../plugin/controllers/models/info.py:334
-#: ../plugin/controllers/models/movies.py:215
-#: ../plugin/controllers/models/movies.py:632
+#: ../plugin/controllers/models/movies.py:222
+#: ../plugin/controllers/models/movies.py:346
+#: ../plugin/controllers/models/movies.py:755
 msgid "MB"
 msgstr "MB"
 
@@ -1045,7 +1055,7 @@ msgstr "Dakika"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Zorunlu \" %s \" parametresi eksik"
 
-#: ../plugin/controllers/models/timers.py:523
+#: ../plugin/controllers/models/timers.py:577
 msgid "Missing requesteter: sRef"
 msgstr "Eksik istekte bulunan: sRef"
 
@@ -1170,7 +1180,7 @@ msgstr "Buket ismi verilmedi!"
 msgid "No current service given!"
 msgstr "Mevcut hizmet yok!"
 
-#: ../plugin/controllers/models/timers.py:416
+#: ../plugin/controllers/models/timers.py:470
 msgid "No event found! Not recording!"
 msgstr "Etkinlik bulunamadı! Kayıt yapılmıyor!"
 
@@ -1178,8 +1188,8 @@ msgstr "Etkinlik bulunamadı! Kayıt yapılmıyor!"
 msgid "No marker-name given!"
 msgstr "İşaretçi ismi yok!"
 
-#: ../plugin/controllers/models/timers.py:339
-#: ../plugin/controllers/models/timers.py:384
+#: ../plugin/controllers/models/timers.py:393
+#: ../plugin/controllers/models/timers.py:438
 msgid "No matching Timer found"
 msgstr "Eşleşen Zamanlayıcı bulunamadı"
 
@@ -1391,6 +1401,11 @@ msgstr "Playback"
 msgid "Playlist"
 msgstr "Playlist"
 
+#: ../plugin/controllers/i18n.py:515
+#, fuzzy
+msgid "Playlist Format"
+msgstr "Playlist"
+
 #: ../plugin/controllers/i18n.py:437
 msgid "Please enter filename"
 msgstr "Lütfen dosya adı girin"
@@ -1403,7 +1418,7 @@ msgstr "PMTPID"
 msgid "Power Control"
 msgstr "Güç kontrolü"
 
-#: ../plugin/controllers/models/timers.py:605
+#: ../plugin/controllers/models/timers.py:659
 msgid "PowerTimer feature not available"
 msgstr "PowerTimer özelliği mevcut değil"
 
@@ -1767,32 +1782,32 @@ msgstr "Benzetmek"
 msgid "Site and sources"
 msgstr "Site ve kaynaklar"
 
-#: ../plugin/controllers/models/timers.py:683
-#: ../plugin/controllers/models/timers.py:710
-#: ../plugin/controllers/models/timers.py:739
-#: ../plugin/controllers/models/timers.py:820
+#: ../plugin/controllers/models/timers.py:737
+#: ../plugin/controllers/models/timers.py:764
+#: ../plugin/controllers/models/timers.py:793
+#: ../plugin/controllers/models/timers.py:874
 msgid "SleepTimer error"
 msgstr "Uyku zamanlayıcısı hata"
 
-#: ../plugin/controllers/models/timers.py:728
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:815
+#: ../plugin/controllers/models/timers.py:782
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:869
 msgid "Sleeptimer has been disabled"
 msgstr "Uyku zamanlayıcısı devre dışı bırakıldı"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is disabled"
 msgstr "Uyku zamanlayıcısı devre dışı"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is enabled"
 msgstr "Uyku zamanlayıcısı etkinleştirildi"
 
-#: ../plugin/controllers/models/timers.py:734
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:810
+#: ../plugin/controllers/models/timers.py:788
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:864
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Sleeptimer %d dakikaya ayarlandı"
@@ -1916,17 +1931,17 @@ msgstr "' %s ' parametresi boş bırakılamaz"
 msgid "The parameter 'command' must be a number"
 msgstr "'Command' parametresi bir sayı olmalıdır"
 
-#: ../plugin/controllers/models/timers.py:378
+#: ../plugin/controllers/models/timers.py:432
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "%s  zamanlayıcı başarıyla %s  edildi"
 
-#: ../plugin/controllers/models/timers.py:334
+#: ../plugin/controllers/models/timers.py:388
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "%s  zamanlayıcısı başarıyla silindi"
 
-#: ../plugin/controllers/models/timers.py:370
+#: ../plugin/controllers/models/timers.py:424
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "' %s ' zamanlayıcısı kaydedildi! Devre dışı değil!"
@@ -1963,27 +1978,27 @@ msgstr "Zaman aşımı"
 msgid "Timer"
 msgstr "Zamanlayıcı"
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:249
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Zamanlayıcı ' %s ' eklendi"
 
-#: ../plugin/controllers/models/timers.py:364
+#: ../plugin/controllers/models/timers.py:418
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "%s  zamanlayıcısı zaten mevcut"
 
-#: ../plugin/controllers/models/timers.py:296
+#: ../plugin/controllers/models/timers.py:350
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "'%s' zamanlayıcı değiştirildi"
 
-#: ../plugin/controllers/models/timers.py:358
+#: ../plugin/controllers/models/timers.py:412
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "%s zamanlayıcısı uyumsuzluk nedeniyle etkinleştirilmedi"
 
-#: ../plugin/controllers/models/timers.py:315
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "%s uyumsuzluk nedeniyle kaydedilemedi"
@@ -1996,7 +2011,7 @@ msgstr "Zamanlayıcı eklendi"
 msgid "Timer added"
 msgstr "Zamanlayıcı eklendi"
 
-#: ../plugin/controllers/models/timers.py:450
+#: ../plugin/controllers/models/timers.py:504
 msgid "Timer conflict detected! Not recording!"
 msgstr "Zamanlayıcı uyumsuzluğu algılandı! Kayıt yapılmıyor!"
 
@@ -2004,7 +2019,7 @@ msgstr "Zamanlayıcı uyumsuzluğu algılandı! Kayıt yapılmıyor!"
 msgid "Timer type"
 msgstr "Zamanlayıcı türü"
 
-#: ../plugin/controllers/models/timers.py:400
+#: ../plugin/controllers/models/timers.py:454
 msgid "TimerList has been saved"
 msgstr "Zamanlayıcı listesi kaydedildi"
 
@@ -2089,7 +2104,7 @@ msgstr "Türü"
 msgid "Unknown Volume command %s"
 msgstr "Bilinmeyen Ses komutu %s"
 
-#: ../plugin/controllers/models/timers.py:545
+#: ../plugin/controllers/models/timers.py:599
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Bilinmeyen komut: %s "
@@ -2130,6 +2145,10 @@ msgstr "Yüklenmiş dosyalar"
 msgid "Use a custom location"
 msgstr "Özel bir konum kullan"
 
+#: ../plugin/controllers/i18n.py:516
+msgid "Use as PiP if possible"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:188
 #, fuzzy
 msgid "Use custom STB name"
@@ -2147,7 +2166,7 @@ msgstr "Yeni tasarım kullanın"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:854
+#: ../plugin/controllers/models/timers.py:908
 msgid "VPS plugin not found"
 msgstr "VPS plugini bulunamadı"
 
@@ -2344,8 +2363,9 @@ msgstr "Başlıkta"
 
 #: ../plugin/controllers/models/info.py:211
 #: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/movies.py:217
-#: ../plugin/controllers/models/movies.py:634
+#: ../plugin/controllers/models/movies.py:224
+#: ../plugin/controllers/models/movies.py:348
+#: ../plugin/controllers/models/movies.py:757
 msgid "kB"
 msgstr "kB"
 
@@ -2395,7 +2415,7 @@ msgstr "r / w"
 msgid "record"
 msgstr "kayıt"
 
-#: ../plugin/controllers/models/movies.py:295
+#: ../plugin/controllers/models/movies.py:418
 msgid "remove"
 msgstr "Kaldır"
 
@@ -2449,7 +2469,7 @@ msgstr "başlık veya kısa açıklama eşlemesi"
 msgid "transcoded"
 msgstr "dönüştürülmüş"
 
-#: ../plugin/controllers/web.py:720
+#: ../plugin/controllers/web.py:721
 #, python-format
 msgid "type %s is not a number"
 msgstr "%s bir sayı değil"

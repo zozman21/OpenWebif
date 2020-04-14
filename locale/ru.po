@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-26 17:40+0430\n"
+"POT-Creation-Date: 2020-04-15 00:49+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: \n"
@@ -99,6 +99,10 @@ msgstr "Добавить название сервиса в информацию
 msgid "Added %s to alternative service %s."
 msgstr "Добавлен %s в альтернативный сервис %s."
 
+#: ../plugin/controllers/i18n.py:518
+msgid "Adjust recording time to real event time"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:77 ../plugin/controllers/i18n.py:401
 msgid "After Event"
 msgstr "После события"
@@ -126,6 +130,10 @@ msgstr "Все альтернативные сервисы удалены."
 #: ../plugin/plugin.py:152
 msgid "Allow IPK Upload"
 msgstr "Разрешить загрузку IPK"
+
+#: ../plugin/controllers/i18n.py:517
+msgid "Allow duplicates"
+msgstr ""
 
 #: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
@@ -363,7 +371,7 @@ msgstr "Закрыть"
 msgid "Common Settings"
 msgstr "Общие настройки"
 
-#: ../plugin/controllers/models/timers.py:188
+#: ../plugin/controllers/models/timers.py:215
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Обнаружен конфликт таймера(ов)! %s"
@@ -376,12 +384,12 @@ msgstr "Принимали участие"
 msgid "Control"
 msgstr "Управление"
 
-#: ../plugin/controllers/models/timers.py:205
+#: ../plugin/controllers/models/timers.py:244
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "Не удалось добавить таймер '%s'!"
 
-#: ../plugin/controllers/models/timers.py:321
+#: ../plugin/controllers/models/timers.py:375
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "Не удалось найти таймер '%s' с заданным временем начала и окончания!"
@@ -457,7 +465,7 @@ msgstr "Удалить запись"
 msgid "Delete Timer"
 msgstr "Удалить таймер"
 
-#: ../plugin/controllers/models/movies.py:301
+#: ../plugin/controllers/models/movies.py:424
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -553,7 +561,7 @@ msgstr "Кодировка EPG"
 msgid "EPGRefresh"
 msgstr "Обновление EPG"
 
-#: ../plugin/controllers/models/timers.py:723
+#: ../plugin/controllers/models/timers.py:777
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "ОШИБКА: не удается установить таймер сна, ресивер находится в режим ожидания"
 
@@ -642,7 +650,7 @@ msgstr "Поиск EPG"
 msgid "Error"
 msgstr "Ошибка"
 
-#: ../plugin/controllers/models/timers.py:849
+#: ../plugin/controllers/models/timers.py:903
 msgid "Error parsing vps.xml"
 msgstr "Ошибка чтения vps.xml"
 
@@ -682,7 +690,7 @@ msgstr "Ошибка: Букет %s не может быть удален, OSErr
 msgid "Event not found"
 msgstr "Событие не найдено"
 
-#: ../plugin/controllers/models/timers.py:219
+#: ../plugin/controllers/models/timers.py:258
 msgid "EventId not found"
 msgstr "Id события не найден"
 
@@ -774,8 +782,9 @@ msgstr "Весь пульт"
 #: ../plugin/controllers/models/info.py:314
 #: ../plugin/controllers/models/info.py:329
 #: ../plugin/controllers/models/info.py:332
-#: ../plugin/controllers/models/movies.py:213
-#: ../plugin/controllers/models/movies.py:630
+#: ../plugin/controllers/models/movies.py:220
+#: ../plugin/controllers/models/movies.py:344
+#: ../plugin/controllers/models/movies.py:753
 msgid "GB"
 msgstr "ГБ"
 
@@ -865,7 +874,7 @@ msgstr "Включить расширенное описание"
 msgid "Include short description"
 msgstr "Включить краткое описание"
 
-#: ../plugin/controllers/models/timers.py:431
+#: ../plugin/controllers/models/timers.py:485
 msgid "Infinite Instant recording started"
 msgstr "Запись без определенного времени окончания началась"
 
@@ -889,7 +898,7 @@ msgstr "Установленные"
 msgid "Instant Record"
 msgstr "Немедленная запись"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:476
 msgid "Instant record for current Event started"
 msgstr "Мгновенная запись для текущего события началась"
 
@@ -954,7 +963,7 @@ msgstr "Этикетки серий"
 msgid "Link Speed"
 msgstr "Скорость связи"
 
-#: ../plugin/controllers/models/timers.py:392
+#: ../plugin/controllers/models/timers.py:446
 msgid "List of Timers has been cleaned"
 msgstr "Список таймеров была очищенен"
 
@@ -973,8 +982,9 @@ msgstr "MAC адрес"
 #: ../plugin/controllers/models/info.py:305
 #: ../plugin/controllers/models/info.py:316
 #: ../plugin/controllers/models/info.py:334
-#: ../plugin/controllers/models/movies.py:215
-#: ../plugin/controllers/models/movies.py:632
+#: ../plugin/controllers/models/movies.py:222
+#: ../plugin/controllers/models/movies.py:346
+#: ../plugin/controllers/models/movies.py:755
 msgid "MB"
 msgstr "МБ"
 
@@ -1035,7 +1045,7 @@ msgstr "Mинута"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Отсутствует обязательный параметр '%s'"
 
-#: ../plugin/controllers/models/timers.py:523
+#: ../plugin/controllers/models/timers.py:577
 msgid "Missing requesteter: sRef"
 msgstr "Отсутствует параметр регистра: sRef"
 
@@ -1159,7 +1169,7 @@ msgstr "Не задано название букета!"
 msgid "No current service given!"
 msgstr "Не задан текщий серви!"
 
-#: ../plugin/controllers/models/timers.py:416
+#: ../plugin/controllers/models/timers.py:470
 msgid "No event found! Not recording!"
 msgstr "Не найдено событие! Нет записи!"
 
@@ -1167,8 +1177,8 @@ msgstr "Не найдено событие! Нет записи!"
 msgid "No marker-name given!"
 msgstr "Не задано название маркера!"
 
-#: ../plugin/controllers/models/timers.py:339
-#: ../plugin/controllers/models/timers.py:384
+#: ../plugin/controllers/models/timers.py:393
+#: ../plugin/controllers/models/timers.py:438
 msgid "No matching Timer found"
 msgstr "Не найден соответствующий таймер"
 
@@ -1379,6 +1389,11 @@ msgstr "Воспроизвести"
 msgid "Playlist"
 msgstr "Плейлист"
 
+#: ../plugin/controllers/i18n.py:515
+#, fuzzy
+msgid "Playlist Format"
+msgstr "Плейлист"
+
 #: ../plugin/controllers/i18n.py:437
 msgid "Please enter filename"
 msgstr "Пожалуйста, введите название файла"
@@ -1391,7 +1406,7 @@ msgstr "Pmtpid"
 msgid "Power Control"
 msgstr "Управление питанием"
 
-#: ../plugin/controllers/models/timers.py:605
+#: ../plugin/controllers/models/timers.py:659
 msgid "PowerTimer feature not available"
 msgstr "Функции тамера питания не доступны"
 
@@ -1754,32 +1769,32 @@ msgstr "Имитировать"
 msgid "Site and sources"
 msgstr "Сайт и исходный код"
 
-#: ../plugin/controllers/models/timers.py:683
-#: ../plugin/controllers/models/timers.py:710
-#: ../plugin/controllers/models/timers.py:739
-#: ../plugin/controllers/models/timers.py:820
+#: ../plugin/controllers/models/timers.py:737
+#: ../plugin/controllers/models/timers.py:764
+#: ../plugin/controllers/models/timers.py:793
+#: ../plugin/controllers/models/timers.py:874
 msgid "SleepTimer error"
 msgstr "Ошибка таймера сна"
 
-#: ../plugin/controllers/models/timers.py:728
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:815
+#: ../plugin/controllers/models/timers.py:782
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:869
 msgid "Sleeptimer has been disabled"
 msgstr "Таймер сна был отключен"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is disabled"
 msgstr "Таймер сна отключен"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is enabled"
 msgstr "Таймер сна включен"
 
-#: ../plugin/controllers/models/timers.py:734
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:810
+#: ../plugin/controllers/models/timers.py:788
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:864
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Таймер сна установлен на %d минут"
@@ -1903,17 +1918,17 @@ msgstr "Параметр '%s' не может быть пустым"
 msgid "The parameter 'command' must be a number"
 msgstr "Параметр 'command' должен быть численным"
 
-#: ../plugin/controllers/models/timers.py:378
+#: ../plugin/controllers/models/timers.py:432
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "Таймер '%s' был %s успешно"
 
-#: ../plugin/controllers/models/timers.py:334
+#: ../plugin/controllers/models/timers.py:388
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "Таймер '%s' был успешно удален"
 
-#: ../plugin/controllers/models/timers.py:370
+#: ../plugin/controllers/models/timers.py:424
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "Таймер '%s' сейчас записывается! Невозможно отключить!"
@@ -1950,27 +1965,27 @@ msgstr "Тайм-аут"
 msgid "Timer"
 msgstr "Таймер"
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:249
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Таймер '%s' добавлен"
 
-#: ../plugin/controllers/models/timers.py:364
+#: ../plugin/controllers/models/timers.py:418
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "Таймер '%s' уже существует!"
 
-#: ../plugin/controllers/models/timers.py:296
+#: ../plugin/controllers/models/timers.py:350
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Таймер '%s' изменен"
 
-#: ../plugin/controllers/models/timers.py:358
+#: ../plugin/controllers/models/timers.py:412
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "Таймер '%s' не сожет быть включен из-за конфликта"
 
-#: ../plugin/controllers/models/timers.py:315
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "Таймер '%s' не сохранен из-за конфликта"
@@ -1983,7 +1998,7 @@ msgstr "Таймер добавлен"
 msgid "Timer added"
 msgstr "Таймер добавлен"
 
-#: ../plugin/controllers/models/timers.py:450
+#: ../plugin/controllers/models/timers.py:504
 msgid "Timer conflict detected! Not recording!"
 msgstr "Обнаружен конфликт таймера! Нет записи!"
 
@@ -1991,7 +2006,7 @@ msgstr "Обнаружен конфликт таймера! Нет записи!
 msgid "Timer type"
 msgstr "Тип таймера"
 
-#: ../plugin/controllers/models/timers.py:400
+#: ../plugin/controllers/models/timers.py:454
 msgid "TimerList has been saved"
 msgstr "Список таймеров был сохранен"
 
@@ -2076,7 +2091,7 @@ msgstr "Тип"
 msgid "Unknown Volume command %s"
 msgstr "Неизвестная команда громкости %s"
 
-#: ../plugin/controllers/models/timers.py:545
+#: ../plugin/controllers/models/timers.py:599
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Неизвестная команда: '%s'"
@@ -2117,6 +2132,10 @@ msgstr "Загруженные файлы"
 msgid "Use a custom location"
 msgstr "Пользовательское расположение"
 
+#: ../plugin/controllers/i18n.py:516
+msgid "Use as PiP if possible"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:188
 #, fuzzy
 msgid "Use custom STB name"
@@ -2134,7 +2153,7 @@ msgstr "Использование нового дизайна"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:854
+#: ../plugin/controllers/models/timers.py:908
 msgid "VPS plugin not found"
 msgstr "Плагин VPS не найден"
 
@@ -2329,8 +2348,9 @@ msgstr "в названии"
 
 #: ../plugin/controllers/models/info.py:211
 #: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/movies.py:217
-#: ../plugin/controllers/models/movies.py:634
+#: ../plugin/controllers/models/movies.py:224
+#: ../plugin/controllers/models/movies.py:348
+#: ../plugin/controllers/models/movies.py:757
 msgid "kB"
 msgstr "КБ"
 
@@ -2379,7 +2399,7 @@ msgstr "r/w"
 msgid "record"
 msgstr "запись"
 
-#: ../plugin/controllers/models/movies.py:295
+#: ../plugin/controllers/models/movies.py:418
 msgid "remove"
 msgstr "удаление"
 
@@ -2433,7 +2453,7 @@ msgstr "название или короткое описание совпаде
 msgid "transcoded"
 msgstr "транскодировать"
 
-#: ../plugin/controllers/web.py:720
+#: ../plugin/controllers/web.py:721
 #, python-format
 msgid "type %s is not a number"
 msgstr "тип %s не численный"

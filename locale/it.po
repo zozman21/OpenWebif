@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-26 17:40+0430\n"
+"POT-Creation-Date: 2020-04-15 00:49+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: William <ghenessior@gmail.com>\n"
 "Language-Team: www.vuplus-community.net <insanity@>\n"
@@ -105,6 +105,10 @@ msgstr "Aggiungi nome canale alle informaz.della trasmissione"
 msgid "Added %s to alternative service %s."
 msgstr "Aggiunto %s al canale alternativo %s."
 
+#: ../plugin/controllers/i18n.py:518
+msgid "Adjust recording time to real event time"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:77 ../plugin/controllers/i18n.py:401
 msgid "After Event"
 msgstr "Azione fine evento"
@@ -132,6 +136,10 @@ msgstr "Eliminati tutti i canali alternativi."
 #: ../plugin/plugin.py:152
 msgid "Allow IPK Upload"
 msgstr "Consentire il caricamento di file IPK"
+
+#: ../plugin/controllers/i18n.py:517
+msgid "Allow duplicates"
+msgstr ""
 
 #: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
@@ -369,7 +377,7 @@ msgstr "Chiudere"
 msgid "Common Settings"
 msgstr "Configurazione CI"
 
-#: ../plugin/controllers/models/timers.py:188
+#: ../plugin/controllers/models/timers.py:215
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Rilevati conflitti nei timer! %s"
@@ -382,12 +390,12 @@ msgstr "Collaboratori"
 msgid "Control"
 msgstr "Controllo"
 
-#: ../plugin/controllers/models/timers.py:205
+#: ../plugin/controllers/models/timers.py:244
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "Impossibile aggiungere il timer '%s'!"
 
-#: ../plugin/controllers/models/timers.py:321
+#: ../plugin/controllers/models/timers.py:375
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "Impossibile trovare il timer '%s' con data di inizio e ora di fine!"
@@ -463,7 +471,7 @@ msgstr "Eliminare registrazione"
 msgid "Delete Timer"
 msgstr "Eliminare il timer"
 
-#: ../plugin/controllers/models/movies.py:301
+#: ../plugin/controllers/models/movies.py:424
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -559,7 +567,7 @@ msgstr "Codifica EPG"
 msgid "EPGRefresh"
 msgstr "EPGRefresh"
 
-#: ../plugin/controllers/models/timers.py:723
+#: ../plugin/controllers/models/timers.py:777
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "ERRORE: impossibile impostare SleepTimer se il dispositivo è in sospensione"
 
@@ -648,7 +656,7 @@ msgstr "Ricerca EPG"
 msgid "Error"
 msgstr "Errore"
 
-#: ../plugin/controllers/models/timers.py:849
+#: ../plugin/controllers/models/timers.py:903
 msgid "Error parsing vps.xml"
 msgstr "Errore analisi vps.xml"
 
@@ -688,7 +696,7 @@ msgstr "Errore di sistema: il bouquet %s non può essere eliminato."
 msgid "Event not found"
 msgstr "Evento non trovato"
 
-#: ../plugin/controllers/models/timers.py:219
+#: ../plugin/controllers/models/timers.py:258
 msgid "EventId not found"
 msgstr "ID evento non trovato"
 
@@ -780,8 +788,9 @@ msgstr "Mostrare il telecomando"
 #: ../plugin/controllers/models/info.py:314
 #: ../plugin/controllers/models/info.py:329
 #: ../plugin/controllers/models/info.py:332
-#: ../plugin/controllers/models/movies.py:213
-#: ../plugin/controllers/models/movies.py:630
+#: ../plugin/controllers/models/movies.py:220
+#: ../plugin/controllers/models/movies.py:344
+#: ../plugin/controllers/models/movies.py:753
 msgid "GB"
 msgstr "GB"
 
@@ -871,7 +880,7 @@ msgstr "Includere descrizione estesa"
 msgid "Include short description"
 msgstr "Includere descrizione breve"
 
-#: ../plugin/controllers/models/timers.py:431
+#: ../plugin/controllers/models/timers.py:485
 msgid "Infinite Instant recording started"
 msgstr "Registrazione istantanea illimitata avviata"
 
@@ -895,7 +904,7 @@ msgstr "Installati"
 msgid "Instant Record"
 msgstr "Registrazione immediata"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:476
 msgid "Instant record for current Event started"
 msgstr "Registrazione immediata avviata"
 
@@ -960,7 +969,7 @@ msgstr "Serie di etichette"
 msgid "Link Speed"
 msgstr "Velocità connessione"
 
-#: ../plugin/controllers/models/timers.py:392
+#: ../plugin/controllers/models/timers.py:446
 msgid "List of Timers has been cleaned"
 msgstr "Elenco dei timer ripulito"
 
@@ -979,8 +988,9 @@ msgstr "Indirizzo MAC"
 #: ../plugin/controllers/models/info.py:305
 #: ../plugin/controllers/models/info.py:316
 #: ../plugin/controllers/models/info.py:334
-#: ../plugin/controllers/models/movies.py:215
-#: ../plugin/controllers/models/movies.py:632
+#: ../plugin/controllers/models/movies.py:222
+#: ../plugin/controllers/models/movies.py:346
+#: ../plugin/controllers/models/movies.py:755
 msgid "MB"
 msgstr "MB"
 
@@ -1041,7 +1051,7 @@ msgstr "Minuto"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Parametro obbligatorio mancante '%s'"
 
-#: ../plugin/controllers/models/timers.py:523
+#: ../plugin/controllers/models/timers.py:577
 msgid "Missing requesteter: sRef"
 msgstr "Mancanza del richiedente: sRef"
 
@@ -1165,7 +1175,7 @@ msgstr "Bouquet senza nome!"
 msgid "No current service given!"
 msgstr "Nessun canale attuale specificato!"
 
-#: ../plugin/controllers/models/timers.py:416
+#: ../plugin/controllers/models/timers.py:470
 msgid "No event found! Not recording!"
 msgstr "Nessun evento trovato! Nessuna registrazione effettuata!"
 
@@ -1173,8 +1183,8 @@ msgstr "Nessun evento trovato! Nessuna registrazione effettuata!"
 msgid "No marker-name given!"
 msgstr "Nessun nome marcatore assegnato!"
 
-#: ../plugin/controllers/models/timers.py:339
-#: ../plugin/controllers/models/timers.py:384
+#: ../plugin/controllers/models/timers.py:393
+#: ../plugin/controllers/models/timers.py:438
 msgid "No matching Timer found"
 msgstr "Nessun timer corrispondente trovato!"
 
@@ -1385,6 +1395,11 @@ msgstr "Riprodurre"
 msgid "Playlist"
 msgstr "Playlist"
 
+#: ../plugin/controllers/i18n.py:515
+#, fuzzy
+msgid "Playlist Format"
+msgstr "Playlist"
+
 #: ../plugin/controllers/i18n.py:437
 msgid "Please enter filename"
 msgstr "Inserire nome del file"
@@ -1397,7 +1412,7 @@ msgstr "Pmtpid"
 msgid "Power Control"
 msgstr "Gestione stato"
 
-#: ../plugin/controllers/models/timers.py:605
+#: ../plugin/controllers/models/timers.py:659
 msgid "PowerTimer feature not available"
 msgstr "Funzione PowerTimer non disponibile"
 
@@ -1761,32 +1776,32 @@ msgstr "Simulare"
 msgid "Site and sources"
 msgstr "Sito e sorgenti"
 
-#: ../plugin/controllers/models/timers.py:683
-#: ../plugin/controllers/models/timers.py:710
-#: ../plugin/controllers/models/timers.py:739
-#: ../plugin/controllers/models/timers.py:820
+#: ../plugin/controllers/models/timers.py:737
+#: ../plugin/controllers/models/timers.py:764
+#: ../plugin/controllers/models/timers.py:793
+#: ../plugin/controllers/models/timers.py:874
 msgid "SleepTimer error"
 msgstr "Errore SleepTimer"
 
-#: ../plugin/controllers/models/timers.py:728
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:815
+#: ../plugin/controllers/models/timers.py:782
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:869
 msgid "Sleeptimer has been disabled"
 msgstr "Sleeptimer è stato disabilitato"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is disabled"
 msgstr "Sleeptimer disabilitato"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is enabled"
 msgstr "Sleeptimer abilitato"
 
-#: ../plugin/controllers/models/timers.py:734
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:810
+#: ../plugin/controllers/models/timers.py:788
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:864
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Sleeptimer impostato a %d minuti"
@@ -1910,17 +1925,17 @@ msgstr "Il parametro '%s' non può essere vuoto"
 msgid "The parameter 'command' must be a number"
 msgstr "Il parametro 'command' deve essere un numero"
 
-#: ../plugin/controllers/models/timers.py:378
+#: ../plugin/controllers/models/timers.py:432
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "Il timer '%s' è stato %s con successo"
 
-#: ../plugin/controllers/models/timers.py:334
+#: ../plugin/controllers/models/timers.py:388
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "Il timer '%s' è stato eliminato con successo"
 
-#: ../plugin/controllers/models/timers.py:370
+#: ../plugin/controllers/models/timers.py:424
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "Il timer '%s' è ora registrato! Non disabilitato!"
@@ -1957,27 +1972,27 @@ msgstr "Scadenza"
 msgid "Timer"
 msgstr "Timer"
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:249
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Timer '%s' aggiunto"
 
-#: ../plugin/controllers/models/timers.py:364
+#: ../plugin/controllers/models/timers.py:418
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "Timer '%s' già esistente!"
 
-#: ../plugin/controllers/models/timers.py:296
+#: ../plugin/controllers/models/timers.py:350
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Timer '%s' modificato"
 
-#: ../plugin/controllers/models/timers.py:358
+#: ../plugin/controllers/models/timers.py:412
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "Timer '%s' non abilitato per conflitto"
 
-#: ../plugin/controllers/models/timers.py:315
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "Timer '%s' non salvato a causa del conflitto"
@@ -1990,7 +2005,7 @@ msgstr "Timer aggiunto"
 msgid "Timer added"
 msgstr "Timer aggiunto"
 
-#: ../plugin/controllers/models/timers.py:450
+#: ../plugin/controllers/models/timers.py:504
 msgid "Timer conflict detected! Not recording!"
 msgstr "Rilevato conflitto nel timer: nessuna registrazione effettuata!"
 
@@ -1998,7 +2013,7 @@ msgstr "Rilevato conflitto nel timer: nessuna registrazione effettuata!"
 msgid "Timer type"
 msgstr "Tipo di timer"
 
-#: ../plugin/controllers/models/timers.py:400
+#: ../plugin/controllers/models/timers.py:454
 msgid "TimerList has been saved"
 msgstr "Elenco dei timer salvato"
 
@@ -2083,7 +2098,7 @@ msgstr "Tipo"
 msgid "Unknown Volume command %s"
 msgstr "Comando volume sconosciuto %s"
 
-#: ../plugin/controllers/models/timers.py:545
+#: ../plugin/controllers/models/timers.py:599
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Comando sconosciuto: '%s'"
@@ -2124,6 +2139,10 @@ msgstr "File caricati"
 msgid "Use a custom location"
 msgstr "Usare una posizione personalizzata"
 
+#: ../plugin/controllers/i18n.py:516
+msgid "Use as PiP if possible"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:188
 #, fuzzy
 msgid "Use custom STB name"
@@ -2141,7 +2160,7 @@ msgstr "Usare nuova interfaccia"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:854
+#: ../plugin/controllers/models/timers.py:908
 msgid "VPS plugin not found"
 msgstr "Plugin VPS non trovato"
 
@@ -2336,8 +2355,9 @@ msgstr "Nel titolo"
 
 #: ../plugin/controllers/models/info.py:211
 #: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/movies.py:217
-#: ../plugin/controllers/models/movies.py:634
+#: ../plugin/controllers/models/movies.py:224
+#: ../plugin/controllers/models/movies.py:348
+#: ../plugin/controllers/models/movies.py:757
 msgid "kB"
 msgstr "KB"
 
@@ -2386,7 +2406,7 @@ msgstr "r/w"
 msgid "record"
 msgstr "Registrazione"
 
-#: ../plugin/controllers/models/movies.py:295
+#: ../plugin/controllers/models/movies.py:418
 msgid "remove"
 msgstr "Rimuovere"
 
@@ -2440,7 +2460,7 @@ msgstr "Corrispondenza titolo o breve descrizione"
 msgid "transcoded"
 msgstr "Trascodificato"
 
-#: ../plugin/controllers/web.py:720
+#: ../plugin/controllers/web.py:721
 #, python-format
 msgid "type %s is not a number"
 msgstr "Il tipo %s non è un numero"

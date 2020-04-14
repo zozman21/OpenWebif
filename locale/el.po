@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebIf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-26 17:40+0430\n"
+"POT-Creation-Date: 2020-04-15 00:49+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: satdreamgr\n"
@@ -98,6 +98,10 @@ msgstr "Προσθήκη ονόματος υπηρεσίας στις πληρο
 msgid "Added %s to alternative service %s."
 msgstr "Το %s προστέθηκε στην εναλλακτική υπηρεσία %s."
 
+#: ../plugin/controllers/i18n.py:518
+msgid "Adjust recording time to real event time"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:77 ../plugin/controllers/i18n.py:401
 msgid "After Event"
 msgstr "Μετά το πρόγραμμα"
@@ -125,6 +129,10 @@ msgstr "Όλες οι εναλλακτικές υπηρεσίες διαγράφ
 #: ../plugin/plugin.py:152
 msgid "Allow IPK Upload"
 msgstr "Να επιτρέπεται το Ανέβασμα IPK"
+
+#: ../plugin/controllers/i18n.py:517
+msgid "Allow duplicates"
+msgstr ""
 
 #: ../plugin/controllers/BouquetEditor.py:453
 #, python-format
@@ -363,7 +371,7 @@ msgstr "Κλείσιμο"
 msgid "Common Settings"
 msgstr "Κοινές Ρυθμίσεις"
 
-#: ../plugin/controllers/models/timers.py:188
+#: ../plugin/controllers/models/timers.py:215
 #, python-format
 msgid "Conflicting Timer(s) detected! %s"
 msgstr "Εντοπίστηκε(αν) διένεξη Χρονοδιακόπτη(ων)! %s"
@@ -376,12 +384,12 @@ msgstr "Συντελεστές"
 msgid "Control"
 msgstr "Έλεγχος"
 
-#: ../plugin/controllers/models/timers.py:205
+#: ../plugin/controllers/models/timers.py:244
 #, python-format
 msgid "Could not add timer '%s'!"
 msgstr "Αδυναμία προσθήκης χρονοδιακόπτη '%s'!"
 
-#: ../plugin/controllers/models/timers.py:321
+#: ../plugin/controllers/models/timers.py:375
 #, python-format
 msgid "Could not find timer '%s' with given start and end time!"
 msgstr "Αδυναμία εύρεσης του χρονοδιακόπτη '%s' με δεδομένη ώρα έναρξης και λήξης!"
@@ -457,7 +465,7 @@ msgstr "Διαγραφή Ταινίας"
 msgid "Delete Timer"
 msgstr "Διαγραφή Χρονοδιακόπτη"
 
-#: ../plugin/controllers/models/movies.py:301
+#: ../plugin/controllers/models/movies.py:424
 msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
@@ -553,7 +561,7 @@ msgstr "Κωδικοποίηση EPG"
 msgid "EPGRefresh"
 msgstr "Ανανέωση EPG"
 
-#: ../plugin/controllers/models/timers.py:723
+#: ../plugin/controllers/models/timers.py:777
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "ΣΦΑΛΜΑ: Αδυναμία ορισμού του Χρονοδιακόπτη Ύπνου όταν η συσκευή βρίσκεται σε αναμονή"
 
@@ -642,7 +650,7 @@ msgstr "Αναζήτηση Epg"
 msgid "Error"
 msgstr "Σφάλμα"
 
-#: ../plugin/controllers/models/timers.py:849
+#: ../plugin/controllers/models/timers.py:903
 msgid "Error parsing vps.xml"
 msgstr "Σφάλμα ανάλυσης του vps.xml"
 
@@ -682,7 +690,7 @@ msgstr "Σφάλμα: Αδυναμία διαγραφής του Μπουκέτ�
 msgid "Event not found"
 msgstr "Το πρόγραμμα δεν βρέθηκε"
 
-#: ../plugin/controllers/models/timers.py:219
+#: ../plugin/controllers/models/timers.py:258
 msgid "EventId not found"
 msgstr "Το EventId δεν βρέθηκε"
 
@@ -774,8 +782,9 @@ msgstr "Πλήρες τηλεχειριστήριο"
 #: ../plugin/controllers/models/info.py:314
 #: ../plugin/controllers/models/info.py:329
 #: ../plugin/controllers/models/info.py:332
-#: ../plugin/controllers/models/movies.py:213
-#: ../plugin/controllers/models/movies.py:630
+#: ../plugin/controllers/models/movies.py:220
+#: ../plugin/controllers/models/movies.py:344
+#: ../plugin/controllers/models/movies.py:753
 msgid "GB"
 msgstr "GB"
 
@@ -865,7 +874,7 @@ msgstr "Συμπερίληψη εκτεταμένης περιγραφής"
 msgid "Include short description"
 msgstr "Συμπερίληψη σύντομης περιγραφής"
 
-#: ../plugin/controllers/models/timers.py:431
+#: ../plugin/controllers/models/timers.py:485
 msgid "Infinite Instant recording started"
 msgstr "Έχει ξεκινήσει απεριόριστη άμεση εγγραφή"
 
@@ -889,7 +898,7 @@ msgstr "Εγκατεστημένο"
 msgid "Instant Record"
 msgstr "Άμεση Εγγραφή"
 
-#: ../plugin/controllers/models/timers.py:422
+#: ../plugin/controllers/models/timers.py:476
 msgid "Instant record for current Event started"
 msgstr "Έχει ξεκινήσει άμεση εγγραφή για το τρέχον πρόγραμμα"
 
@@ -954,7 +963,7 @@ msgstr "Σειρές ετικετών"
 msgid "Link Speed"
 msgstr "Ταχύτητα Σύνδεσης"
 
-#: ../plugin/controllers/models/timers.py:392
+#: ../plugin/controllers/models/timers.py:446
 msgid "List of Timers has been cleaned"
 msgstr "Έγινε εκκαθάριση της λίστας χρονοδιακοπτών"
 
@@ -973,8 +982,9 @@ msgstr "Διεύθυνση MAC"
 #: ../plugin/controllers/models/info.py:305
 #: ../plugin/controllers/models/info.py:316
 #: ../plugin/controllers/models/info.py:334
-#: ../plugin/controllers/models/movies.py:215
-#: ../plugin/controllers/models/movies.py:632
+#: ../plugin/controllers/models/movies.py:222
+#: ../plugin/controllers/models/movies.py:346
+#: ../plugin/controllers/models/movies.py:755
 msgid "MB"
 msgstr "MB"
 
@@ -1035,7 +1045,7 @@ msgstr "Λεπτό"
 msgid "Missing mandatory parameter '%s'"
 msgstr "Λείπει η απαραίτητη παράμετρος '%s'"
 
-#: ../plugin/controllers/models/timers.py:523
+#: ../plugin/controllers/models/timers.py:577
 msgid "Missing requesteter: sRef"
 msgstr "Έλλειψη αναφοράς: sRef"
 
@@ -1159,7 +1169,7 @@ msgstr "Δεν δόθηκε όνομα μπουκέτου!"
 msgid "No current service given!"
 msgstr "Δεν δόθηκε τρέχουσα υπηρεσία!"
 
-#: ../plugin/controllers/models/timers.py:416
+#: ../plugin/controllers/models/timers.py:470
 msgid "No event found! Not recording!"
 msgstr "Δεν βρέθηκε πρόγραμμα! Μη εγγραφή!"
 
@@ -1167,8 +1177,8 @@ msgstr "Δεν βρέθηκε πρόγραμμα! Μη εγγραφή!"
 msgid "No marker-name given!"
 msgstr "Δεν δόθηκε όνομα σημειωτή!"
 
-#: ../plugin/controllers/models/timers.py:339
-#: ../plugin/controllers/models/timers.py:384
+#: ../plugin/controllers/models/timers.py:393
+#: ../plugin/controllers/models/timers.py:438
 msgid "No matching Timer found"
 msgstr "Δεν βρέθηκε ο αντίστοιχος Χρονοδιακόπτης"
 
@@ -1379,6 +1389,11 @@ msgstr "Αναπαραγωγή"
 msgid "Playlist"
 msgstr "Λίστα αναπαραγωγής"
 
+#: ../plugin/controllers/i18n.py:515
+#, fuzzy
+msgid "Playlist Format"
+msgstr "Λίστα αναπαραγωγής"
+
 #: ../plugin/controllers/i18n.py:437
 msgid "Please enter filename"
 msgstr "Εισαγωγή νέου ονόματος αρχείου"
@@ -1391,7 +1406,7 @@ msgstr "Pmtpid"
 msgid "Power Control"
 msgstr "Έλεγχος Τροφοδοσίας"
 
-#: ../plugin/controllers/models/timers.py:605
+#: ../plugin/controllers/models/timers.py:659
 msgid "PowerTimer feature not available"
 msgstr "Ο χρονοδιακόπτης απενεργοποίησης δεν είναι διαθέσιμος"
 
@@ -1755,32 +1770,32 @@ msgstr "Εξομοίωση"
 msgid "Site and sources"
 msgstr "Ιστοσελίδα και πηγές"
 
-#: ../plugin/controllers/models/timers.py:683
-#: ../plugin/controllers/models/timers.py:710
-#: ../plugin/controllers/models/timers.py:739
-#: ../plugin/controllers/models/timers.py:820
+#: ../plugin/controllers/models/timers.py:737
+#: ../plugin/controllers/models/timers.py:764
+#: ../plugin/controllers/models/timers.py:793
+#: ../plugin/controllers/models/timers.py:874
 msgid "SleepTimer error"
 msgstr "Σφάλμα Χρονοδιακόπτη Ύπνου"
 
-#: ../plugin/controllers/models/timers.py:728
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:815
+#: ../plugin/controllers/models/timers.py:782
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:869
 msgid "Sleeptimer has been disabled"
 msgstr "Ο χρονοδιακόπτης ύπνου απενεργοποιήθηκε"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is disabled"
 msgstr "Ο χρονοδιακόπτης ύπνου είναι ανενεργός"
 
-#: ../plugin/controllers/models/timers.py:678
-#: ../plugin/controllers/models/timers.py:704
+#: ../plugin/controllers/models/timers.py:732
+#: ../plugin/controllers/models/timers.py:758
 msgid "Sleeptimer is enabled"
 msgstr "Ο χρονοδιακόπτης ύπνου είναι ενεργός"
 
-#: ../plugin/controllers/models/timers.py:734
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:810
+#: ../plugin/controllers/models/timers.py:788
+#: ../plugin/controllers/models/timers.py:851
+#: ../plugin/controllers/models/timers.py:864
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Ο χρονοδιακόπτης ύπνου έχει οριστεί σε %d λεπτά"
@@ -1904,17 +1919,17 @@ msgstr "Η παράμετρος '%s' δεν μπορεί να είναι κεν�
 msgid "The parameter 'command' must be a number"
 msgstr "Η παράμετρος 'εντολή' πρέπει να είναι αριθμός"
 
-#: ../plugin/controllers/models/timers.py:378
+#: ../plugin/controllers/models/timers.py:432
 #, python-format
 msgid "The timer '%s' has been %s successfully"
 msgstr "Ο χρονοδιακόπτης '%s' έχει %s με επιτυχία"
 
-#: ../plugin/controllers/models/timers.py:334
+#: ../plugin/controllers/models/timers.py:388
 #, python-format
 msgid "The timer '%s' has been deleted successfully"
 msgstr "Ο χρονοδιακόπτης '%s' διαγράφτηκε επιτυχώς"
 
-#: ../plugin/controllers/models/timers.py:370
+#: ../plugin/controllers/models/timers.py:424
 #, python-format
 msgid "The timer '%s' now recorded! Not disabled!"
 msgstr "Γίνεται τώρα εγγραφή του χρονοδιακόπτη '%s'! Δεν απενεργοποιήθηκε!"
@@ -1951,27 +1966,27 @@ msgstr "Χρόνος Λήξης"
 msgid "Timer"
 msgstr "Χρονοδιακόπτης"
 
-#: ../plugin/controllers/models/timers.py:210
+#: ../plugin/controllers/models/timers.py:249
 #, python-format
 msgid "Timer '%s' added"
 msgstr "Ο χρονοδιακόπτης '%s' προστέθηκε"
 
-#: ../plugin/controllers/models/timers.py:364
+#: ../plugin/controllers/models/timers.py:418
 #, python-format
 msgid "Timer '%s' already exists!"
 msgstr "Ο χρονοδιακόπτης '%s' υπάρχει ήδη!"
 
-#: ../plugin/controllers/models/timers.py:296
+#: ../plugin/controllers/models/timers.py:350
 #, python-format
 msgid "Timer '%s' changed"
 msgstr "Ο χρονοδιακόπτης '%s' άλλαξε"
 
-#: ../plugin/controllers/models/timers.py:358
+#: ../plugin/controllers/models/timers.py:412
 #, python-format
 msgid "Timer '%s' not enabled while Conflict"
 msgstr "Ο χρονοδιακόπτης '%s' δεν ενεργοποιήθηκε κατά τη Διένεξη"
 
-#: ../plugin/controllers/models/timers.py:315
+#: ../plugin/controllers/models/timers.py:369
 #, python-format
 msgid "Timer '%s' not saved while Conflict"
 msgstr "Ο χρονοδιακόπτης '%s' δεν αποθηκεύτηκε λόγω διένεξης"
@@ -1984,7 +1999,7 @@ msgstr "Ο Χρονοδιακόπτης Προστέθηκε"
 msgid "Timer added"
 msgstr "Έγινε προσθήκη του χρονοδιακόπτη"
 
-#: ../plugin/controllers/models/timers.py:450
+#: ../plugin/controllers/models/timers.py:504
 msgid "Timer conflict detected! Not recording!"
 msgstr "Εντοπίστηκε διένεξη χρονοδιακόπτη! Μη εγγραφή!"
 
@@ -1992,7 +2007,7 @@ msgstr "Εντοπίστηκε διένεξη χρονοδιακόπτη! Μη �
 msgid "Timer type"
 msgstr "Τύπος χρονοδιακόπτη"
 
-#: ../plugin/controllers/models/timers.py:400
+#: ../plugin/controllers/models/timers.py:454
 msgid "TimerList has been saved"
 msgstr "Η λίστα χρονοδιακοπτών αποθηκεύτηκε"
 
@@ -2077,7 +2092,7 @@ msgstr "Τύπος"
 msgid "Unknown Volume command %s"
 msgstr "Άγνωστη εντολή Έντασης %s"
 
-#: ../plugin/controllers/models/timers.py:545
+#: ../plugin/controllers/models/timers.py:599
 #, python-format
 msgid "Unknown command: '%s'"
 msgstr "Άγνωστη εντολή: '%s'"
@@ -2118,6 +2133,10 @@ msgstr "Ανεβασμένα Αρχεία"
 msgid "Use a custom location"
 msgstr "Χρήση τοποθεσίας ορισμένης από το χρήστη"
 
+#: ../plugin/controllers/i18n.py:516
+msgid "Use as PiP if possible"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:188
 #, fuzzy
 msgid "Use custom STB name"
@@ -2135,7 +2154,7 @@ msgstr "Χρήση νέας σχεδίασης"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:854
+#: ../plugin/controllers/models/timers.py:908
 msgid "VPS plugin not found"
 msgstr "Το πρόσθετο VPS δεν βρέθηκε"
 
@@ -2330,8 +2349,9 @@ msgstr "σε Τίτλο"
 
 #: ../plugin/controllers/models/info.py:211
 #: ../plugin/controllers/models/info.py:214
-#: ../plugin/controllers/models/movies.py:217
-#: ../plugin/controllers/models/movies.py:634
+#: ../plugin/controllers/models/movies.py:224
+#: ../plugin/controllers/models/movies.py:348
+#: ../plugin/controllers/models/movies.py:757
 msgid "kB"
 msgstr "kB"
 
@@ -2380,7 +2400,7 @@ msgstr "r/w"
 msgid "record"
 msgstr "εγγραφή"
 
-#: ../plugin/controllers/models/movies.py:295
+#: ../plugin/controllers/models/movies.py:418
 msgid "remove"
 msgstr "αφαίρεση"
 
@@ -2434,7 +2454,7 @@ msgstr "συσχέτιση τίτλου ή σύντομης περιγραφής
 msgid "transcoded"
 msgstr "διαδικοποιημένο"
 
-#: ../plugin/controllers/web.py:720
+#: ../plugin/controllers/web.py:721
 #, python-format
 msgid "type %s is not a number"
 msgstr "ο τύπος %s δεν είναι αριθμός"
