@@ -7,7 +7,7 @@
 <head>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/openwebif-1.2.19.min.js"></script>
+	<script type="text/javascript" src="js/openwebif-1.2.20.min.js"></script>
 	<script type="text/javascript" src="/js/chosen.1.8.2.min.js"></script>
 	<script type="text/javascript">initJsTranslation($dumps($tstrings))</script>
 	<title>$boxname - OpenWebif</title>
@@ -49,6 +49,7 @@
 			<i class="material-icons">close</i>
 		</div>
 	</div>
+	#if $vti == "1"
 	<div class="search-bar search-bar-movie">
 		<div class="search-icon">
 			<div class="start-search">
@@ -63,6 +64,7 @@
 			<i class="material-icons">close</i>
 		</div>
 	</div>
+	#end if
 	<span id="topmenuheader">
 		<nav class="navbar">
 			<div class="container-fluid">
@@ -82,7 +84,9 @@
 						<li class="osd-toggle" id="responsive_vol_value"><a><div class="dropdown-toggle" id="volumevalue"><b><span class="curvolume"></span></b></div></a></li>
 						<!-- Call Search -->
 						<li><a href="javascript:void(0);" class="js-search-epg" data-close="true" title="$tstrings['epgsearch']" ><i class="material-icons">search</i></a></li>
-						<!--<li><a href="javascript:void(0);" class="js-search-movie" data-close="true" title="$tstrings['moviesearch']"><i class="material-icons">youtube_searched_for</i></a></li>  -->
+						#if $vti == "1"
+						<li><a href="javascript:void(0);" class="js-search-movie" data-close="true" title="$tstrings['moviesearch']"><i class="material-icons">youtube_searched_for</i></a></li>
+						#end if
 						<!-- #END# Call Search -->
 						<li class="dropdown" id="responsive_rec_info"></li>
 						<li class="dropdown" id="responsive_stream_info"></li>
@@ -558,7 +562,7 @@
 				<!-- it is not allowed to remove this copyright and link when using the materialize (aka responsive) design for openwebif -->
 				<div class="legal" id="leftfooter">
 					<div class="copyright">
-						Materialize design - <b>Version: </b> 1.0.1</br>&copy; 2017 <a href="https://www.vuplus-support.org" target="_blank">VTi - vuplus-support.org</a>.
+						Materialize design - <b>Version: </b> 1.2.0</br>&copy; 2017 <a href="https://www.vuplus-support.org" target="_blank">VTi - vuplus-support.org</a>.
 					</div>
 				</div>
 <!-- END COPYRIGHT -->
@@ -588,7 +592,7 @@
 									</div>
 								</li>
 							</ul>
-<!--						<p>$tstrings['moviesearch']</p>
+						<p>$tstrings['moviesearch']</p>
 							<ul class="setting-list">
 								<li>
 									<span>$tstrings['inc_shortdesc']</span>
@@ -603,7 +607,7 @@
 									</div>
 								</li>
 							</ul>
--->							
+							
 							<p>$tstrings['common_settings']</p>
 							<ul class="setting-list">
 								<li>
@@ -628,6 +632,12 @@
 									<span>$tstrings['min_epg_list']</span>
 									<div class="switch">
 										<label><input type="checkbox" id="minepglist" $MinEPGList ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
+									</div>
+								</li>
+								<li>
+									<span>XSPF Playlist</span>
+									<div class="switch">
+										<label><input type="checkbox" id="plformat"><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 								<li>
@@ -1021,6 +1031,12 @@
 					window.location.reload(true);
 				}
 			});
+		});
+		var pl = GetLSValue('pl','m3u');
+		\$('#plformat').prop('checked',( pl != 'm3u'));
+		\$("#plformat").change(function() {
+			var val = \$(this).is(":checked") ? 'xspf' : 'm3u'
+			SetLSValue('pl',val);
 		});
 	});
 </script>

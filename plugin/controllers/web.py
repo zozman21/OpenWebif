@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ##############################################################################
-#                        2011-2017 E2OpenPlugins                             #
+#                        2011-2020 E2OpenPlugins                             #
 #                                                                            #
 #  This file is open source software; you can redistribute it and/or modify  #
 #     it under the terms of the GNU General Public License version 2 as      #
@@ -1039,23 +1039,7 @@ class WebController(BaseController):
 		ret["locations"] = comp_config.movielist.videodirs.value
 		return ret
 
-	def P_timeradd(self, request):
-		"""
-		Request handler for the `timeradd` endpoint.
-		Add timer
-
-		.. seealso::
-
-			https://dream.reichholf.net/e2web/#timeradd
-
-		Args:
-			request (twisted.web.server.Request): HTTP request object
-		Returns:
-			HTTP response with headers
-		"""
-		res = self.testMandatoryArguments(request, ["sRef", "begin", "end", "name"])
-		if res:
-			return res
+	def _AddEditTimer(self, request, mode):
 
 		disabled = False
 		if "disabled" in request.args.keys():
@@ -1086,38 +1070,137 @@ class WebController(BaseController):
 			description = request.args["description"][0]
 
 		eit = 0
-		if "eit" in request.args.keys() and type(request.args["eit"][0]) is int:
-			eventid = request.args["eit"][0]
+		if mode == 1:
+			try:
+				eventid = int(request.args["eventid"][0])
+			except Exception:  # noqa: E722
+				return {
+					"result": False,
+					"message": "The parameter 'eventid' must be a number"
+				}
+		elif "eit" in request.args.keys() and type(request.args["eit"][0]) is int:
+			eit = int(request.args["eit"][0])
 		else:
+			# TODO : move this code to timers.py
 			from enigma import eEPGCache, eServiceReference
 			queryTime = int(request.args["begin"][0]) + (int(request.args["end"][0]) - int(request.args["begin"][0])) / 2
 			event = eEPGCache.getInstance().lookupEventTime(eServiceReference(request.args["sRef"][0]), queryTime)
 			eventid = event and event.getEventId()
-		if eventid is not None:
-			eit = int(eventid)
+			if eventid is not None:
+				eit = int(eventid)
 
 		always_zap = -1
 		if "always_zap" in request.args.keys():
 			always_zap = int(request.args["always_zap"][0])
+			
+		pipzap = -1
+		if "pipzap" in request.args.keys():
+			pipzap = int(request.args["pipzap"][0])
 
-		return addTimer(
-			self.session,
-			request.args["sRef"][0],
-			request.args["begin"][0],
-			request.args["end"][0],
-			request.args["name"][0],
-			description,
-			disabled,
-			justplay,
-			afterevent,
-			dirname,
-			tags,
-			repeated,
-			self.vpsparams(request),
-			None,
-			eit,
-			always_zap
-		)
+		allow_duplicate = True
+		if "allow_duplicate" in request.args.keys():
+			allow_duplicate = request.args["allow_duplicate"][0] == "1"
+
+		autoadjust = -1
+		if "autoadjust" in request.args.keys():
+			autoadjust = request.args["autoadjust"][0] == "1"
+		
+		# TODO: merge function addTimer+editTimer+addTimerByEventId in timers.py
+		if mode == 1:
+			return addTimerByEventId(
+				self.session,
+				eventid,
+				request.args["sRef"][0],
+				justplay,
+				dirname,
+				tags,
+				self.vpsparams(request),
+				always_zap,
+				afterevent,
+				pipzap,
+				allow_duplicate,
+				autoadjust
+			)
+		elif mode == 2:
+			try:
+				beginOld = int(request.args["beginOld"][0])
+			except Exception:  # noqa: E722
+				return {
+					"result": False,
+					"message": "The parameter 'beginOld' must be a number"
+				}
+	
+			try:
+				endOld = int(request.args["endOld"][0])
+			except Exception:  # noqa: E722
+				return {
+					"result": False,
+					"message": "The parameter 'endOld' must be a number"
+				}
+			return editTimer(
+				self.session,
+				request.args["sRef"][0],
+				request.args["begin"][0],
+				request.args["end"][0],
+				request.args["name"][0],
+				description,
+				disabled,
+				justplay,
+				afterevent,
+				dirname,
+				tags,
+				repeated,
+				request.args["channelOld"][0],
+				beginOld,
+				endOld,
+				self.vpsparams(request),
+				always_zap,
+				pipzap,
+				allow_duplicate,
+				autoadjust
+			)
+		else:
+			return addTimer(
+				self.session,
+				request.args["sRef"][0],
+				request.args["begin"][0],
+				request.args["end"][0],
+				request.args["name"][0],
+				description,
+				disabled,
+				justplay,
+				afterevent,
+				dirname,
+				tags,
+				repeated,
+				self.vpsparams(request),
+				None,
+				eit,
+				always_zap,
+				pipzap,
+				allow_duplicate,
+				autoadjust
+			)
+
+	def P_timeradd(self, request):
+		"""
+		Request handler for the `timeradd` endpoint.
+		Add timer
+
+		.. seealso::
+
+			https://dream.reichholf.net/e2web/#timeradd
+
+		Args:
+			request (twisted.web.server.Request): HTTP request object
+		Returns:
+			HTTP response with headers
+		"""
+		res = self.testMandatoryArguments(request, ["sRef", "begin", "end", "name"])
+		if res:
+			return res
+		
+		return self._AddEditTimer(request, 0)
 
 	def P_timeraddbyeventid(self, request):
 		"""
@@ -1146,45 +1229,7 @@ class WebController(BaseController):
 		if res:
 			return res
 
-		justplay = False
-		if "justplay" in request.args.keys():
-			justplay = request.args["justplay"][0] == "1"
-
-		dirname = None
-		if "dirname" in request.args.keys() and len(request.args["dirname"][0]) > 0:
-			dirname = request.args["dirname"][0]
-
-		tags = []
-		if "tags" in request.args.keys():
-			tags = request.args["tags"][0].split(' ')
-
-		try:
-			eventid = int(request.args["eventid"][0])
-		except Exception:  # noqa: E722
-			return {
-				"result": False,
-				"message": "The parameter 'eventid' must be a number"
-			}
-
-		always_zap = -1
-		if "always_zap" in request.args.keys():
-			always_zap = int(request.args["always_zap"][0])
-
-		afterevent = 3
-		if "afterevent" in request.args.keys() and request.args["afterevent"][0] in ["0", "1", "2", "3"]:
-			afterevent = int(request.args["afterevent"][0])
-
-		return addTimerByEventId(
-			self.session,
-			eventid,
-			request.args["sRef"][0],
-			justplay,
-			dirname,
-			tags,
-			self.vpsparams(request),
-			always_zap,
-			afterevent
-		)
+		return self._AddEditTimer(request, 1)
 
 	def P_timerchange(self, request):
 		"""
@@ -1221,73 +1266,7 @@ class WebController(BaseController):
 		if res:
 			return res
 
-		disabled = False
-		if "disabled" in request.args.keys():
-			disabled = request.args["disabled"][0] == "1"
-
-		justplay = False
-		if "justplay" in request.args.keys():
-			justplay = request.args["justplay"][0] == "1"
-
-		afterevent = 3
-		if "afterevent" in request.args.keys() and request.args["afterevent"][0] in ["0", "1", "2", "3"]:
-			afterevent = int(request.args["afterevent"][0])
-
-		dirname = None
-		if "dirname" in request.args.keys() and len(request.args["dirname"][0]) > 0:
-			dirname = request.args["dirname"][0]
-
-		tags = []
-		if "tags" in request.args.keys():
-			tags = request.args["tags"][0].split(' ')
-
-		repeated = 0
-		if "repeated" in request.args.keys():
-			repeated = int(request.args["repeated"][0])
-
-		description = ""
-		if "description" in request.args.keys():
-			description = request.args["description"][0]
-
-		try:
-			beginOld = int(request.args["beginOld"][0])
-		except Exception:  # noqa: E722
-			return {
-				"result": False,
-				"message": "The parameter 'beginOld' must be a number"
-			}
-
-		try:
-			endOld = int(request.args["endOld"][0])
-		except Exception:  # noqa: E722
-			return {
-				"result": False,
-				"message": "The parameter 'endOld' must be a number"
-			}
-
-		always_zap = -1
-		if "always_zap" in request.args.keys():
-			always_zap = int(request.args["always_zap"][0])
-
-		return editTimer(
-			self.session,
-			request.args["sRef"][0],
-			request.args["begin"][0],
-			request.args["end"][0],
-			request.args["name"][0],
-			description,
-			disabled,
-			justplay,
-			afterevent,
-			dirname,
-			tags,
-			repeated,
-			request.args["channelOld"][0],
-			beginOld,
-			endOld,
-			self.vpsparams(request),
-			always_zap
-		)
+		return self._AddEditTimer(request, 2)
 
 	def P_timertogglestatus(self, request):
 		"""

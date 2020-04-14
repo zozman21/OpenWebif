@@ -25,7 +25,7 @@ from Components.config import config
 
 from Plugins.Extensions.OpenWebif.controllers.models.services import getBouquets, getChannels, getSatellites, getProviders, getEventDesc, getChannelEpg, getSearchEpg, getCurrentFullInfo, getMultiEpg, getEvent
 from Plugins.Extensions.OpenWebif.controllers.models.info import getInfo
-from Plugins.Extensions.OpenWebif.controllers.models.movies import getMovieList
+from Plugins.Extensions.OpenWebif.controllers.models.movies import getMovieList, getMovieSearchList
 from Plugins.Extensions.OpenWebif.controllers.models.timers import getTimers
 from Plugins.Extensions.OpenWebif.controllers.models.config import getConfigs, getConfigsSections
 from Plugins.Extensions.OpenWebif.controllers.models.stream import GetSession
@@ -52,7 +52,13 @@ class AjaxController(BaseController):
 		"""
 		ajax requests with no extra data
 		"""
-		return ['powerstate', 'message', 'myepg', 'radio', 'terminal', 'epgr', 'bqe', 'tv', 'edittimer']
+		return ['powerstate', 'message', 'myepg', 'radio', 'terminal', 'epgr', 'bqe', 'tv']
+
+	def P_edittimer(self, request):
+		imagedistro = getInfo()['imagedistro']
+		vti = imagedistro in ("VTi-Team Image") and 1 or 0
+		pipzap = imagedistro in ("openpli", "satdreamgr", "openvision", "openrsi") and 1 or 0
+		return {"vti": vti , "pipzap" : pipzap}
 
 	def P_current(self, request):
 		return getCurrentFullInfo(self.session)
@@ -184,6 +190,25 @@ class AjaxController(BaseController):
 			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime'])
 		elif sorttype == 'dated':
 			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime'], reverse=True)
+
+		movies['sort'] = sorttype
+		return movies
+
+	def P_moviesearch(self, request):
+		movies = getMovieSearchList(request.args)
+		movies['transcoding'] = TRANSCODING
+
+		sorttype = config.OpenWebif.webcache.moviesort.value
+		unsort = movies['movies']
+
+		if sorttype == 'name':
+			movies['movies'] = sorted(unsort, key=lambda k: k['eventname']) 
+		elif sorttype == 'named':
+			movies['movies'] = sorted(unsort, key=lambda k: k['eventname'],reverse=True) 
+		elif sorttype == 'date':
+			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime']) 
+		elif sorttype == 'dated':
+			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime'],reverse=True) 
 
 		movies['sort'] = sorttype
 		return movies

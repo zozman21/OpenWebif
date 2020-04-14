@@ -1,8 +1,8 @@
 //******************************************************************************
 //* openwebif.js: openwebif base module
-//* Version 1.2.19
+//* Version 1.2.20
 //******************************************************************************
-//* Copyright (C) 2011-2018 E2OpenPlugins
+//* Copyright (C) 2011-2020 E2OpenPlugins
 //*
 //* V 1.0   - Initial Version
 //* V 1.1   - add movie move and rename
@@ -32,6 +32,7 @@
 //* V 1.2.17 - allow timers for IPTV #715, added LCD, PiP into screenshots
 //* V 1.2.18 - rename stream.m3u8 to <channelname>.m3u8
 //* V 1.2.19 - fixed missing <channelname> when requesting a transcoding stream m3u8
+//* V 1.2.20 - timer pipzap option
 //*
 //* Authors: skaman <sandro # skanetwork.com>
 //* 		 meo
@@ -1230,13 +1231,32 @@ function editTimer(serviceref, begin, end) {
 							
 							if (typeof timer.always_zap !== 'undefined')
 							{
-								$('#always_zap1').show();
+								//$('#always_zap1').show();
 								$('#always_zap').prop("checked", timer.always_zap==1);
 								$('#justplay').prop("disabled",timer.always_zap==1);
 							} else {
-								$('#always_zap1').hide();
+								//$('#always_zap1').hide();
+								$('#always_zap').prop("disabled", true);
 							}
-							
+
+							if (typeof timer.pipzap !== 'undefined')
+							{
+								$('#pipzap').prop("disabled",false);
+								$('#pipzap').prop("checked", timer.pipzap==1);
+							} else {
+								$('#pipzap').prop("disabled",true);
+							}
+
+							if (typeof timer.allow_duplicate !== 'undefined')
+							{
+								$('#allow_duplicate').prop("checked", timer.allow_duplicate==1);
+								autoadjust: ($('#autoadjust').is(':checked')?"1":"0"),
+							}
+							if (typeof timer.autoadjust !== 'undefined')
+							{
+								$('#autoadjust').prop("checked", timer.autoadjust==1);
+							}
+
 							openTimerDlg(tstr_edit_timer + " - " + timer.name);
 							
 							break;
@@ -1316,6 +1336,8 @@ function addTimer(evt,chsref,chname,top,isradio) {
 	$('#dirname').val("None");
 	$('#enabled').prop("checked", true);
 	$('#justplay').prop("checked", false);
+	$('#allow_duplicate').prop("checked", true);
+	$('#autoadjust').prop("checked", false);
 	$('#afterevent').val(3);
 	$('#errorbox').hide();
 
