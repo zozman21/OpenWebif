@@ -65,7 +65,7 @@ def getStream(session, request, m3ufile):
 	portNumber = config.OpenWebif.streamport.value
 	info = getInfo()
 	model = info["model"]
-	machinebuild = info["machinebuild"]
+	procmodel = info["procmodel"]
 	urlparam = '&'
 	transcoder_port = None
 	args = ""
@@ -161,7 +161,7 @@ def getTS(self, request):
 		proto = 'http'
 		info = getInfo()
 		model = info["model"]
-		machinebuild = info["machinebuild"]
+		procmodel = info["procmodel"]
 		transcoder_port = None
 		args = ""
 		urlparam = '&'

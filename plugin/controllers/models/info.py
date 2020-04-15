@@ -31,7 +31,7 @@ from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnig
 from Tools.StbHardware import getFPVersion, getBoxProc, getHWSerial, getBoxRCType
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
-from boxbranding import getImageDistro, getImageBuild, getVisionVersion, getVisionRevision, getHaveTranscoding, getHaveMultiTranscoding
+from boxbranding import getImageDistro, getImageBuild, getVisionVersion, getVisionRevision, getHaveTranscoding, getHaveMultiTranscoding, getDisplayType
 from owibranding import getLcd, getGrabPip
 
 
@@ -185,11 +185,7 @@ def getInfo(session=None, need_fullinfo=False):
 	info['brand'] = getBoxBrand()
 	info['model'] = getBoxType()
 	info['boxtype'] = getBoxType()
-	info['machinebuild'] = getBoxProc()
-	info['hwserial'] = getHWSerial()
-	info['boxrctype'] = getBoxRCType()
-	info['transcoding'] = getHaveTranscoding()
-	info['multitranscoding'] = getHaveMultiTranscoding()
+	info['procmodel'] = getBoxProc()
 
 	try:
 		info['lcd'] = getLcd()
@@ -248,6 +244,12 @@ def getInfo(session=None, need_fullinfo=False):
 	info['gstreamerversion'] = about.getGStreamerVersionString(cpu)
 	info['ffmpegversion'] = about.getFFmpegVersionString()
 	info['pythonversion'] = about.getPythonVersionString()
+
+	info['hwserial'] = getHWSerial()
+	info['boxrctype'] = getBoxRCType()
+	info['transcoding'] = getHaveTranscoding()
+	info['multitranscoding'] = getHaveMultiTranscoding()
+	info['displaytype'] = getDisplayType()
 
 	try:
 		info['fp_version'] = getFPVersion()
