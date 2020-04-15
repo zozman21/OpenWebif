@@ -261,7 +261,7 @@ def getInfo(session=None, need_fullinfo=False):
 	info['imagefilesystem'] = boxbranding.getImageFileSystem()
 	info['feedsurl'] = boxbranding.getFeedsUrl()
 	info['developername'] = boxbranding.getDeveloperName()
-	info['builddatestring'] = boxbranding.getBuildDateString()
+	info['builddatestring'] = about.getBuildDateString()
 	info['imagefpu'] = boxbranding.getImageFPU()
 	info['havemultilib'] = boxbranding.getHaveMultiLib()
 
@@ -358,7 +358,7 @@ def getInfo(session=None, need_fullinfo=False):
 		})
 
 	info['shares'] = []
-	autofiles = ('/etc/auto.network')
+	autofiles = ('/etc/auto.network', '/etc/auto.network_vti')
 	for autofs in autofiles:
 		if fileExists(autofs):
 			method = "autofs"
