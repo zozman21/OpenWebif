@@ -27,7 +27,7 @@ from RecordTimer import parseEvent
 from timer import TimerEntry
 from Screens.InfoBar import InfoBar
 from Tools.Directories import fileExists, pathExists
-from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnigmaVersionString, eEPGCache, getBoxType, getBoxBrand
+from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnigmaVersionString, eEPGCache, getBoxType, getBoxBrand, eGetEnigmaDebugLvl
 from Tools.StbHardware import getFPVersion, getBoxProc, getHWSerial, getBoxRCType
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
@@ -247,9 +247,14 @@ def getInfo(session=None, need_fullinfo=False):
 
 	info['hwserial'] = getHWSerial()
 	info['boxrctype'] = getBoxRCType()
+
 	info['transcoding'] = getHaveTranscoding()
 	info['multitranscoding'] = getHaveMultiTranscoding()
+
 	info['displaytype'] = getDisplayType()
+
+	info['updatedatestring'] = about.getUpdateDateString()
+	info['enigmadebuglvl'] = eGetEnigmaDebugLvl()
 
 	try:
 		info['fp_version'] = getFPVersion()
