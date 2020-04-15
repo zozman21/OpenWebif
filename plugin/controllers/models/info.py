@@ -31,7 +31,7 @@ from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnig
 from Tools.StbHardware import getFPVersion, getBoxProc
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
-from boxbranding import getImageDistro, getImageVersion, getImageBuild, getOEVersion
+from boxbranding import getImageDistro, getImageVersion, getImageBuild, getOEVersion, getVisionVersion, getVisionRevision
 from owibranding import getLcd, getGrabPip
 
 
@@ -189,12 +189,12 @@ def getInfo(session=None, need_fullinfo=False):
 
 	try:
 		info['lcd'] = getLcd()
-	except: # temporary due OE-A
+	except:
 		info['lcd'] = 0
 
 	try:
 		info['grabpip'] = getGrabPip()
-	except: # temporary due OE-A
+	except:
 		info['grabpip'] = 0
 
 	cpu = about.getCPUInfoString()
@@ -233,8 +233,8 @@ def getInfo(session=None, need_fullinfo=False):
 	info['imagedistro'] = getImageDistro()
 	info['friendlyimagedistro'] = getFriendlyImageDistro()
 	info['oever'] = getOEVersion()
-	info['visionversion'] = about.getVisionVersion()
-	info['visionrevision'] = about.getVisionRevision()
+	info['visionversion'] = getVisionVersion()
+	info['visionrevision'] = getVisionRevision()
 	info['visionmodule'] = about.getVisionModule()
 	info['imagever'] = getImageVersion()
 
