@@ -26,9 +26,7 @@ from Plugins.Extensions.OpenWebif.controllers.models.timers import getTimers
 from Plugins.Extensions.OpenWebif.controllers.models.services import getBouquets, getChannels, getChannelEpg, getEvent, getPicon
 from urllib import quote
 from time import localtime, strftime
-
-from Plugins.Extensions.OpenWebif.controllers.defaults import TRANSCODING
-
+from boxbranding import getHaveTranscoding
 
 class MobileController(BaseController):
 	"""
@@ -57,7 +55,7 @@ class MobileController(BaseController):
 		if "id" in request.args.keys():
 			idbouquet = request.args["id"][0]
 		channels = getChannels(idbouquet, stype)
-		channels['transcoding'] = TRANSCODING
+		channels['transcoding'] = getHaveTranscoding()
 		return channels
 
 	def P_channelinfo(self, request):
@@ -128,7 +126,7 @@ class MobileController(BaseController):
 
 	def P_movies(self, request):
 		movies = getMovieList(request.args)
-		movies['transcoding'] = TRANSCODING
+		movies['transcoding'] = getHaveTranscoding()
 		return movies
 
 	def P_remote(self, request):

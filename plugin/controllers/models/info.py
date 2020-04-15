@@ -30,7 +30,7 @@ from Tools.Directories import fileExists, pathExists
 from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnigmaVersionString, eEPGCache, getBoxType, getBoxBrand, eGetEnigmaDebugLvl
 from Tools.StbHardware import getFPVersion, getBoxProc, getHWSerial, getBoxRCType
 from ..i18n import _
-from ..defaults import OPENWEBIFVER, TRANSCODING
+from ..defaults import OPENWEBIFVER
 import boxbranding
 from owibranding import getLcd, getGrabPip
 
@@ -358,7 +358,7 @@ def getInfo(session=None, need_fullinfo=False):
 		})
 
 	info['shares'] = []
-	autofiles = ('/etc/auto.network', '/etc/auto.network_vti')
+	autofiles = ('/etc/auto.network')
 	for autofs in autofiles:
 		if fileExists(autofs):
 			method = "autofs"
@@ -431,8 +431,6 @@ def getInfo(session=None, need_fullinfo=False):
 						"friendlyaddress": friendlyaddress
 					})
 	# TODO: fstab
-
-	info['transcoding'] = TRANSCODING
 
 	info['EX'] = ''
 
@@ -620,7 +618,7 @@ def getStatusInfo(self):
 	statusinfo = {
 		'volume': vcontrol.getVolume(),
 		'muted': vcontrol.isMuted(),
-		'transcoding': TRANSCODING,
+		'transcoding': boxbranding.getHaveTranscoding(),
 		'currservice_filename': "",
 		'currservice_id': -1,
 	}

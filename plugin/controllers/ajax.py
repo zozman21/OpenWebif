@@ -32,8 +32,8 @@ from Plugins.Extensions.OpenWebif.controllers.models.stream import GetSession
 from Plugins.Extensions.OpenWebif.controllers.base import BaseController
 from time import mktime, localtime
 from Plugins.Extensions.OpenWebif.controllers.models.locations import getLocations
-
-from Plugins.Extensions.OpenWebif.controllers.defaults import OPENWEBIFVER, getPublicPath, VIEWS_PATH, TRANSCODING
+from Plugins.Extensions.OpenWebif.controllers.defaults import OPENWEBIFVER, getPublicPath, VIEWS_PATH
+from boxbranding import getHaveTranscoding
 
 # from twisted.web.resource import Resource
 import os
@@ -92,7 +92,7 @@ class AjaxController(BaseController):
 		if "id" in request.args.keys():
 			idbouquet = request.args["id"][0]
 		channels = getChannels(idbouquet, stype)
-		channels['transcoding'] = TRANSCODING
+		channels['transcoding'] = getHaveTranscoding()
 		channels['type'] = stype
 		channels['showchannelpicon'] = config.OpenWebif.webcache.showchannelpicon.value
 		return channels
@@ -111,7 +111,7 @@ class AjaxController(BaseController):
 		except ImportError:
 			pass
 		event['at'] = at
-		event['transcoding'] = TRANSCODING
+		event['transcoding'] = getHaveTranscoding()
 		if config.OpenWebif.webcache.moviedb.value:
 			event['moviedb'] = config.OpenWebif.webcache.moviedb.value
 		else:
@@ -177,7 +177,7 @@ class AjaxController(BaseController):
 
 	def P_movies(self, request):
 		movies = getMovieList(request.args)
-		movies['transcoding'] = TRANSCODING
+		movies['transcoding'] = getHaveTranscoding()
 
 		sorttype = config.OpenWebif.webcache.moviesort.value
 		unsort = movies['movies']
@@ -196,7 +196,7 @@ class AjaxController(BaseController):
 
 	def P_moviesearch(self, request):
 		movies = getMovieSearchList(request.args)
-		movies['transcoding'] = TRANSCODING
+		movies['transcoding'] = getHaveTranscoding()
 
 		sorttype = config.OpenWebif.webcache.moviesort.value
 		unsort = movies['movies']
@@ -369,7 +369,7 @@ class AjaxController(BaseController):
 		vxgenabled = False
 		if fileExists(getPublicPath("/vxg/media_player.pexe")):
 			vxgenabled = True
-		transcoding = TRANSCODING
+		transcoding = getHaveTranscoding()
 		transcoder_port = 0
 		if transcoding:
 			try:
