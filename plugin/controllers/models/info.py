@@ -31,7 +31,7 @@ from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnig
 from Tools.StbHardware import getFPVersion, getBoxProc
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
-from boxbranding import getImageDistro, getImageVersion, getImageBuild, getOEVersion, getVisionVersion, getVisionRevision
+from boxbranding import getImageDistro, getImageBuild, getVisionVersion, getVisionRevision
 from owibranding import getLcd, getGrabPip
 
 
@@ -232,15 +232,10 @@ def getInfo(session=None, need_fullinfo=False):
 	info["webifver"] = OPENWEBIFVER
 	info['imagedistro'] = getImageDistro()
 	info['friendlyimagedistro'] = getFriendlyImageDistro()
-	info['oever'] = getOEVersion()
+	info['oever'] = getImageBuild()
 	info['visionversion'] = getVisionVersion()
 	info['visionrevision'] = getVisionRevision()
 	info['visionmodule'] = about.getVisionModule()
-	info['imagever'] = getImageVersion()
-
-	ib = getImageBuild()
-	if ib:
-		info['imagever'] = info['imagever'] + "." + ib
 
 	info['enigmaver'] = getEnigmaVersionString()
 	info['driverdate'] = about.getDriverInstalledDate()
