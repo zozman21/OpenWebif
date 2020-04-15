@@ -31,7 +31,7 @@ from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnig
 from Tools.StbHardware import getFPVersion, getBoxProc, getHWSerial, getBoxRCType
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
-from boxbranding import getImageDistro, getImageBuild, getVisionVersion, getVisionRevision
+from boxbranding import getImageDistro, getImageBuild, getVisionVersion, getVisionRevision, getHaveTranscoding, getHaveMultiTranscoding
 from owibranding import getLcd, getGrabPip
 
 
@@ -188,6 +188,8 @@ def getInfo(session=None, need_fullinfo=False):
 	info['machinebuild'] = getBoxProc()
 	info['hwserial'] = getHWSerial()
 	info['boxrctype'] = getBoxRCType()
+	info['transcoding'] = getHaveTranscoding()
+	info['multitranscoding'] = getHaveMultiTranscoding()
 
 	try:
 		info['lcd'] = getLcd()
