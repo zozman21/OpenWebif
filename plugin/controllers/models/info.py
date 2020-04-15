@@ -31,7 +31,7 @@ from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnig
 from Tools.StbHardware import getFPVersion, getBoxProc, getHWSerial, getBoxRCType
 from ..i18n import _
 from ..defaults import OPENWEBIFVER, TRANSCODING
-from boxbranding import getImageDistro, getImageBuild, getVisionVersion, getVisionRevision, getHaveTranscoding, getHaveMultiTranscoding, getDisplayType
+import boxbranding
 from owibranding import getLcd, getGrabPip
 
 
@@ -41,7 +41,7 @@ def getEnigmaVersionString():
 STATICBOXINFO = None
 
 def getFriendlyImageDistro():
-	dist = getImageDistro().replace("openvision", "Open Vision")
+	dist = boxbranding.getImageDistro().replace("openvision", "Open Vision")
 	return dist
 
 def getIPMethod(iface):
@@ -230,11 +230,11 @@ def getInfo(session=None, need_fullinfo=False):
 	info['uptime'] = uptimetext
 
 	info["webifver"] = OPENWEBIFVER
-	info['imagedistro'] = getImageDistro()
+	info['imagedistro'] = boxbranding.getImageDistro()
 	info['friendlyimagedistro'] = getFriendlyImageDistro()
-	info['oever'] = getImageBuild()
-	info['visionversion'] = getVisionVersion()
-	info['visionrevision'] = getVisionRevision()
+	info['oever'] = boxbranding.getImageBuild()
+	info['visionversion'] = boxbranding.getVisionVersion()
+	info['visionrevision'] = boxbranding.getVisionRevision()
 	info['visionmodule'] = about.getVisionModule()
 
 	info['enigmaver'] = getEnigmaVersionString()
@@ -248,13 +248,22 @@ def getInfo(session=None, need_fullinfo=False):
 	info['hwserial'] = getHWSerial()
 	info['boxrctype'] = getBoxRCType()
 
-	info['transcoding'] = getHaveTranscoding()
-	info['multitranscoding'] = getHaveMultiTranscoding()
+	info['transcoding'] = boxbranding.getHaveTranscoding()
+	info['multitranscoding'] = boxbranding.getHaveMultiTranscoding()
 
-	info['displaytype'] = getDisplayType()
+	info['displaytype'] = boxbranding.getDisplayType()
 
 	info['updatedatestring'] = about.getUpdateDateString()
 	info['enigmadebuglvl'] = eGetEnigmaDebugLvl()
+
+	info['imagearch'] = boxbranding.getImageArch()
+	info['imagefolder'] = boxbranding.getImageFolder()
+	info['imagefilesystem'] = boxbranding.getImageFileSystem()
+	info['feedsurl'] = boxbranding.getFeedsUrl()
+	info['developername'] = boxbranding.getDeveloperName()
+	info['builddatestring'] = boxbranding.getBuildDateString()
+	info['imagefpu'] = boxbranding.getImageFPU()
+	info['havemultilib'] = boxbranding.getHaveMultiLib()
 
 	try:
 		info['fp_version'] = getFPVersion()
