@@ -245,8 +245,15 @@ def getInfo(session=None, need_fullinfo=False):
 	info['ffmpegversion'] = about.getFFmpegVersionString()
 	info['pythonversion'] = about.getPythonVersionString()
 
-	info['hwserial'] = getHWSerial()
-	info['boxrctype'] = getBoxRCType()
+	try:
+		info['hwserial'] = getHWSerial()
+	except:  # noqa: E722
+		info['hwserial'] = None
+
+	try:
+		info['boxrctype'] = getBoxRCType()
+	except:  # noqa: E722
+		info['boxrctype'] = None
 
 	info['transcoding'] = boxbranding.getHaveTranscoding()
 	info['multitranscoding'] = boxbranding.getHaveMultiTranscoding()
