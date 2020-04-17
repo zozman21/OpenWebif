@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-17 19:46+0430\n"
+"POT-Creation-Date: 2020-04-17 21:38+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: William <ghenessior@gmail.com>\n"
 "Language-Team: www.vuplus-community.net <insanity@>\n"
@@ -27,7 +27,7 @@ msgid "%s %s is locked."
 msgstr "%s %s bloccato."
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:356
+#: ../plugin/controllers/models/info.py:365
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s liberi / %s totale"
@@ -149,6 +149,11 @@ msgstr "Creazione alternativa fallita %s ."
 #: ../plugin/controllers/i18n.py:425
 msgid "Always"
 msgstr "Sempre"
+
+#: ../plugin/controllers/models/info.py:263
+#, fuzzy
+msgid "Amlogic remote"
+msgstr "Mostrare il telecomando"
 
 #: ../plugin/controllers/i18n.py:354
 msgid "Amount of recordings left"
@@ -568,7 +573,7 @@ msgstr "Drivers"
 msgid "Duration"
 msgstr "Durata"
 
-#: ../plugin/controllers/models/info.py:544
+#: ../plugin/controllers/models/info.py:553
 msgid "E"
 msgstr "E"
 
@@ -793,7 +798,7 @@ msgstr "Memoria libera"
 
 #: ../plugin/controllers/i18n.py:274
 #, fuzzy
-msgid "Free memory/Total memory"
+msgid "Free/Total memory"
 msgstr "Memoria libera"
 
 #: ../plugin/controllers/i18n.py:49
@@ -813,10 +818,10 @@ msgstr "Versione del Frontprocessor"
 msgid "Full remote"
 msgstr "Mostrare il telecomando"
 
-#: ../plugin/controllers/models/info.py:322
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:343
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:337
+#: ../plugin/controllers/models/info.py:352
+#: ../plugin/controllers/models/info.py:355
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -1010,6 +1015,11 @@ msgstr "Impostazioni LCD4Linux"
 msgid "LICENSE"
 msgstr "LICENZA"
 
+#: ../plugin/controllers/models/info.py:265
+#, fuzzy
+msgid "LIRC remote"
+msgstr "Telecomando"
+
 #: ../plugin/controllers/i18n.py:390
 msgid "Label series"
 msgstr "Serie di etichette"
@@ -1039,9 +1049,9 @@ msgstr "Bloccato"
 msgid "MAC address"
 msgstr "Indirizzo MAC"
 
-#: ../plugin/controllers/models/info.py:319
-#: ../plugin/controllers/models/info.py:330
-#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:328
+#: ../plugin/controllers/models/info.py:339
+#: ../plugin/controllers/models/info.py:357
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1185,13 +1195,14 @@ msgstr "Nome del marcatore"
 msgid "Namespace"
 msgstr "Spazio dei nomi"
 
-#: ../plugin/controllers/i18n.py:193
-msgid "Network Interface"
-msgstr "Interfaccia di rete"
-
 #: ../plugin/controllers/i18n.py:490
 msgid "Network Shares"
 msgstr "Condivisioni di rete"
+
+#: ../plugin/controllers/i18n.py:193
+#, fuzzy
+msgid "Network interface"
+msgstr "Interfaccia di rete"
 
 #: ../plugin/controllers/i18n.py:355 ../plugin/controllers/i18n.py:426
 msgid "Never"
@@ -1939,9 +1950,9 @@ msgstr "Dom"
 msgid "Sunday"
 msgstr "Domenica"
 
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:338
-#: ../plugin/controllers/models/info.py:340
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:347
+#: ../plugin/controllers/models/info.py:349
 msgid "TB"
 msgstr "TB"
 
@@ -2278,7 +2289,7 @@ msgstr "Controllo volume"
 msgid "Vpid"
 msgstr "Vpid"
 
-#: ../plugin/controllers/models/info.py:547
+#: ../plugin/controllers/models/info.py:556
 msgid "W"
 msgstr "O"
 
@@ -2472,11 +2483,11 @@ msgstr "Uno due tre quattro comando sconosciuto"
 msgid "partial match"
 msgstr "corrispondenza parziale"
 
-#: ../plugin/controllers/models/info.py:389
+#: ../plugin/controllers/models/info.py:398
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:385
+#: ../plugin/controllers/models/info.py:394
 msgid "r/w"
 msgstr "r/w"
 

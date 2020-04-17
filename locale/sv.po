@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-17 19:46+0430\n"
+"POT-Creation-Date: 2020-04-17 21:38+0430\n"
 "PO-Revision-Date: 2017-06-08 10:05+0200\n"
 "Last-Translator: Svevrstt <svevrstt@gmail.com>\n"
 "Language-Team: \n"
@@ -22,7 +22,7 @@ msgid "%s %s is locked."
 msgstr "%s %s är låst."
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:356
+#: ../plugin/controllers/models/info.py:365
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s ledigt / %s totalt"
@@ -144,6 +144,11 @@ msgstr "Misslyckades med att skapa alternativ distributör %s"
 #: ../plugin/controllers/i18n.py:425
 msgid "Always"
 msgstr "Alltid"
+
+#: ../plugin/controllers/models/info.py:263
+#, fuzzy
+msgid "Amlogic remote"
+msgstr "Dölj stor fjärrkontroll"
 
 #: ../plugin/controllers/i18n.py:354
 msgid "Amount of recordings left"
@@ -566,7 +571,7 @@ msgstr "Version av drivrutinerna"
 msgid "Duration"
 msgstr "Varaktighet (i min)"
 
-#: ../plugin/controllers/models/info.py:544
+#: ../plugin/controllers/models/info.py:553
 msgid "E"
 msgstr "Ö"
 
@@ -791,7 +796,7 @@ msgstr "Ledigt minne"
 
 #: ../plugin/controllers/i18n.py:274
 #, fuzzy
-msgid "Free memory/Total memory"
+msgid "Free/Total memory"
 msgstr "Ledigt minne"
 
 #: ../plugin/controllers/i18n.py:49
@@ -812,10 +817,10 @@ msgstr "Frontprocessorversion"
 msgid "Full remote"
 msgstr "Dölj stor fjärrkontroll"
 
-#: ../plugin/controllers/models/info.py:322
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:343
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:337
+#: ../plugin/controllers/models/info.py:352
+#: ../plugin/controllers/models/info.py:355
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -1012,6 +1017,11 @@ msgstr "LCD4Linux inställning"
 msgid "LICENSE"
 msgstr "LICENS"
 
+#: ../plugin/controllers/models/info.py:265
+#, fuzzy
+msgid "LIRC remote"
+msgstr "Fjärrkontroll"
+
 #: ../plugin/controllers/i18n.py:390
 msgid "Label series"
 msgstr "Lägg till avsnittsinformation för TV-serier"
@@ -1041,9 +1051,9 @@ msgstr "Låst"
 msgid "MAC address"
 msgstr "MAC-adress"
 
-#: ../plugin/controllers/models/info.py:319
-#: ../plugin/controllers/models/info.py:330
-#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:328
+#: ../plugin/controllers/models/info.py:339
+#: ../plugin/controllers/models/info.py:357
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1189,13 +1199,14 @@ msgstr "Bokmärkets namn"
 msgid "Namespace"
 msgstr "Namnrymd"
 
-#: ../plugin/controllers/i18n.py:193
-msgid "Network Interface"
-msgstr "Nätverksgränssnitt"
-
 #: ../plugin/controllers/i18n.py:490
 msgid "Network Shares"
 msgstr "Delade nätverksresurser"
+
+#: ../plugin/controllers/i18n.py:193
+#, fuzzy
+msgid "Network interface"
+msgstr "Nätverksgränssnitt"
 
 #: ../plugin/controllers/i18n.py:355 ../plugin/controllers/i18n.py:426
 msgid "Never"
@@ -1953,9 +1964,9 @@ msgstr "Sön"
 msgid "Sunday"
 msgstr "Söndag"
 
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:338
-#: ../plugin/controllers/models/info.py:340
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:347
+#: ../plugin/controllers/models/info.py:349
 msgid "TB"
 msgstr "TB"
 
@@ -2297,7 +2308,7 @@ msgstr "Volymkontroll"
 msgid "Vpid"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:547
+#: ../plugin/controllers/models/info.py:556
 msgid "W"
 msgstr "V"
 
@@ -2496,12 +2507,12 @@ msgid "partial match"
 msgstr "ofullständig matchning"
 
 # Lämnas oöversatt t.v. eftersom begreppen kan vara mer kända på engelska än svenska. Står för behörigheten: Enbart läsbehörighet
-#: ../plugin/controllers/models/info.py:389
+#: ../plugin/controllers/models/info.py:398
 msgid "r/o"
 msgstr ""
 
 # Lämnas oöversatt t.v. eftersom begreppen kan vara mer kända på engelska än svenska. Står för behörigheten: Läs- och skriv-behörighet
-#: ../plugin/controllers/models/info.py:385
+#: ../plugin/controllers/models/info.py:394
 msgid "r/w"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-17 19:46+0430\n"
+"POT-Creation-Date: 2020-04-17 21:38+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "%s %s is locked."
 msgstr ""
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:356
+#: ../plugin/controllers/models/info.py:365
 #, python-format
 msgid "%s free / %s total"
 msgstr ""
@@ -144,6 +144,10 @@ msgstr ""
 
 #: ../plugin/controllers/i18n.py:425
 msgid "Always"
+msgstr ""
+
+#: ../plugin/controllers/models/info.py:263
+msgid "Amlogic remote"
 msgstr ""
 
 #: ../plugin/controllers/i18n.py:354
@@ -558,7 +562,7 @@ msgstr ""
 msgid "Duration"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:544
+#: ../plugin/controllers/models/info.py:553
 msgid "E"
 msgstr ""
 
@@ -780,7 +784,7 @@ msgid "Free Memory"
 msgstr ""
 
 #: ../plugin/controllers/i18n.py:274
-msgid "Free memory/Total memory"
+msgid "Free/Total memory"
 msgstr ""
 
 #: ../plugin/controllers/i18n.py:49
@@ -799,10 +803,10 @@ msgstr ""
 msgid "Full remote"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:322
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:343
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:337
+#: ../plugin/controllers/models/info.py:352
+#: ../plugin/controllers/models/info.py:355
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -994,6 +998,10 @@ msgstr ""
 msgid "LICENSE"
 msgstr ""
 
+#: ../plugin/controllers/models/info.py:265
+msgid "LIRC remote"
+msgstr ""
+
 #: ../plugin/controllers/i18n.py:390
 msgid "Label series"
 msgstr ""
@@ -1022,9 +1030,9 @@ msgstr ""
 msgid "MAC address"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:319
-#: ../plugin/controllers/models/info.py:330
-#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:328
+#: ../plugin/controllers/models/info.py:339
+#: ../plugin/controllers/models/info.py:357
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1165,12 +1173,12 @@ msgstr ""
 msgid "Namespace"
 msgstr ""
 
-#: ../plugin/controllers/i18n.py:193
-msgid "Network Interface"
-msgstr ""
-
 #: ../plugin/controllers/i18n.py:490
 msgid "Network Shares"
+msgstr ""
+
+#: ../plugin/controllers/i18n.py:193
+msgid "Network interface"
 msgstr ""
 
 #: ../plugin/controllers/i18n.py:355 ../plugin/controllers/i18n.py:426
@@ -1906,9 +1914,9 @@ msgstr ""
 msgid "Sunday"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:338
-#: ../plugin/controllers/models/info.py:340
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:347
+#: ../plugin/controllers/models/info.py:349
 msgid "TB"
 msgstr ""
 
@@ -2243,7 +2251,7 @@ msgstr ""
 msgid "Vpid"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:547
+#: ../plugin/controllers/models/info.py:556
 msgid "W"
 msgstr ""
 
@@ -2437,11 +2445,11 @@ msgstr ""
 msgid "partial match"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:389
+#: ../plugin/controllers/models/info.py:398
 msgid "r/o"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:385
+#: ../plugin/controllers/models/info.py:394
 msgid "r/w"
 msgstr ""
 

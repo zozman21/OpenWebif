@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-17 19:46+0430\n"
+"POT-Creation-Date: 2020-04-17 21:38+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgid "%s %s is locked."
 msgstr "%s %s заблокирован."
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:356
+#: ../plugin/controllers/models/info.py:365
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s свободно / %s всего"
@@ -143,6 +143,11 @@ msgstr "Ошибка создания %s альтернативы."
 #: ../plugin/controllers/i18n.py:425
 msgid "Always"
 msgstr "Всегда"
+
+#: ../plugin/controllers/models/info.py:263
+#, fuzzy
+msgid "Amlogic remote"
+msgstr "Весь пульт"
 
 #: ../plugin/controllers/i18n.py:354
 msgid "Amount of recordings left"
@@ -562,7 +567,7 @@ msgstr "Драйвера"
 msgid "Duration"
 msgstr "Длительность"
 
-#: ../plugin/controllers/models/info.py:544
+#: ../plugin/controllers/models/info.py:553
 msgid "E"
 msgstr "E"
 
@@ -787,7 +792,7 @@ msgstr "Свободная память"
 
 #: ../plugin/controllers/i18n.py:274
 #, fuzzy
-msgid "Free memory/Total memory"
+msgid "Free/Total memory"
 msgstr "Свободная память"
 
 #: ../plugin/controllers/i18n.py:49
@@ -807,10 +812,10 @@ msgstr "Версия фронтпроцессора"
 msgid "Full remote"
 msgstr "Весь пульт"
 
-#: ../plugin/controllers/models/info.py:322
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:343
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:337
+#: ../plugin/controllers/models/info.py:352
+#: ../plugin/controllers/models/info.py:355
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -1004,6 +1009,11 @@ msgstr "Настройки LCD4Linux"
 msgid "LICENSE"
 msgstr "ЛИЦЕНЗИЯ"
 
+#: ../plugin/controllers/models/info.py:265
+#, fuzzy
+msgid "LIRC remote"
+msgstr "Пульт"
+
 #: ../plugin/controllers/i18n.py:390
 msgid "Label series"
 msgstr "Этикетки серий"
@@ -1033,9 +1043,9 @@ msgstr "Заблокировано"
 msgid "MAC address"
 msgstr "MAC адрес"
 
-#: ../plugin/controllers/models/info.py:319
-#: ../plugin/controllers/models/info.py:330
-#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:328
+#: ../plugin/controllers/models/info.py:339
+#: ../plugin/controllers/models/info.py:357
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1179,13 +1189,14 @@ msgstr "Название маркера"
 msgid "Namespace"
 msgstr "Пространство названий"
 
-#: ../plugin/controllers/i18n.py:193
-msgid "Network Interface"
-msgstr "Сетевой интерфейс"
-
 #: ../plugin/controllers/i18n.py:490
 msgid "Network Shares"
 msgstr "Сетевые подключения"
+
+#: ../plugin/controllers/i18n.py:193
+#, fuzzy
+msgid "Network interface"
+msgstr "Сетевой интерфейс"
 
 #: ../plugin/controllers/i18n.py:355 ../plugin/controllers/i18n.py:426
 msgid "Never"
@@ -1932,9 +1943,9 @@ msgstr "Вск"
 msgid "Sunday"
 msgstr "Воскресенье"
 
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:338
-#: ../plugin/controllers/models/info.py:340
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:347
+#: ../plugin/controllers/models/info.py:349
 msgid "TB"
 msgstr "ТБ"
 
@@ -2271,7 +2282,7 @@ msgstr "Контроль громкости"
 msgid "Vpid"
 msgstr "Vpid"
 
-#: ../plugin/controllers/models/info.py:547
+#: ../plugin/controllers/models/info.py:556
 msgid "W"
 msgstr "W"
 
@@ -2465,11 +2476,11 @@ msgstr "одна /две / три / четыре неизвестные кома
 msgid "partial match"
 msgstr "частичное совпадение"
 
-#: ../plugin/controllers/models/info.py:389
+#: ../plugin/controllers/models/info.py:398
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:385
+#: ../plugin/controllers/models/info.py:394
 msgid "r/w"
 msgstr "r/w"
 
