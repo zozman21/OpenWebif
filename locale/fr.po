@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-15 17:37+0430\n"
+"POT-Creation-Date: 2020-04-17 19:46+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pr2\n"
 "Language-Team: \n"
@@ -20,7 +20,7 @@ msgid "%s %s is locked."
 msgstr "%s %s est verrouillé."
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:357
+#: ../plugin/controllers/models/info.py:356
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s de libre / %s au total"
@@ -359,7 +359,7 @@ msgstr "Chaîne"
 msgid "Channels"
 msgstr "Chaînes"
 
-#: ../plugin/controllers/i18n.py:98 ../plugin/controllers/models/info.py:273
+#: ../plugin/controllers/i18n.py:98
 msgid "Chipset"
 msgstr "Processeur"
 
@@ -561,7 +561,7 @@ msgstr "Pilotes"
 msgid "Duration"
 msgstr "Longueur"
 
-#: ../plugin/controllers/models/info.py:545
+#: ../plugin/controllers/models/info.py:544
 msgid "E"
 msgstr "E"
 
@@ -786,7 +786,7 @@ msgstr "Mémoire libre"
 
 #: ../plugin/controllers/i18n.py:274
 #, fuzzy
-msgid "Free/Total memory"
+msgid "Free memory/Total memory"
 msgstr "Mémoire libre"
 
 #: ../plugin/controllers/i18n.py:49
@@ -802,18 +802,14 @@ msgstr "Vendredi"
 msgid "Frontprocessor"
 msgstr "Version du frontprocesseur"
 
-#: ../plugin/controllers/models/info.py:276
-msgid "Frontprocessor Version"
-msgstr "Version du frontprocesseur"
-
 #: ../plugin/controllers/i18n.py:528
 msgid "Full remote"
 msgstr "Télécommande complète"
 
-#: ../plugin/controllers/models/info.py:323
-#: ../plugin/controllers/models/info.py:329
-#: ../plugin/controllers/models/info.py:344
-#: ../plugin/controllers/models/info.py:347
+#: ../plugin/controllers/models/info.py:322
+#: ../plugin/controllers/models/info.py:328
+#: ../plugin/controllers/models/info.py:343
+#: ../plugin/controllers/models/info.py:346
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -1016,7 +1012,8 @@ msgid "Last update"
 msgstr ""
 
 #: ../plugin/controllers/i18n.py:489
-msgid "Link Speed"
+#, fuzzy
+msgid "Link speed"
 msgstr "Vitesse du lien"
 
 #: ../plugin/controllers/models/timers.py:446
@@ -1035,9 +1032,9 @@ msgstr "Vérouillé"
 msgid "MAC address"
 msgstr "Adresse MAC"
 
-#: ../plugin/controllers/models/info.py:320
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/info.py:349
+#: ../plugin/controllers/models/info.py:319
+#: ../plugin/controllers/models/info.py:330
+#: ../plugin/controllers/models/info.py:348
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1931,9 +1928,9 @@ msgstr "Dim"
 msgid "Sunday"
 msgstr "Dimanche"
 
-#: ../plugin/controllers/models/info.py:327
-#: ../plugin/controllers/models/info.py:339
-#: ../plugin/controllers/models/info.py:341
+#: ../plugin/controllers/models/info.py:326
+#: ../plugin/controllers/models/info.py:338
+#: ../plugin/controllers/models/info.py:340
 msgid "TB"
 msgstr "To"
 
@@ -2270,7 +2267,7 @@ msgstr "Ctrl Volume"
 msgid "Vpid"
 msgstr "Vpid"
 
-#: ../plugin/controllers/models/info.py:548
+#: ../plugin/controllers/models/info.py:547
 msgid "W"
 msgstr "O"
 
@@ -2464,11 +2461,11 @@ msgstr "un deux trois quatre commande inconnue"
 msgid "partial match"
 msgstr "correspondance partielle"
 
-#: ../plugin/controllers/models/info.py:390
+#: ../plugin/controllers/models/info.py:389
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:386
+#: ../plugin/controllers/models/info.py:385
 msgid "r/w"
 msgstr "r/w"
 

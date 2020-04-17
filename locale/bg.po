@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-15 17:37+0430\n"
+"POT-Creation-Date: 2020-04-17 19:46+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgid "%s %s is locked."
 msgstr "%s %s е заключен."
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:357
+#: ../plugin/controllers/models/info.py:356
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s свободни / %s общо"
@@ -360,7 +360,7 @@ msgstr "Канал"
 msgid "Channels"
 msgstr "Канали"
 
-#: ../plugin/controllers/i18n.py:98 ../plugin/controllers/models/info.py:273
+#: ../plugin/controllers/i18n.py:98
 msgid "Chipset"
 msgstr "Чипсет"
 
@@ -563,7 +563,7 @@ msgstr "Драйвери"
 msgid "Duration"
 msgstr "Продължителност"
 
-#: ../plugin/controllers/models/info.py:545
+#: ../plugin/controllers/models/info.py:544
 msgid "E"
 msgstr "E"
 
@@ -788,7 +788,7 @@ msgstr "Свободна Памет"
 
 #: ../plugin/controllers/i18n.py:274
 #, fuzzy
-msgid "Free/Total memory"
+msgid "Free memory/Total memory"
 msgstr "Свободна Памет"
 
 #: ../plugin/controllers/i18n.py:49
@@ -804,19 +804,15 @@ msgstr "Петък"
 msgid "Frontprocessor"
 msgstr "Версия на фронтпроцесора"
 
-#: ../plugin/controllers/models/info.py:276
-msgid "Frontprocessor Version"
-msgstr "Версия на фронтпроцесора"
-
 #: ../plugin/controllers/i18n.py:528
 #, fuzzy
 msgid "Full remote"
 msgstr "Скрий пълното дистанционно"
 
-#: ../plugin/controllers/models/info.py:323
-#: ../plugin/controllers/models/info.py:329
-#: ../plugin/controllers/models/info.py:344
-#: ../plugin/controllers/models/info.py:347
+#: ../plugin/controllers/models/info.py:322
+#: ../plugin/controllers/models/info.py:328
+#: ../plugin/controllers/models/info.py:343
+#: ../plugin/controllers/models/info.py:346
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -1022,7 +1018,8 @@ msgid "Last update"
 msgstr ""
 
 #: ../plugin/controllers/i18n.py:489
-msgid "Link Speed"
+#, fuzzy
+msgid "Link speed"
 msgstr "Скорост на Връзката"
 
 #: ../plugin/controllers/models/timers.py:446
@@ -1041,9 +1038,9 @@ msgstr "Заключен"
 msgid "MAC address"
 msgstr "MAC адрес"
 
-#: ../plugin/controllers/models/info.py:320
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/info.py:349
+#: ../plugin/controllers/models/info.py:319
+#: ../plugin/controllers/models/info.py:330
+#: ../plugin/controllers/models/info.py:348
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1944,9 +1941,9 @@ msgstr "Нед"
 msgid "Sunday"
 msgstr "Неделя"
 
-#: ../plugin/controllers/models/info.py:327
-#: ../plugin/controllers/models/info.py:339
-#: ../plugin/controllers/models/info.py:341
+#: ../plugin/controllers/models/info.py:326
+#: ../plugin/controllers/models/info.py:338
+#: ../plugin/controllers/models/info.py:340
 msgid "TB"
 msgstr "ТБ"
 
@@ -2284,7 +2281,7 @@ msgstr "Контрол на Усилването"
 msgid "Vpid"
 msgstr "Vpid"
 
-#: ../plugin/controllers/models/info.py:548
+#: ../plugin/controllers/models/info.py:547
 msgid "W"
 msgstr "W"
 
@@ -2481,11 +2478,11 @@ msgstr "една /две / три / четири неизвестни коман
 msgid "partial match"
 msgstr "частично съвпадение"
 
-#: ../plugin/controllers/models/info.py:390
+#: ../plugin/controllers/models/info.py:389
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:386
+#: ../plugin/controllers/models/info.py:385
 msgid "r/w"
 msgstr "r/w"
 
