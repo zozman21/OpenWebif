@@ -250,10 +250,19 @@ def getInfo(session=None, need_fullinfo=False):
 	except:  # noqa: E722
 		info['hwserial'] = None
 
+	if (info['hwserial'] is None or info['hwserial'] == "unknown"):
+		info['hwserial'] = about.getCPUSerial()
+
 	try:
 		info['boxrctype'] = getBoxRCType()
 	except:  # noqa: E722
 		info['boxrctype'] = None
+
+	if (info['boxrctype'] is None or info['boxrctype'] == "unknown"):
+		if fileExists("/usr/bin/remotecfg"):
+			info['boxrctype'] = _("Amlogic remote")
+		elif fileExists("/usr/sbin/lircd"):
+			info['boxrctype'] = _("LIRC remote")
 
 	info['transcoding'] = boxbranding.getHaveTranscoding()
 	info['multitranscoding'] = boxbranding.getHaveMultiTranscoding()
