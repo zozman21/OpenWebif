@@ -277,14 +277,6 @@ def getInfo(session=None, need_fullinfo=False):
 	except:  # noqa: E722
 		info['fp_version'] = None
 
-	friendlychipsetdescription = _("Chipset")
-	friendlychipsettext = info['chipset']
-	if not (info['fp_version'] is None or info['fp_version'] == 0):
-		friendlychipsetdescription = friendlychipsetdescription + " (" + _("Frontprocessor Version") + ")"
-		friendlychipsettext = friendlychipsettext + " (" + str(info['fp_version']) + ")"
-
-	info['friendlychipsetdescription'] = friendlychipsetdescription
-	info['friendlychipsettext'] = friendlychipsettext
 	info['tuners'] = []
 	for i in range(0, nimmanager.getSlotCount()):
 		print("[OpenWebif] -D- tuner '%d' '%s' '%s'" % (i, nimmanager.getNimName(i), nimmanager.getNim(i).getSlotName()))
