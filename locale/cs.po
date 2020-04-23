@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-17 21:38+0430\n"
+"POT-Creation-Date: 2020-04-24 02:23+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi\n"
@@ -21,7 +21,7 @@ msgid "%s %s is locked."
 msgstr "%s %s je uzamčen."
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:365
+#: ../plugin/controllers/models/info.py:352
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s volné / %s celkem"
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Always"
 msgstr "Vždy"
 
-#: ../plugin/controllers/models/info.py:263
+#: ../plugin/controllers/models/info.py:250
 #, fuzzy
 msgid "Amlogic remote"
 msgstr "Úplný ovladač"
@@ -566,7 +566,7 @@ msgstr "Ovladače"
 msgid "Duration"
 msgstr "Délka"
 
-#: ../plugin/controllers/models/info.py:553
+#: ../plugin/controllers/models/info.py:540
 msgid "E"
 msgstr "E"
 
@@ -811,10 +811,10 @@ msgstr " Frontprocesor"
 msgid "Full remote"
 msgstr "Úplný ovladač"
 
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/info.py:337
-#: ../plugin/controllers/models/info.py:352
-#: ../plugin/controllers/models/info.py:355
+#: ../plugin/controllers/models/info.py:318
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:339
+#: ../plugin/controllers/models/info.py:342
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -1008,7 +1008,7 @@ msgstr "Nastavení LCD4Linux"
 msgid "LICENSE"
 msgstr "LICENCE"
 
-#: ../plugin/controllers/models/info.py:265
+#: ../plugin/controllers/models/info.py:252
 #, fuzzy
 msgid "LIRC remote"
 msgstr "Ovladač"
@@ -1042,9 +1042,9 @@ msgstr "Zamknuto"
 msgid "MAC address"
 msgstr "MAC adresa"
 
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:339
-#: ../plugin/controllers/models/info.py:357
+#: ../plugin/controllers/models/info.py:315
+#: ../plugin/controllers/models/info.py:326
+#: ../plugin/controllers/models/info.py:344
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1938,9 +1938,9 @@ msgstr "Ne"
 msgid "Sunday"
 msgstr "Neděle"
 
-#: ../plugin/controllers/models/info.py:335
-#: ../plugin/controllers/models/info.py:347
-#: ../plugin/controllers/models/info.py:349
+#: ../plugin/controllers/models/info.py:322
+#: ../plugin/controllers/models/info.py:334
+#: ../plugin/controllers/models/info.py:336
 msgid "TB"
 msgstr ""
 
@@ -2277,7 +2277,7 @@ msgstr "Hlasitost"
 msgid "Vpid"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:556
+#: ../plugin/controllers/models/info.py:543
 msgid "W"
 msgstr "W"
 
@@ -2471,11 +2471,11 @@ msgstr "jeden dva tři čtyři neznámé příkazy"
 msgid "partial match"
 msgstr "částečná shoda"
 
-#: ../plugin/controllers/models/info.py:398
+#: ../plugin/controllers/models/info.py:385
 msgid "r/o"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:394
+#: ../plugin/controllers/models/info.py:381
 msgid "r/w"
 msgstr ""
 

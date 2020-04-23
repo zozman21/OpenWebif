@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-17 21:38+0430\n"
+"POT-Creation-Date: 2020-04-24 02:23+0430\n"
 "PO-Revision-Date: 2018-04-08 02:43+0300\n"
 "Last-Translator: t5k6 <t5k6@users.noreply.github.com>\n"
 "Language-Team: Turkish\n"
@@ -23,7 +23,7 @@ msgid "%s %s is locked."
 msgstr "%s  %s kilitli"
 
 #: ../plugin/controllers/models/info.py:215
-#: ../plugin/controllers/models/info.py:365
+#: ../plugin/controllers/models/info.py:352
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s boş / %s toplam"
@@ -146,7 +146,7 @@ msgstr "Alternatif %s oluşturulamadı."
 msgid "Always"
 msgstr "Daima"
 
-#: ../plugin/controllers/models/info.py:263
+#: ../plugin/controllers/models/info.py:250
 #, fuzzy
 msgid "Amlogic remote"
 msgstr "Tüm kumandayı göster"
@@ -573,7 +573,7 @@ msgstr "Sürücüler"
 msgid "Duration"
 msgstr "Süre"
 
-#: ../plugin/controllers/models/info.py:553
+#: ../plugin/controllers/models/info.py:540
 msgid "E"
 msgstr "D"
 
@@ -819,10 +819,10 @@ msgstr "Ön İşlemci Sürümü"
 msgid "Full remote"
 msgstr "Tüm kumandayı göster"
 
-#: ../plugin/controllers/models/info.py:331
-#: ../plugin/controllers/models/info.py:337
-#: ../plugin/controllers/models/info.py:352
-#: ../plugin/controllers/models/info.py:355
+#: ../plugin/controllers/models/info.py:318
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:339
+#: ../plugin/controllers/models/info.py:342
 #: ../plugin/controllers/models/movies.py:220
 #: ../plugin/controllers/models/movies.py:344
 #: ../plugin/controllers/models/movies.py:753
@@ -1018,7 +1018,7 @@ msgstr "LCD4Linux Kurulumu"
 msgid "LICENSE"
 msgstr "LİSANS"
 
-#: ../plugin/controllers/models/info.py:265
+#: ../plugin/controllers/models/info.py:252
 #, fuzzy
 msgid "LIRC remote"
 msgstr "Kumanda"
@@ -1052,9 +1052,9 @@ msgstr "Kilitli"
 msgid "MAC address"
 msgstr "MAC adresi"
 
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:339
-#: ../plugin/controllers/models/info.py:357
+#: ../plugin/controllers/models/info.py:315
+#: ../plugin/controllers/models/info.py:326
+#: ../plugin/controllers/models/info.py:344
 #: ../plugin/controllers/models/movies.py:222
 #: ../plugin/controllers/models/movies.py:346
 #: ../plugin/controllers/models/movies.py:755
@@ -1956,9 +1956,9 @@ msgstr "Paz"
 msgid "Sunday"
 msgstr "Pazar"
 
-#: ../plugin/controllers/models/info.py:335
-#: ../plugin/controllers/models/info.py:347
-#: ../plugin/controllers/models/info.py:349
+#: ../plugin/controllers/models/info.py:322
+#: ../plugin/controllers/models/info.py:334
+#: ../plugin/controllers/models/info.py:336
 msgid "TB"
 msgstr "TB"
 
@@ -2295,7 +2295,7 @@ msgstr "Ses Kontrol"
 msgid "Vpid"
 msgstr "VPID"
 
-#: ../plugin/controllers/models/info.py:556
+#: ../plugin/controllers/models/info.py:543
 msgid "W"
 msgstr "B"
 
@@ -2492,11 +2492,11 @@ msgstr "bir iki üç dört bilinmeyen komut"
 msgid "partial match"
 msgstr "kısmi eşleşme"
 
-#: ../plugin/controllers/models/info.py:398
+#: ../plugin/controllers/models/info.py:385
 msgid "r/o"
 msgstr "R / O"
 
-#: ../plugin/controllers/models/info.py:394
+#: ../plugin/controllers/models/info.py:381
 msgid "r/w"
 msgstr "r / w"
 
