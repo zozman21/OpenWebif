@@ -214,20 +214,7 @@ def getInfo(session=None, need_fullinfo=False):
 	info['mem2'] = "%s %s" % (memFree, _("kB"))
 	info['mem3'] = _("%s free / %s total") % (info['mem2'], info['mem1'])
 
-	try:
-		f = open("/proc/uptime", "rb")
-		uptime = int(float(f.readline().split(' ', 2)[0].strip()))
-		f.close()
-		uptimetext = ''
-		if uptime > 86400:
-			d = uptime / 86400
-			uptime = uptime % 86400
-			uptimetext += '%dd ' % d
-		uptimetext += "%d:%.2d" % (uptime / 3600, (uptime % 3600) / 60)
-	except:  # noqa: E722
-		uptimetext = "?"
-
-	info['uptime'] = uptimetext
+	info['uptime'] = about.getSTBUptime()
 
 	info["webifver"] = OPENWEBIFVER
 	info['imagedistro'] = boxbranding.getImageDistro()
