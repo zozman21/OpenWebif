@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
 from __future__ import print_function
+
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry, ConfigSubsection, ConfigInteger, ConfigYesNo, ConfigText, ConfigSelection
 

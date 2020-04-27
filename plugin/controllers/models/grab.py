@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 ##############################################################################
 #                        2011 E2OpenPlugins                                  #
@@ -8,7 +9,6 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
-from __future__ import print_function
 from enigma import eConsoleAppContainer
 from Screens.InfoBar import InfoBar
 from twisted.web import resource, server

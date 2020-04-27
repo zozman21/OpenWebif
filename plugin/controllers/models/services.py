@@ -8,7 +8,6 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
-from __future__ import print_function
 import re
 import unicodedata
 from time import time, localtime, strftime, mktime

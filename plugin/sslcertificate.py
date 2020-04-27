@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 ##############################################################################
 #                        2011 E2OpenPlugins                                  #
@@ -9,7 +10,6 @@
 #                                                                            #
 ##############################################################################
 
-from __future__ import print_function
 from OpenSSL import crypto
 from socket import gethostname
 from time import time

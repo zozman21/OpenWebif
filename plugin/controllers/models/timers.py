@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 ##############################################################################
 #                        2011 - 2020 E2OpenPlugin                            #
@@ -9,7 +10,6 @@
 #                                                                            #
 ##############################################################################
 
-from __future__ import print_function
 from enigma import eEPGCache, eServiceReference
 from Components.UsageConfig import preferredTimerPath, preferredInstantRecordPath
 from Components.config import config

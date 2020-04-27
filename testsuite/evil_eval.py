@@ -1,5 +1,5 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python
 """
 Unit Test for Code Trying to Mitigate a Remote Code Execution Vulnerability
 (CVE-2017-9807).
@@ -16,7 +16,6 @@ Unit Test for Code Trying to Mitigate a Remote Code Execution Vulnerability
     uid=0(root) gid=0(root)
 
 """
-from __future__ import print_function
 import os
 import sys
 import unittest

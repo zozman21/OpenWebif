@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
 from __future__ import print_function
+
 from enigma import eEnv
 from Components.SystemInfo import SystemInfo
 from Components.config import config
@@ -255,7 +255,7 @@ class ConfigFiles:
 	def parseConfigFiles(self):
 		sections = []
 		for setupfile in self.setupfiles:
-			# print "[OpenWebif] loading configuration file :", setupfile
+			# print("[OpenWebif] loading configuration file :", setupfile)
 			setupfile = file(setupfile, 'r')
 			setupdom = xml.etree.cElementTree.parse(setupfile)  # nosec
 			setupfile.close()
@@ -272,7 +272,7 @@ class ConfigFiles:
 						self.allowedsections.append(key)
 					else:
 						continue
-				# print "[OpenWebif] loading configuration section :", key
+				# print("[OpenWebif] loading configuration section :", key)
 				for entry in section:
 					if entry.tag == "item":
 						requires = entry.get("requires")

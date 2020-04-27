@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 ##############################################################################
 #                        2011 E2OpenPlugins                                  #
@@ -208,7 +209,7 @@ class OpkgController(BaseController):
 		if self.IsAlive:
 			nresult = ''
 			for a in self.ResultString.split("\n"):
-				# print "%s" % a
+				# print("%s" % a)
 				if a.count(" - ") > 0:
 					if nresult[:-1] == "\n":
 						nresult += a

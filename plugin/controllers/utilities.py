@@ -1,5 +1,6 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
+#!/usr/bin/env python
 import re
 
 MANY_SLASHES_PATTERN = r'[\/]+'
