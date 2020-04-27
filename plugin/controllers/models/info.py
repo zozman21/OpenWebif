@@ -32,7 +32,7 @@ from Tools.StbHardware import getFPVersion, getBoxProc, getHWSerial, getBoxRCTyp
 from ..i18n import _
 from ..defaults import OPENWEBIFVER
 import boxbranding
-from owibranding import getLcd, getGrabPip
+from Plugins.Extensions.OpenWebif.controllers.models.owibranding import getLcd, getGrabPip
 
 
 def getEnigmaVersionString():

@@ -37,7 +37,7 @@ from Plugins.Extensions.OpenWebif.controllers.ER import ERController
 from Plugins.Extensions.OpenWebif.controllers.BQE import BQEController
 from Plugins.Extensions.OpenWebif.controllers.transcoding import TranscodingController
 from Plugins.Extensions.OpenWebif.controllers.wol import WOLSetupController, WOLClientController
-from file import FileController
+from Plugins.Extensions.OpenWebif.controllers.file import FileController
 
 from Plugins.Extensions.OpenWebif.controllers.defaults import PICON_PATH, getPublicPath, VIEWS_PATH
 
