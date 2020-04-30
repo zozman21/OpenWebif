@@ -26,7 +26,7 @@ def getAllInfo():
 	info = {}
 
 	grabpip = 0
-	if "4k" or "uhd" or "ultra" in model or brand in ("dinobot","maxytec") or model in ("dm900","dm920","sf8008","sf8008m","cc1","beyonwizv2","hd60","hd61","h9","h9combo","h10","i55plus") or pathExists("/proc/hisi") or fileExists("/usr/bin/hihalt"):
+	if "4k" or "uhd" or "ultra" in model or brand in ("dinobot","maxytec") or model in ("dm900","dm920","sf8008","sf8008m","beyonwizv2","hd60","hd61","h9","h9combo","h10","i55plus") or pathExists("/proc/hisi") or fileExists("/usr/bin/hihalt"):
 		grabpip = 1
 
 	info['grabpip'] = grabpip or 0
@@ -105,12 +105,10 @@ def getAllInfo():
 		remote = "hd60"
 	elif model == "hd61":
 		remote = "ax4"
-	elif model in ("multibox","v8plus"):
+	elif model == "multibox":
 		remote = "maxytec1"
 	elif model in ("spycat","spycatmini","spycatminiplus","spycat4kmini","spycat4k","spycat4kcombo"):
 		remote = "xcore1"
-	elif model in ("bcm7358","vp7358ci"):
-		remote = "xcore2"
 	elif model in ("osmini","osminiplus","osmega"):
 		remote = "xcore3"
 	elif model in ("ixussone","ixusszero"):
@@ -241,8 +239,6 @@ def getAllInfo():
 		remote = "uclan"
 	elif model == "valalinux":
 		remote = "vala"
-	elif model == "cc1":
-		remote = "cc1"
 	elif model in ("force4","iqonios100hd","iqonios200hd","iqonios300hd","iqonios300hdv2","force2se","force2","force2plus","force2plushv","force2nano"):
 		remote = "iqon1"
 	elif model in ("force1","force1plus","worldvisionf1","worldvisionf1plus"):
