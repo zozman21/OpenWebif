@@ -532,7 +532,7 @@ def getInfo(session=None, need_fullinfo=False):
 		if hasattr(timer, "autoadjust"):
 			info['timerautoadjust'] = True
 	except Exception, error:
-		print "[OpenWebif] -D- RecordTimerEntry check %s" % error
+		print("[OpenWebif] -D- RecordTimerEntry check %s" % error)
 
 	STATICBOXINFO = info
 	return info
