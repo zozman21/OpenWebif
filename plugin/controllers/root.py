@@ -33,7 +33,6 @@ from Plugins.Extensions.OpenWebif.controllers.ajax import AjaxController
 from Plugins.Extensions.OpenWebif.controllers.mobile import MobileController
 from Plugins.Extensions.OpenWebif.controllers.opkg import OpkgController
 from Plugins.Extensions.OpenWebif.controllers.AT import ATController
-from Plugins.Extensions.OpenWebif.controllers.SR import SRController
 from Plugins.Extensions.OpenWebif.controllers.ER import ERController
 from Plugins.Extensions.OpenWebif.controllers.BQE import BQEController
 from Plugins.Extensions.OpenWebif.controllers.transcoding import TranscodingController
@@ -67,7 +66,6 @@ class RootController(BaseController):
 			self.putChild("terminal", proxy.ReverseProxyResource('::1', 4200, '/'))
 		self.putGZChild("opkg", OpkgController(session))
 		self.putChild("autotimer", ATController(session))
-		self.putChild("serienrecorder", SRController(session))
 		self.putChild("epgrefresh", ERController(session))
 		self.putChild("bouqueteditor", BQEController(session))
 		self.putChild("transcoding", TranscodingController())

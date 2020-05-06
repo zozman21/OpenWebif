@@ -53,13 +53,12 @@ class AjaxController(BaseController):
 		"""
 		ajax requests with no extra data
 		"""
-		return ['powerstate', 'message', 'myepg', 'radio', 'terminal', 'epgr', 'bqe', 'tv']
+		return ['powerstate', 'message', 'myepg', 'radio', 'terminal', 'epgr', 'bqe', 'tv', 'satfinder']
 
 	def P_edittimer(self, request):
-		imagedistro = getInfo()['imagedistro']
-		vti = imagedistro in ("vti") and 1 or 0
-		pipzap = imagedistro in ("openvision") and 1 or 0
-		return {"vti": vti , "pipzap" : pipzap}
+		pipzap = getInfo()['timerpipzap']
+		autoadjust = getInfo()['timerautoadjust']
+		return {"autoadjust": autoadjust , "pipzap" : pipzap}
 
 	def P_current(self, request):
 		return getCurrentFullInfo(self.session)
