@@ -103,7 +103,7 @@ class BaseController(resource.Resource):
 		"""
 		request.setHeader("content-type", "text/html")
 		request.setResponseCode(http.NOT_FOUND)
-		request.write("<html><head><title>Open Webif</title></head><body><h1>Error 404: Page not found</h1><br />The requested URL was not found on this server.</body></html>")
+		request.write(b"<html><head><title>Open Webif</title></head><body><h1>Error 404: Page not found</h1><br />The requested URL was not found on this server.</body></html>")
 		request.finish()
 
 	def loadTemplate(self, path, module, args):
@@ -142,21 +142,21 @@ class BaseController(resource.Resource):
 		isCustom = self.isCustom
 		isMobile = self.isMobile
 
-		if self.path == "":
-			self.path = "index"
-		elif self.path == "signal":
-			self.path = "tunersignal"
-			request.uri = request.uri.replace('signal', 'tunersignal')
-			request.path = request.path.replace('signal', 'tunersignal')
+		if self.path == b"":
+			self.path = b"index"
+		elif self.path == b"signal":
+			self.path = b"tunersignal"
+			request.uri = request.uri.replace(b'signal', b'tunersignal')
+			request.path = request.path.replace(b'signal', b'tunersignal')
 
 		self.suppresslog = False
-		self.path = self.path.replace(".", "")
-		if request.path.startswith('/api/config'):
+		self.path = self.path.replace(b".", b"")
+		if request.path.startswith(b'/api/config'):
 			func = getattr(self, "P_config", None)
 		elif self.path in self.NoDataRender():
 			func = getattr(self, "noData", None)
 		else:
-			func = getattr(self, "P_" + self.path, None)
+			func = getattr(self, "P_" + self.path.decode() , None)
 
 		if callable(func):
 			request.setResponseCode(http.OK)
@@ -197,8 +197,8 @@ class BaseController(resource.Resource):
 					module += "index"
 				elif module[-5:] != "index" and self.path == "index":
 					module += "/index"
-				module = module.strip("/")
-				module = module.replace(".", "")
+				module = module.strip(b"/")
+				module = module.replace(b".", b"")
 				out = self.loadTemplate(module, self.path, data)
 				if out is None:
 					print("[OpenWebif] ERROR! Template not found for page '%s'" % request.uri)
