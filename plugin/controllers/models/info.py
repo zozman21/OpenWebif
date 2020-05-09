@@ -185,9 +185,16 @@ def getInfo(session=None, need_fullinfo=False):
 
 	info['brand'] = getBoxBrand()
 	info['model'] = getBoxType()
-	info['boxtype'] = getBoxType()
-	info['procmodel'] = getBoxProc()
-	info['procmodeltype'] = getBoxProcType()
+
+	try:
+		info['procmodel'] = getBoxProc()
+	except:  # noqa: E722
+		info['procmodel'] = None
+
+	try:
+		info['procmodeltype'] = getBoxProcType()
+	except:  # noqa: E722
+		info['procmodeltype'] = None
 
 	try:
 		info['lcd'] = getLcd()
