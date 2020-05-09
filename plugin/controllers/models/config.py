@@ -116,6 +116,16 @@ def getJsonFromConfig(cnf):
 			"type": "text",
 			"current": cnf.value
 		}
+	elif cnf.__class__.__name__ == "ConfigSlider":
+		return {
+			"result": True,
+			"type": "slider",
+			"current": cnf.value,
+			"increment": cnf.increment,
+			"limits": (cnf.min, cnf.max)
+		}
+	elif cnf.__class__.__name__ == "ConfigNothing":
+		return None
 
 	print("[OpenWebif] Unknown class ", cnf.__class__.__name__)
 	return {
@@ -154,6 +164,15 @@ def saveConfig(path, value):
 			elif cnf_value > cnf_max:
 				cnf_value = cnf_max
 			cnf.value = cnf_value
+		elif cnf.__class__.__name__ in ("ConfigSlider"):
+			cnf_min = int(cnf.min)
+			cnf_max = int(cnf.max)
+			cnf_value = int(value)
+			if cnf_value < cnf_min:
+				cnf_value = cnf_min
+			elif cnf_value > cnf_max:
+				cnf_value = cnf_max
+			cnf.value = cnf_value
 		else:
 			cnf.value = value
 		cnf.save()
@@ -179,6 +198,9 @@ def getConfigs(key):
 		for entry in config_entries:
 			try:
 				data = getJsonFromConfig(eval(entry.text or ""))  # nosec
+				if data is None:
+					continue
+				# print("[OpenWebif] -D- config entry: ", entry.text)
 				text = _(entry.get("text", ""))
 				if "limits" in data:
 					text = "%s (%d - %d)" % (text, data["limits"][0], data["limits"][1])
