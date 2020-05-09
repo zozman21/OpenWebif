@@ -29,7 +29,7 @@ from timer import TimerEntry
 from Screens.InfoBar import InfoBar
 from Tools.Directories import fileExists, pathExists
 from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnigmaVersionString, eEPGCache, getBoxType, getBoxBrand, eGetEnigmaDebugLvl
-from Tools.StbHardware import getFPVersion, getBoxProc, getHWSerial, getBoxRCType
+from Tools.StbHardware import getFPVersion, getBoxProc, getBoxProcType, getHWSerial, getBoxRCType
 from ..i18n import _
 from ..defaults import OPENWEBIFVER
 import boxbranding
@@ -187,6 +187,7 @@ def getInfo(session=None, need_fullinfo=False):
 	info['model'] = getBoxType()
 	info['boxtype'] = getBoxType()
 	info['procmodel'] = getBoxProc()
+	info['procmodeltype'] = getBoxProcType()
 
 	try:
 		info['lcd'] = getLcd()

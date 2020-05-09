@@ -211,6 +211,7 @@ tstrings = {
 	'playlist': _("Playlist"),
 	'powercontrol': _("Power Control"),
 	'procmodel': _("Proc model"),
+	'procmodeltype': _("Hardware type"),
 	'provider': _("Provider"),
 	'providers': _("Providers"),
 	'python_version': _("Python"),

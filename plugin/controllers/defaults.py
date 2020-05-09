@@ -10,7 +10,7 @@ from Components.config import config as comp_config
 
 from enigma import eEnv
 
-OPENWEBIFVER = "OWIF 1.4.5 for Open Vision"
+OPENWEBIFVER = "OWIF 1.4.6 for Open Vision"
 
 PLUGIN_NAME = 'OpenWebif'
 PLUGIN_DESCRIPTION = "OpenWebif Configuration"
