@@ -299,7 +299,7 @@ class AuthResource(resource.Resource):
 		if fileExists('/etc/passwd'):
 			for line in open('/etc/passwd').readlines():
 				line = line.strip()
-				if line.startswith(user + ":") and (line.endswith(":/bin/false") or line.endswith(":/sbin/nologin")):
+				if line.startswith(str(user) + ":") and (line.endswith(":/bin/false") or line.endswith(":/sbin/nologin")):
 					return True
 		return False
 
