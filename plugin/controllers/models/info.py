@@ -539,7 +539,7 @@ def getInfo(session=None, need_fullinfo=False):
 			info['timerpipzap'] = True
 		if hasattr(timer, "autoadjust"):
 			info['timerautoadjust'] = True
-	except Exception, error:
+	except Exception as error:
 		print("[OpenWebif] -D- RecordTimerEntry check %s" % error)
 
 	STATICBOXINFO = info
