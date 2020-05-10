@@ -12,7 +12,7 @@
 from urllib import unquote
 from enigma import eDVBDB
 from Components.NimManager import nimmanager
-import Components.ParentalControl
+from Components import ParentalControl
 
 
 def reloadLameDB(self):

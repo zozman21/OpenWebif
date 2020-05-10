@@ -30,8 +30,8 @@ from Screens.InfoBar import InfoBar
 from Tools.Directories import fileExists, pathExists
 from enigma import eDVBVolumecontrol, eServiceCenter, eServiceReference, getEnigmaVersionString, eEPGCache, getBoxType, getBoxBrand, eGetEnigmaDebugLvl
 from Tools.StbHardware import getFPVersion, getBoxProc, getBoxProcType, getHWSerial, getBoxRCType
-from ..i18n import _
-from ..defaults import OPENWEBIFVER
+from Plugins.Extensions.OpenWebif.controllers.i18n import _
+from Plugins.Extensions.OpenWebif.controllers.defaults import OPENWEBIFVER
 import boxbranding
 from Plugins.Extensions.OpenWebif.controllers.models.owibranding import getLcd, getGrabPip
 

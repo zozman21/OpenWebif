@@ -10,7 +10,7 @@ from __future__ import print_function
 # http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative
 # Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
-from i18n import _
+from Plugins.Extensions.OpenWebif.controllers.i18n import _
 from enigma import eServiceReference, eServiceCenter, eDVBDB
 from Components.Sources.Source import Source
 from Screens.ChannelSelection import MODE_TV  #,service_types_tv, MODE_RADIO

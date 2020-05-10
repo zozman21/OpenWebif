@@ -24,14 +24,14 @@ from Screens.InfoBar import InfoBar
 from enigma import eServiceCenter, eServiceReference, iServiceInformation, eEPGCache
 from Plugins.Extensions.OpenWebif.controllers.models.info import GetWithAlternative, getOrbitalText, getOrb
 from urllib import quote, unquote
-from ..utilities import parse_servicereference, SERVICE_TYPE_LOOKUP, NS_LOOKUP
-from ..i18n import _, tstrings
-from ..defaults import PICON_PATH
+from Plugins.Extensions.OpenWebif.controllers.utilities import parse_servicereference, SERVICE_TYPE_LOOKUP, NS_LOOKUP
+from Plugins.Extensions.OpenWebif.controllers.i18n import _, tstrings
+from Plugins.Extensions.OpenWebif.controllers.defaults import PICON_PATH
 
 try:
 	from Components.Converter.genre import getGenreStringLong
 except ImportError:
-	from ..utilities import getGenreStringLong
+	from Plugins.Extensions.OpenWebif.controllers.utilities import getGenreStringLong
 
 try:
 	from collections import OrderedDict

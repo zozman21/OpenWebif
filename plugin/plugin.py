@@ -30,7 +30,7 @@ from controllers.defaults import getKinopoisk
 
 from Plugins.Extensions.OpenWebif.httpserver import HttpdStart, HttpdStop, HttpdRestart
 
-from controllers.i18n import _
+from Plugins.Extensions.OpenWebif.controllers.i18n import _
 
 # not used redmond -> original , trontastic , ui-lightness
 THEMES = [

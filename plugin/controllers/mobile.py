@@ -135,6 +135,6 @@ class MobileController(BaseController):
 			from Components.RcModel import rc_model
 			REMOTE = rc_model.getRcFolder() + "/remote"
 		except:
-			from models.owibranding import rc_model
+			from Plugins.Extensions.OpenWebif.controllers.models.owibranding import rc_model
 			REMOTE = rc_model().getRcFolder()
 		return { "remote": REMOTE }
