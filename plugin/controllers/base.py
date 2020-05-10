@@ -212,7 +212,7 @@ class BaseController(resource.Resource):
 							out = nout
 					elif self.isGZ:
 						return out
-					request.write(out)
+					request.write(str(out).encode())
 					request.finish()
 
 		else:
