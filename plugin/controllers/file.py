@@ -26,10 +26,10 @@ from Plugins.Extensions.OpenWebif.controllers.utilities import lenient_force_utf
 def new_getRequestHostname(self):
 	host = self.getHeader(b'host')
 	if host:
-		if host[0] == '[':
-			return host.split(']', 1)[0] + "]"
-		return host.split(':', 1)[0].encode('ascii')
-	return self.getHost().host.encode('ascii')
+		if host[0:] == b'[':
+			return host.split(b']', 1)[0] + b"]"
+		return host.split(b':', 1)[0].decode('ascii')
+	return self.getHost().host.decode('ascii')
 
 
 http.Request.getRequestHostname = new_getRequestHostname
