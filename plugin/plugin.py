@@ -26,7 +26,7 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry, ConfigSubsection, ConfigInteger, ConfigYesNo, ConfigText, ConfigSelection, configfile
 from enigma import getDesktop
 from Plugins.Extensions.OpenWebif.controllers.models.info import getInfo
-from controllers.defaults import getKinopoisk
+from Plugins.Extensions.OpenWebif.controllers.defaults import getKinopoisk
 
 from Plugins.Extensions.OpenWebif.httpserver import HttpdStart, HttpdStop, HttpdRestart
 
@@ -89,7 +89,7 @@ config.OpenWebif.epg_encoding = ConfigSelection(default='utf-8', choices=['utf-8
 										'iso-8859-10',
 										'iso-8859-16'])
 
-import vtiaddon
+from Plugins.Extensions.OpenWebif import vtiaddon
 vtiaddon.expandConfig()
 
 imagedistro = getInfo()['imagedistro']

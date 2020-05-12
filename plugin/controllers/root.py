@@ -74,7 +74,7 @@ class RootController(BaseController):
 		if PICON_PATH:
 			self.putChild("picon", static.File(PICON_PATH))
 		try:
-			from NET import NetController
+			from Plugins.Extensions.OpenWebif.controllers.NET import NetController
 			self.putChild("net", NetController(session))
 		except:
 			pass

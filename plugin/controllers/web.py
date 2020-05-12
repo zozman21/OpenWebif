@@ -2007,7 +2007,7 @@ class WebController(BaseController):
 		Returns:
 			HTTP response with headers
 		"""
-		from ..httpserver import HttpdRestart
+		from Plugins.Extensions.OpenWebif.httpserver import HttpdRestart
 		HttpdRestart(self.session)
 		return ""
 
