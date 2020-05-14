@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 02:10+0430\n"
+"POT-Creation-Date: 2020-05-14 09:43+0430\n"
 "PO-Revision-Date: 2017-11-11 23:16+0200\n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: Vytenis Pulokas <vyteniui@gmail.com>\n"
@@ -20,8 +20,8 @@ msgstr ""
 msgid "%s %s is locked."
 msgstr "%s %s užrakinta."
 
-#: ../plugin/controllers/models/info.py:217
-#: ../plugin/controllers/models/info.py:354
+#: ../plugin/controllers/models/info.py:224
+#: ../plugin/controllers/models/info.py:361
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s laisvų / %s iš viso"
@@ -144,7 +144,7 @@ msgstr "Alternatyvos %s sukurti nepavyko."
 msgid "Always"
 msgstr "Visada"
 
-#: ../plugin/controllers/models/info.py:252
+#: ../plugin/controllers/models/info.py:259
 #, fuzzy
 msgid "Amlogic remote"
 msgstr "Slėpti nuotolinį pultą"
@@ -568,7 +568,7 @@ msgstr "Tvarkyklių data"
 msgid "Duration"
 msgstr "Trukmė"
 
-#: ../plugin/controllers/models/info.py:554
+#: ../plugin/controllers/models/info.py:561
 msgid "E"
 msgstr "R"
 
@@ -814,10 +814,10 @@ msgstr "Sąsajos procesoriaus versija"
 msgid "Full remote"
 msgstr "Slėpti nuotolinį pultą"
 
-#: ../plugin/controllers/models/info.py:320
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:341
-#: ../plugin/controllers/models/info.py:344
+#: ../plugin/controllers/models/info.py:327
+#: ../plugin/controllers/models/info.py:333
+#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:351
 #: ../plugin/controllers/models/movies.py:221
 #: ../plugin/controllers/models/movies.py:345
 #: ../plugin/controllers/models/movies.py:754
@@ -1019,7 +1019,7 @@ msgstr "LCD4Linux sąranka"
 msgid "LICENSE"
 msgstr "LICENCIJA"
 
-#: ../plugin/controllers/models/info.py:254
+#: ../plugin/controllers/models/info.py:261
 #, fuzzy
 msgid "LIRC remote"
 msgstr "Nuotolinis"
@@ -1053,9 +1053,9 @@ msgstr "Užrakinta"
 msgid "MAC address"
 msgstr "MAC adresas"
 
-#: ../plugin/controllers/models/info.py:317
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:353
 #: ../plugin/controllers/models/movies.py:223
 #: ../plugin/controllers/models/movies.py:347
 #: ../plugin/controllers/models/movies.py:756
@@ -1957,9 +1957,9 @@ msgstr "Sek"
 msgid "Sunday"
 msgstr "sekmadienis"
 
-#: ../plugin/controllers/models/info.py:324
-#: ../plugin/controllers/models/info.py:336
-#: ../plugin/controllers/models/info.py:338
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:343
+#: ../plugin/controllers/models/info.py:345
 msgid "TB"
 msgstr "TB"
 
@@ -2297,7 +2297,7 @@ msgstr "Garso valdymas"
 msgid "Vpid"
 msgstr "VPId"
 
-#: ../plugin/controllers/models/info.py:557
+#: ../plugin/controllers/models/info.py:564
 msgid "W"
 msgstr "V"
 
@@ -2452,8 +2452,8 @@ msgstr "trumpame aprašyme"
 msgid "in Title"
 msgstr "pavadinime"
 
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/info.py:216
+#: ../plugin/controllers/models/info.py:220
+#: ../plugin/controllers/models/info.py:223
 #: ../plugin/controllers/models/movies.py:225
 #: ../plugin/controllers/models/movies.py:349
 #: ../plugin/controllers/models/movies.py:758
@@ -2494,11 +2494,11 @@ msgstr "vienas du trys keturi nežinoma komanda"
 msgid "partial match"
 msgstr "dalinis atitikimas"
 
-#: ../plugin/controllers/models/info.py:387
+#: ../plugin/controllers/models/info.py:394
 msgid "r/o"
 msgstr "tik skaityti"
 
-#: ../plugin/controllers/models/info.py:383
+#: ../plugin/controllers/models/info.py:390
 msgid "r/w"
 msgstr "skaityti/rašyti"
 

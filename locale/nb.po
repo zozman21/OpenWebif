@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 02:10+0430\n"
+"POT-Creation-Date: 2020-05-14 09:43+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: andy1 <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
@@ -21,8 +21,8 @@ msgstr ""
 msgid "%s %s is locked."
 msgstr "%s %s er låst."
 
-#: ../plugin/controllers/models/info.py:217
-#: ../plugin/controllers/models/info.py:354
+#: ../plugin/controllers/models/info.py:224
+#: ../plugin/controllers/models/info.py:361
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s ledig / %s total"
@@ -145,7 +145,7 @@ msgstr "Alternativ %s opprettet feilet."
 msgid "Always"
 msgstr "Alltid"
 
-#: ../plugin/controllers/models/info.py:252
+#: ../plugin/controllers/models/info.py:259
 #, fuzzy
 msgid "Amlogic remote"
 msgstr "Full fjernkontroll"
@@ -567,7 +567,7 @@ msgstr "Drivere"
 msgid "Duration"
 msgstr "Varighet"
 
-#: ../plugin/controllers/models/info.py:554
+#: ../plugin/controllers/models/info.py:561
 msgid "E"
 msgstr "Ø"
 
@@ -811,10 +811,10 @@ msgstr "Frontprosessor versjon"
 msgid "Full remote"
 msgstr "Full fjernkontroll"
 
-#: ../plugin/controllers/models/info.py:320
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:341
-#: ../plugin/controllers/models/info.py:344
+#: ../plugin/controllers/models/info.py:327
+#: ../plugin/controllers/models/info.py:333
+#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:351
 #: ../plugin/controllers/models/movies.py:221
 #: ../plugin/controllers/models/movies.py:345
 #: ../plugin/controllers/models/movies.py:754
@@ -1013,7 +1013,7 @@ msgstr "LCD4Linux innstilling"
 msgid "LICENSE"
 msgstr "LISENS"
 
-#: ../plugin/controllers/models/info.py:254
+#: ../plugin/controllers/models/info.py:261
 #, fuzzy
 msgid "LIRC remote"
 msgstr "Fjernkontroll"
@@ -1047,9 +1047,9 @@ msgstr "Låst"
 msgid "MAC address"
 msgstr "MAC adresse"
 
-#: ../plugin/controllers/models/info.py:317
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:353
 #: ../plugin/controllers/models/movies.py:223
 #: ../plugin/controllers/models/movies.py:347
 #: ../plugin/controllers/models/movies.py:756
@@ -1944,9 +1944,9 @@ msgstr "Søn"
 msgid "Sunday"
 msgstr "Søndag"
 
-#: ../plugin/controllers/models/info.py:324
-#: ../plugin/controllers/models/info.py:336
-#: ../plugin/controllers/models/info.py:338
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:343
+#: ../plugin/controllers/models/info.py:345
 msgid "TB"
 msgstr "TB"
 
@@ -2283,7 +2283,7 @@ msgstr "Volumkontroll"
 msgid "Vpid"
 msgstr "Vpid"
 
-#: ../plugin/controllers/models/info.py:557
+#: ../plugin/controllers/models/info.py:564
 msgid "W"
 msgstr "V"
 
@@ -2436,8 +2436,8 @@ msgstr "i kortforklaringen"
 msgid "in Title"
 msgstr "i tittel"
 
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/info.py:216
+#: ../plugin/controllers/models/info.py:220
+#: ../plugin/controllers/models/info.py:223
 #: ../plugin/controllers/models/movies.py:225
 #: ../plugin/controllers/models/movies.py:349
 #: ../plugin/controllers/models/movies.py:758
@@ -2477,11 +2477,11 @@ msgstr "en to tre fire ukjent kommando"
 msgid "partial match"
 msgstr "delvis samsvarssøk"
 
-#: ../plugin/controllers/models/info.py:387
+#: ../plugin/controllers/models/info.py:394
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:383
+#: ../plugin/controllers/models/info.py:390
 msgid "r/w"
 msgstr "r/w"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 02:10+0430\n"
+"POT-Creation-Date: 2020-05-14 09:43+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: \n"
@@ -20,8 +20,8 @@ msgstr ""
 msgid "%s %s is locked."
 msgstr "%s %s е заключен."
 
-#: ../plugin/controllers/models/info.py:217
-#: ../plugin/controllers/models/info.py:354
+#: ../plugin/controllers/models/info.py:224
+#: ../plugin/controllers/models/info.py:361
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s свободни / %s общо"
@@ -144,7 +144,7 @@ msgstr "Грешка при създаване на %s алтернативи."
 msgid "Always"
 msgstr "Винаги"
 
-#: ../plugin/controllers/models/info.py:252
+#: ../plugin/controllers/models/info.py:259
 #, fuzzy
 msgid "Amlogic remote"
 msgstr "Скрий пълното дистанционно"
@@ -568,7 +568,7 @@ msgstr "Драйвери"
 msgid "Duration"
 msgstr "Продължителност"
 
-#: ../plugin/controllers/models/info.py:554
+#: ../plugin/controllers/models/info.py:561
 msgid "E"
 msgstr "E"
 
@@ -814,10 +814,10 @@ msgstr "Версия на фронтпроцесора"
 msgid "Full remote"
 msgstr "Скрий пълното дистанционно"
 
-#: ../plugin/controllers/models/info.py:320
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:341
-#: ../plugin/controllers/models/info.py:344
+#: ../plugin/controllers/models/info.py:327
+#: ../plugin/controllers/models/info.py:333
+#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:351
 #: ../plugin/controllers/models/movies.py:221
 #: ../plugin/controllers/models/movies.py:345
 #: ../plugin/controllers/models/movies.py:754
@@ -1019,7 +1019,7 @@ msgstr "LCD4Linux Настройки"
 msgid "LICENSE"
 msgstr "ЛИЦЕНЗ"
 
-#: ../plugin/controllers/models/info.py:254
+#: ../plugin/controllers/models/info.py:261
 #, fuzzy
 msgid "LIRC remote"
 msgstr "Дистанционно"
@@ -1053,9 +1053,9 @@ msgstr "Заключен"
 msgid "MAC address"
 msgstr "MAC адрес"
 
-#: ../plugin/controllers/models/info.py:317
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:353
 #: ../plugin/controllers/models/movies.py:223
 #: ../plugin/controllers/models/movies.py:347
 #: ../plugin/controllers/models/movies.py:756
@@ -1957,9 +1957,9 @@ msgstr "Нед"
 msgid "Sunday"
 msgstr "Неделя"
 
-#: ../plugin/controllers/models/info.py:324
-#: ../plugin/controllers/models/info.py:336
-#: ../plugin/controllers/models/info.py:338
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:343
+#: ../plugin/controllers/models/info.py:345
 msgid "TB"
 msgstr "ТБ"
 
@@ -2297,7 +2297,7 @@ msgstr "Контрол на Усилването"
 msgid "Vpid"
 msgstr "Vpid"
 
-#: ../plugin/controllers/models/info.py:557
+#: ../plugin/controllers/models/info.py:564
 msgid "W"
 msgstr "W"
 
@@ -2452,8 +2452,8 @@ msgstr "в Краткото описание"
 msgid "in Title"
 msgstr "в Името"
 
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/info.py:216
+#: ../plugin/controllers/models/info.py:220
+#: ../plugin/controllers/models/info.py:223
 #: ../plugin/controllers/models/movies.py:225
 #: ../plugin/controllers/models/movies.py:349
 #: ../plugin/controllers/models/movies.py:758
@@ -2494,11 +2494,11 @@ msgstr "една /две / три / четири неизвестни коман
 msgid "partial match"
 msgstr "частично съвпадение"
 
-#: ../plugin/controllers/models/info.py:387
+#: ../plugin/controllers/models/info.py:394
 msgid "r/o"
 msgstr "r/o"
 
-#: ../plugin/controllers/models/info.py:383
+#: ../plugin/controllers/models/info.py:390
 msgid "r/w"
 msgstr "r/w"
 

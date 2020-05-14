@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 02:10+0430\n"
+"POT-Creation-Date: 2020-05-14 09:43+0430\n"
 "PO-Revision-Date: 2017-11-10 22:14+0100\n"
 "Last-Translator: JR <openspateam@gmail.com>\n"
 "Language-Team: OpenSPA\n"
@@ -22,8 +22,8 @@ msgstr ""
 msgid "%s %s is locked."
 msgstr "%s %s està bloquejat."
 
-#: ../plugin/controllers/models/info.py:217
-#: ../plugin/controllers/models/info.py:354
+#: ../plugin/controllers/models/info.py:224
+#: ../plugin/controllers/models/info.py:361
 #, python-format
 msgid "%s free / %s total"
 msgstr "%s lliure / %s total"
@@ -146,7 +146,7 @@ msgstr "Crear alternativa %s ha fallat."
 msgid "Always"
 msgstr "Sempre"
 
-#: ../plugin/controllers/models/info.py:252
+#: ../plugin/controllers/models/info.py:259
 #, fuzzy
 msgid "Amlogic remote"
 msgstr "Ocultar comandament completo"
@@ -571,7 +571,7 @@ msgstr "Data de driver"
 msgid "Duration"
 msgstr "Duració"
 
-#: ../plugin/controllers/models/info.py:554
+#: ../plugin/controllers/models/info.py:561
 msgid "E"
 msgstr "E"
 
@@ -817,10 +817,10 @@ msgstr "Versió Frontprocessor"
 msgid "Full remote"
 msgstr "Ocultar comandament completo"
 
-#: ../plugin/controllers/models/info.py:320
-#: ../plugin/controllers/models/info.py:326
-#: ../plugin/controllers/models/info.py:341
-#: ../plugin/controllers/models/info.py:344
+#: ../plugin/controllers/models/info.py:327
+#: ../plugin/controllers/models/info.py:333
+#: ../plugin/controllers/models/info.py:348
+#: ../plugin/controllers/models/info.py:351
 #: ../plugin/controllers/models/movies.py:221
 #: ../plugin/controllers/models/movies.py:345
 #: ../plugin/controllers/models/movies.py:754
@@ -1022,7 +1022,7 @@ msgstr "Configurar LCD4Linux"
 msgid "LICENSE"
 msgstr "LLICÈNCIA"
 
-#: ../plugin/controllers/models/info.py:254
+#: ../plugin/controllers/models/info.py:261
 #, fuzzy
 msgid "LIRC remote"
 msgstr "Comandament a distància"
@@ -1055,9 +1055,9 @@ msgstr "Bloquejat"
 msgid "MAC address"
 msgstr "Direcció MAC"
 
-#: ../plugin/controllers/models/info.py:317
-#: ../plugin/controllers/models/info.py:328
-#: ../plugin/controllers/models/info.py:346
+#: ../plugin/controllers/models/info.py:324
+#: ../plugin/controllers/models/info.py:335
+#: ../plugin/controllers/models/info.py:353
 #: ../plugin/controllers/models/movies.py:223
 #: ../plugin/controllers/models/movies.py:347
 #: ../plugin/controllers/models/movies.py:756
@@ -1957,9 +1957,9 @@ msgstr "Diu"
 msgid "Sunday"
 msgstr "Diumenge"
 
-#: ../plugin/controllers/models/info.py:324
-#: ../plugin/controllers/models/info.py:336
-#: ../plugin/controllers/models/info.py:338
+#: ../plugin/controllers/models/info.py:331
+#: ../plugin/controllers/models/info.py:343
+#: ../plugin/controllers/models/info.py:345
 msgid "TB"
 msgstr ""
 
@@ -2297,7 +2297,7 @@ msgstr "Control de volum"
 msgid "Vpid"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:557
+#: ../plugin/controllers/models/info.py:564
 msgid "W"
 msgstr "W"
 
@@ -2452,8 +2452,8 @@ msgstr "a la descripció curta"
 msgid "in Title"
 msgstr "al Títul"
 
-#: ../plugin/controllers/models/info.py:213
-#: ../plugin/controllers/models/info.py:216
+#: ../plugin/controllers/models/info.py:220
+#: ../plugin/controllers/models/info.py:223
 #: ../plugin/controllers/models/movies.py:225
 #: ../plugin/controllers/models/movies.py:349
 #: ../plugin/controllers/models/movies.py:758
@@ -2494,11 +2494,11 @@ msgstr "un dos tres quatre ordre desconeguda"
 msgid "partial match"
 msgstr "coincidència parcial"
 
-#: ../plugin/controllers/models/info.py:387
+#: ../plugin/controllers/models/info.py:394
 msgid "r/o"
 msgstr ""
 
-#: ../plugin/controllers/models/info.py:383
+#: ../plugin/controllers/models/info.py:390
 msgid "r/w"
 msgstr ""
 
