@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-14 09:43+0430\n"
+"POT-Creation-Date: 2020-05-21 18:28+0430\n"
 "PO-Revision-Date: 2019-01-12 10:46+0200\n"
 "Last-Translator: rimas <rimas@domeen.ee>\n"
 "Language-Team: Estonian\n"
@@ -581,7 +581,7 @@ msgstr "EPG tähemärgistik"
 msgid "EPGRefresh"
 msgstr "EPG värskendus"
 
-#: ../plugin/controllers/models/timers.py:781
+#: ../plugin/controllers/models/timers.py:795
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "VIGA: Unetaimerit ei saa määrata kui vastuvõtja on ooteseisundis"
 
@@ -678,7 +678,7 @@ msgstr "Epg otsing"
 msgid "Error"
 msgstr "Viga"
 
-#: ../plugin/controllers/models/timers.py:907
+#: ../plugin/controllers/models/timers.py:921
 msgid "Error parsing vps.xml"
 msgstr "Viga vps.xml faili parsimisel"
 
@@ -1398,7 +1398,7 @@ msgstr "Luba OpenWebIf"
 msgid "OpenWebif Browser Settings"
 msgstr "OpenWebif brauseri seaded"
 
-#: ../plugin/plugin.py:162 ../plugin/plugin.py:227 ../plugin/plugin.py:229
+#: ../plugin/plugin.py:162 ../plugin/plugin.py:228 ../plugin/plugin.py:230
 msgid "OpenWebif Configuration"
 msgstr "Veebiliidese seaded"
 
@@ -1485,7 +1485,7 @@ msgstr "Pmtpid"
 msgid "Power Control"
 msgstr "Seiskamine"
 
-#: ../plugin/controllers/models/timers.py:663
+#: ../plugin/controllers/models/timers.py:670
 msgid "PowerTimer feature not available"
 msgstr "Toitetaimeri võimalus puudub"
 
@@ -1855,32 +1855,32 @@ msgstr "Matki"
 msgid "Site and sources"
 msgstr "Lähtekood"
 
-#: ../plugin/controllers/models/timers.py:741
-#: ../plugin/controllers/models/timers.py:768
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:878
+#: ../plugin/controllers/models/timers.py:755
+#: ../plugin/controllers/models/timers.py:782
+#: ../plugin/controllers/models/timers.py:811
+#: ../plugin/controllers/models/timers.py:892
 msgid "SleepTimer error"
 msgstr "Unetaimeri viga"
 
-#: ../plugin/controllers/models/timers.py:786
-#: ../plugin/controllers/models/timers.py:855
-#: ../plugin/controllers/models/timers.py:873
+#: ../plugin/controllers/models/timers.py:800
+#: ../plugin/controllers/models/timers.py:869
+#: ../plugin/controllers/models/timers.py:887
 msgid "Sleeptimer has been disabled"
 msgstr "Unetaimer keelati"
 
-#: ../plugin/controllers/models/timers.py:736
-#: ../plugin/controllers/models/timers.py:762
+#: ../plugin/controllers/models/timers.py:750
+#: ../plugin/controllers/models/timers.py:776
 msgid "Sleeptimer is disabled"
 msgstr "Unetaimer keelati"
 
-#: ../plugin/controllers/models/timers.py:736
-#: ../plugin/controllers/models/timers.py:762
+#: ../plugin/controllers/models/timers.py:750
+#: ../plugin/controllers/models/timers.py:776
 msgid "Sleeptimer is enabled"
 msgstr "Unetaimer lubati"
 
-#: ../plugin/controllers/models/timers.py:792
-#: ../plugin/controllers/models/timers.py:855
-#: ../plugin/controllers/models/timers.py:868
+#: ../plugin/controllers/models/timers.py:806
+#: ../plugin/controllers/models/timers.py:869
+#: ../plugin/controllers/models/timers.py:882
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Unetaimer määratud %d minutile"
@@ -2244,7 +2244,7 @@ msgstr "Kasuta uut disaini"
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:912
+#: ../plugin/controllers/models/timers.py:926
 msgid "VPS plugin not found"
 msgstr "VPS pluginat ei leitud"
 

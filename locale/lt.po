@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-14 09:43+0430\n"
+"POT-Creation-Date: 2020-05-21 18:28+0430\n"
 "PO-Revision-Date: 2017-11-11 23:16+0200\n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: Vytenis Pulokas <vyteniui@gmail.com>\n"
@@ -584,7 +584,7 @@ msgstr "EPG koduotė"
 msgid "EPGRefresh"
 msgstr "EPG atnaujinimas"
 
-#: ../plugin/controllers/models/timers.py:781
+#: ../plugin/controllers/models/timers.py:795
 msgid "ERROR: Cannot set SleepTimer while device is in Standby-Mode"
 msgstr "KLAIDA: Negalima nustatyti budėjimo laikmačio, kai įrenginys budėjimo būsenoje"
 
@@ -681,7 +681,7 @@ msgstr "EPG paieška"
 msgid "Error"
 msgstr "Klaida"
 
-#: ../plugin/controllers/models/timers.py:907
+#: ../plugin/controllers/models/timers.py:921
 msgid "Error parsing vps.xml"
 msgstr "Klaida, apdorojant vps.xml"
 
@@ -1408,7 +1408,7 @@ msgstr "OpenWeb sąsaja įjungta"
 msgid "OpenWebif Browser Settings"
 msgstr "OpenWebif naršyklės nuostatos"
 
-#: ../plugin/plugin.py:162 ../plugin/plugin.py:227 ../plugin/plugin.py:229
+#: ../plugin/plugin.py:162 ../plugin/plugin.py:228 ../plugin/plugin.py:230
 msgid "OpenWebif Configuration"
 msgstr "OpenWebif konfigūravimas"
 
@@ -1495,7 +1495,7 @@ msgstr "Pmtpid"
 msgid "Power Control"
 msgstr "Maitinimo valdymas"
 
-#: ../plugin/controllers/models/timers.py:663
+#: ../plugin/controllers/models/timers.py:670
 msgid "PowerTimer feature not available"
 msgstr "Išjungimo laikmačio funkcija negalima"
 
@@ -1867,32 +1867,32 @@ msgstr "Imituoti"
 msgid "Site and sources"
 msgstr "Svetainė ir šaltiniai"
 
-#: ../plugin/controllers/models/timers.py:741
-#: ../plugin/controllers/models/timers.py:768
-#: ../plugin/controllers/models/timers.py:797
-#: ../plugin/controllers/models/timers.py:878
+#: ../plugin/controllers/models/timers.py:755
+#: ../plugin/controllers/models/timers.py:782
+#: ../plugin/controllers/models/timers.py:811
+#: ../plugin/controllers/models/timers.py:892
 msgid "SleepTimer error"
 msgstr "Budėjimo laikmačio klaida"
 
-#: ../plugin/controllers/models/timers.py:786
-#: ../plugin/controllers/models/timers.py:855
-#: ../plugin/controllers/models/timers.py:873
+#: ../plugin/controllers/models/timers.py:800
+#: ../plugin/controllers/models/timers.py:869
+#: ../plugin/controllers/models/timers.py:887
 msgid "Sleeptimer has been disabled"
 msgstr "Budėjimo laikmatis išjungtas"
 
-#: ../plugin/controllers/models/timers.py:736
-#: ../plugin/controllers/models/timers.py:762
+#: ../plugin/controllers/models/timers.py:750
+#: ../plugin/controllers/models/timers.py:776
 msgid "Sleeptimer is disabled"
 msgstr "Budėjimo laikmatis išjungtas"
 
-#: ../plugin/controllers/models/timers.py:736
-#: ../plugin/controllers/models/timers.py:762
+#: ../plugin/controllers/models/timers.py:750
+#: ../plugin/controllers/models/timers.py:776
 msgid "Sleeptimer is enabled"
 msgstr "Budėjimo laikmatis įjungtas"
 
-#: ../plugin/controllers/models/timers.py:792
-#: ../plugin/controllers/models/timers.py:855
-#: ../plugin/controllers/models/timers.py:868
+#: ../plugin/controllers/models/timers.py:806
+#: ../plugin/controllers/models/timers.py:869
+#: ../plugin/controllers/models/timers.py:882
 #, python-format
 msgid "Sleeptimer set to %d minutes"
 msgstr "Budėjimo laikmatis nustatytas %d minučių"
@@ -2257,7 +2257,7 @@ msgstr ""
 msgid "VPS"
 msgstr "VPS"
 
-#: ../plugin/controllers/models/timers.py:912
+#: ../plugin/controllers/models/timers.py:926
 msgid "VPS plugin not found"
 msgstr "VPS įskiepio nerasta"
 
