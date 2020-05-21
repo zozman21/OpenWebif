@@ -210,6 +210,7 @@ def getInfo(session=None, need_fullinfo=False):
 	info['chipset'] = cpu
 	info['cpubrand'] = about.getCPUBrand()
 	info['cpuarch'] = about.getCPUArch()
+	info['cpubenchmark'] = about.getCPUBenchmark()
 	info['flashtype'] = about.getFlashType()
 
 	memFree = 0

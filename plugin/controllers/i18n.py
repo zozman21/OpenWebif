@@ -102,6 +102,7 @@ tstrings = {
 	'contributors': _("Contributors"),
 	'control': _("Control"),
 	'cpu_arch': _("CPU architecture"),
+	'cpu_benchmark': _("CPU benchmark"),
 	'cpu_brand': _("CPU brand"),
 	'current': _("Current"),
 	'current_event': _("Current Event"),
