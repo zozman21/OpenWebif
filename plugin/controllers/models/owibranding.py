@@ -117,7 +117,7 @@ def getAllInfo():
 		remote = "dmm0"
 	elif model in ("dm800","dm800se","dm500hd"):
 		remote = "dmm1"
-	elif model in ("dm7080","dm7020hd","dm7020hdv2","dm800sev2","dm500hdv2","dm520","dm820","dm900","dm920","dreamone"):
+	elif model in ("dm7080","dm7020hd","dm7020hdv2","dm800sev2","dm500hdv2","dm520","dm820","dm900","dm920"):
 		remote = "dmm2"
 	elif model == "wetekplay":
 		remote = "wetek"
