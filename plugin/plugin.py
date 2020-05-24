@@ -25,7 +25,6 @@ from Components.Label import Label
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry, ConfigSubsection, ConfigInteger, ConfigYesNo, ConfigText, ConfigSelection, configfile
 from enigma import getDesktop
-from Plugins.Extensions.OpenWebif.controllers.models.info import getInfo
 from Plugins.Extensions.OpenWebif.controllers.defaults import getKinopoisk
 
 from Plugins.Extensions.OpenWebif.httpserver import HttpdStart, HttpdStop, HttpdRestart
@@ -91,8 +90,6 @@ config.OpenWebif.epg_encoding = ConfigSelection(default='utf-8', choices=['utf-8
 
 from Plugins.Extensions.OpenWebif import vtiaddon
 vtiaddon.expandConfig()
-
-imagedistro = getInfo()['imagedistro']
 
 class OpenWebifConfig(Screen, ConfigListScreen):
 	skin = """
