@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-29 00:42+0430\n"
+"POT-Creation-Date: 2020-06-01 16:28+0430\n"
 "PO-Revision-Date: 2017-06-08 10:05+0200\n"
 "Last-Translator: Svevrstt <svevrstt@gmail.com>\n"
 "Language-Team: \n"
@@ -2593,7 +2593,7 @@ msgstr "titeln eller kortfattade beskrivningen matchar"
 msgid "transcoded"
 msgstr "omkodad"
 
-#: ../plugin/controllers/web.py:722
+#: ../plugin/controllers/web.py:724
 #, python-format
 msgid "type %s is not a number"
 msgstr "typ %s är inte en siffra"

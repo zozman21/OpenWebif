@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-29 00:42+0430\n"
+"POT-Creation-Date: 2020-06-01 16:28+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: satfan <satfan@163.com>\n"
@@ -2570,7 +2570,7 @@ msgstr "标题或简介匹配"
 msgid "transcoded"
 msgstr "转码"
 
-#: ../plugin/controllers/web.py:722
+#: ../plugin/controllers/web.py:724
 #, python-format
 msgid "type %s is not a number"
 msgstr "类型 %s 的不是数字"

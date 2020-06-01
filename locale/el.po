@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebIf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-29 00:42+0430\n"
+"POT-Creation-Date: 2020-06-01 16:28+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: satdreamgr\n"
@@ -2562,7 +2562,7 @@ msgstr "συσχέτιση τίτλου ή σύντομης περιγραφής
 msgid "transcoded"
 msgstr "διαδικοποιημένο"
 
-#: ../plugin/controllers/web.py:722
+#: ../plugin/controllers/web.py:724
 #, python-format
 msgid "type %s is not a number"
 msgstr "ο τύπος %s δεν είναι αριθμός"

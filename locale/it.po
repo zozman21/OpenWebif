@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-29 00:42+0430\n"
+"POT-Creation-Date: 2020-06-01 16:28+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: William <ghenessior@gmail.com>\n"
 "Language-Team: www.vuplus-community.net <insanity@>\n"
@@ -2568,7 +2568,7 @@ msgstr "Corrispondenza titolo o breve descrizione"
 msgid "transcoded"
 msgstr "Trascodificato"
 
-#: ../plugin/controllers/web.py:722
+#: ../plugin/controllers/web.py:724
 #, python-format
 msgid "type %s is not a number"
 msgstr "Il tipo %s non è un numero"

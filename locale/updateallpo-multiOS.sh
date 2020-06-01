@@ -31,8 +31,8 @@
 #
 # You then need to clone the OpenWebif repository with the following command:
 # -------------------------------------------------------------------------------------
-# git https://github.com/pr2git/e2openplugin-OpenWebif
-# cd e2openplugin-OpenWebif/locale/
+# git https://github.com/OpenVisionE2/OpenWebif
+# cd OpenWebif/locale/
 # -------------------------------------------------------------------------------------
 # Run this script from within the locale folder.
 #

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenWebif\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-29 00:42+0430\n"
+"POT-Creation-Date: 2020-06-01 16:28+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: \n"
@@ -133,7 +133,7 @@ msgstr "Позволи IPK Kачване"
 
 #: ../plugin/controllers/i18n.py:539
 msgid "Allow duplicates"
-msgstr ""
+msgstr "Позволи дублирани"
 
 #: ../plugin/controllers/BouquetEditor.py:454
 #, python-format
@@ -147,7 +147,7 @@ msgstr "Винаги"
 #: ../plugin/controllers/models/info.py:260
 #, fuzzy
 msgid "Amlogic remote"
-msgstr "Скрий пълното дистанционно"
+msgstr "Пълно дистанционно"
 
 #: ../plugin/controllers/i18n.py:357
 msgid "Amount of recordings left"
@@ -207,7 +207,7 @@ msgstr "Автотаймер Редактор"
 
 #: ../plugin/controllers/i18n.py:316
 msgid "AutoTimer List"
-msgstr "Список с Автотаймери"
+msgstr "Списък с Автотаймери"
 
 #: ../plugin/controllers/i18n.py:395
 msgid "AutoTimer Settings"
@@ -243,11 +243,11 @@ msgstr "Начало на промеждутъка от време"
 
 #: ../plugin/controllers/i18n.py:499
 msgid "Bookmark"
-msgstr ""
+msgstr "Отметка"
 
 #: ../plugin/controllers/i18n.py:498
 msgid "Bookmarks"
-msgstr ""
+msgstr "Отметки"
 
 #: ../plugin/controllers/BouquetEditor.py:129
 #, python-format
@@ -472,9 +472,8 @@ msgid "Delete"
 msgstr "Изтрий"
 
 #: ../plugin/controllers/i18n.py:500
-#, fuzzy
 msgid "Delete Bookmark"
-msgstr "Изтрий Таймер"
+msgstr "Изтрий Отметка"
 
 #: ../plugin/controllers/i18n.py:449
 msgid "Delete Bouquet"
@@ -493,11 +492,12 @@ msgid ""
 "Delete failed, because there is no movie trash !\n"
 "Disable movie trash in configuration to delete this item"
 msgstr ""
+"Не може да се изтрие, защото няма кошче за филми !\n"
+"Спрете кошчето за филми от настройките за да изтриете този запис"
 
 #: ../plugin/controllers/i18n.py:508
-#, fuzzy
 msgid "Deleted"
-msgstr "Изтрий"
+msgstr "Изтрит"
 
 #: ../plugin/controllers/i18n.py:117 ../plugin/controllers/i18n.py:319
 msgid "Description"
@@ -638,7 +638,7 @@ msgstr "Включи достъп от VPN"
 
 #: ../plugin/controllers/i18n.py:496
 msgid "Enable/Disable Screenshot on key press or"
-msgstr ""
+msgstr "Включи/Спри Скрийншот при натискане на бутон или"
 
 #: ../plugin/controllers/i18n.py:136 ../plugin/controllers/i18n.py:318
 #: ../plugin/controllers/i18n.py:416
@@ -750,9 +750,8 @@ msgid "Extras"
 msgstr "Допълнително"
 
 #: ../plugin/controllers/i18n.py:148
-#, fuzzy
 msgid "FFmpeg"
-msgstr "Имидж версия"
+msgstr ""
 
 #: ../plugin/controllers/i18n.py:168
 msgid "FPU"
@@ -814,9 +813,8 @@ msgid "Frontprocessor"
 msgstr "Версия на фронтпроцесора"
 
 #: ../plugin/controllers/i18n.py:531
-#, fuzzy
 msgid "Full remote"
-msgstr "Скрий пълното дистанционно"
+msgstr "Пълно дистанционно"
 
 #: ../plugin/controllers/models/info.py:328
 #: ../plugin/controllers/models/info.py:334
@@ -871,9 +869,8 @@ msgid "Hardware serial"
 msgstr "Наземна"
 
 #: ../plugin/controllers/i18n.py:215
-#, fuzzy
 msgid "Hardware type"
-msgstr "Наземна"
+msgstr ""
 
 #: ../plugin/controllers/i18n.py:160
 msgid "Hide full remote"
@@ -955,12 +952,11 @@ msgstr "Наследен Автотаймер"
 
 #: ../plugin/controllers/i18n.py:516
 msgid "Install Package"
-msgstr ""
+msgstr "Инсталиране на Пакет"
 
 #: ../plugin/controllers/i18n.py:518
-#, fuzzy
 msgid "Installed"
-msgstr "Незабавен Запис"
+msgstr "Инсталиран"
 
 #: ../plugin/controllers/i18n.py:175
 msgid "Instant Record"
@@ -1013,7 +1009,7 @@ msgstr "Ядро"
 
 #: ../plugin/controllers/i18n.py:180
 msgid "LCD"
-msgstr ""
+msgstr "LCD"
 
 #: ../plugin/controllers/base.py:296
 msgid "LCD4Linux Setup"
@@ -1047,7 +1043,7 @@ msgstr "Списъка с Таймерите беше изчистен"
 
 #: ../plugin/controllers/i18n.py:183
 msgid "Location"
-msgstr "Разположение"
+msgstr "Местоположение"
 
 #: ../plugin/controllers/i18n.py:184
 msgid "Locked"
@@ -1076,7 +1072,7 @@ msgstr "Март"
 
 #: ../plugin/controllers/BouquetEditor.py:350
 msgid "Marker added."
-msgstr "Маркер е добавен."
+msgstr "Добавен е Маркер."
 
 #: ../plugin/controllers/i18n.py:320
 msgid "Match title"
@@ -1100,16 +1096,15 @@ msgstr "Метод"
 
 #: ../plugin/controllers/i18n.py:513
 msgid "Minimal EPG list"
-msgstr ""
+msgstr "Минимален EPG лист"
 
 #: ../plugin/controllers/i18n.py:511
-#, fuzzy
 msgid "Minimal movie list"
-msgstr "Списък с филми"
+msgstr "Минимален Списък с филми"
 
 #: ../plugin/controllers/i18n.py:512
 msgid "Minimal timer list"
-msgstr ""
+msgstr "Минимален таймер лист"
 
 #: ../plugin/controllers/i18n.py:187
 msgid "Minute"
@@ -1146,16 +1141,15 @@ msgstr "Ежемесечно"
 
 #: ../plugin/controllers/i18n.py:519
 msgid "More"
-msgstr ""
+msgstr "Повече"
 
 #: ../plugin/controllers/i18n.py:478
 msgid "Movie database for EPG"
-msgstr ""
+msgstr "Филмова база данни за EPG"
 
 #: ../plugin/controllers/i18n.py:525
-#, fuzzy
 msgid "Movie search"
-msgstr "Записи"
+msgstr "Търсене на филми"
 
 #: ../plugin/controllers/i18n.py:189
 msgid "Movielist"
@@ -1185,9 +1179,8 @@ msgid "MultiTranscoding"
 msgstr "Транскодиране"
 
 #: ../plugin/controllers/base.py:320
-#, fuzzy
 msgid "NCam Webinterface"
-msgstr "OSCam Уеб-интерфейс"
+msgstr "NCam Уеб-интерфейс"
 
 #: ../plugin/controllers/i18n.py:193
 msgid "Name"
@@ -1293,9 +1286,8 @@ msgid "No service given!"
 msgstr "Не е зададен канал!"
 
 #: ../plugin/controllers/i18n.py:505
-#, fuzzy
 msgid "No, cancel"
-msgstr "Отмяна"
+msgstr "Не, отмени"
 
 #: ../plugin/controllers/i18n.py:409
 msgid "None"
@@ -1383,9 +1375,8 @@ msgid "Open Source Web Interface for Linux set-top box"
 msgstr "Уеб Интерфейс с отворен код за линукс-приемник"
 
 #: ../plugin/controllers/i18n.py:204
-#, fuzzy
 msgid "Open Vision"
-msgstr "GUI Версия"
+msgstr ""
 
 #: ../plugin/controllers/i18n.py:299
 msgid "Open Vision module"
@@ -1435,7 +1426,7 @@ msgstr "Замени открития в алтернативен канал"
 
 #: ../plugin/controllers/i18n.py:502
 msgid "Packages"
-msgstr ""
+msgstr "Пакети"
 
 #: ../plugin/controllers/BouquetEditor.py:530
 #: ../plugin/controllers/BouquetEditor.py:532
@@ -1460,7 +1451,7 @@ msgstr "Pcrpid"
 
 #: ../plugin/controllers/i18n.py:210
 msgid "PiP"
-msgstr ""
+msgstr "PiP"
 
 #: ../plugin/controllers/i18n.py:435
 msgid "Picture in Picture"
@@ -1483,9 +1474,8 @@ msgid "Playlist"
 msgstr "Плейлист"
 
 #: ../plugin/controllers/i18n.py:537
-#, fuzzy
 msgid "Playlist Format"
-msgstr "Плейлист"
+msgstr "Плейлист Формат"
 
 #: ../plugin/controllers/i18n.py:459
 msgid "Please enter filename"
@@ -1505,7 +1495,7 @@ msgstr "Функциите на таймера за захранването н�
 
 #: ../plugin/controllers/i18n.py:495
 msgid "Primetimes"
-msgstr ""
+msgstr "Праймтайм"
 
 #: ../plugin/controllers/i18n.py:214
 msgid "Proc model"
@@ -1544,9 +1534,8 @@ msgid "Really rename the recording"
 msgstr "Искате ли да преименувате записа?"
 
 #: ../plugin/controllers/i18n.py:176
-#, fuzzy
 msgid "Really start instant record now?"
-msgstr "Старт на незабавен запис"
+msgstr "Старт на незабавен запис сега?"
 
 #: ../plugin/controllers/i18n.py:220
 #, fuzzy
@@ -1592,7 +1581,7 @@ msgstr "Дистанционно"
 
 #: ../plugin/controllers/i18n.py:514
 msgid "Remove Package"
-msgstr ""
+msgstr "Премахване на Пакет"
 
 #: ../plugin/controllers/i18n.py:452
 msgid "Rename"
@@ -1661,9 +1650,8 @@ msgid "STB control"
 msgstr "Управление на приемника"
 
 #: ../plugin/controllers/i18n.py:89
-#, fuzzy
 msgid "STB info"
-msgstr "Информация за приемника"
+msgstr ""
 
 #: ../plugin/controllers/i18n.py:90
 #, fuzzy
@@ -1730,7 +1718,7 @@ msgstr "Тип на търсенето"
 
 #: ../plugin/controllers/i18n.py:527
 msgid "Select IPK File for Upload"
-msgstr ""
+msgstr "Изберете IPK файл за качване"
 
 #: ../plugin/controllers/i18n.py:241
 msgid "Send Message"
@@ -1845,7 +1833,7 @@ msgstr "Покажи името на приемника в заглавието"
 
 #: ../plugin/controllers/i18n.py:532
 msgid "Show details"
-msgstr ""
+msgstr "Покажи детайли"
 
 #: ../plugin/controllers/i18n.py:249
 msgid "Show full remote"
@@ -2002,7 +1990,7 @@ msgstr "Шаблон на Двигателя"
 
 #: ../plugin/controllers/base.py:351
 msgid "Terminal"
-msgstr ""
+msgstr "Терминал"
 
 #: ../plugin/controllers/models/services.py:341
 msgid "Terrestrial"
@@ -2214,32 +2202,31 @@ msgstr "Предстоящи Предавания"
 
 #: ../plugin/controllers/i18n.py:517
 msgid "Update"
-msgstr ""
+msgstr "Актуализация"
 
 #: ../plugin/controllers/i18n.py:515
 msgid "Update Package"
-msgstr ""
+msgstr "Актуализация на Пакет"
 
 #: ../plugin/controllers/i18n.py:520
 msgid "Update from Feed"
-msgstr ""
+msgstr "Актуализация от фийд"
 
 #: ../plugin/controllers/i18n.py:521
 msgid "Upgrade all Packages"
-msgstr ""
+msgstr "Актуализация на всички Пакети"
 
 #: ../plugin/controllers/i18n.py:530
 msgid "Upload File Error"
-msgstr ""
+msgstr "Грешка при качване на Файла"
 
 #: ../plugin/controllers/i18n.py:529
 msgid "Upload package"
-msgstr ""
+msgstr "Качване на файл"
 
 #: ../plugin/controllers/i18n.py:528
-#, fuzzy
 msgid "Uploaded Files"
-msgstr "Грешка при зареждане на файла"
+msgstr "Качени Файлове"
 
 #: ../plugin/controllers/i18n.py:368
 msgid "Use a custom location"
@@ -2247,7 +2234,7 @@ msgstr "Потребителско местоположение"
 
 #: ../plugin/controllers/i18n.py:538
 msgid "Use as PiP if possible"
-msgstr ""
+msgstr "Използване на PiP ако е възможно"
 
 #: ../plugin/plugin.py:131
 #, fuzzy
@@ -2378,13 +2365,12 @@ msgid "Wrong parameter format 'set=%s'. Use set=set15 "
 msgstr "Неправилен формат на параметъра 'set=%s'. Използвайте set=set15 "
 
 #: ../plugin/controllers/i18n.py:522
-#, fuzzy
 msgid "Yes"
-msgstr "Да/Не"
+msgstr "Да"
 
 #: ../plugin/controllers/i18n.py:506
 msgid "Yes, delete it"
-msgstr ""
+msgstr "Да, изтрий го"
 
 #: ../plugin/controllers/i18n.py:307
 msgid "Yes/No"
@@ -2392,7 +2378,7 @@ msgstr "Да/Не"
 
 #: ../plugin/controllers/i18n.py:509
 msgid "You need to write something!"
-msgstr ""
+msgstr "Трябва да напишете нещо!"
 
 #: ../plugin/controllers/i18n.py:308
 msgid "Zap"
@@ -2452,7 +2438,7 @@ msgstr "към режим готовност"
 
 #: ../plugin/controllers/i18n.py:32
 msgid "hour"
-msgstr ""
+msgstr "час"
 
 #: ../plugin/controllers/i18n.py:380
 msgid "in Description"
@@ -2484,9 +2470,8 @@ msgid "manual/disabled"
 msgstr "ръчно/спрян"
 
 #: ../plugin/controllers/i18n.py:32
-#, fuzzy
 msgid "minute"
-msgstr "Mинута"
+msgstr "минута"
 
 #: ../plugin/controllers/i18n.py:196
 msgid "no description available"
@@ -2522,7 +2507,7 @@ msgstr "запис"
 
 #: ../plugin/controllers/models/movies.py:419
 msgid "remove"
-msgstr ""
+msgstr "премахване"
 
 #: ../plugin/controllers/i18n.py:230
 msgid "running"
@@ -2574,7 +2559,7 @@ msgstr "името или краткото описание съвпада"
 msgid "transcoded"
 msgstr "транскодиран"
 
-#: ../plugin/controllers/web.py:722
+#: ../plugin/controllers/web.py:724
 #, python-format
 msgid "type %s is not a number"
 msgstr "тип %s не е число"
