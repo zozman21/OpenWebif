@@ -2,15 +2,27 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
-##############################################################################
-#                        2011-2017 E2OpenPlugins                             #
-#                                                                            #
-#  This file is open source software; you can redistribute it and/or modify  #
-#     it under the terms of the GNU General Public License version 2 as      #
-#               published by the Free Software Foundation.                   #
-#                                                                            #
-##############################################################################
+##########################################################################
+# OpenWebif: info
+##########################################################################
+# Copyright (C) 2011 - 2020 E2OpenPlugins
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software Foundation,
+# Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+##########################################################################
 
+from __future__ import print_function
 import os
 import sys
 import time
@@ -50,7 +62,7 @@ def getIPMethod(iface):
 	ipmethod = _("SLAAC")
 	if fileExists('/etc/network/interfaces'):
 		ifaces = '/etc/network/interfaces'
-		for line in file(ifaces).readlines():
+		for line in open(ifaces).readlines():
 			if not line.startswith('#'):
 				if line.startswith('iface') and "inet6" in line and iface in line:
 					if "static" in line:
@@ -69,7 +81,7 @@ def getIPv4Method(iface):
 	ipv4method = _("static")
 	if fileExists('/etc/network/interfaces'):
 		ifaces = '/etc/network/interfaces'
-		for line in file(ifaces).readlines():
+		for line in open(ifaces).readlines():
 			if not line.startswith('#'):
 				if line.startswith('iface') and "inet " in line and iface in line:
 					if "static" in line:
@@ -140,7 +152,7 @@ def getAdapterIPv6(ifname):
 		if has_ipv6 and version.major >= 12:
 			proc = '/proc/net/if_inet6'
 			tempaddrs = []
-			for line in file(proc).readlines():
+			for line in open(proc).readlines():
 				if line.startswith('fe80'):
 					continue
 
@@ -367,7 +379,7 @@ def getInfo(session=None, need_fullinfo=False):
 	for autofs in autofiles:
 		if fileExists(autofs):
 			method = "autofs"
-			for line in file(autofs).readlines():
+			for line in open(autofs).readlines():
 				if not line.startswith('#'):
 					# Replace escaped spaces that can appear inside credentials with underscores
 					# Not elegant but we wouldn't want to expose credentials on the OWIF anyways
@@ -441,14 +453,12 @@ def getInfo(session=None, need_fullinfo=False):
 
 	if session:
 		try:
-# gets all current stream clients for images using eStreamServer
-# TODO: merge eStreamServer and streamList
-# TODO: get tuner info for streams
-# TODO: get recoding/timer info if more than one
-
+			#  gets all current stream clients for images using eStreamServer
+			#  TODO: merge eStreamServer and streamList
+			#  TODO: get tuner info for streams
+			#  TODO: get recoding/timer info if more than one
 			info['streams'] = []
 			try:
-				streams = []
 				from enigma import eStreamServer
 				streamServer = eStreamServer.getInstance()
 				if streamServer is not None:
@@ -466,12 +476,13 @@ def getInfo(session=None, need_fullinfo=False):
 						})
 			except Exception as error:
 				print("[OpenWebif] -D- no eStreamServer %s" % error)
+
 			recs = NavigationInstance.instance.getRecordings()
 			if recs:
-# only one stream and only TV
+				#  only one stream and only TV
 				from Plugins.Extensions.OpenWebif.controllers.stream import streamList
 				s_name = ''
-				# s_cip = ''
+				#  s_cip = ''
 
 				print("[OpenWebif] -D- streamList count '%d'" % len(streamList))
 				if len(streamList) == 1:
@@ -533,9 +544,9 @@ def getInfo(session=None, need_fullinfo=False):
 
 	info['timerpipzap'] = False
 	info['timerautoadjust'] = False
-	
+
 	try:
-		timer = RecordTimerEntry('',0,0,'','',0)
+		timer = RecordTimerEntry('', 0, 0, '', '', 0)
 		if hasattr(timer, "pipzap"):
 			info['timerpipzap'] = True
 		if hasattr(timer, "autoadjust"):

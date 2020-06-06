@@ -4,7 +4,7 @@
 ##########################################################################
 # OpenWebif: NetController
 ##########################################################################
-# Copyright (C) 2018 jbleyel and E2OpenPlugins
+# Copyright (C) 2018-2020 jbleyel and E2OpenPlugins
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -82,7 +82,7 @@ class NetController(resource.Resource):
 	def P_listmounts(self):
 		list = []
 		mounts = iAutoMount.getMountsList()
-		for sharename in mounts.keys():
+		for sharename in list(mounts.keys()):
 			mountentry = iAutoMount.automounts[sharename]
 			list.append(mountentry)
 		self.result["result"] = True

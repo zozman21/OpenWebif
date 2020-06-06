@@ -5,7 +5,7 @@ from __future__ import print_function
 ##########################################################################
 # OpenWebif: BaseController
 ##########################################################################
-# Copyright (C) 2011 - 2018 E2OpenPlugins
+# Copyright (C) 2011 - 2020 E2OpenPlugins
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -22,6 +22,7 @@ from __future__ import print_function
 # Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 ##########################################################################
 
+from __future__ import print_function
 import os
 import imp
 import json
@@ -57,6 +58,14 @@ http.Request.getRequestHostname = new_getRequestHostname
 REMOTE = ''
 
 try:
+<<<<<<< HEAD
+=======
+	from boxbranding import getBoxType, getMachineName
+except:  # noqa: E722
+	from Plugins.Extensions.OpenWebif.controllers.models.owibranding import getBoxType, getMachineName  # noqa: F401
+
+try:
+>>>>>>> 0f945666dd0ce866ce41628dbdae584ada28db2b
 	from Components.RcModel import rc_model
 	REMOTE = rc_model.getRcFolder() + "/remote"
 except:  # noqa: E722
@@ -120,7 +129,7 @@ class BaseController(resource.Resource):
 
 	def putGZChild(self, path, child):
 		child.isGZ = True
-		self.putChild(path,EncodingResourceWrapper(child, [GzipEncoderFactory()]))
+		self.putChild(path, EncodingResourceWrapper(child, [GzipEncoderFactory()]))
 
 	def getChild(self, path, request):
 		if self.isGZ:
@@ -242,7 +251,7 @@ class BaseController(resource.Resource):
 				else:
 					variant = "oscam"
 
-				conffile = file.split('/')[-1].replace("version","conf")
+				conffile = file.split('/')[-1].replace("version", "conf")
 
 				data = open(file, "r").readlines()  # nosec
 				for i in data:

@@ -9,7 +9,7 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
-from urllib import unquote
+from six.moves.urllib.parse import unquote
 from enigma import eDVBDB
 from Components.NimManager import nimmanager
 from Components import ParentalControl

@@ -2,14 +2,27 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
-##############################################################################
-#                        2011 E2OpenPlugins                                  #
-#                                                                            #
-#  This file is open source software; you can redistribute it and/or modify  #
-#     it under the terms of the GNU General Public License version 2 as      #
-#               published by the Free Software Foundation.                   #
-#                                                                            #
-##############################################################################
+##########################################################################
+# OpenWebif: grab
+##########################################################################
+# Copyright (C) 2011 - 2020 E2OpenPlugins
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software Foundation,
+# Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+##########################################################################
+
+from __future__ import print_function
 from enigma import eConsoleAppContainer
 from Screens.InfoBar import InfoBar
 from twisted.web import resource, server
@@ -79,9 +92,9 @@ class GrabRequest(object):
 		request.notifyFinish().addErrback(self.requestAborted)
 		request.setHeader('Content-Disposition', 'inline; filename=%s.%s;' % (sref, fileformat))
 		request.setHeader('Content-Type', 'image/%s' % fileformat.replace("jpg", "jpeg"))
-		#request.setHeader('Expires', 'Sat, 26 Jul 1997 05:00:00 GMT')
-		#request.setHeader('Cache-Control', 'no-store, must-revalidate, post-check=0, pre-check=0')
-		#request.setHeader('Pragma', 'no-cache')
+		# request.setHeader('Expires', 'Sat, 26 Jul 1997 05:00:00 GMT')
+		# request.setHeader('Cache-Control', 'no-store, must-revalidate, post-check=0, pre-check=0')
+		# request.setHeader('Pragma', 'no-cache')
 
 	def requestAborted(self, err):
 		# Called when client disconnected early, abort the process and

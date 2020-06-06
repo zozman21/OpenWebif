@@ -4,7 +4,7 @@
 ##########################################################################
 # OpenWebif: RootController
 ##########################################################################
-# Copyright (C) 2011 - 2018 E2OpenPlugins
+# Copyright (C) 2011 - 2020 E2OpenPlugins
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -38,7 +38,6 @@ from Plugins.Extensions.OpenWebif.controllers.BQE import BQEController
 from Plugins.Extensions.OpenWebif.controllers.transcoding import TranscodingController
 from Plugins.Extensions.OpenWebif.controllers.wol import WOLSetupController, WOLClientController
 from Plugins.Extensions.OpenWebif.controllers.file import FileController
-
 from Plugins.Extensions.OpenWebif.controllers.defaults import PICON_PATH, getPublicPath, VIEWS_PATH
 
 class RootController(BaseController):
@@ -76,7 +75,7 @@ class RootController(BaseController):
 		try:
 			from Plugins.Extensions.OpenWebif.controllers.NET import NetController
 			self.putChild("net", NetController(session))
-		except:
+		except:  # noqa: E722
 			pass
 
 	# this function will be called before a page is loaded
@@ -90,7 +89,7 @@ class RootController(BaseController):
 		if config.OpenWebif.responsive_enabled.value and os.path.exists(VIEWS_PATH + "/responsive"):
 			return {}
 		mode = ''
-		if "mode" in request.args.keys():
+		if "mode" in list(request.args.keys()):
 			mode = request.args["mode"][0]
 		uagent = request.getHeader('User-Agent')
 		if uagent and mode != 'fullpage' and os.path.exists(getPublicPath('mobile')):

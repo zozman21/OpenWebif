@@ -12,12 +12,13 @@
 from enigma import eServiceReference, getBestPlayableServiceReference
 from ServiceReference import ServiceReference
 from Plugins.Extensions.OpenWebif.controllers.models.info import getInfo
-from urllib import unquote, quote
+from six.moves.urllib.parse import unquote, quote
 import os
 import re
 from Components.config import config
 from twisted.web.resource import Resource
 from Tools.Directories import fileExists
+from Plugins.Extensions.OpenWebif.controllers.models.info import getInfo
 
 
 class GetSession(Resource):
@@ -27,7 +28,7 @@ class GetSession(Resource):
 
 	def GetAuth(self, request):
 		session = request.getSession().sessionNamespaces
-		if "pwd" in session.keys() and session["pwd"] is not None:
+		if "pwd" in list(session.keys()) and session["pwd"] is not None:
 			return (session["user"], session["pwd"])
 		else:
 			return None
@@ -74,7 +75,7 @@ def getStream(session, request, m3ufile):
 	if fileExists("/dev/bcm_enc0"):
 		try:
 			transcoder_port = int(config.plugins.transcodingsetup.port.value)
-		except StandardError:
+		except Exception:
 			# Transcoding Plugin is not installed or your STB does not support transcoding
 			transcoder_port = None
 		if "device" in request.args:
@@ -170,7 +171,7 @@ def getTS(self, request):
 		if fileExists("/dev/bcm_enc0") or fileExists("/dev/encoder0") or fileExists("/proc/stb/encoder/0/apply"):
 			try:
 				transcoder_port = int(config.plugins.transcodingsetup.port.value)
-			except StandardError:
+			except Exception:
 				# Transcoding Plugin is not installed or your STB does not support transcoding
 				transcoder_port = None
 			if "device" in request.args:

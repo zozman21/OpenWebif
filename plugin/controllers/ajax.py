@@ -4,7 +4,7 @@
 ##########################################################################
 # OpenWebif: AjaxController
 ##########################################################################
-# Copyright (C) 2011 - 2018 E2OpenPlugins
+# Copyright (C) 2011 - 2020 E2OpenPlugins
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -58,28 +58,28 @@ class AjaxController(BaseController):
 	def P_edittimer(self, request):
 		pipzap = getInfo()['timerpipzap']
 		autoadjust = getInfo()['timerautoadjust']
-		return {"autoadjust": autoadjust , "pipzap" : pipzap}
+		return {"autoadjust": autoadjust, "pipzap": pipzap}
 
 	def P_current(self, request):
 		return getCurrentFullInfo(self.session)
 
 	def P_bouquets(self, request):
 		stype = "tv"
-		if "stype" in request.args.keys():
+		if "stype" in list(request.args.keys()):
 			stype = request.args["stype"][0]
 		bouq = getBouquets(stype)
 		return {"bouquets": bouq['bouquets'], "stype": stype}
 
 	def P_providers(self, request):
 		stype = "tv"
-		if "stype" in request.args.keys():
+		if "stype" in list(request.args.keys()):
 			stype = request.args["stype"][0]
 		prov = getProviders(stype)
 		return {"providers": prov['providers'], "stype": stype}
 
 	def P_satellites(self, request):
 		stype = "tv"
-		if "stype" in request.args.keys():
+		if "stype" in list(request.args.keys()):
 			stype = request.args["stype"][0]
 		sat = getSatellites(stype)
 		return {"satellites": sat['satellites'], "stype": stype}
@@ -87,9 +87,9 @@ class AjaxController(BaseController):
 	def P_channels(self, request):
 		stype = "tv"
 		idbouquet = "ALL"
-		if "stype" in request.args.keys():
+		if "stype" in list(request.args.keys()):
 			stype = request.args["stype"][0]
-		if "id" in request.args.keys():
+		if "id" in list(request.args.keys()):
 			idbouquet = request.args["id"][0]
 		channels = getChannels(idbouquet, stype)
 		channels['transcoding'] = getHaveTranscoding()
@@ -138,15 +138,15 @@ class AjaxController(BaseController):
 	def P_epgpop(self, request):
 		events = []
 		timers = []
-		if "sref" in request.args.keys():
+		if "sref" in list(request.args.keys()):
 			ev = getChannelEpg(request.args["sref"][0])
 			events = ev["events"]
-		elif "sstr" in request.args.keys():
+		elif "sstr" in list(request.args.keys()):
 			fulldesc = False
-			if "full" in request.args.keys():
+			if "full" in list(request.args.keys()):
 				fulldesc = True
 			bouquetsonly = False
-			if "bouquetsonly" in request.args.keys():
+			if "bouquetsonly" in list(request.args.keys()):
 				bouquetsonly = True
 			ev = getSearchEpg(request.args["sstr"][0], None, fulldesc, bouquetsonly)
 			events = sorted(ev["events"], key=lambda ev: ev['begin_timestamp'])
@@ -202,13 +202,13 @@ class AjaxController(BaseController):
 		unsort = movies['movies']
 
 		if sorttype == 'name':
-			movies['movies'] = sorted(unsort, key=lambda k: k['eventname']) 
+			movies['movies'] = sorted(unsort, key=lambda k: k['eventname'])
 		elif sorttype == 'named':
-			movies['movies'] = sorted(unsort, key=lambda k: k['eventname'],reverse=True) 
+			movies['movies'] = sorted(unsort, key=lambda k: k['eventname'], reverse=True)
 		elif sorttype == 'date':
-			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime']) 
+			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime'])
 		elif sorttype == 'dated':
-			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime'],reverse=True) 
+			movies['movies'] = sorted(unsort, key=lambda k: k['recordingtime'], reverse=True)
 
 		movies['sort'] = sorttype
 		return movies
@@ -219,7 +219,7 @@ class AjaxController(BaseController):
 		sorttype = ''
 		unsort = timers['timers']
 
-		if "sort" in request.args.keys():
+		if "sort" in list(request.args.keys()):
 			sorttype = request.args["sort"][0]
 		else:
 			return timers
@@ -239,7 +239,7 @@ class AjaxController(BaseController):
 
 	def P_tvradio(self, request):
 		epgmode = "tv"
-		if "epgmode" in request.args.keys():
+		if "epgmode" in list(request.args.keys()):
 			epgmode = request.args["epgmode"][0]
 			if epgmode not in ["tv", "radio"]:
 				epgmode = "tv"
@@ -247,7 +247,7 @@ class AjaxController(BaseController):
 
 	def P_config(self, request):
 		section = "usage"
-		if "section" in request.args.keys():
+		if "section" in list(request.args.keys()):
 			section = request.args["section"][0]
 		return getConfigs(section)
 
@@ -283,13 +283,13 @@ class AjaxController(BaseController):
 
 	def P_multiepg(self, request):
 		epgmode = "tv"
-		if "epgmode" in request.args.keys():
+		if "epgmode" in list(request.args.keys()):
 			epgmode = request.args["epgmode"][0]
 			if epgmode not in ["tv", "radio"]:
 				epgmode = "tv"
 
 		bouq = getBouquets(epgmode)
-		if "bref" not in request.args.keys():
+		if "bref" not in list(request.args.keys()):
 			bref = bouq['bouquets'][0][0]
 		else:
 			bref = request.args["bref"][0]
@@ -298,13 +298,13 @@ class AjaxController(BaseController):
 		day = 0
 		week = 0
 		wadd = 0
-		if "week" in request.args.keys():
+		if "week" in list(request.args.keys()):
 			try:
 				week = int(request.args["week"][0])
 				wadd = week * 7
 			except ValueError:
 				pass
-		if "day" in request.args.keys():
+		if "day" in list(request.args.keys()):
 			try:
 				day = int(request.args["day"][0])
 				if day > 0 or wadd > 0:
@@ -332,6 +332,8 @@ class AjaxController(BaseController):
 		ret['hasVPS'] = 0
 		ret['hasSeriesPlugin'] = 0
 		ret['test'] = 0
+		ret['autoadjust'] = getInfo()['timerautoadjust']
+
 		try:
 			from Plugins.Extensions.AutoTimer.AutoTimer import typeMap
 			ret['types'] = typeMap
@@ -376,6 +378,6 @@ class AjaxController(BaseController):
 				transcoder_port = int(config.plugins.transcodingsetup.port.value)
 				if getBoxType() in ("sezammarvel","xpeedlx3","atemionemesis","mbultra","beyonwizt4","hd2400","et10000","et13000","beyonwizu4","sf5008","x2plus","formuler1","tiviaraplus","e4hdultra","protek4k"):
 					transcoder_port = int(config.OpenWebif.streamport.value)
-			except StandardError:
+			except Exception:
 				transcoder_port = 0
 		return {"transcoder_port": transcoder_port, "vxgenabled": vxgenabled, "auth": auth}

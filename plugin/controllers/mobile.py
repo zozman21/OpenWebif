@@ -25,9 +25,10 @@ from Plugins.Extensions.OpenWebif.controllers.base import BaseController
 from Plugins.Extensions.OpenWebif.controllers.models.movies import getMovieList
 from Plugins.Extensions.OpenWebif.controllers.models.timers import getTimers
 from Plugins.Extensions.OpenWebif.controllers.models.services import getBouquets, getChannels, getChannelEpg, getEvent, getPicon
-from urllib import quote
+from six.moves.urllib.parse import quote
 from time import localtime, strftime
 from boxbranding import getHaveTranscoding
+
 
 class MobileController(BaseController):
 	"""
@@ -44,16 +45,16 @@ class MobileController(BaseController):
 
 	def P_bouquets(self, request):
 		stype = "tv"
-		if "stype" in request.args.keys():
+		if "stype" in list(request.args.keys()):
 			stype = request.args["stype"][0]
 		return getBouquets(stype)
 
 	def P_channels(self, request):
 		stype = "tv"
 		idbouquet = "ALL"
-		if "stype" in request.args.keys():
+		if "stype" in list(request.args.keys()):
 			stype = request.args["stype"][0]
-		if "id" in request.args.keys():
+		if "id" in list(request.args.keys()):
 			idbouquet = request.args["id"][0]
 		channels = getChannels(idbouquet, stype)
 		channels['transcoding'] = getHaveTranscoding()
@@ -62,7 +63,7 @@ class MobileController(BaseController):
 	def P_channelinfo(self, request):
 		channelinfo = {}
 		channelepg = {}
-		if "sref" in request.args.keys():
+		if "sref" in list(request.args.keys()):
 			sref = request.args["sref"][0]
 			channelepg = getChannelEpg(sref)
 			# Detect if sRef contains a stream
@@ -106,9 +107,9 @@ class MobileController(BaseController):
 		event['duration'] = 0
 		event['channel'] = ""
 
-		if "eventid" in request.args.keys():
+		if "eventid" in list(request.args.keys()):
 			eventid = request.args["eventid"][0]
-		if "eventref" in request.args.keys():
+		if "eventref" in list(request.args.keys()):
 			ref = request.args["eventref"][0]
 		if ref and eventid:
 			event = getEvent(ref, eventid)['event']

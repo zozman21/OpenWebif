@@ -3,6 +3,7 @@
 from __future__ import print_function
 #!/usr/bin/env python
 import re
+import six
 
 MANY_SLASHES_PATTERN = r'[\/]+'
 MANY_SLASHES_REGEX = re.compile(MANY_SLASHES_PATTERN)
@@ -36,16 +37,16 @@ SERVICE_TYPE_RADIOA = 0x0a
 
 
 SERVICE_TYPE = {
-	SERVICE_TYPE_TV : 'TV',
-	SERVICE_TYPE_HDTV : 'HDTV',
-	SERVICE_TYPE_RADIO : 'RADIO',
-	SERVICE_TYPE_RADIOA : 'RADIO',
-	SERVICE_TYPE_UHD : 'UHD',
-	SERVICE_TYPE_SD4 : 'SD4',
-	SERVICE_TYPE_OPT : 'OPT',
+	SERVICE_TYPE_TV: 'TV',
+	SERVICE_TYPE_HDTV: 'HDTV',
+	SERVICE_TYPE_RADIO: 'RADIO',
+	SERVICE_TYPE_RADIOA: 'RADIO',
+	SERVICE_TYPE_UHD: 'UHD',
+	SERVICE_TYPE_SD4: 'SD4',
+	SERVICE_TYPE_OPT: 'OPT',
 }
 
-SERVICE_TYPE_LOOKUP = {k: v for k, v in SERVICE_TYPE.iteritems()}
+SERVICE_TYPE_LOOKUP = {k: v for k, v in six.iteritems(SERVICE_TYPE)}
 
 #: Namespace - DVB-C services
 NS_DVB_C = 0xffff0000
@@ -64,7 +65,7 @@ NS = {
 }
 
 #: Namespace:Label lookup map
-NS_LOOKUP = {v: k for k, v in NS.iteritems()}
+NS_LOOKUP = {v: k for k, v in six.iteritems(NS)}
 
 
 def lenient_decode(value, encoding=None):
@@ -271,8 +272,9 @@ def getGenreStringLong(hn, ln):
 def _moviePlayState(cutsFileName, ref, length):
 	return 0
 
+
 if __name__ == '__main__':
 	import doctest
 
 	(FAILED, SUCCEEDED) = doctest.testmod()
-	print("[doctest] SUCCEEDED/FAILED: {:d}/{:d}".format(SUCCEEDED, FAILED))
+	print(("[doctest] SUCCEEDED/FAILED: {:d}/{:d}".format(SUCCEEDED, FAILED)))
