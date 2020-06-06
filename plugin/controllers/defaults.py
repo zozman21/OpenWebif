@@ -1,10 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
-<<<<<<< HEAD
-#!/usr/bin/env python
-=======
->>>>>>> 0f945666dd0ce866ce41628dbdae584ada28db2b
 import os
 import sys
 

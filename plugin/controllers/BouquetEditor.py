@@ -444,11 +444,7 @@ class BouquetEditor(Source):
 					if mutableAlternatives:
 						mutableAlternatives.setListName(name)
 						if mutableAlternatives.addService(cur_ref):
-<<<<<<< HEAD
-									print("add", cur_ref.toString(), "to new alternatives failed")
-=======
 							print("add", cur_ref.toString(), "to new alternatives failed")
->>>>>>> 0f945666dd0ce866ce41628dbdae584ada28db2b
 						mutableAlternatives.flushChanges()
 						self.setRoot(sBouquetRef)
 						sCurrentRef = sref  # currentRef is now an alternative (bouquet)

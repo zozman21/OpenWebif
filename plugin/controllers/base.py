@@ -58,14 +58,6 @@ http.Request.getRequestHostname = new_getRequestHostname
 REMOTE = ''
 
 try:
-<<<<<<< HEAD
-=======
-	from boxbranding import getBoxType, getMachineName
-except:  # noqa: E722
-	from Plugins.Extensions.OpenWebif.controllers.models.owibranding import getBoxType, getMachineName  # noqa: F401
-
-try:
->>>>>>> 0f945666dd0ce866ce41628dbdae584ada28db2b
 	from Components.RcModel import rc_model
 	REMOTE = rc_model.getRcFolder() + "/remote"
 except:  # noqa: E722
