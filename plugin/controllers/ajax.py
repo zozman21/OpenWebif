@@ -53,7 +53,7 @@ class AjaxController(BaseController):
 		"""
 		ajax requests with no extra data
 		"""
-		return ['powerstate', 'message', 'myepg', 'radio', 'terminal', 'epgr', 'bqe', 'tv', 'satfinder']
+		return [b'powerstate', b'message', b'myepg', b'radio', b'terminal', b'epgr', b'bqe', b'tv', b'satfinder']
 
 	def P_edittimer(self, request):
 		pipzap = getInfo()['timerpipzap']
