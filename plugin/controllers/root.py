@@ -47,34 +47,34 @@ class RootController(BaseController):
 	def __init__(self, session, path=""):
 		BaseController.__init__(self, path=path, session=session)
 
-		self.putChild("web", WebController(session))
-		self.putGZChild("api", ApiController(session))
-		self.putGZChild("ajax", AjaxController(session))
-		self.putChild("file", FileController())
-		self.putChild("grab", grabScreenshot(session))
+		self.putChild(b"web", WebController(session))
+		self.putGZChild(b"api", ApiController(session))
+		self.putGZChild(b"ajax", AjaxController(session))
+		self.putChild(b"file", FileController())
+		self.putChild(b"grab", grabScreenshot(session))
 		if os.path.exists(getPublicPath('mobile')):
-			self.putChild("mobile", MobileController(session))
-			self.putChild("m", static.File(getPublicPath() + "/mobile"))
+			self.putChild(b"mobile", MobileController(session))
+			self.putChild(b"m", static.File(getPublicPath() + "/mobile"))
 		for static_val in ('js', 'css', 'static', 'images', 'fonts'):
-			self.putChild(static_val, static.File(getPublicPath() + '/' + static_val))
+			self.putChild(static_val.encode(), static.File(getPublicPath() + '/' + static_val))
 		for static_val in ('themes', 'webtv', 'vxg'):
 			if os.path.exists(getPublicPath(static_val)):
-				self.putChild(static_val, static.File(getPublicPath() + '/' + static_val))
+				self.putChild(static_val.encode(), static.File(getPublicPath() + '/' + static_val))
 
 		if os.path.exists('/usr/bin/shellinaboxd'):
-			self.putChild("terminal", proxy.ReverseProxyResource('::1', 4200, '/'))
+			self.putChild(b"terminal", proxy.ReverseProxyResource('::1', 4200, '/'))
 		self.putGZChild("opkg", OpkgController(session))
 		self.putChild("autotimer", ATController(session))
-		self.putChild("epgrefresh", ERController(session))
-		self.putChild("bouqueteditor", BQEController(session))
-		self.putChild("transcoding", TranscodingController())
-		self.putChild("wol", WOLClientController())
-		self.putChild("wolsetup", WOLSetupController(session))
+		self.putChild(b"epgrefresh", ERController(session))
+		self.putChild(b"bouqueteditor", BQEController(session))
+		self.putChild(b"transcoding", TranscodingController())
+		self.putChild(b"wol", WOLClientController())
+		self.putChild(b"wolsetup", WOLSetupController(session))
 		if PICON_PATH:
-			self.putChild("picon", static.File(PICON_PATH))
+			self.putChild(b"picon", static.File(PICON_PATH))
 		try:
 			from Plugins.Extensions.OpenWebif.controllers.NET import NetController
-			self.putChild("net", NetController(session))
+			self.putChild(b"net", NetController(session))
 		except:  # noqa: E722
 			pass
 

@@ -55,7 +55,7 @@ class WebController(BaseController):
 	"""
 	def __init__(self, session, path=""):
 		BaseController.__init__(self, path=path, session=session)
-		self.putChild("stream", StreamController(session))
+		self.putChild(b"stream", StreamController(session))
 
 	def prePageLoad(self, request):
 		request.setHeader("content-type", "text/xml")
