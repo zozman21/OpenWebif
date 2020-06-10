@@ -682,8 +682,8 @@ def getStatusInfo(self):
 		statusinfo['currservice_end'] = time.strftime("%H:%M", (time.localtime(end_timestamp)))
 		statusinfo['currservice_end_timestamp'] = end_timestamp
 		statusinfo['currservice_description'] = curEvent[3]
-		if len(curEvent[3].decode('utf-8')) > 220:
-			statusinfo['currservice_description'] = curEvent[3].decode('utf-8')[0:220].encode('utf-8') + "..."
+		if len(curEvent[3]) > 220:
+			statusinfo['currservice_description'] = curEvent[3][0:220] + "..."
 		statusinfo['currservice_station'] = currservice_station
 		if statusinfo['currservice_serviceref'].startswith('1:0:0'):
 			statusinfo['currservice_filename'] = '/' + '/'.join(serviceref_string.split("/")[1:])
