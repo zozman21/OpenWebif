@@ -107,8 +107,11 @@ class BaseController(resource.Resource):
 		request.finish()
 
 	def loadTemplate(self, path, module, args):
-		if fileExists(getViewsPath(path + ".py")):
-			template = imp.load_source(module, getViewsPath(path + ".py"))
+		if fileExists(getViewsPath(path + ".py")) or fileExists(getViewsPath(path + ".pyo")):
+			if fileExists(getViewsPath(path + ".pyo")):
+				template = imp.load_compiled(module, getViewsPath(path + ".pyo"))
+			else:
+				template = imp.load_source(module, getViewsPath(path + ".py"))
 			mod = getattr(template, module, None)
 			if callable(mod):
 				return str(mod(searchList=args))
@@ -190,13 +193,13 @@ class BaseController(resource.Resource):
 			else:
 				# print("[OpenWebif] page '%s' ok (cheetah template)" % request.uri)
 				module = request.path
-				if module[-1:]== b'/':
-					module += b"index"
+				if module[-1] == "/":
+					module += "index"
 				elif module[-5:] != "index" and self.path == "index":
-					module += b"/index"
+					module += "/index"
 				module = module.strip(b"/")
 				module = module.replace(b".", b"")
-				out = self.loadTemplate(self.path.decode(), module.decode(), data)
+				out = self.loadTemplate(module, self.path, data)
 				if out is None:
 					print("[OpenWebif] ERROR! Template not found for page '%s'" % request.uri)
 					self.error404(request)
