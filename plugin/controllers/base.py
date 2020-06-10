@@ -196,7 +196,7 @@ class BaseController(resource.Resource):
 					module += b"/index"
 				module = module.strip(b"/")
 				module = module.replace(b".", b"")
-				out = self.loadTemplate(self.path.decode(), module.decode(), data)
+				out = self.loadTemplate(module.decode(), self.path.decode(), data)
 				if out is None:
 					print("[OpenWebif] ERROR! Template not found for page '%s'" % request.uri)
 					self.error404(request)
