@@ -207,10 +207,10 @@ def getMovieList(rargs=None, locations=None):
 					extended_description = event and event.getExtendedDescription() or ""
 					if extended_description == '' and txtdesc != '':
 						extended_description = txtdesc
-					movie['descriptionExtended'] = six.text_type(extended_description, 'utf_8', errors='ignore').encode('utf_8', 'ignore')
+					movie['descriptionExtended'] = extended_description
 
 					desc = info.getInfoString(serviceref, iServiceInformation.sDescription)
-					movie['description'] = six.text_type(desc, 'utf_8', errors='ignore').encode('utf_8', 'ignore')
+					movie['description'] = desc
 
 				if fields is None or 'size' in fields:
 					size = 0
