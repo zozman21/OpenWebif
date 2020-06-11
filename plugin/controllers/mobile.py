@@ -41,7 +41,7 @@ class MobileController(BaseController):
 		"""
 		mobile requests with no extra data
 		"""
-		return ['index', 'control', 'screenshot', 'satfinder', 'about']
+		return [b'index', b'control', b'screenshot', b'satfinder', b'about']
 
 	def P_bouquets(self, request):
 		stype = "tv"
